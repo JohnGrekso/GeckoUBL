@@ -3,6 +3,10 @@ using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
+using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Cec;
+using GeckoUBL.Ubl21.Udt;
+using ValueType = System.ValueType;
 
 namespace GeckoUBL.Ubl21.Ccts
 {

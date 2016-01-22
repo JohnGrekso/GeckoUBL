@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ubl21\Cbc\Cbc.cs" />
     <Compile Include="Ubl21\Ccts\AmountType.cs" />
     <Compile Include="Ubl21\Ccts\BinaryObjectType.cs" />
     <Compile Include="Ubl21\Ccts\CodeType.cs" />
@@ -48,13 +49,14 @@
     <Compile Include="Ubl21\Ccts\NumericType.cs" />
     <Compile Include="Ubl21\Ccts\QuantityType.cs" />
     <Compile Include="Ubl21\Ccts\TextType.cs" />
+    <Compile Include="Ubl21\Cec\Cec.cs" />
+    <Compile Include="Ubl21\Udt\Unqualified.cs" />
     <Compile Include="Ubl21\xsd-output.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ubl21\Cac\" />
     <Folder Include="Ubl21\Documents\" />
     <Folder Include="Ubl21\Qdt\" />
-    <Folder Include="Ubl21\Udt\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
