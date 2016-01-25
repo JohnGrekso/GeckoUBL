@@ -324,7 +324,7 @@
     <Compile Include="Ubl21\Cac\ShareholderPartyType.cs" />
     <Compile Include="Ubl21\Cac\ShipmentStageType.cs" />
     <Compile Include="Ubl21\Cac\ShipmentType.cs" />
-    <Compile Include="Ubl21\SignatureInformationType.cs" />
+    <Compile Include="Ubl21\Signature\SignatureInformationType.cs" />
     <Compile Include="Ubl21\Miscellaneous\SignatureMethodType1.cs" />
     <Compile Include="Ubl21\Miscellaneous\SignaturePolicyIdentifierType.cs" />
     <Compile Include="Ubl21\Miscellaneous\SignaturePolicyIdType.cs" />
@@ -396,7 +396,7 @@
     <Compile Include="Ubl21\Cac\TransportScheduleType.cs" />
     <Compile Include="Ubl21\Documents\TransportServiceDescriptionRequestType.cs" />
     <Compile Include="Ubl21\Documents\TransportServiceDescriptionType.cs" />
-    <Compile Include="Ubl21\UBLDocumentSignaturesType.cs" />
+    <Compile Include="Ubl21\Signature\UBLDocumentSignaturesType.cs" />
     <Compile Include="Ubl21\Udt\Unqualified.cs" />
     <Compile Include="Ubl21\Documents\UnawardedNotificationType.cs" />
     <Compile Include="Ubl21\Miscellaneous\UnsignedDataObjectPropertiesType.cs" />
@@ -413,7 +413,7 @@
     <Compile Include="Ubl21\Miscellaneous\X509DataType.cs" />
     <Compile Include="Ubl21\Miscellaneous\X509IssuerSerialType.cs" />
     <Compile Include="Ubl21\Miscellaneous\XAdESTimeStampType.cs" />
-    <Compile Include="Ubl21\ReferencedSignatureIDType.cs" />
+    <Compile Include="Ubl21\Signature\ReferencedSignatureIDType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ubl21\Qdt\" />
