@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Ccts;
 using GeckoUBL.Ubl21.Cec;
-using ValueType = System.ValueType;
 
 namespace GeckoUBL.Ubl21.Udt
 {

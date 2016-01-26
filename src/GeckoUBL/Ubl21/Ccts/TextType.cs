@@ -6,7 +6,6 @@ using System.Xml.Serialization;
 using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Cec;
 using GeckoUBL.Ubl21.Udt;
-using ValueType = System.ValueType;
 
 namespace GeckoUBL.Ubl21.Ccts
 {
@@ -42,7 +41,6 @@ namespace GeckoUBL.Ubl21.Ccts
 	[XmlInclude(typeof(WorkPhaseType))]
 	[XmlInclude(typeof(WeightType))]
 	[XmlInclude(typeof(WarrantyInformationType))]
-	[XmlInclude(typeof(ValueType))]
 	[XmlInclude(typeof(ValueQualifierType))]
 	[XmlInclude(typeof(ValidateToolVersionType))]
 	[XmlInclude(typeof(ValidateToolType))]
