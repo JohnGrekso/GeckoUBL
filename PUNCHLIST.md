@@ -7,3 +7,4 @@ Punchlist for the GeckoUBL Project
 - [ ] Figure out what to do with the classes in the Cbc folder
 - [ ] Resharper / CA cleanup
 - [ ] Figure out what to do with the XmlInclude attributes
+- [ ] Add extension methods for core component types

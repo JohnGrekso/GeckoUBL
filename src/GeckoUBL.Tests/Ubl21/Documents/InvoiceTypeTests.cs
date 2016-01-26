@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -14,7 +15,7 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		public void GivenInvoiceTrivialXml_ThenInvoiceLoads()
 		{
 			var doc = UblDocumentHandler<InvoiceType>.GetDocument("UBL-Invoice-2.1-Example-Trivial.xml");
-
+			
 			Assert.AreEqual("123", doc.ID.Value);
 			Assert.AreEqual(DateTime.Parse("2011-09-22"), doc.IssueDate.Value);
 			Assert.AreEqual(DateTime.Parse("2011-08-01"), doc.InvoicePeriod[0].StartDate.Value);
@@ -37,6 +38,8 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		{
 			var doc = UblDocumentHandler<InvoiceType>.GetDocument("UBL-Invoice-2.1-Example.xml");
 
+			Assert.AreEqual("2.1", doc.UBLVersionID.Value);
+
 			Assert.AreEqual("TOSL108", doc.ID.Value);
 			Assert.AreEqual(DateTime.Parse("2009-12-15"), doc.IssueDate.Value);
 			Assert.AreEqual(DateTime.Parse("2009-11-01"), doc.InvoicePeriod[0].StartDate.Value);
@@ -55,7 +58,7 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		{
 			const string subdirectory = @"Ubl21\Examples";
 
-			var directory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+			var directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 			var file = string.Format(@"{0}\{1}\{2}", directory, subdirectory, filename);
 
 			T doc;

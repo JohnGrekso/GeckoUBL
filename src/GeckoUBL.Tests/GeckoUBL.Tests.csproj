@@ -53,8 +53,12 @@
   <ItemGroup>
     <Compile Include="Ubl21\Documents\InvoiceTypeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ubl21\Documents\CatalogueTypeTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ubl21\Examples\UBL-Catalogue-2.1-Example.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Ubl21\Examples\UBL-Invoice-2.1-Example-Trivial.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
