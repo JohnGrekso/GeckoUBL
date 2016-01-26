@@ -16,6 +16,7 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 			Assert.AreEqual("2.1", doc.UBLVersionID.Value);
 
 			Assert.AreEqual("1234", doc.ID.Value);
+			Assert.AreEqual("Add", doc.ActionCode.Value);
 			Assert.AreEqual(DateTime.Parse("2016-01-05"), doc.IssueDate.Value);
 			Assert.AreEqual(DateTime.Parse("2016-01-01"), doc.ValidityPeriod[0].StartDate.Value);
 			Assert.AreEqual(DateTime.Parse("2016-03-31"), doc.ValidityPeriod[0].EndDate.Value);

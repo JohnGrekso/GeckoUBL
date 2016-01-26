@@ -13,10 +13,10 @@ namespace GeckoUBL.Ubl21.Ccts
 	[XmlType(Namespace = "urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2")]
 	public class NumericType
 	{
-		[XmlAttribute()]
+		[XmlAttribute]
 		public string format { get; set; }
 
-		[XmlText()]
+		[XmlText]
 		public decimal Value { get; set; }
 	}
 }

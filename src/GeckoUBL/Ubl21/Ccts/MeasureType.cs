@@ -13,16 +13,13 @@ namespace GeckoUBL.Ubl21.Ccts
 	[XmlType(Namespace = "urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2")]
 	public class MeasureType
 	{
-		/// <remarks/>
 		[XmlAttribute(DataType = "normalizedString")]
 		public string unitCode { get; set; }
 
-		/// <remarks/>
 		[XmlAttribute(DataType = "normalizedString")]
 		public string unitCodeListVersionID { get; set; }
 
-		/// <remarks/>
-		[XmlText()]
+		[XmlText]
 		public decimal Value { get; set; }
 	}
 

@@ -22,10 +22,10 @@ namespace GeckoUBL.Ubl21.Ccts
 		[XmlAttribute(DataType = "normalizedString")]
 		public string unitCodeListAgencyID { get; set; }
 
-		[XmlAttribute()]
+		[XmlAttribute]
 		public string unitCodeListAgencyName { get; set; }
 
-		[XmlText()]
+		[XmlText]
 		public decimal Value { get; set; }
 	}
 }
