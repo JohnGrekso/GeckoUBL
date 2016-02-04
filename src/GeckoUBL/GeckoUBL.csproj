@@ -46,6 +46,9 @@
     <Compile Include="Ubl21\Cac\AddressType.cs" />
     <Compile Include="Ubl21\Cac\AirTransportType.cs" />
     <Compile Include="Ubl21\Cac\AllowanceChargeType.cs" />
+    <Compile Include="Ubl21\Documents\BaseUblDocument.cs" />
+    <Compile Include="Ubl21\Extensions\BaseUblDocumentExtensions.cs" />
+    <Compile Include="Ubl21\Extensions\ValidationResponse.cs" />
     <Compile Include="Ubl21\Miscellaneous\AnyType.cs" />
     <Compile Include="Ubl21\Cac\AppealTermsType.cs" />
     <Compile Include="Ubl21\Documents\ApplicationResponseType.cs" />
