@@ -1,61 +1,64 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("EmissionCalculationMethod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class EmissionCalculationMethodType {
-    
-	private CalculationMethodCodeType calculationMethodCodeField;
-    
-	private FullnessIndicationCodeType fullnessIndicationCodeField;
-    
-	private LocationType1 measurementFromLocationField;
-    
-	private LocationType1 measurementToLocationField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CalculationMethodCodeType CalculationMethodCode {
-		get {
-			return this.calculationMethodCodeField;
-		}
-		set {
-			this.calculationMethodCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("EmissionCalculationMethod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class EmissionCalculationMethodType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public FullnessIndicationCodeType FullnessIndicationCode {
-		get {
-			return this.fullnessIndicationCodeField;
-		}
-		set {
-			this.fullnessIndicationCodeField = value;
-		}
-	}
+		private CalculationMethodCodeType calculationMethodCodeField;
     
-	/// <remarks/>
-	public LocationType1 MeasurementFromLocation {
-		get {
-			return this.measurementFromLocationField;
-		}
-		set {
-			this.measurementFromLocationField = value;
-		}
-	}
+		private FullnessIndicationCodeType fullnessIndicationCodeField;
     
-	/// <remarks/>
-	public LocationType1 MeasurementToLocation {
-		get {
-			return this.measurementToLocationField;
+		private LocationType1 measurementFromLocationField;
+    
+		private LocationType1 measurementToLocationField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CalculationMethodCodeType CalculationMethodCode {
+			get {
+				return calculationMethodCodeField;
+			}
+			set {
+				calculationMethodCodeField = value;
+			}
 		}
-		set {
-			this.measurementToLocationField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public FullnessIndicationCodeType FullnessIndicationCode {
+			get {
+				return fullnessIndicationCodeField;
+			}
+			set {
+				fullnessIndicationCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public LocationType1 MeasurementFromLocation {
+			get {
+				return measurementFromLocationField;
+			}
+			set {
+				measurementFromLocationField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public LocationType1 MeasurementToLocation {
+			get {
+				return measurementToLocationField;
+			}
+			set {
+				measurementToLocationField = value;
+			}
 		}
 	}
 }

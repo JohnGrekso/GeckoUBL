@@ -1,98 +1,101 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AccountingCustomerParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class CustomerPartyType {
-    
-	private CustomerAssignedAccountIDType customerAssignedAccountIDField;
-    
-	private SupplierAssignedAccountIDType supplierAssignedAccountIDField;
-    
-	private AdditionalAccountIDType[] additionalAccountIDField;
-    
-	private PartyType partyField;
-    
-	private ContactType deliveryContactField;
-    
-	private ContactType accountingContactField;
-    
-	private ContactType buyerContactField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CustomerAssignedAccountIDType CustomerAssignedAccountID {
-		get {
-			return this.customerAssignedAccountIDField;
-		}
-		set {
-			this.customerAssignedAccountIDField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AccountingCustomerParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class CustomerPartyType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SupplierAssignedAccountIDType SupplierAssignedAccountID {
-		get {
-			return this.supplierAssignedAccountIDField;
-		}
-		set {
-			this.supplierAssignedAccountIDField = value;
-		}
-	}
+		private CustomerAssignedAccountIDType customerAssignedAccountIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("AdditionalAccountID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AdditionalAccountIDType[] AdditionalAccountID {
-		get {
-			return this.additionalAccountIDField;
-		}
-		set {
-			this.additionalAccountIDField = value;
-		}
-	}
+		private SupplierAssignedAccountIDType supplierAssignedAccountIDField;
     
-	/// <remarks/>
-	public PartyType Party {
-		get {
-			return this.partyField;
-		}
-		set {
-			this.partyField = value;
-		}
-	}
+		private AdditionalAccountIDType[] additionalAccountIDField;
     
-	/// <remarks/>
-	public ContactType DeliveryContact {
-		get {
-			return this.deliveryContactField;
-		}
-		set {
-			this.deliveryContactField = value;
-		}
-	}
+		private PartyType partyField;
     
-	/// <remarks/>
-	public ContactType AccountingContact {
-		get {
-			return this.accountingContactField;
-		}
-		set {
-			this.accountingContactField = value;
-		}
-	}
+		private ContactType deliveryContactField;
     
-	/// <remarks/>
-	public ContactType BuyerContact {
-		get {
-			return this.buyerContactField;
+		private ContactType accountingContactField;
+    
+		private ContactType buyerContactField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CustomerAssignedAccountIDType CustomerAssignedAccountID {
+			get {
+				return customerAssignedAccountIDField;
+			}
+			set {
+				customerAssignedAccountIDField = value;
+			}
 		}
-		set {
-			this.buyerContactField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SupplierAssignedAccountIDType SupplierAssignedAccountID {
+			get {
+				return supplierAssignedAccountIDField;
+			}
+			set {
+				supplierAssignedAccountIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("AdditionalAccountID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AdditionalAccountIDType[] AdditionalAccountID {
+			get {
+				return additionalAccountIDField;
+			}
+			set {
+				additionalAccountIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType Party {
+			get {
+				return partyField;
+			}
+			set {
+				partyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ContactType DeliveryContact {
+			get {
+				return deliveryContactField;
+			}
+			set {
+				deliveryContactField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ContactType AccountingContact {
+			get {
+				return accountingContactField;
+			}
+			set {
+				accountingContactField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ContactType BuyerContact {
+			get {
+				return buyerContactField;
+			}
+			set {
+				buyerContactField = value;
+			}
 		}
 	}
 }

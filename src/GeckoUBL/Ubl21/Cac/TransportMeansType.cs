@@ -1,174 +1,177 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ApplicableTransportMeans", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TransportMeansType {
-    
-	private JourneyIDType journeyIDField;
-    
-	private RegistrationNationalityIDType registrationNationalityIDField;
-    
-	private RegistrationNationalityType[] registrationNationalityField;
-    
-	private DirectionCodeType directionCodeField;
-    
-	private TransportMeansTypeCodeType transportMeansTypeCodeField;
-    
-	private TradeServiceCodeType tradeServiceCodeField;
-    
-	private StowageType stowageField;
-    
-	private AirTransportType airTransportField;
-    
-	private RoadTransportType roadTransportField;
-    
-	private RailTransportType railTransportField;
-    
-	private MaritimeTransportType maritimeTransportField;
-    
-	private PartyType ownerPartyField;
-    
-	private DimensionType[] measurementDimensionField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public JourneyIDType JourneyID {
-		get {
-			return this.journeyIDField;
-		}
-		set {
-			this.journeyIDField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ApplicableTransportMeans", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TransportMeansType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RegistrationNationalityIDType RegistrationNationalityID {
-		get {
-			return this.registrationNationalityIDField;
-		}
-		set {
-			this.registrationNationalityIDField = value;
-		}
-	}
+		private JourneyIDType journeyIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("RegistrationNationality", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RegistrationNationalityType[] RegistrationNationality {
-		get {
-			return this.registrationNationalityField;
-		}
-		set {
-			this.registrationNationalityField = value;
-		}
-	}
+		private RegistrationNationalityIDType registrationNationalityIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DirectionCodeType DirectionCode {
-		get {
-			return this.directionCodeField;
-		}
-		set {
-			this.directionCodeField = value;
-		}
-	}
+		private RegistrationNationalityType[] registrationNationalityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TransportMeansTypeCodeType TransportMeansTypeCode {
-		get {
-			return this.transportMeansTypeCodeField;
-		}
-		set {
-			this.transportMeansTypeCodeField = value;
-		}
-	}
+		private DirectionCodeType directionCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TradeServiceCodeType TradeServiceCode {
-		get {
-			return this.tradeServiceCodeField;
-		}
-		set {
-			this.tradeServiceCodeField = value;
-		}
-	}
+		private TransportMeansTypeCodeType transportMeansTypeCodeField;
     
-	/// <remarks/>
-	public StowageType Stowage {
-		get {
-			return this.stowageField;
-		}
-		set {
-			this.stowageField = value;
-		}
-	}
+		private TradeServiceCodeType tradeServiceCodeField;
     
-	/// <remarks/>
-	public AirTransportType AirTransport {
-		get {
-			return this.airTransportField;
-		}
-		set {
-			this.airTransportField = value;
-		}
-	}
+		private StowageType stowageField;
     
-	/// <remarks/>
-	public RoadTransportType RoadTransport {
-		get {
-			return this.roadTransportField;
-		}
-		set {
-			this.roadTransportField = value;
-		}
-	}
+		private AirTransportType airTransportField;
     
-	/// <remarks/>
-	public RailTransportType RailTransport {
-		get {
-			return this.railTransportField;
-		}
-		set {
-			this.railTransportField = value;
-		}
-	}
+		private RoadTransportType roadTransportField;
     
-	/// <remarks/>
-	public MaritimeTransportType MaritimeTransport {
-		get {
-			return this.maritimeTransportField;
-		}
-		set {
-			this.maritimeTransportField = value;
-		}
-	}
+		private RailTransportType railTransportField;
     
-	/// <remarks/>
-	public PartyType OwnerParty {
-		get {
-			return this.ownerPartyField;
-		}
-		set {
-			this.ownerPartyField = value;
-		}
-	}
+		private MaritimeTransportType maritimeTransportField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
-	public DimensionType[] MeasurementDimension {
-		get {
-			return this.measurementDimensionField;
+		private PartyType ownerPartyField;
+    
+		private DimensionType[] measurementDimensionField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public JourneyIDType JourneyID {
+			get {
+				return journeyIDField;
+			}
+			set {
+				journeyIDField = value;
+			}
 		}
-		set {
-			this.measurementDimensionField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RegistrationNationalityIDType RegistrationNationalityID {
+			get {
+				return registrationNationalityIDField;
+			}
+			set {
+				registrationNationalityIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("RegistrationNationality", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RegistrationNationalityType[] RegistrationNationality {
+			get {
+				return registrationNationalityField;
+			}
+			set {
+				registrationNationalityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DirectionCodeType DirectionCode {
+			get {
+				return directionCodeField;
+			}
+			set {
+				directionCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TransportMeansTypeCodeType TransportMeansTypeCode {
+			get {
+				return transportMeansTypeCodeField;
+			}
+			set {
+				transportMeansTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TradeServiceCodeType TradeServiceCode {
+			get {
+				return tradeServiceCodeField;
+			}
+			set {
+				tradeServiceCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public StowageType Stowage {
+			get {
+				return stowageField;
+			}
+			set {
+				stowageField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public AirTransportType AirTransport {
+			get {
+				return airTransportField;
+			}
+			set {
+				airTransportField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public RoadTransportType RoadTransport {
+			get {
+				return roadTransportField;
+			}
+			set {
+				roadTransportField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public RailTransportType RailTransport {
+			get {
+				return railTransportField;
+			}
+			set {
+				railTransportField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public MaritimeTransportType MaritimeTransport {
+			get {
+				return maritimeTransportField;
+			}
+			set {
+				maritimeTransportField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType OwnerParty {
+			get {
+				return ownerPartyField;
+			}
+			set {
+				ownerPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
+		public DimensionType[] MeasurementDimension {
+			get {
+				return measurementDimensionField;
+			}
+			set {
+				measurementDimensionField = value;
+			}
 		}
 	}
 }

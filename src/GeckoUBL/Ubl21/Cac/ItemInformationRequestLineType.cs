@@ -1,89 +1,92 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ItemInformationRequestLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ItemInformationRequestLineType {
-    
-	private TimeFrequencyCodeType timeFrequencyCodeField;
-    
-	private SupplyChainActivityTypeCodeType supplyChainActivityTypeCodeField;
-    
-	private ForecastTypeCodeType forecastTypeCodeField;
-    
-	private PerformanceMetricTypeCodeType performanceMetricTypeCodeField;
-    
-	private PeriodType[] periodField;
-    
-	private SalesItemType[] salesItemField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TimeFrequencyCodeType TimeFrequencyCode {
-		get {
-			return this.timeFrequencyCodeField;
-		}
-		set {
-			this.timeFrequencyCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ItemInformationRequestLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ItemInformationRequestLineType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SupplyChainActivityTypeCodeType SupplyChainActivityTypeCode {
-		get {
-			return this.supplyChainActivityTypeCodeField;
-		}
-		set {
-			this.supplyChainActivityTypeCodeField = value;
-		}
-	}
+		private TimeFrequencyCodeType timeFrequencyCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ForecastTypeCodeType ForecastTypeCode {
-		get {
-			return this.forecastTypeCodeField;
-		}
-		set {
-			this.forecastTypeCodeField = value;
-		}
-	}
+		private SupplyChainActivityTypeCodeType supplyChainActivityTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PerformanceMetricTypeCodeType PerformanceMetricTypeCode {
-		get {
-			return this.performanceMetricTypeCodeField;
-		}
-		set {
-			this.performanceMetricTypeCodeField = value;
-		}
-	}
+		private ForecastTypeCodeType forecastTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Period")]
-	public PeriodType[] Period {
-		get {
-			return this.periodField;
-		}
-		set {
-			this.periodField = value;
-		}
-	}
+		private PerformanceMetricTypeCodeType performanceMetricTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("SalesItem")]
-	public SalesItemType[] SalesItem {
-		get {
-			return this.salesItemField;
+		private PeriodType[] periodField;
+    
+		private SalesItemType[] salesItemField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TimeFrequencyCodeType TimeFrequencyCode {
+			get {
+				return timeFrequencyCodeField;
+			}
+			set {
+				timeFrequencyCodeField = value;
+			}
 		}
-		set {
-			this.salesItemField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SupplyChainActivityTypeCodeType SupplyChainActivityTypeCode {
+			get {
+				return supplyChainActivityTypeCodeField;
+			}
+			set {
+				supplyChainActivityTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ForecastTypeCodeType ForecastTypeCode {
+			get {
+				return forecastTypeCodeField;
+			}
+			set {
+				forecastTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PerformanceMetricTypeCodeType PerformanceMetricTypeCode {
+			get {
+				return performanceMetricTypeCodeField;
+			}
+			set {
+				performanceMetricTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Period")]
+		public PeriodType[] Period {
+			get {
+				return periodField;
+			}
+			set {
+				periodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("SalesItem")]
+		public SalesItemType[] SalesItem {
+			get {
+				return salesItemField;
+			}
+			set {
+				salesItemField = value;
+			}
 		}
 	}
 }

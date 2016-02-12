@@ -1,98 +1,101 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("Consumption", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ConsumptionType {
-    
-	private UtilityStatementTypeCodeType utilityStatementTypeCodeField;
-    
-	private PeriodType mainPeriodField;
-    
-	private AllowanceChargeType[] allowanceChargeField;
-    
-	private TaxTotalType[] taxTotalField;
-    
-	private EnergyWaterSupplyType energyWaterSupplyField;
-    
-	private TelecommunicationsSupplyType telecommunicationsSupplyField;
-    
-	private MonetaryTotalType legalMonetaryTotalField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public UtilityStatementTypeCodeType UtilityStatementTypeCode {
-		get {
-			return this.utilityStatementTypeCodeField;
-		}
-		set {
-			this.utilityStatementTypeCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("Consumption", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ConsumptionType {
     
-	/// <remarks/>
-	public PeriodType MainPeriod {
-		get {
-			return this.mainPeriodField;
-		}
-		set {
-			this.mainPeriodField = value;
-		}
-	}
+		private UtilityStatementTypeCodeType utilityStatementTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-	public AllowanceChargeType[] AllowanceCharge {
-		get {
-			return this.allowanceChargeField;
-		}
-		set {
-			this.allowanceChargeField = value;
-		}
-	}
+		private PeriodType mainPeriodField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-	public TaxTotalType[] TaxTotal {
-		get {
-			return this.taxTotalField;
-		}
-		set {
-			this.taxTotalField = value;
-		}
-	}
+		private AllowanceChargeType[] allowanceChargeField;
     
-	/// <remarks/>
-	public EnergyWaterSupplyType EnergyWaterSupply {
-		get {
-			return this.energyWaterSupplyField;
-		}
-		set {
-			this.energyWaterSupplyField = value;
-		}
-	}
+		private TaxTotalType[] taxTotalField;
     
-	/// <remarks/>
-	public TelecommunicationsSupplyType TelecommunicationsSupply {
-		get {
-			return this.telecommunicationsSupplyField;
-		}
-		set {
-			this.telecommunicationsSupplyField = value;
-		}
-	}
+		private EnergyWaterSupplyType energyWaterSupplyField;
     
-	/// <remarks/>
-	public MonetaryTotalType LegalMonetaryTotal {
-		get {
-			return this.legalMonetaryTotalField;
+		private TelecommunicationsSupplyType telecommunicationsSupplyField;
+    
+		private MonetaryTotalType legalMonetaryTotalField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public UtilityStatementTypeCodeType UtilityStatementTypeCode {
+			get {
+				return utilityStatementTypeCodeField;
+			}
+			set {
+				utilityStatementTypeCodeField = value;
+			}
 		}
-		set {
-			this.legalMonetaryTotalField = value;
+    
+		/// <remarks/>
+		public PeriodType MainPeriod {
+			get {
+				return mainPeriodField;
+			}
+			set {
+				mainPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
+		public AllowanceChargeType[] AllowanceCharge {
+			get {
+				return allowanceChargeField;
+			}
+			set {
+				allowanceChargeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
+		public TaxTotalType[] TaxTotal {
+			get {
+				return taxTotalField;
+			}
+			set {
+				taxTotalField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public EnergyWaterSupplyType EnergyWaterSupply {
+			get {
+				return energyWaterSupplyField;
+			}
+			set {
+				energyWaterSupplyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TelecommunicationsSupplyType TelecommunicationsSupply {
+			get {
+				return telecommunicationsSupplyField;
+			}
+			set {
+				telecommunicationsSupplyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public MonetaryTotalType LegalMonetaryTotal {
+			get {
+				return legalMonetaryTotalField;
+			}
+			set {
+				legalMonetaryTotalField = value;
+			}
 		}
 	}
 }

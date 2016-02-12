@@ -1,31 +1,34 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#", IncludeInSchema=false)]
-public enum ItemsChoiceType2 {
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlEnumAttribute("##any:")]
-	Item,
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#", IncludeInSchema=false)]
+	public enum ItemsChoiceType2 {
     
-	/// <remarks/>
-	KeyName,
+		/// <remarks/>
+		[System.Xml.Serialization.XmlEnumAttribute("##any:")]
+		Item,
     
-	/// <remarks/>
-	KeyValue,
+		/// <remarks/>
+		KeyName,
     
-	/// <remarks/>
-	MgmtData,
+		/// <remarks/>
+		KeyValue,
     
-	/// <remarks/>
-	PGPData,
+		/// <remarks/>
+		MgmtData,
     
-	/// <remarks/>
-	RetrievalMethod,
+		/// <remarks/>
+		PGPData,
     
-	/// <remarks/>
-	SPKIData,
+		/// <remarks/>
+		RetrievalMethod,
     
-	/// <remarks/>
-	X509Data,
+		/// <remarks/>
+		SPKIData,
+    
+		/// <remarks/>
+		X509Data,
+	}
 }

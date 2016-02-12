@@ -1,204 +1,207 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("UtilityItem", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class UtilityItemType {
-    
-	private IDType idField;
-    
-	private SubscriberIDType subscriberIDField;
-    
-	private SubscriberTypeType subscriberTypeField;
-    
-	private SubscriberTypeCodeType subscriberTypeCodeField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private PackQuantityType packQuantityField;
-    
-	private PackSizeNumericType packSizeNumericField;
-    
-	private ConsumptionTypeType consumptionTypeField;
-    
-	private ConsumptionTypeCodeType consumptionTypeCodeField;
-    
-	private CurrentChargeTypeType currentChargeTypeField;
-    
-	private CurrentChargeTypeCodeType currentChargeTypeCodeField;
-    
-	private OneTimeChargeTypeType oneTimeChargeTypeField;
-    
-	private OneTimeChargeTypeCodeType oneTimeChargeTypeCodeField;
-    
-	private TaxCategoryType taxCategoryField;
-    
-	private ContractType contractField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("UtilityItem", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class UtilityItemType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SubscriberIDType SubscriberID {
-		get {
-			return this.subscriberIDField;
-		}
-		set {
-			this.subscriberIDField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SubscriberTypeType SubscriberType {
-		get {
-			return this.subscriberTypeField;
-		}
-		set {
-			this.subscriberTypeField = value;
-		}
-	}
+		private SubscriberIDType subscriberIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SubscriberTypeCodeType SubscriberTypeCode {
-		get {
-			return this.subscriberTypeCodeField;
-		}
-		set {
-			this.subscriberTypeCodeField = value;
-		}
-	}
+		private SubscriberTypeType subscriberTypeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private SubscriberTypeCodeType subscriberTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PackQuantityType PackQuantity {
-		get {
-			return this.packQuantityField;
-		}
-		set {
-			this.packQuantityField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PackSizeNumericType PackSizeNumeric {
-		get {
-			return this.packSizeNumericField;
-		}
-		set {
-			this.packSizeNumericField = value;
-		}
-	}
+		private PackQuantityType packQuantityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ConsumptionTypeType ConsumptionType {
-		get {
-			return this.consumptionTypeField;
-		}
-		set {
-			this.consumptionTypeField = value;
-		}
-	}
+		private PackSizeNumericType packSizeNumericField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ConsumptionTypeCodeType ConsumptionTypeCode {
-		get {
-			return this.consumptionTypeCodeField;
-		}
-		set {
-			this.consumptionTypeCodeField = value;
-		}
-	}
+		private ConsumptionTypeType consumptionTypeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CurrentChargeTypeType CurrentChargeType {
-		get {
-			return this.currentChargeTypeField;
-		}
-		set {
-			this.currentChargeTypeField = value;
-		}
-	}
+		private ConsumptionTypeCodeType consumptionTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CurrentChargeTypeCodeType CurrentChargeTypeCode {
-		get {
-			return this.currentChargeTypeCodeField;
-		}
-		set {
-			this.currentChargeTypeCodeField = value;
-		}
-	}
+		private CurrentChargeTypeType currentChargeTypeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public OneTimeChargeTypeType OneTimeChargeType {
-		get {
-			return this.oneTimeChargeTypeField;
-		}
-		set {
-			this.oneTimeChargeTypeField = value;
-		}
-	}
+		private CurrentChargeTypeCodeType currentChargeTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public OneTimeChargeTypeCodeType OneTimeChargeTypeCode {
-		get {
-			return this.oneTimeChargeTypeCodeField;
-		}
-		set {
-			this.oneTimeChargeTypeCodeField = value;
-		}
-	}
+		private OneTimeChargeTypeType oneTimeChargeTypeField;
     
-	/// <remarks/>
-	public TaxCategoryType TaxCategory {
-		get {
-			return this.taxCategoryField;
-		}
-		set {
-			this.taxCategoryField = value;
-		}
-	}
+		private OneTimeChargeTypeCodeType oneTimeChargeTypeCodeField;
     
-	/// <remarks/>
-	public ContractType Contract {
-		get {
-			return this.contractField;
+		private TaxCategoryType taxCategoryField;
+    
+		private ContractType contractField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.contractField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SubscriberIDType SubscriberID {
+			get {
+				return subscriberIDField;
+			}
+			set {
+				subscriberIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SubscriberTypeType SubscriberType {
+			get {
+				return subscriberTypeField;
+			}
+			set {
+				subscriberTypeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SubscriberTypeCodeType SubscriberTypeCode {
+			get {
+				return subscriberTypeCodeField;
+			}
+			set {
+				subscriberTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PackQuantityType PackQuantity {
+			get {
+				return packQuantityField;
+			}
+			set {
+				packQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PackSizeNumericType PackSizeNumeric {
+			get {
+				return packSizeNumericField;
+			}
+			set {
+				packSizeNumericField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ConsumptionTypeType ConsumptionType {
+			get {
+				return consumptionTypeField;
+			}
+			set {
+				consumptionTypeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ConsumptionTypeCodeType ConsumptionTypeCode {
+			get {
+				return consumptionTypeCodeField;
+			}
+			set {
+				consumptionTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CurrentChargeTypeType CurrentChargeType {
+			get {
+				return currentChargeTypeField;
+			}
+			set {
+				currentChargeTypeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CurrentChargeTypeCodeType CurrentChargeTypeCode {
+			get {
+				return currentChargeTypeCodeField;
+			}
+			set {
+				currentChargeTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public OneTimeChargeTypeType OneTimeChargeType {
+			get {
+				return oneTimeChargeTypeField;
+			}
+			set {
+				oneTimeChargeTypeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public OneTimeChargeTypeCodeType OneTimeChargeTypeCode {
+			get {
+				return oneTimeChargeTypeCodeField;
+			}
+			set {
+				oneTimeChargeTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TaxCategoryType TaxCategory {
+			get {
+				return taxCategoryField;
+			}
+			set {
+				taxCategoryField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ContractType Contract {
+			get {
+				return contractField;
+			}
+			set {
+				contractField = value;
+			}
 		}
 	}
 }

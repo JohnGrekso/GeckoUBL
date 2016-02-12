@@ -1,61 +1,64 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("EventTactic", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class EventTacticType {
-    
-	private CommentType commentField;
-    
-	private QuantityType2 quantityField;
-    
-	private EventTacticEnumerationType eventTacticEnumerationField;
-    
-	private PeriodType periodField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CommentType Comment {
-		get {
-			return this.commentField;
-		}
-		set {
-			this.commentField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("EventTactic", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class EventTacticType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public QuantityType2 Quantity {
-		get {
-			return this.quantityField;
-		}
-		set {
-			this.quantityField = value;
-		}
-	}
+		private CommentType commentField;
     
-	/// <remarks/>
-	public EventTacticEnumerationType EventTacticEnumeration {
-		get {
-			return this.eventTacticEnumerationField;
-		}
-		set {
-			this.eventTacticEnumerationField = value;
-		}
-	}
+		private QuantityType2 quantityField;
     
-	/// <remarks/>
-	public PeriodType Period {
-		get {
-			return this.periodField;
+		private EventTacticEnumerationType eventTacticEnumerationField;
+    
+		private PeriodType periodField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CommentType Comment {
+			get {
+				return commentField;
+			}
+			set {
+				commentField = value;
+			}
 		}
-		set {
-			this.periodField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public QuantityType2 Quantity {
+			get {
+				return quantityField;
+			}
+			set {
+				quantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public EventTacticEnumerationType EventTacticEnumeration {
+			get {
+				return eventTacticEnumerationField;
+			}
+			set {
+				eventTacticEnumerationField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType Period {
+			get {
+				return periodField;
+			}
+			set {
+				periodField = value;
+			}
 		}
 	}
 }

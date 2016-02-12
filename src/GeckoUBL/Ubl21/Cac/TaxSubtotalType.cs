@@ -1,140 +1,143 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("TaxSubtotal", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TaxSubtotalType {
-    
-	private TaxableAmountType taxableAmountField;
-    
-	private TaxAmountType taxAmountField;
-    
-	private CalculationSequenceNumericType calculationSequenceNumericField;
-    
-	private TransactionCurrencyTaxAmountType transactionCurrencyTaxAmountField;
-    
-	private PercentType1 percentField;
-    
-	private BaseUnitMeasureType baseUnitMeasureField;
-    
-	private PerUnitAmountType perUnitAmountField;
-    
-	private TierRangeType tierRangeField;
-    
-	private TierRatePercentType tierRatePercentField;
-    
-	private TaxCategoryType taxCategoryField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TaxableAmountType TaxableAmount {
-		get {
-			return this.taxableAmountField;
-		}
-		set {
-			this.taxableAmountField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("TaxSubtotal", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TaxSubtotalType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TaxAmountType TaxAmount {
-		get {
-			return this.taxAmountField;
-		}
-		set {
-			this.taxAmountField = value;
-		}
-	}
+		private TaxableAmountType taxableAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CalculationSequenceNumericType CalculationSequenceNumeric {
-		get {
-			return this.calculationSequenceNumericField;
-		}
-		set {
-			this.calculationSequenceNumericField = value;
-		}
-	}
+		private TaxAmountType taxAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TransactionCurrencyTaxAmountType TransactionCurrencyTaxAmount {
-		get {
-			return this.transactionCurrencyTaxAmountField;
-		}
-		set {
-			this.transactionCurrencyTaxAmountField = value;
-		}
-	}
+		private CalculationSequenceNumericType calculationSequenceNumericField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PercentType1 Percent {
-		get {
-			return this.percentField;
-		}
-		set {
-			this.percentField = value;
-		}
-	}
+		private TransactionCurrencyTaxAmountType transactionCurrencyTaxAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public BaseUnitMeasureType BaseUnitMeasure {
-		get {
-			return this.baseUnitMeasureField;
-		}
-		set {
-			this.baseUnitMeasureField = value;
-		}
-	}
+		private PercentType1 percentField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PerUnitAmountType PerUnitAmount {
-		get {
-			return this.perUnitAmountField;
-		}
-		set {
-			this.perUnitAmountField = value;
-		}
-	}
+		private BaseUnitMeasureType baseUnitMeasureField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TierRangeType TierRange {
-		get {
-			return this.tierRangeField;
-		}
-		set {
-			this.tierRangeField = value;
-		}
-	}
+		private PerUnitAmountType perUnitAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TierRatePercentType TierRatePercent {
-		get {
-			return this.tierRatePercentField;
-		}
-		set {
-			this.tierRatePercentField = value;
-		}
-	}
+		private TierRangeType tierRangeField;
     
-	/// <remarks/>
-	public TaxCategoryType TaxCategory {
-		get {
-			return this.taxCategoryField;
+		private TierRatePercentType tierRatePercentField;
+    
+		private TaxCategoryType taxCategoryField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TaxableAmountType TaxableAmount {
+			get {
+				return taxableAmountField;
+			}
+			set {
+				taxableAmountField = value;
+			}
 		}
-		set {
-			this.taxCategoryField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TaxAmountType TaxAmount {
+			get {
+				return taxAmountField;
+			}
+			set {
+				taxAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CalculationSequenceNumericType CalculationSequenceNumeric {
+			get {
+				return calculationSequenceNumericField;
+			}
+			set {
+				calculationSequenceNumericField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TransactionCurrencyTaxAmountType TransactionCurrencyTaxAmount {
+			get {
+				return transactionCurrencyTaxAmountField;
+			}
+			set {
+				transactionCurrencyTaxAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PercentType1 Percent {
+			get {
+				return percentField;
+			}
+			set {
+				percentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public BaseUnitMeasureType BaseUnitMeasure {
+			get {
+				return baseUnitMeasureField;
+			}
+			set {
+				baseUnitMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PerUnitAmountType PerUnitAmount {
+			get {
+				return perUnitAmountField;
+			}
+			set {
+				perUnitAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TierRangeType TierRange {
+			get {
+				return tierRangeField;
+			}
+			set {
+				tierRangeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TierRatePercentType TierRatePercent {
+			get {
+				return tierRatePercentField;
+			}
+			set {
+				tierRatePercentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TaxCategoryType TaxCategory {
+			get {
+				return taxCategoryField;
+			}
+			set {
+				taxCategoryField = value;
+			}
 		}
 	}
 }

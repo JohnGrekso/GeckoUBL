@@ -1,364 +1,368 @@
+using GeckoUBL.Ubl21.Cac;
 using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Cec;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CatalogueItemSpecificationUpdate-2")]
-[System.Xml.Serialization.XmlRootAttribute("CatalogueItemSpecificationUpdate", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CatalogueItemSpecificationUpdate-2", IsNullable=false)]
-public partial class CatalogueItemSpecificationUpdateType {
-    
-	private UBLExtensionType[] uBLExtensionsField;
-    
-	private UBLVersionIDType uBLVersionIDField;
-    
-	private CustomizationIDType customizationIDField;
-    
-	private ProfileIDType profileIDField;
-    
-	private ProfileExecutionIDType profileExecutionIDField;
-    
-	private IDType idField;
-    
-	private UUIDType uUIDField;
-    
-	private NameType1 nameField;
-    
-	private IssueDateType issueDateField;
-    
-	private IssueTimeType issueTimeField;
-    
-	private RevisionDateType revisionDateField;
-    
-	private RevisionTimeType revisionTimeField;
-    
-	private NoteType[] noteField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private VersionIDType versionIDField;
-    
-	private LineCountNumericType lineCountNumericField;
-    
-	private PeriodType[] validityPeriodField;
-    
-	private CatalogueReferenceType relatedCatalogueReferenceField;
-    
-	private ContractType[] referencedContractField;
-    
-	private SignatureType[] signatureField;
-    
-	private PartyType providerPartyField;
-    
-	private PartyType receiverPartyField;
-    
-	private SupplierPartyType sellerSupplierPartyField;
-    
-	private CustomerPartyType contractorCustomerPartyField;
-    
-	private TradingTermsType tradingTermsField;
-    
-	private LanguageType defaultLanguageField;
-    
-	private CatalogueItemSpecificationUpdateLineType[] catalogueItemSpecificationUpdateLineField;
-    
+namespace GeckoUBL.Ubl21.Documents
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlArrayAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
-	[System.Xml.Serialization.XmlArrayItemAttribute("UBLExtension", IsNullable=false)]
-	public UBLExtensionType[] UBLExtensions {
-		get {
-			return this.uBLExtensionsField;
-		}
-		set {
-			this.uBLExtensionsField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CatalogueItemSpecificationUpdate-2")]
+	[System.Xml.Serialization.XmlRootAttribute("CatalogueItemSpecificationUpdate", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CatalogueItemSpecificationUpdate-2", IsNullable=false)]
+	public class CatalogueItemSpecificationUpdateType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public UBLVersionIDType UBLVersionID {
-		get {
-			return this.uBLVersionIDField;
-		}
-		set {
-			this.uBLVersionIDField = value;
-		}
-	}
+		private UBLExtensionType[] uBLExtensionsField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CustomizationIDType CustomizationID {
-		get {
-			return this.customizationIDField;
-		}
-		set {
-			this.customizationIDField = value;
-		}
-	}
+		private UBLVersionIDType uBLVersionIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ProfileIDType ProfileID {
-		get {
-			return this.profileIDField;
-		}
-		set {
-			this.profileIDField = value;
-		}
-	}
+		private CustomizationIDType customizationIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ProfileExecutionIDType ProfileExecutionID {
-		get {
-			return this.profileExecutionIDField;
-		}
-		set {
-			this.profileExecutionIDField = value;
-		}
-	}
+		private ProfileIDType profileIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+		private ProfileExecutionIDType profileExecutionIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public UUIDType UUID {
-		get {
-			return this.uUIDField;
-		}
-		set {
-			this.uUIDField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NameType1 Name {
-		get {
-			return this.nameField;
-		}
-		set {
-			this.nameField = value;
-		}
-	}
+		private UUIDType uUIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IssueDateType IssueDate {
-		get {
-			return this.issueDateField;
-		}
-		set {
-			this.issueDateField = value;
-		}
-	}
+		private NameType1 nameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IssueTimeType IssueTime {
-		get {
-			return this.issueTimeField;
-		}
-		set {
-			this.issueTimeField = value;
-		}
-	}
+		private IssueDateType issueDateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RevisionDateType RevisionDate {
-		get {
-			return this.revisionDateField;
-		}
-		set {
-			this.revisionDateField = value;
-		}
-	}
+		private IssueTimeType issueTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RevisionTimeType RevisionTime {
-		get {
-			return this.revisionTimeField;
-		}
-		set {
-			this.revisionTimeField = value;
-		}
-	}
+		private RevisionDateType revisionDateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NoteType[] Note {
-		get {
-			return this.noteField;
-		}
-		set {
-			this.noteField = value;
-		}
-	}
+		private RevisionTimeType revisionTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private NoteType[] noteField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public VersionIDType VersionID {
-		get {
-			return this.versionIDField;
-		}
-		set {
-			this.versionIDField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public LineCountNumericType LineCountNumeric {
-		get {
-			return this.lineCountNumericField;
-		}
-		set {
-			this.lineCountNumericField = value;
-		}
-	}
+		private VersionIDType versionIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("ValidityPeriod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public PeriodType[] ValidityPeriod {
-		get {
-			return this.validityPeriodField;
-		}
-		set {
-			this.validityPeriodField = value;
-		}
-	}
+		private LineCountNumericType lineCountNumericField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public CatalogueReferenceType RelatedCatalogueReference {
-		get {
-			return this.relatedCatalogueReferenceField;
-		}
-		set {
-			this.relatedCatalogueReferenceField = value;
-		}
-	}
+		private PeriodType[] validityPeriodField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("ReferencedContract", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public ContractType[] ReferencedContract {
-		get {
-			return this.referencedContractField;
-		}
-		set {
-			this.referencedContractField = value;
-		}
-	}
+		private CatalogueReferenceType relatedCatalogueReferenceField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Signature", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public SignatureType[] Signature {
-		get {
-			return this.signatureField;
-		}
-		set {
-			this.signatureField = value;
-		}
-	}
+		private ContractType[] referencedContractField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public PartyType ProviderParty {
-		get {
-			return this.providerPartyField;
-		}
-		set {
-			this.providerPartyField = value;
-		}
-	}
+		private SignatureType[] signatureField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public PartyType ReceiverParty {
-		get {
-			return this.receiverPartyField;
-		}
-		set {
-			this.receiverPartyField = value;
-		}
-	}
+		private PartyType providerPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public SupplierPartyType SellerSupplierParty {
-		get {
-			return this.sellerSupplierPartyField;
-		}
-		set {
-			this.sellerSupplierPartyField = value;
-		}
-	}
+		private PartyType receiverPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public CustomerPartyType ContractorCustomerParty {
-		get {
-			return this.contractorCustomerPartyField;
-		}
-		set {
-			this.contractorCustomerPartyField = value;
-		}
-	}
+		private SupplierPartyType sellerSupplierPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public TradingTermsType TradingTerms {
-		get {
-			return this.tradingTermsField;
-		}
-		set {
-			this.tradingTermsField = value;
-		}
-	}
+		private CustomerPartyType contractorCustomerPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public LanguageType DefaultLanguage {
-		get {
-			return this.defaultLanguageField;
-		}
-		set {
-			this.defaultLanguageField = value;
-		}
-	}
+		private TradingTermsType tradingTermsField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("CatalogueItemSpecificationUpdateLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-	public CatalogueItemSpecificationUpdateLineType[] CatalogueItemSpecificationUpdateLine {
-		get {
-			return this.catalogueItemSpecificationUpdateLineField;
+		private LanguageType defaultLanguageField;
+    
+		private CatalogueItemSpecificationUpdateLineType[] catalogueItemSpecificationUpdateLineField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlArrayAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
+		[System.Xml.Serialization.XmlArrayItemAttribute("UBLExtension", IsNullable=false)]
+		public UBLExtensionType[] UBLExtensions {
+			get {
+				return uBLExtensionsField;
+			}
+			set {
+				uBLExtensionsField = value;
+			}
 		}
-		set {
-			this.catalogueItemSpecificationUpdateLineField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public UBLVersionIDType UBLVersionID {
+			get {
+				return uBLVersionIDField;
+			}
+			set {
+				uBLVersionIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CustomizationIDType CustomizationID {
+			get {
+				return customizationIDField;
+			}
+			set {
+				customizationIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ProfileIDType ProfileID {
+			get {
+				return profileIDField;
+			}
+			set {
+				profileIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ProfileExecutionIDType ProfileExecutionID {
+			get {
+				return profileExecutionIDField;
+			}
+			set {
+				profileExecutionIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public UUIDType UUID {
+			get {
+				return uUIDField;
+			}
+			set {
+				uUIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NameType1 Name {
+			get {
+				return nameField;
+			}
+			set {
+				nameField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IssueDateType IssueDate {
+			get {
+				return issueDateField;
+			}
+			set {
+				issueDateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IssueTimeType IssueTime {
+			get {
+				return issueTimeField;
+			}
+			set {
+				issueTimeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RevisionDateType RevisionDate {
+			get {
+				return revisionDateField;
+			}
+			set {
+				revisionDateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RevisionTimeType RevisionTime {
+			get {
+				return revisionTimeField;
+			}
+			set {
+				revisionTimeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NoteType[] Note {
+			get {
+				return noteField;
+			}
+			set {
+				noteField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public VersionIDType VersionID {
+			get {
+				return versionIDField;
+			}
+			set {
+				versionIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public LineCountNumericType LineCountNumeric {
+			get {
+				return lineCountNumericField;
+			}
+			set {
+				lineCountNumericField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("ValidityPeriod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public PeriodType[] ValidityPeriod {
+			get {
+				return validityPeriodField;
+			}
+			set {
+				validityPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public CatalogueReferenceType RelatedCatalogueReference {
+			get {
+				return relatedCatalogueReferenceField;
+			}
+			set {
+				relatedCatalogueReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("ReferencedContract", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public ContractType[] ReferencedContract {
+			get {
+				return referencedContractField;
+			}
+			set {
+				referencedContractField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Signature", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public SignatureType[] Signature {
+			get {
+				return signatureField;
+			}
+			set {
+				signatureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public PartyType ProviderParty {
+			get {
+				return providerPartyField;
+			}
+			set {
+				providerPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public PartyType ReceiverParty {
+			get {
+				return receiverPartyField;
+			}
+			set {
+				receiverPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public SupplierPartyType SellerSupplierParty {
+			get {
+				return sellerSupplierPartyField;
+			}
+			set {
+				sellerSupplierPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public CustomerPartyType ContractorCustomerParty {
+			get {
+				return contractorCustomerPartyField;
+			}
+			set {
+				contractorCustomerPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public TradingTermsType TradingTerms {
+			get {
+				return tradingTermsField;
+			}
+			set {
+				tradingTermsField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public LanguageType DefaultLanguage {
+			get {
+				return defaultLanguageField;
+			}
+			set {
+				defaultLanguageField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("CatalogueItemSpecificationUpdateLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+		public CatalogueItemSpecificationUpdateLineType[] CatalogueItemSpecificationUpdateLine {
+			get {
+				return catalogueItemSpecificationUpdateLineField;
+			}
+			set {
+				catalogueItemSpecificationUpdateLineField = value;
+			}
 		}
 	}
 }

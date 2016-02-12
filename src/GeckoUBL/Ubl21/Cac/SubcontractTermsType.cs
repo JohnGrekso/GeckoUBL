@@ -1,102 +1,105 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AllowedSubcontractTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class SubcontractTermsType {
-    
-	private RateType1 rateField;
-    
-	private UnknownPriceIndicatorType unknownPriceIndicatorField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private AmountType2 amountField;
-    
-	private SubcontractingConditionsCodeType subcontractingConditionsCodeField;
-    
-	private MaximumPercentType maximumPercentField;
-    
-	private MinimumPercentType minimumPercentField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RateType1 Rate {
-		get {
-			return this.rateField;
-		}
-		set {
-			this.rateField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AllowedSubcontractTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class SubcontractTermsType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public UnknownPriceIndicatorType UnknownPriceIndicator {
-		get {
-			return this.unknownPriceIndicatorField;
-		}
-		set {
-			this.unknownPriceIndicatorField = value;
-		}
-	}
+		private RateType1 rateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private UnknownPriceIndicatorType unknownPriceIndicatorField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AmountType2 Amount {
-		get {
-			return this.amountField;
-		}
-		set {
-			this.amountField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SubcontractingConditionsCodeType SubcontractingConditionsCode {
-		get {
-			return this.subcontractingConditionsCodeField;
-		}
-		set {
-			this.subcontractingConditionsCodeField = value;
-		}
-	}
+		private AmountType2 amountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MaximumPercentType MaximumPercent {
-		get {
-			return this.maximumPercentField;
-		}
-		set {
-			this.maximumPercentField = value;
-		}
-	}
+		private SubcontractingConditionsCodeType subcontractingConditionsCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MinimumPercentType MinimumPercent {
-		get {
-			return this.minimumPercentField;
+		private MaximumPercentType maximumPercentField;
+    
+		private MinimumPercentType minimumPercentField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RateType1 Rate {
+			get {
+				return rateField;
+			}
+			set {
+				rateField = value;
+			}
 		}
-		set {
-			this.minimumPercentField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public UnknownPriceIndicatorType UnknownPriceIndicator {
+			get {
+				return unknownPriceIndicatorField;
+			}
+			set {
+				unknownPriceIndicatorField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AmountType2 Amount {
+			get {
+				return amountField;
+			}
+			set {
+				amountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SubcontractingConditionsCodeType SubcontractingConditionsCode {
+			get {
+				return subcontractingConditionsCodeField;
+			}
+			set {
+				subcontractingConditionsCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MaximumPercentType MaximumPercent {
+			get {
+				return maximumPercentField;
+			}
+			set {
+				maximumPercentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MinimumPercentType MinimumPercent {
+			get {
+				return minimumPercentField;
+			}
+			set {
+				minimumPercentField = value;
+			}
 		}
 	}
 }

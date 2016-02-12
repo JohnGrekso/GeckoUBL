@@ -9,7 +9,6 @@
 //------------------------------------------------------------------------------
 
 using System.Xml.Serialization;
-using GeckoUBL.Ubl21.Ccts;
 using GeckoUBL.Ubl21.Udt;
 
 // 
@@ -17,12 +16,15 @@ using GeckoUBL.Ubl21.Udt;
 // 
 
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ReferencedSignatureID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2", IsNullable=false)]
-public partial class ReferencedSignatureIDType : IdentifierType1 {
+namespace GeckoUBL.Ubl21.Signature
+{
+	/// <remarks/>
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[XmlType(Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2")]
+	[XmlRoot("ReferencedSignatureID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2", IsNullable=false)]
+	public partial class ReferencedSignatureIDType : IdentifierType1 {
+	}
 }

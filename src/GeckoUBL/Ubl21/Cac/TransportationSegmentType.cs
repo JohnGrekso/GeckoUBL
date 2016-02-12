@@ -1,86 +1,89 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("TransportationSegment", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TransportationSegmentType {
-    
-	private SequenceNumericType sequenceNumericField;
-    
-	private TransportExecutionPlanReferenceIDType transportExecutionPlanReferenceIDField;
-    
-	private TransportationServiceType transportationServiceField;
-    
-	private PartyType transportServiceProviderPartyField;
-    
-	private ConsignmentType referencedConsignmentField;
-    
-	private ShipmentStageType[] shipmentStageField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SequenceNumericType SequenceNumeric {
-		get {
-			return this.sequenceNumericField;
-		}
-		set {
-			this.sequenceNumericField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("TransportationSegment", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TransportationSegmentType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TransportExecutionPlanReferenceIDType TransportExecutionPlanReferenceID {
-		get {
-			return this.transportExecutionPlanReferenceIDField;
-		}
-		set {
-			this.transportExecutionPlanReferenceIDField = value;
-		}
-	}
+		private SequenceNumericType sequenceNumericField;
     
-	/// <remarks/>
-	public TransportationServiceType TransportationService {
-		get {
-			return this.transportationServiceField;
-		}
-		set {
-			this.transportationServiceField = value;
-		}
-	}
+		private TransportExecutionPlanReferenceIDType transportExecutionPlanReferenceIDField;
     
-	/// <remarks/>
-	public PartyType TransportServiceProviderParty {
-		get {
-			return this.transportServiceProviderPartyField;
-		}
-		set {
-			this.transportServiceProviderPartyField = value;
-		}
-	}
+		private TransportationServiceType transportationServiceField;
     
-	/// <remarks/>
-	public ConsignmentType ReferencedConsignment {
-		get {
-			return this.referencedConsignmentField;
-		}
-		set {
-			this.referencedConsignmentField = value;
-		}
-	}
+		private PartyType transportServiceProviderPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("ShipmentStage")]
-	public ShipmentStageType[] ShipmentStage {
-		get {
-			return this.shipmentStageField;
+		private ConsignmentType referencedConsignmentField;
+    
+		private ShipmentStageType[] shipmentStageField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SequenceNumericType SequenceNumeric {
+			get {
+				return sequenceNumericField;
+			}
+			set {
+				sequenceNumericField = value;
+			}
 		}
-		set {
-			this.shipmentStageField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TransportExecutionPlanReferenceIDType TransportExecutionPlanReferenceID {
+			get {
+				return transportExecutionPlanReferenceIDField;
+			}
+			set {
+				transportExecutionPlanReferenceIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportationServiceType TransportationService {
+			get {
+				return transportationServiceField;
+			}
+			set {
+				transportationServiceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType TransportServiceProviderParty {
+			get {
+				return transportServiceProviderPartyField;
+			}
+			set {
+				transportServiceProviderPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ConsignmentType ReferencedConsignment {
+			get {
+				return referencedConsignmentField;
+			}
+			set {
+				referencedConsignmentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("ShipmentStage")]
+		public ShipmentStageType[] ShipmentStage {
+			get {
+				return shipmentStageField;
+			}
+			set {
+				shipmentStageField = value;
+			}
 		}
 	}
 }

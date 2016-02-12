@@ -1,76 +1,79 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("EconomicOperatorShortList", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class EconomicOperatorShortListType {
-    
-	private LimitationDescriptionType[] limitationDescriptionField;
-    
-	private ExpectedQuantityType expectedQuantityField;
-    
-	private MaximumQuantityType maximumQuantityField;
-    
-	private MinimumQuantityType minimumQuantityField;
-    
-	private PartyType[] preSelectedPartyField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("LimitationDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public LimitationDescriptionType[] LimitationDescription {
-		get {
-			return this.limitationDescriptionField;
-		}
-		set {
-			this.limitationDescriptionField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("EconomicOperatorShortList", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class EconomicOperatorShortListType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ExpectedQuantityType ExpectedQuantity {
-		get {
-			return this.expectedQuantityField;
-		}
-		set {
-			this.expectedQuantityField = value;
-		}
-	}
+		private LimitationDescriptionType[] limitationDescriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MaximumQuantityType MaximumQuantity {
-		get {
-			return this.maximumQuantityField;
-		}
-		set {
-			this.maximumQuantityField = value;
-		}
-	}
+		private ExpectedQuantityType expectedQuantityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MinimumQuantityType MinimumQuantity {
-		get {
-			return this.minimumQuantityField;
-		}
-		set {
-			this.minimumQuantityField = value;
-		}
-	}
+		private MaximumQuantityType maximumQuantityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("PreSelectedParty")]
-	public PartyType[] PreSelectedParty {
-		get {
-			return this.preSelectedPartyField;
+		private MinimumQuantityType minimumQuantityField;
+    
+		private PartyType[] preSelectedPartyField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("LimitationDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public LimitationDescriptionType[] LimitationDescription {
+			get {
+				return limitationDescriptionField;
+			}
+			set {
+				limitationDescriptionField = value;
+			}
 		}
-		set {
-			this.preSelectedPartyField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ExpectedQuantityType ExpectedQuantity {
+			get {
+				return expectedQuantityField;
+			}
+			set {
+				expectedQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MaximumQuantityType MaximumQuantity {
+			get {
+				return maximumQuantityField;
+			}
+			set {
+				maximumQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MinimumQuantityType MinimumQuantity {
+			get {
+				return minimumQuantityField;
+			}
+			set {
+				minimumQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("PreSelectedParty")]
+		public PartyType[] PreSelectedParty {
+			get {
+				return preSelectedPartyField;
+			}
+			set {
+				preSelectedPartyField = value;
+			}
 		}
 	}
 }

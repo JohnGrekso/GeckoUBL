@@ -1,100 +1,103 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("HazardousGoodsTransit", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class HazardousGoodsTransitType {
-    
-	private TransportEmergencyCardCodeType transportEmergencyCardCodeField;
-    
-	private PackingCriteriaCodeType packingCriteriaCodeField;
-    
-	private HazardousRegulationCodeType hazardousRegulationCodeField;
-    
-	private InhalationToxicityZoneCodeType inhalationToxicityZoneCodeField;
-    
-	private TransportAuthorizationCodeType transportAuthorizationCodeField;
-    
-	private TemperatureType maximumTemperatureField;
-    
-	private TemperatureType minimumTemperatureField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TransportEmergencyCardCodeType TransportEmergencyCardCode {
-		get {
-			return this.transportEmergencyCardCodeField;
-		}
-		set {
-			this.transportEmergencyCardCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("HazardousGoodsTransit", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class HazardousGoodsTransitType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PackingCriteriaCodeType PackingCriteriaCode {
-		get {
-			return this.packingCriteriaCodeField;
-		}
-		set {
-			this.packingCriteriaCodeField = value;
-		}
-	}
+		private TransportEmergencyCardCodeType transportEmergencyCardCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public HazardousRegulationCodeType HazardousRegulationCode {
-		get {
-			return this.hazardousRegulationCodeField;
-		}
-		set {
-			this.hazardousRegulationCodeField = value;
-		}
-	}
+		private PackingCriteriaCodeType packingCriteriaCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public InhalationToxicityZoneCodeType InhalationToxicityZoneCode {
-		get {
-			return this.inhalationToxicityZoneCodeField;
-		}
-		set {
-			this.inhalationToxicityZoneCodeField = value;
-		}
-	}
+		private HazardousRegulationCodeType hazardousRegulationCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TransportAuthorizationCodeType TransportAuthorizationCode {
-		get {
-			return this.transportAuthorizationCodeField;
-		}
-		set {
-			this.transportAuthorizationCodeField = value;
-		}
-	}
+		private InhalationToxicityZoneCodeType inhalationToxicityZoneCodeField;
     
-	/// <remarks/>
-	public TemperatureType MaximumTemperature {
-		get {
-			return this.maximumTemperatureField;
-		}
-		set {
-			this.maximumTemperatureField = value;
-		}
-	}
+		private TransportAuthorizationCodeType transportAuthorizationCodeField;
     
-	/// <remarks/>
-	public TemperatureType MinimumTemperature {
-		get {
-			return this.minimumTemperatureField;
+		private TemperatureType maximumTemperatureField;
+    
+		private TemperatureType minimumTemperatureField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TransportEmergencyCardCodeType TransportEmergencyCardCode {
+			get {
+				return transportEmergencyCardCodeField;
+			}
+			set {
+				transportEmergencyCardCodeField = value;
+			}
 		}
-		set {
-			this.minimumTemperatureField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PackingCriteriaCodeType PackingCriteriaCode {
+			get {
+				return packingCriteriaCodeField;
+			}
+			set {
+				packingCriteriaCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public HazardousRegulationCodeType HazardousRegulationCode {
+			get {
+				return hazardousRegulationCodeField;
+			}
+			set {
+				hazardousRegulationCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public InhalationToxicityZoneCodeType InhalationToxicityZoneCode {
+			get {
+				return inhalationToxicityZoneCodeField;
+			}
+			set {
+				inhalationToxicityZoneCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TransportAuthorizationCodeType TransportAuthorizationCode {
+			get {
+				return transportAuthorizationCodeField;
+			}
+			set {
+				transportAuthorizationCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TemperatureType MaximumTemperature {
+			get {
+				return maximumTemperatureField;
+			}
+			set {
+				maximumTemperatureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TemperatureType MinimumTemperature {
+			get {
+				return minimumTemperatureField;
+			}
+			set {
+				minimumTemperatureField = value;
+			}
 		}
 	}
 }

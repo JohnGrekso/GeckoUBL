@@ -1,89 +1,92 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsSupply", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TelecommunicationsSupplyType {
-    
-	private TelecommunicationsSupplyTypeType telecommunicationsSupplyType1Field;
-    
-	private TelecommunicationsSupplyTypeCodeType telecommunicationsSupplyTypeCodeField;
-    
-	private PrivacyCodeType privacyCodeField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private TotalAmountType totalAmountField;
-    
-	private TelecommunicationsSupplyLineType[] telecommunicationsSupplyLineField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TelecommunicationsSupplyType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TelecommunicationsSupplyTypeType TelecommunicationsSupplyType1 {
-		get {
-			return this.telecommunicationsSupplyType1Field;
-		}
-		set {
-			this.telecommunicationsSupplyType1Field = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsSupply", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TelecommunicationsSupplyType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TelecommunicationsSupplyTypeCodeType TelecommunicationsSupplyTypeCode {
-		get {
-			return this.telecommunicationsSupplyTypeCodeField;
-		}
-		set {
-			this.telecommunicationsSupplyTypeCodeField = value;
-		}
-	}
+		private TelecommunicationsSupplyTypeType telecommunicationsSupplyType1Field;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PrivacyCodeType PrivacyCode {
-		get {
-			return this.privacyCodeField;
-		}
-		set {
-			this.privacyCodeField = value;
-		}
-	}
+		private TelecommunicationsSupplyTypeCodeType telecommunicationsSupplyTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private PrivacyCodeType privacyCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TotalAmountType TotalAmount {
-		get {
-			return this.totalAmountField;
-		}
-		set {
-			this.totalAmountField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TelecommunicationsSupplyLine")]
-	public TelecommunicationsSupplyLineType[] TelecommunicationsSupplyLine {
-		get {
-			return this.telecommunicationsSupplyLineField;
+		private TotalAmountType totalAmountField;
+    
+		private TelecommunicationsSupplyLineType[] telecommunicationsSupplyLineField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TelecommunicationsSupplyType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TelecommunicationsSupplyTypeType TelecommunicationsSupplyType1 {
+			get {
+				return telecommunicationsSupplyType1Field;
+			}
+			set {
+				telecommunicationsSupplyType1Field = value;
+			}
 		}
-		set {
-			this.telecommunicationsSupplyLineField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TelecommunicationsSupplyTypeCodeType TelecommunicationsSupplyTypeCode {
+			get {
+				return telecommunicationsSupplyTypeCodeField;
+			}
+			set {
+				telecommunicationsSupplyTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PrivacyCodeType PrivacyCode {
+			get {
+				return privacyCodeField;
+			}
+			set {
+				privacyCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TotalAmountType TotalAmount {
+			get {
+				return totalAmountField;
+			}
+			set {
+				totalAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TelecommunicationsSupplyLine")]
+		public TelecommunicationsSupplyLineType[] TelecommunicationsSupplyLine {
+			get {
+				return telecommunicationsSupplyLineField;
+			}
+			set {
+				telecommunicationsSupplyLineField = value;
+			}
 		}
 	}
 }

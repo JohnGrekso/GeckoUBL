@@ -1,165 +1,168 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ExceptionCriteriaLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ExceptionCriteriaLineType {
-    
-	private IDType idField;
-    
-	private NoteType[] noteField;
-    
-	private ThresholdValueComparisonCodeType thresholdValueComparisonCodeField;
-    
-	private ThresholdQuantityType thresholdQuantityField;
-    
-	private ExceptionStatusCodeType exceptionStatusCodeField;
-    
-	private CollaborationPriorityCodeType collaborationPriorityCodeField;
-    
-	private ExceptionResolutionCodeType exceptionResolutionCodeField;
-    
-	private SupplyChainActivityTypeCodeType supplyChainActivityTypeCodeField;
-    
-	private PerformanceMetricTypeCodeType performanceMetricTypeCodeField;
-    
-	private PeriodType effectivePeriodField;
-    
-	private ItemType[] supplyItemField;
-    
-	private ForecastExceptionCriterionLineType forecastExceptionCriterionLineField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ExceptionCriteriaLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ExceptionCriteriaLineType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NoteType[] Note {
-		get {
-			return this.noteField;
-		}
-		set {
-			this.noteField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ThresholdValueComparisonCodeType ThresholdValueComparisonCode {
-		get {
-			return this.thresholdValueComparisonCodeField;
-		}
-		set {
-			this.thresholdValueComparisonCodeField = value;
-		}
-	}
+		private NoteType[] noteField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ThresholdQuantityType ThresholdQuantity {
-		get {
-			return this.thresholdQuantityField;
-		}
-		set {
-			this.thresholdQuantityField = value;
-		}
-	}
+		private ThresholdValueComparisonCodeType thresholdValueComparisonCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ExceptionStatusCodeType ExceptionStatusCode {
-		get {
-			return this.exceptionStatusCodeField;
-		}
-		set {
-			this.exceptionStatusCodeField = value;
-		}
-	}
+		private ThresholdQuantityType thresholdQuantityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CollaborationPriorityCodeType CollaborationPriorityCode {
-		get {
-			return this.collaborationPriorityCodeField;
-		}
-		set {
-			this.collaborationPriorityCodeField = value;
-		}
-	}
+		private ExceptionStatusCodeType exceptionStatusCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ExceptionResolutionCodeType ExceptionResolutionCode {
-		get {
-			return this.exceptionResolutionCodeField;
-		}
-		set {
-			this.exceptionResolutionCodeField = value;
-		}
-	}
+		private CollaborationPriorityCodeType collaborationPriorityCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SupplyChainActivityTypeCodeType SupplyChainActivityTypeCode {
-		get {
-			return this.supplyChainActivityTypeCodeField;
-		}
-		set {
-			this.supplyChainActivityTypeCodeField = value;
-		}
-	}
+		private ExceptionResolutionCodeType exceptionResolutionCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PerformanceMetricTypeCodeType PerformanceMetricTypeCode {
-		get {
-			return this.performanceMetricTypeCodeField;
-		}
-		set {
-			this.performanceMetricTypeCodeField = value;
-		}
-	}
+		private SupplyChainActivityTypeCodeType supplyChainActivityTypeCodeField;
     
-	/// <remarks/>
-	public PeriodType EffectivePeriod {
-		get {
-			return this.effectivePeriodField;
-		}
-		set {
-			this.effectivePeriodField = value;
-		}
-	}
+		private PerformanceMetricTypeCodeType performanceMetricTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("SupplyItem")]
-	public ItemType[] SupplyItem {
-		get {
-			return this.supplyItemField;
-		}
-		set {
-			this.supplyItemField = value;
-		}
-	}
+		private PeriodType effectivePeriodField;
     
-	/// <remarks/>
-	public ForecastExceptionCriterionLineType ForecastExceptionCriterionLine {
-		get {
-			return this.forecastExceptionCriterionLineField;
+		private ItemType[] supplyItemField;
+    
+		private ForecastExceptionCriterionLineType forecastExceptionCriterionLineField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.forecastExceptionCriterionLineField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NoteType[] Note {
+			get {
+				return noteField;
+			}
+			set {
+				noteField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ThresholdValueComparisonCodeType ThresholdValueComparisonCode {
+			get {
+				return thresholdValueComparisonCodeField;
+			}
+			set {
+				thresholdValueComparisonCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ThresholdQuantityType ThresholdQuantity {
+			get {
+				return thresholdQuantityField;
+			}
+			set {
+				thresholdQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ExceptionStatusCodeType ExceptionStatusCode {
+			get {
+				return exceptionStatusCodeField;
+			}
+			set {
+				exceptionStatusCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CollaborationPriorityCodeType CollaborationPriorityCode {
+			get {
+				return collaborationPriorityCodeField;
+			}
+			set {
+				collaborationPriorityCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ExceptionResolutionCodeType ExceptionResolutionCode {
+			get {
+				return exceptionResolutionCodeField;
+			}
+			set {
+				exceptionResolutionCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SupplyChainActivityTypeCodeType SupplyChainActivityTypeCode {
+			get {
+				return supplyChainActivityTypeCodeField;
+			}
+			set {
+				supplyChainActivityTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PerformanceMetricTypeCodeType PerformanceMetricTypeCode {
+			get {
+				return performanceMetricTypeCodeField;
+			}
+			set {
+				performanceMetricTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType EffectivePeriod {
+			get {
+				return effectivePeriodField;
+			}
+			set {
+				effectivePeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("SupplyItem")]
+		public ItemType[] SupplyItem {
+			get {
+				return supplyItemField;
+			}
+			set {
+				supplyItemField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ForecastExceptionCriterionLineType ForecastExceptionCriterionLine {
+			get {
+				return forecastExceptionCriterionLineField;
+			}
+			set {
+				forecastExceptionCriterionLineField = value;
+			}
 		}
 	}
 }

@@ -1,160 +1,163 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("TransportSchedule", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TransportScheduleType {
-    
-	private SequenceNumericType sequenceNumericField;
-    
-	private ReferenceDateType referenceDateField;
-    
-	private ReferenceTimeType referenceTimeField;
-    
-	private ReliabilityPercentType reliabilityPercentField;
-    
-	private RemarksType[] remarksField;
-    
-	private LocationType1 statusLocationField;
-    
-	private TransportEventType actualArrivalTransportEventField;
-    
-	private TransportEventType actualDepartureTransportEventField;
-    
-	private TransportEventType estimatedDepartureTransportEventField;
-    
-	private TransportEventType estimatedArrivalTransportEventField;
-    
-	private TransportEventType plannedDepartureTransportEventField;
-    
-	private TransportEventType plannedArrivalTransportEventField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SequenceNumericType SequenceNumeric {
-		get {
-			return this.sequenceNumericField;
-		}
-		set {
-			this.sequenceNumericField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("TransportSchedule", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TransportScheduleType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ReferenceDateType ReferenceDate {
-		get {
-			return this.referenceDateField;
-		}
-		set {
-			this.referenceDateField = value;
-		}
-	}
+		private SequenceNumericType sequenceNumericField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ReferenceTimeType ReferenceTime {
-		get {
-			return this.referenceTimeField;
-		}
-		set {
-			this.referenceTimeField = value;
-		}
-	}
+		private ReferenceDateType referenceDateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ReliabilityPercentType ReliabilityPercent {
-		get {
-			return this.reliabilityPercentField;
-		}
-		set {
-			this.reliabilityPercentField = value;
-		}
-	}
+		private ReferenceTimeType referenceTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Remarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RemarksType[] Remarks {
-		get {
-			return this.remarksField;
-		}
-		set {
-			this.remarksField = value;
-		}
-	}
+		private ReliabilityPercentType reliabilityPercentField;
     
-	/// <remarks/>
-	public LocationType1 StatusLocation {
-		get {
-			return this.statusLocationField;
-		}
-		set {
-			this.statusLocationField = value;
-		}
-	}
+		private RemarksType[] remarksField;
     
-	/// <remarks/>
-	public TransportEventType ActualArrivalTransportEvent {
-		get {
-			return this.actualArrivalTransportEventField;
-		}
-		set {
-			this.actualArrivalTransportEventField = value;
-		}
-	}
+		private LocationType1 statusLocationField;
     
-	/// <remarks/>
-	public TransportEventType ActualDepartureTransportEvent {
-		get {
-			return this.actualDepartureTransportEventField;
-		}
-		set {
-			this.actualDepartureTransportEventField = value;
-		}
-	}
+		private TransportEventType actualArrivalTransportEventField;
     
-	/// <remarks/>
-	public TransportEventType EstimatedDepartureTransportEvent {
-		get {
-			return this.estimatedDepartureTransportEventField;
-		}
-		set {
-			this.estimatedDepartureTransportEventField = value;
-		}
-	}
+		private TransportEventType actualDepartureTransportEventField;
     
-	/// <remarks/>
-	public TransportEventType EstimatedArrivalTransportEvent {
-		get {
-			return this.estimatedArrivalTransportEventField;
-		}
-		set {
-			this.estimatedArrivalTransportEventField = value;
-		}
-	}
+		private TransportEventType estimatedDepartureTransportEventField;
     
-	/// <remarks/>
-	public TransportEventType PlannedDepartureTransportEvent {
-		get {
-			return this.plannedDepartureTransportEventField;
-		}
-		set {
-			this.plannedDepartureTransportEventField = value;
-		}
-	}
+		private TransportEventType estimatedArrivalTransportEventField;
     
-	/// <remarks/>
-	public TransportEventType PlannedArrivalTransportEvent {
-		get {
-			return this.plannedArrivalTransportEventField;
+		private TransportEventType plannedDepartureTransportEventField;
+    
+		private TransportEventType plannedArrivalTransportEventField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SequenceNumericType SequenceNumeric {
+			get {
+				return sequenceNumericField;
+			}
+			set {
+				sequenceNumericField = value;
+			}
 		}
-		set {
-			this.plannedArrivalTransportEventField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ReferenceDateType ReferenceDate {
+			get {
+				return referenceDateField;
+			}
+			set {
+				referenceDateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ReferenceTimeType ReferenceTime {
+			get {
+				return referenceTimeField;
+			}
+			set {
+				referenceTimeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ReliabilityPercentType ReliabilityPercent {
+			get {
+				return reliabilityPercentField;
+			}
+			set {
+				reliabilityPercentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Remarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RemarksType[] Remarks {
+			get {
+				return remarksField;
+			}
+			set {
+				remarksField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public LocationType1 StatusLocation {
+			get {
+				return statusLocationField;
+			}
+			set {
+				statusLocationField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType ActualArrivalTransportEvent {
+			get {
+				return actualArrivalTransportEventField;
+			}
+			set {
+				actualArrivalTransportEventField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType ActualDepartureTransportEvent {
+			get {
+				return actualDepartureTransportEventField;
+			}
+			set {
+				actualDepartureTransportEventField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType EstimatedDepartureTransportEvent {
+			get {
+				return estimatedDepartureTransportEventField;
+			}
+			set {
+				estimatedDepartureTransportEventField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType EstimatedArrivalTransportEvent {
+			get {
+				return estimatedArrivalTransportEventField;
+			}
+			set {
+				estimatedArrivalTransportEventField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType PlannedDepartureTransportEvent {
+			get {
+				return plannedDepartureTransportEventField;
+			}
+			set {
+				plannedDepartureTransportEventField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public TransportEventType PlannedArrivalTransportEvent {
+			get {
+				return plannedArrivalTransportEventField;
+			}
+			set {
+				plannedArrivalTransportEventField = value;
+			}
 		}
 	}
 }

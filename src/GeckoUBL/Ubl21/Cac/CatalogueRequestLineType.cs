@@ -1,87 +1,90 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("CatalogueRequestLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class CatalogueRequestLineType {
-    
-	private IDType idField;
-    
-	private ContractSubdivisionType contractSubdivisionField;
-    
-	private NoteType[] noteField;
-    
-	private PeriodType lineValidityPeriodField;
-    
-	private ItemLocationQuantityType[] requiredItemLocationQuantityField;
-    
-	private ItemType itemField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("CatalogueRequestLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class CatalogueRequestLineType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ContractSubdivisionType ContractSubdivision {
-		get {
-			return this.contractSubdivisionField;
-		}
-		set {
-			this.contractSubdivisionField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NoteType[] Note {
-		get {
-			return this.noteField;
-		}
-		set {
-			this.noteField = value;
-		}
-	}
+		private ContractSubdivisionType contractSubdivisionField;
     
-	/// <remarks/>
-	public PeriodType LineValidityPeriod {
-		get {
-			return this.lineValidityPeriodField;
-		}
-		set {
-			this.lineValidityPeriodField = value;
-		}
-	}
+		private NoteType[] noteField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("RequiredItemLocationQuantity")]
-	public ItemLocationQuantityType[] RequiredItemLocationQuantity {
-		get {
-			return this.requiredItemLocationQuantityField;
-		}
-		set {
-			this.requiredItemLocationQuantityField = value;
-		}
-	}
+		private PeriodType lineValidityPeriodField;
     
-	/// <remarks/>
-	public ItemType Item {
-		get {
-			return this.itemField;
+		private ItemLocationQuantityType[] requiredItemLocationQuantityField;
+    
+		private ItemType itemField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.itemField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ContractSubdivisionType ContractSubdivision {
+			get {
+				return contractSubdivisionField;
+			}
+			set {
+				contractSubdivisionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NoteType[] Note {
+			get {
+				return noteField;
+			}
+			set {
+				noteField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType LineValidityPeriod {
+			get {
+				return lineValidityPeriodField;
+			}
+			set {
+				lineValidityPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("RequiredItemLocationQuantity")]
+		public ItemLocationQuantityType[] RequiredItemLocationQuantity {
+			get {
+				return requiredItemLocationQuantityField;
+			}
+			set {
+				requiredItemLocationQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ItemType Item {
+			get {
+				return itemField;
+			}
+			set {
+				itemField = value;
+			}
 		}
 	}
 }

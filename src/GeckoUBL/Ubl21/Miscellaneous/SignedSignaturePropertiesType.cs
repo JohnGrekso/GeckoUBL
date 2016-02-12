@@ -1,96 +1,99 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("SignedSignatureProperties", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
-public partial class SignedSignaturePropertiesType {
-    
-	private System.DateTime signingTimeField;
-    
-	private bool signingTimeFieldSpecified;
-    
-	private CertIDType[] signingCertificateField;
-    
-	private SignaturePolicyIdentifierType signaturePolicyIdentifierField;
-    
-	private SignatureProductionPlaceType signatureProductionPlaceField;
-    
-	private SignerRoleType signerRoleField;
-    
-	private string idField;
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	public System.DateTime SigningTime {
-		get {
-			return this.signingTimeField;
-		}
-		set {
-			this.signingTimeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
+	[System.Xml.Serialization.XmlRootAttribute("SignedSignatureProperties", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
+	public class SignedSignaturePropertiesType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlIgnoreAttribute()]
-	public bool SigningTimeSpecified {
-		get {
-			return this.signingTimeFieldSpecified;
-		}
-		set {
-			this.signingTimeFieldSpecified = value;
-		}
-	}
+		private System.DateTime signingTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlArrayItemAttribute("Cert", IsNullable=false)]
-	public CertIDType[] SigningCertificate {
-		get {
-			return this.signingCertificateField;
-		}
-		set {
-			this.signingCertificateField = value;
-		}
-	}
+		private bool signingTimeFieldSpecified;
     
-	/// <remarks/>
-	public SignaturePolicyIdentifierType SignaturePolicyIdentifier {
-		get {
-			return this.signaturePolicyIdentifierField;
-		}
-		set {
-			this.signaturePolicyIdentifierField = value;
-		}
-	}
+		private CertIDType[] signingCertificateField;
     
-	/// <remarks/>
-	public SignatureProductionPlaceType SignatureProductionPlace {
-		get {
-			return this.signatureProductionPlaceField;
-		}
-		set {
-			this.signatureProductionPlaceField = value;
-		}
-	}
+		private SignaturePolicyIdentifierType signaturePolicyIdentifierField;
     
-	/// <remarks/>
-	public SignerRoleType SignerRole {
-		get {
-			return this.signerRoleField;
-		}
-		set {
-			this.signerRoleField = value;
-		}
-	}
+		private SignatureProductionPlaceType signatureProductionPlaceField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-	public string Id {
-		get {
-			return this.idField;
+		private SignerRoleType signerRoleField;
+    
+		private string idField;
+    
+		/// <remarks/>
+		public System.DateTime SigningTime {
+			get {
+				return signingTimeField;
+			}
+			set {
+				signingTimeField = value;
+			}
 		}
-		set {
-			this.idField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlIgnoreAttribute()]
+		public bool SigningTimeSpecified {
+			get {
+				return signingTimeFieldSpecified;
+			}
+			set {
+				signingTimeFieldSpecified = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlArrayItemAttribute("Cert", IsNullable=false)]
+		public CertIDType[] SigningCertificate {
+			get {
+				return signingCertificateField;
+			}
+			set {
+				signingCertificateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public SignaturePolicyIdentifierType SignaturePolicyIdentifier {
+			get {
+				return signaturePolicyIdentifierField;
+			}
+			set {
+				signaturePolicyIdentifierField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public SignatureProductionPlaceType SignatureProductionPlace {
+			get {
+				return signatureProductionPlaceField;
+			}
+			set {
+				signatureProductionPlaceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public SignerRoleType SignerRole {
+			get {
+				return signerRoleField;
+			}
+			set {
+				signerRoleField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+		public string Id {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
 	}
 }

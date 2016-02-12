@@ -1,113 +1,116 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("MaritimeTransport", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class MaritimeTransportType {
-    
-	private VesselIDType vesselIDField;
-    
-	private VesselNameType vesselNameField;
-    
-	private RadioCallSignIDType radioCallSignIDField;
-    
-	private ShipsRequirementsType[] shipsRequirementsField;
-    
-	private GrossTonnageMeasureType grossTonnageMeasureField;
-    
-	private NetTonnageMeasureType netTonnageMeasureField;
-    
-	private DocumentReferenceType registryCertificateDocumentReferenceField;
-    
-	private LocationType1 registryPortLocationField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public VesselIDType VesselID {
-		get {
-			return this.vesselIDField;
-		}
-		set {
-			this.vesselIDField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("MaritimeTransport", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class MaritimeTransportType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public VesselNameType VesselName {
-		get {
-			return this.vesselNameField;
-		}
-		set {
-			this.vesselNameField = value;
-		}
-	}
+		private VesselIDType vesselIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public RadioCallSignIDType RadioCallSignID {
-		get {
-			return this.radioCallSignIDField;
-		}
-		set {
-			this.radioCallSignIDField = value;
-		}
-	}
+		private VesselNameType vesselNameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("ShipsRequirements", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ShipsRequirementsType[] ShipsRequirements {
-		get {
-			return this.shipsRequirementsField;
-		}
-		set {
-			this.shipsRequirementsField = value;
-		}
-	}
+		private RadioCallSignIDType radioCallSignIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public GrossTonnageMeasureType GrossTonnageMeasure {
-		get {
-			return this.grossTonnageMeasureField;
-		}
-		set {
-			this.grossTonnageMeasureField = value;
-		}
-	}
+		private ShipsRequirementsType[] shipsRequirementsField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NetTonnageMeasureType NetTonnageMeasure {
-		get {
-			return this.netTonnageMeasureField;
-		}
-		set {
-			this.netTonnageMeasureField = value;
-		}
-	}
+		private GrossTonnageMeasureType grossTonnageMeasureField;
     
-	/// <remarks/>
-	public DocumentReferenceType RegistryCertificateDocumentReference {
-		get {
-			return this.registryCertificateDocumentReferenceField;
-		}
-		set {
-			this.registryCertificateDocumentReferenceField = value;
-		}
-	}
+		private NetTonnageMeasureType netTonnageMeasureField;
     
-	/// <remarks/>
-	public LocationType1 RegistryPortLocation {
-		get {
-			return this.registryPortLocationField;
+		private DocumentReferenceType registryCertificateDocumentReferenceField;
+    
+		private LocationType1 registryPortLocationField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public VesselIDType VesselID {
+			get {
+				return vesselIDField;
+			}
+			set {
+				vesselIDField = value;
+			}
 		}
-		set {
-			this.registryPortLocationField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public VesselNameType VesselName {
+			get {
+				return vesselNameField;
+			}
+			set {
+				vesselNameField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public RadioCallSignIDType RadioCallSignID {
+			get {
+				return radioCallSignIDField;
+			}
+			set {
+				radioCallSignIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("ShipsRequirements", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ShipsRequirementsType[] ShipsRequirements {
+			get {
+				return shipsRequirementsField;
+			}
+			set {
+				shipsRequirementsField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public GrossTonnageMeasureType GrossTonnageMeasure {
+			get {
+				return grossTonnageMeasureField;
+			}
+			set {
+				grossTonnageMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NetTonnageMeasureType NetTonnageMeasure {
+			get {
+				return netTonnageMeasureField;
+			}
+			set {
+				netTonnageMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public DocumentReferenceType RegistryCertificateDocumentReference {
+			get {
+				return registryCertificateDocumentReferenceField;
+			}
+			set {
+				registryCertificateDocumentReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public LocationType1 RegistryPortLocation {
+			get {
+				return registryPortLocationField;
+			}
+			set {
+				registryPortLocationField = value;
+			}
 		}
 	}
 }

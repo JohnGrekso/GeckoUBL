@@ -1,63 +1,66 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AdditionalCommodityClassification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class CommodityClassificationType {
-    
-	private NatureCodeType natureCodeField;
-    
-	private CargoTypeCodeType cargoTypeCodeField;
-    
-	private CommodityCodeType commodityCodeField;
-    
-	private ItemClassificationCodeType itemClassificationCodeField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NatureCodeType NatureCode {
-		get {
-			return this.natureCodeField;
-		}
-		set {
-			this.natureCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AdditionalCommodityClassification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class CommodityClassificationType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CargoTypeCodeType CargoTypeCode {
-		get {
-			return this.cargoTypeCodeField;
-		}
-		set {
-			this.cargoTypeCodeField = value;
-		}
-	}
+		private NatureCodeType natureCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CommodityCodeType CommodityCode {
-		get {
-			return this.commodityCodeField;
-		}
-		set {
-			this.commodityCodeField = value;
-		}
-	}
+		private CargoTypeCodeType cargoTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ItemClassificationCodeType ItemClassificationCode {
-		get {
-			return this.itemClassificationCodeField;
+		private CommodityCodeType commodityCodeField;
+    
+		private ItemClassificationCodeType itemClassificationCodeField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NatureCodeType NatureCode {
+			get {
+				return natureCodeField;
+			}
+			set {
+				natureCodeField = value;
+			}
 		}
-		set {
-			this.itemClassificationCodeField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CargoTypeCodeType CargoTypeCode {
+			get {
+				return cargoTypeCodeField;
+			}
+			set {
+				cargoTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CommodityCodeType CommodityCode {
+			get {
+				return commodityCodeField;
+			}
+			set {
+				commodityCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ItemClassificationCodeType ItemClassificationCode {
+			get {
+				return itemClassificationCodeField;
+			}
+			set {
+				itemClassificationCodeField = value;
+			}
 		}
 	}
 }

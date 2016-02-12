@@ -1,76 +1,79 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("SecondaryHazard", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class SecondaryHazardType {
-    
-	private IDType idField;
-    
-	private PlacardNotationType placardNotationField;
-    
-	private PlacardEndorsementType placardEndorsementField;
-    
-	private EmergencyProceduresCodeType emergencyProceduresCodeField;
-    
-	private ExtensionType[] extensionField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("SecondaryHazard", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class SecondaryHazardType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PlacardNotationType PlacardNotation {
-		get {
-			return this.placardNotationField;
-		}
-		set {
-			this.placardNotationField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PlacardEndorsementType PlacardEndorsement {
-		get {
-			return this.placardEndorsementField;
-		}
-		set {
-			this.placardEndorsementField = value;
-		}
-	}
+		private PlacardNotationType placardNotationField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public EmergencyProceduresCodeType EmergencyProceduresCode {
-		get {
-			return this.emergencyProceduresCodeField;
-		}
-		set {
-			this.emergencyProceduresCodeField = value;
-		}
-	}
+		private PlacardEndorsementType placardEndorsementField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Extension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ExtensionType[] Extension {
-		get {
-			return this.extensionField;
+		private EmergencyProceduresCodeType emergencyProceduresCodeField;
+    
+		private ExtensionType[] extensionField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.extensionField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PlacardNotationType PlacardNotation {
+			get {
+				return placardNotationField;
+			}
+			set {
+				placardNotationField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PlacardEndorsementType PlacardEndorsement {
+			get {
+				return placardEndorsementField;
+			}
+			set {
+				placardEndorsementField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public EmergencyProceduresCodeType EmergencyProceduresCode {
+			get {
+				return emergencyProceduresCodeField;
+			}
+			set {
+				emergencyProceduresCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Extension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ExtensionType[] Extension {
+			get {
+				return extensionField;
+			}
+			set {
+				extensionField = value;
+			}
 		}
 	}
 }

@@ -1,49 +1,52 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#", IncludeInSchema=false)]
-public enum ItemsChoiceType3 {
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlEnumAttribute("##any:")]
-	Item,
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#", IncludeInSchema=false)]
+	public enum ItemsChoiceType3 {
     
-	/// <remarks/>
-	ArchiveTimeStamp,
+		/// <remarks/>
+		[System.Xml.Serialization.XmlEnumAttribute("##any:")]
+		Item,
     
-	/// <remarks/>
-	AttrAuthoritiesCertValues,
+		/// <remarks/>
+		ArchiveTimeStamp,
     
-	/// <remarks/>
-	AttributeCertificateRefs,
+		/// <remarks/>
+		AttrAuthoritiesCertValues,
     
-	/// <remarks/>
-	AttributeRevocationRefs,
+		/// <remarks/>
+		AttributeCertificateRefs,
     
-	/// <remarks/>
-	AttributeRevocationValues,
+		/// <remarks/>
+		AttributeRevocationRefs,
     
-	/// <remarks/>
-	CertificateValues,
+		/// <remarks/>
+		AttributeRevocationValues,
     
-	/// <remarks/>
-	CompleteCertificateRefs,
+		/// <remarks/>
+		CertificateValues,
     
-	/// <remarks/>
-	CompleteRevocationRefs,
+		/// <remarks/>
+		CompleteCertificateRefs,
     
-	/// <remarks/>
-	CounterSignature,
+		/// <remarks/>
+		CompleteRevocationRefs,
     
-	/// <remarks/>
-	RefsOnlyTimeStamp,
+		/// <remarks/>
+		CounterSignature,
     
-	/// <remarks/>
-	RevocationValues,
+		/// <remarks/>
+		RefsOnlyTimeStamp,
     
-	/// <remarks/>
-	SigAndRefsTimeStamp,
+		/// <remarks/>
+		RevocationValues,
     
-	/// <remarks/>
-	SignatureTimeStamp,
+		/// <remarks/>
+		SigAndRefsTimeStamp,
+    
+		/// <remarks/>
+		SignatureTimeStamp,
+	}
 }

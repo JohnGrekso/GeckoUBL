@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GeckoUBL.Ubl21.Udt;
+﻿using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cbc
 {
@@ -14,7 +9,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IdentificationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IdentificationIDType : IdentifierType1
+	public class IdentificationIDType : IdentifierType1
 	{
 	}
 
@@ -25,7 +20,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EmbeddedDocumentBinaryObject", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EmbeddedDocumentBinaryObjectType : BinaryObjectType1
+	public class EmbeddedDocumentBinaryObjectType : BinaryObjectType1
 	{
 	}
 
@@ -36,7 +31,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TargetCurrencyBaseRate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TargetCurrencyBaseRateType : RateType
+	public class TargetCurrencyBaseRateType : RateType
 	{
 	}
 
@@ -47,7 +42,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SourceCurrencyBaseRate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SourceCurrencyBaseRateType : RateType
+	public class SourceCurrencyBaseRateType : RateType
 	{
 	}
 
@@ -58,7 +53,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "RateType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Rate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RateType1 : RateType
+	public class RateType1 : RateType
 	{
 	}
 
@@ -69,7 +64,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderableUnitFactorRate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderableUnitFactorRateType : RateType
+	public class OrderableUnitFactorRateType : RateType
 	{
 	}
 
@@ -80,7 +75,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CalculationRate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CalculationRateType : RateType
+	public class CalculationRateType : RateType
 	{
 	}
 
@@ -91,7 +86,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AmountRate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AmountRateType : RateType
+	public class AmountRateType : RateType
 	{
 	}
 
@@ -102,7 +97,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TierRatePercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TierRatePercentType : PercentType
+	public class TierRatePercentType : PercentType
 	{
 	}
 
@@ -113,7 +108,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TargetServicePercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TargetServicePercentType : PercentType
+	public class TargetServicePercentType : PercentType
 	{
 	}
 
@@ -124,7 +119,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SettlementDiscountPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SettlementDiscountPercentType : PercentType
+	public class SettlementDiscountPercentType : PercentType
 	{
 	}
 
@@ -135,7 +130,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReliabilityPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReliabilityPercentType : PercentType
+	public class ReliabilityPercentType : PercentType
 	{
 	}
 
@@ -146,7 +141,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProgressPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProgressPercentType : PercentType
+	public class ProgressPercentType : PercentType
 	{
 	}
 
@@ -157,7 +152,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "PercentType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Percent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PercentType1 : PercentType
+	public class PercentType1 : PercentType
 	{
 	}
 
@@ -168,7 +163,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PenaltySurchargePercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PenaltySurchargePercentType : PercentType
+	public class PenaltySurchargePercentType : PercentType
 	{
 	}
 
@@ -179,7 +174,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentPercentType : PercentType
+	public class PaymentPercentType : PercentType
 	{
 	}
 
@@ -190,7 +185,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ParticipationPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ParticipationPercentType : PercentType
+	public class ParticipationPercentType : PercentType
 	{
 	}
 
@@ -201,7 +196,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartecipationPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartecipationPercentType : PercentType
+	public class PartecipationPercentType : PercentType
 	{
 	}
 
@@ -212,7 +207,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumPercentType : PercentType
+	public class MinimumPercentType : PercentType
 	{
 	}
 
@@ -223,7 +218,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumPercentType : PercentType
+	public class MaximumPercentType : PercentType
 	{
 	}
 
@@ -234,7 +229,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HumidityPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HumidityPercentType : PercentType
+	public class HumidityPercentType : PercentType
 	{
 	}
 
@@ -245,7 +240,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AirFlowPercent", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AirFlowPercentType : PercentType
+	public class AirFlowPercentType : PercentType
 	{
 	}
 
@@ -256,7 +251,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WeightNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WeightNumericType : NumericType1
+	public class WeightNumericType : NumericType1
 	{
 	}
 
@@ -267,7 +262,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SequenceNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SequenceNumericType : NumericType1
+	public class SequenceNumericType : NumericType1
 	{
 	}
 
@@ -278,7 +273,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResidentOccupantsNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResidentOccupantsNumericType : NumericType1
+	public class ResidentOccupantsNumericType : NumericType1
 	{
 	}
 
@@ -289,7 +284,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReminderSequenceNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReminderSequenceNumericType : NumericType1
+	public class ReminderSequenceNumericType : NumericType1
 	{
 	}
 
@@ -300,7 +295,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackSizeNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackSizeNumericType : NumericType1
+	public class PackSizeNumericType : NumericType1
 	{
 	}
 
@@ -311,7 +306,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderQuantityIncrementNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderQuantityIncrementNumericType : NumericType1
+	public class OrderQuantityIncrementNumericType : NumericType1
 	{
 	}
 
@@ -322,7 +317,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderIntervalDaysNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderIntervalDaysNumericType : NumericType1
+	public class OrderIntervalDaysNumericType : NumericType1
 	{
 	}
 
@@ -333,7 +328,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MultiplierFactorNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MultiplierFactorNumericType : NumericType1
+	public class MultiplierFactorNumericType : NumericType1
 	{
 	}
 
@@ -344,7 +339,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumNumberNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumNumberNumericType : NumericType1
+	public class MinimumNumberNumericType : NumericType1
 	{
 	}
 
@@ -355,7 +350,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumPaymentInstructionsNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumPaymentInstructionsNumericType : NumericType1
+	public class MaximumPaymentInstructionsNumericType : NumericType1
 	{
 	}
 
@@ -366,7 +361,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumNumberNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumNumberNumericType : NumericType1
+	public class MaximumNumberNumericType : NumericType1
 	{
 	}
 
@@ -377,7 +372,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumCopiesNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumCopiesNumericType : NumericType1
+	public class MaximumCopiesNumericType : NumericType1
 	{
 	}
 
@@ -388,7 +383,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LineNumberNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineNumberNumericType : NumericType1
+	public class LineNumberNumericType : NumericType1
 	{
 	}
 
@@ -399,7 +394,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LineCountNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineCountNumericType : NumericType1
+	public class LineCountNumericType : NumericType1
 	{
 	}
 
@@ -410,7 +405,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FrozenPeriodDaysNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FrozenPeriodDaysNumericType : NumericType1
+	public class FrozenPeriodDaysNumericType : NumericType1
 	{
 	}
 
@@ -421,7 +416,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CalculationSequenceNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CalculationSequenceNumericType : NumericType1
+	public class CalculationSequenceNumericType : NumericType1
 	{
 	}
 
@@ -432,7 +427,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BudgetYearNumeric", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BudgetYearNumericType : NumericType1
+	public class BudgetYearNumericType : NumericType1
 	{
 	}
 
@@ -443,7 +438,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValueAmountType : AmountType1
+	public class ValueAmountType : AmountType1
 	{
 	}
 
@@ -454,7 +449,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransactionCurrencyTaxAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransactionCurrencyTaxAmountType : AmountType1
+	public class TransactionCurrencyTaxAmountType : AmountType1
 	{
 	}
 
@@ -465,7 +460,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalTaxAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalTaxAmountType : AmountType1
+	public class TotalTaxAmountType : AmountType1
 	{
 	}
 
@@ -476,7 +471,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalTaskAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalTaskAmountType : AmountType1
+	public class TotalTaskAmountType : AmountType1
 	{
 	}
 
@@ -487,7 +482,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalPaymentAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalPaymentAmountType : AmountType1
+	public class TotalPaymentAmountType : AmountType1
 	{
 	}
 
@@ -498,7 +493,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalInvoiceAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalInvoiceAmountType : AmountType1
+	public class TotalInvoiceAmountType : AmountType1
 	{
 	}
 
@@ -509,7 +504,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalDebitAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalDebitAmountType : AmountType1
+	public class TotalDebitAmountType : AmountType1
 	{
 	}
 
@@ -520,7 +515,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalCreditAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalCreditAmountType : AmountType1
+	public class TotalCreditAmountType : AmountType1
 	{
 	}
 
@@ -531,7 +526,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalBalanceAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalBalanceAmountType : AmountType1
+	public class TotalBalanceAmountType : AmountType1
 	{
 	}
 
@@ -542,7 +537,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalAmountType : AmountType1
+	public class TotalAmountType : AmountType1
 	{
 	}
 
@@ -553,7 +548,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ThresholdAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ThresholdAmountType : AmountType1
+	public class ThresholdAmountType : AmountType1
 	{
 	}
 
@@ -564,7 +559,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxableAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxableAmountType : AmountType1
+	public class TaxableAmountType : AmountType1
 	{
 	}
 
@@ -575,7 +570,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxInclusiveAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxInclusiveAmountType : AmountType1
+	public class TaxInclusiveAmountType : AmountType1
 	{
 	}
 
@@ -586,7 +581,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxExclusiveAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxExclusiveAmountType : AmountType1
+	public class TaxExclusiveAmountType : AmountType1
 	{
 	}
 
@@ -597,7 +592,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxEnergyOnAccountAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxEnergyOnAccountAmountType : AmountType1
+	public class TaxEnergyOnAccountAmountType : AmountType1
 	{
 	}
 
@@ -608,7 +603,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxEnergyBalanceAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxEnergyBalanceAmountType : AmountType1
+	public class TaxEnergyBalanceAmountType : AmountType1
 	{
 	}
 
@@ -619,7 +614,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxEnergyAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxEnergyAmountType : AmountType1
+	public class TaxEnergyAmountType : AmountType1
 	{
 	}
 
@@ -630,7 +625,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxAmountType : AmountType1
+	public class TaxAmountType : AmountType1
 	{
 	}
 
@@ -641,7 +636,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SettlementDiscountAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SettlementDiscountAmountType : AmountType1
+	public class SettlementDiscountAmountType : AmountType1
 	{
 	}
 
@@ -652,7 +647,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RoundingAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RoundingAmountType : AmountType1
+	public class RoundingAmountType : AmountType1
 	{
 	}
 
@@ -663,7 +658,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequiredFeeAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequiredFeeAmountType : AmountType1
+	public class RequiredFeeAmountType : AmountType1
 	{
 	}
 
@@ -674,7 +669,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceAmountType : AmountType1
+	public class PriceAmountType : AmountType1
 	{
 	}
 
@@ -685,7 +680,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrepaidAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrepaidAmountType : AmountType1
+	public class PrepaidAmountType : AmountType1
 	{
 	}
 
@@ -696,7 +691,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PerUnitAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PerUnitAmountType : AmountType1
+	public class PerUnitAmountType : AmountType1
 	{
 	}
 
@@ -707,7 +702,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PenaltyAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PenaltyAmountType : AmountType1
+	public class PenaltyAmountType : AmountType1
 	{
 	}
 
@@ -718,7 +713,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PayableRoundingAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PayableRoundingAmountType : AmountType1
+	public class PayableRoundingAmountType : AmountType1
 	{
 	}
 
@@ -729,7 +724,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PayableAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PayableAmountType : AmountType1
+	public class PayableAmountType : AmountType1
 	{
 	}
 
@@ -740,7 +735,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PayableAlternativeAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PayableAlternativeAmountType : AmountType1
+	public class PayableAlternativeAmountType : AmountType1
 	{
 	}
 
@@ -751,7 +746,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartyCapacityAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartyCapacityAmountType : AmountType1
+	public class PartyCapacityAmountType : AmountType1
 	{
 	}
 
@@ -762,7 +757,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaidAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaidAmountType : AmountType1
+	public class PaidAmountType : AmountType1
 	{
 	}
 
@@ -773,7 +768,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumAmountType : AmountType1
+	public class MinimumAmountType : AmountType1
 	{
 	}
 
@@ -784,7 +779,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumPaidAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumPaidAmountType : AmountType1
+	public class MaximumPaidAmountType : AmountType1
 	{
 	}
 
@@ -795,7 +790,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumAmountType : AmountType1
+	public class MaximumAmountType : AmountType1
 	{
 	}
 
@@ -806,7 +801,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumAdvertisementAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumAdvertisementAmountType : AmountType1
+	public class MaximumAdvertisementAmountType : AmountType1
 	{
 	}
 
@@ -817,7 +812,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarketValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarketValueAmountType : AmountType1
+	public class MarketValueAmountType : AmountType1
 	{
 	}
 
@@ -828,7 +823,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LowerTenderAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LowerTenderAmountType : AmountType1
+	public class LowerTenderAmountType : AmountType1
 	{
 	}
 
@@ -839,7 +834,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LineExtensionAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineExtensionAmountType : AmountType1
+	public class LineExtensionAmountType : AmountType1
 	{
 	}
 
@@ -850,7 +845,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LiabilityAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LiabilityAmountType : AmountType1
+	public class LiabilityAmountType : AmountType1
 	{
 	}
 
@@ -861,7 +856,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InventoryValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InventoryValueAmountType : AmountType1
+	public class InventoryValueAmountType : AmountType1
 	{
 	}
 
@@ -872,7 +867,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InsuranceValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InsuranceValueAmountType : AmountType1
+	public class InsuranceValueAmountType : AmountType1
 	{
 	}
 
@@ -883,7 +878,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InsurancePremiumAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InsurancePremiumAmountType : AmountType1
+	public class InsurancePremiumAmountType : AmountType1
 	{
 	}
 
@@ -894,7 +889,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HigherTenderAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HigherTenderAmountType : AmountType1
+	public class HigherTenderAmountType : AmountType1
 	{
 	}
 
@@ -905,7 +900,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FreeOnBoardValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FreeOnBoardValueAmountType : AmountType1
+	public class FreeOnBoardValueAmountType : AmountType1
 	{
 	}
 
@@ -916,7 +911,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FeeAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FeeAmountType : AmountType1
+	public class FeeAmountType : AmountType1
 	{
 	}
 
@@ -927,7 +922,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FaceValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FaceValueAmountType : AmountType1
+	public class FaceValueAmountType : AmountType1
 	{
 	}
 
@@ -938,7 +933,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedOverallContractAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedOverallContractAmountType : AmountType1
+	public class EstimatedOverallContractAmountType : AmountType1
 	{
 	}
 
@@ -949,7 +944,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedAmountType : AmountType1
+	public class EstimatedAmountType : AmountType1
 	{
 	}
 
@@ -960,7 +955,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentationFeeAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentationFeeAmountType : AmountType1
+	public class DocumentationFeeAmountType : AmountType1
 	{
 	}
 
@@ -971,7 +966,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeclaredStatisticsValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeclaredStatisticsValueAmountType : AmountType1
+	public class DeclaredStatisticsValueAmountType : AmountType1
 	{
 	}
 
@@ -982,7 +977,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeclaredForCarriageValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeclaredForCarriageValueAmountType : AmountType1
+	public class DeclaredForCarriageValueAmountType : AmountType1
 	{
 	}
 
@@ -993,7 +988,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeclaredCustomsValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeclaredCustomsValueAmountType : AmountType1
+	public class DeclaredCustomsValueAmountType : AmountType1
 	{
 	}
 
@@ -1004,7 +999,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeclaredCarriageValueAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeclaredCarriageValueAmountType : AmountType1
+	public class DeclaredCarriageValueAmountType : AmountType1
 	{
 	}
 
@@ -1015,7 +1010,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DebitLineAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DebitLineAmountType : AmountType1
+	public class DebitLineAmountType : AmountType1
 	{
 	}
 
@@ -1026,7 +1021,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CreditLineAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CreditLineAmountType : AmountType1
+	public class CreditLineAmountType : AmountType1
 	{
 	}
 
@@ -1037,7 +1032,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorrectionUnitAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorrectionUnitAmountType : AmountType1
+	public class CorrectionUnitAmountType : AmountType1
 	{
 	}
 
@@ -1048,7 +1043,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorrectionAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorrectionAmountType : AmountType1
+	public class CorrectionAmountType : AmountType1
 	{
 	}
 
@@ -1059,7 +1054,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorporateStockAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorporateStockAmountType : AmountType1
+	public class CorporateStockAmountType : AmountType1
 	{
 	}
 
@@ -1070,7 +1065,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChargeTotalAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChargeTotalAmountType : AmountType1
+	public class ChargeTotalAmountType : AmountType1
 	{
 	}
 
@@ -1081,7 +1076,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CallExtensionAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CallExtensionAmountType : AmountType1
+	public class CallExtensionAmountType : AmountType1
 	{
 	}
 
@@ -1092,7 +1087,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CallBaseAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CallBaseAmountType : AmountType1
+	public class CallBaseAmountType : AmountType1
 	{
 	}
 
@@ -1103,7 +1098,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BaseAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BaseAmountType : AmountType1
+	public class BaseAmountType : AmountType1
 	{
 	}
 
@@ -1114,7 +1109,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BalanceAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BalanceAmountType : AmountType1
+	public class BalanceAmountType : AmountType1
 	{
 	}
 
@@ -1125,7 +1120,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AverageSubsequentContractAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AverageSubsequentContractAmountType : AmountType1
+	public class AverageSubsequentContractAmountType : AmountType1
 	{
 	}
 
@@ -1136,7 +1131,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AverageAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AverageAmountType : AmountType1
+	public class AverageAmountType : AmountType1
 	{
 	}
 
@@ -1147,7 +1142,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AnnualAverageAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AnnualAverageAmountType : AmountType1
+	public class AnnualAverageAmountType : AmountType1
 	{
 	}
 
@@ -1158,7 +1153,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "AmountType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Amount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AmountType2 : AmountType1
+	public class AmountType2 : AmountType1
 	{
 	}
 
@@ -1169,7 +1164,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AllowanceTotalAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AllowanceTotalAmountType : AmountType1
+	public class AllowanceTotalAmountType : AmountType1
 	{
 	}
 
@@ -1180,7 +1175,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdvertisementAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdvertisementAmountType : AmountType1
+	public class AdvertisementAmountType : AmountType1
 	{
 	}
 
@@ -1191,7 +1186,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VarianceQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VarianceQuantityType : QuantityType1
+	public class VarianceQuantityType : QuantityType1
 	{
 	}
 
@@ -1202,7 +1197,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValueQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValueQuantityType : QuantityType1
+	public class ValueQuantityType : QuantityType1
 	{
 	}
 
@@ -1213,7 +1208,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalTransportHandlingUnitQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalTransportHandlingUnitQuantityType : QuantityType1
+	public class TotalTransportHandlingUnitQuantityType : QuantityType1
 	{
 	}
 
@@ -1224,7 +1219,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalPackagesQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalPackagesQuantityType : QuantityType1
+	public class TotalPackagesQuantityType : QuantityType1
 	{
 	}
 
@@ -1235,7 +1230,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalPackageQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalPackageQuantityType : QuantityType1
+	public class TotalPackageQuantityType : QuantityType1
 	{
 	}
 
@@ -1246,7 +1241,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalMeteredQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalMeteredQuantityType : QuantityType1
+	public class TotalMeteredQuantityType : QuantityType1
 	{
 	}
 
@@ -1257,7 +1252,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalGoodsItemQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalGoodsItemQuantityType : QuantityType1
+	public class TotalGoodsItemQuantityType : QuantityType1
 	{
 	}
 
@@ -1268,7 +1263,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalDeliveredQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalDeliveredQuantityType : QuantityType1
+	public class TotalDeliveredQuantityType : QuantityType1
 	{
 	}
 
@@ -1279,7 +1274,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TotalConsumedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TotalConsumedQuantityType : QuantityType1
+	public class TotalConsumedQuantityType : QuantityType1
 	{
 	}
 
@@ -1290,7 +1285,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimeDeltaDaysQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimeDeltaDaysQuantityType : QuantityType1
+	public class TimeDeltaDaysQuantityType : QuantityType1
 	{
 	}
 
@@ -1301,7 +1296,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ThresholdQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ThresholdQuantityType : QuantityType1
+	public class ThresholdQuantityType : QuantityType1
 	{
 	}
 
@@ -1312,7 +1307,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TargetInventoryQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TargetInventoryQuantityType : QuantityType1
+	public class TargetInventoryQuantityType : QuantityType1
 	{
 	}
 
@@ -1323,7 +1318,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShortQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShortQuantityType : QuantityType1
+	public class ShortQuantityType : QuantityType1
 	{
 	}
 
@@ -1334,7 +1329,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SharesNumberQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SharesNumberQuantityType : QuantityType1
+	public class SharesNumberQuantityType : QuantityType1
 	{
 	}
 
@@ -1345,7 +1340,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReturnableQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReturnableQuantityType : QuantityType1
+	public class ReturnableQuantityType : QuantityType1
 	{
 	}
 
@@ -1356,7 +1351,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RejectedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RejectedQuantityType : QuantityType1
+	public class RejectedQuantityType : QuantityType1
 	{
 	}
 
@@ -1367,7 +1362,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceivedTenderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceivedTenderQuantityType : QuantityType1
+	public class ReceivedTenderQuantityType : QuantityType1
 	{
 	}
 
@@ -1378,7 +1373,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceivedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceivedQuantityType : QuantityType1
+	public class ReceivedQuantityType : QuantityType1
 	{
 	}
 
@@ -1389,7 +1384,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceivedForeignTenderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceivedForeignTenderQuantityType : QuantityType1
+	public class ReceivedForeignTenderQuantityType : QuantityType1
 	{
 	}
 
@@ -1400,7 +1395,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceivedElectronicTenderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceivedElectronicTenderQuantityType : QuantityType1
+	public class ReceivedElectronicTenderQuantityType : QuantityType1
 	{
 	}
 
@@ -1411,7 +1406,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "QuantityType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Quantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class QuantityType2 : QuantityType1
+	public class QuantityType2 : QuantityType1
 	{
 	}
 
@@ -1422,7 +1417,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousMeterQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousMeterQuantityType : QuantityType1
+	public class PreviousMeterQuantityType : QuantityType1
 	{
 	}
 
@@ -1433,7 +1428,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PerformanceValueQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PerformanceValueQuantityType : QuantityType1
+	public class PerformanceValueQuantityType : QuantityType1
 	{
 	}
 
@@ -1444,7 +1439,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PassengerQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PassengerQuantityType : QuantityType1
+	public class PassengerQuantityType : QuantityType1
 	{
 	}
 
@@ -1455,7 +1450,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackQuantityType : QuantityType1
+	public class PackQuantityType : QuantityType1
 	{
 	}
 
@@ -1466,7 +1461,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OversupplyQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OversupplyQuantityType : QuantityType1
+	public class OversupplyQuantityType : QuantityType1
 	{
 	}
 
@@ -1477,7 +1472,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OutstandingQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OutstandingQuantityType : QuantityType1
+	public class OutstandingQuantityType : QuantityType1
 	{
 	}
 
@@ -1488,7 +1483,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OperatingYearsQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OperatingYearsQuantityType : QuantityType1
+	public class OperatingYearsQuantityType : QuantityType1
 	{
 	}
 
@@ -1499,7 +1494,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NormalTemperatureReductionQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NormalTemperatureReductionQuantityType : QuantityType1
+	public class NormalTemperatureReductionQuantityType : QuantityType1
 	{
 	}
 
@@ -1510,7 +1505,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MultipleOrderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MultipleOrderQuantityType : QuantityType1
+	public class MultipleOrderQuantityType : QuantityType1
 	{
 	}
 
@@ -1521,7 +1516,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumQuantityType : QuantityType1
+	public class MinimumQuantityType : QuantityType1
 	{
 	}
 
@@ -1532,7 +1527,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumOrderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumOrderQuantityType : QuantityType1
+	public class MinimumOrderQuantityType : QuantityType1
 	{
 	}
 
@@ -1543,7 +1538,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumInventoryQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumInventoryQuantityType : QuantityType1
+	public class MinimumInventoryQuantityType : QuantityType1
 	{
 	}
 
@@ -1554,7 +1549,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumBackorderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumBackorderQuantityType : QuantityType1
+	public class MinimumBackorderQuantityType : QuantityType1
 	{
 	}
 
@@ -1565,7 +1560,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumVariantQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumVariantQuantityType : QuantityType1
+	public class MaximumVariantQuantityType : QuantityType1
 	{
 	}
 
@@ -1576,7 +1571,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumQuantityType : QuantityType1
+	public class MaximumQuantityType : QuantityType1
 	{
 	}
 
@@ -1587,7 +1582,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumOrderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumOrderQuantityType : QuantityType1
+	public class MaximumOrderQuantityType : QuantityType1
 	{
 	}
 
@@ -1598,7 +1593,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumOperatorQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumOperatorQuantityType : QuantityType1
+	public class MaximumOperatorQuantityType : QuantityType1
 	{
 	}
 
@@ -1609,7 +1604,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumBackorderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumBackorderQuantityType : QuantityType1
+	public class MaximumBackorderQuantityType : QuantityType1
 	{
 	}
 
@@ -1620,7 +1615,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestMeterQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestMeterQuantityType : QuantityType1
+	public class LatestMeterQuantityType : QuantityType1
 	{
 	}
 
@@ -1631,7 +1626,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InvoicedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InvoicedQuantityType : QuantityType1
+	public class InvoicedQuantityType : QuantityType1
 	{
 	}
 
@@ -1642,7 +1637,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GasPressureQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GasPressureQuantityType : QuantityType1
+	public class GasPressureQuantityType : QuantityType1
 	{
 	}
 
@@ -1653,7 +1648,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpectedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpectedQuantityType : QuantityType1
+	public class ExpectedQuantityType : QuantityType1
 	{
 	}
 
@@ -1664,7 +1659,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpectedOperatorQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpectedOperatorQuantityType : QuantityType1
+	public class ExpectedOperatorQuantityType : QuantityType1
 	{
 	}
 
@@ -1675,7 +1670,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedOverallContractQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedOverallContractQuantityType : QuantityType1
+	public class EstimatedOverallContractQuantityType : QuantityType1
 	{
 	}
 
@@ -1686,7 +1681,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedConsumedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedConsumedQuantityType : QuantityType1
+	public class EstimatedConsumedQuantityType : QuantityType1
 	{
 	}
 
@@ -1697,7 +1692,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EmployeeQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EmployeeQuantityType : QuantityType1
+	public class EmployeeQuantityType : QuantityType1
 	{
 	}
 
@@ -1708,7 +1703,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DifferenceTemperatureReductionQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DifferenceTemperatureReductionQuantityType : QuantityType1
+	public class DifferenceTemperatureReductionQuantityType : QuantityType1
 	{
 	}
 
@@ -1719,7 +1714,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeliveredQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeliveredQuantityType : QuantityType1
+	public class DeliveredQuantityType : QuantityType1
 	{
 	}
 
@@ -1730,7 +1725,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DebitedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DebitedQuantityType : QuantityType1
+	public class DebitedQuantityType : QuantityType1
 	{
 	}
 
@@ -1741,7 +1736,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomsTariffQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomsTariffQuantityType : QuantityType1
+	public class CustomsTariffQuantityType : QuantityType1
 	{
 	}
 
@@ -1752,7 +1747,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CrewQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CrewQuantityType : QuantityType1
+	public class CrewQuantityType : QuantityType1
 	{
 	}
 
@@ -1763,7 +1758,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CreditedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CreditedQuantityType : QuantityType1
+	public class CreditedQuantityType : QuantityType1
 	{
 	}
 
@@ -1774,7 +1769,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContentUnitQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContentUnitQuantityType : QuantityType1
+	public class ContentUnitQuantityType : QuantityType1
 	{
 	}
 
@@ -1785,7 +1780,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionWaterQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionWaterQuantityType : QuantityType1
+	public class ConsumptionWaterQuantityType : QuantityType1
 	{
 	}
 
@@ -1796,7 +1791,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionEnergyQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionEnergyQuantityType : QuantityType1
+	public class ConsumptionEnergyQuantityType : QuantityType1
 	{
 	}
 
@@ -1807,7 +1802,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumerUnitQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumerUnitQuantityType : QuantityType1
+	public class ConsumerUnitQuantityType : QuantityType1
 	{
 	}
 
@@ -1818,7 +1813,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsignmentQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsignmentQuantityType : QuantityType1
+	public class ConsignmentQuantityType : QuantityType1
 	{
 	}
 
@@ -1829,7 +1824,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChildConsignmentQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChildConsignmentQuantityType : QuantityType1
+	public class ChildConsignmentQuantityType : QuantityType1
 	{
 	}
 
@@ -1840,7 +1835,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChargeableQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChargeableQuantityType : QuantityType1
+	public class ChargeableQuantityType : QuantityType1
 	{
 	}
 
@@ -1851,7 +1846,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BatchQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BatchQuantityType : QuantityType1
+	public class BatchQuantityType : QuantityType1
 	{
 	}
 
@@ -1862,7 +1857,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BasicConsumedQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BasicConsumedQuantityType : QuantityType1
+	public class BasicConsumedQuantityType : QuantityType1
 	{
 	}
 
@@ -1873,7 +1868,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BaseQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BaseQuantityType : QuantityType1
+	public class BaseQuantityType : QuantityType1
 	{
 	}
 
@@ -1884,7 +1879,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BackorderQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BackorderQuantityType : QuantityType1
+	public class BackorderQuantityType : QuantityType1
 	{
 	}
 
@@ -1895,7 +1890,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualTemperatureReductionQuantity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualTemperatureReductionQuantityType : QuantityType1
+	public class ActualTemperatureReductionQuantityType : QuantityType1
 	{
 	}
 
@@ -1906,7 +1901,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValueMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValueMeasureType : MeasureType1
+	public class ValueMeasureType : MeasureType1
 	{
 	}
 
@@ -1917,7 +1912,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TareWeightMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TareWeightMeasureType : MeasureType1
+	public class TareWeightMeasureType : MeasureType1
 	{
 	}
 
@@ -1928,7 +1923,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SourceValueMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SourceValueMeasureType : MeasureType1
+	public class SourceValueMeasureType : MeasureType1
 	{
 	}
 
@@ -1939,7 +1934,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreEventNotificationDurationMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreEventNotificationDurationMeasureType : MeasureType1
+	public class PreEventNotificationDurationMeasureType : MeasureType1
 	{
 	}
 
@@ -1950,7 +1945,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PostEventNotificationDurationMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PostEventNotificationDurationMeasureType : MeasureType1
+	public class PostEventNotificationDurationMeasureType : MeasureType1
 	{
 	}
 
@@ -1961,7 +1956,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NetWeightMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NetWeightMeasureType : MeasureType1
+	public class NetWeightMeasureType : MeasureType1
 	{
 	}
 
@@ -1972,7 +1967,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NetVolumeMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NetVolumeMeasureType : MeasureType1
+	public class NetVolumeMeasureType : MeasureType1
 	{
 	}
 
@@ -1983,7 +1978,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NetTonnageMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NetTonnageMeasureType : MeasureType1
+	public class NetTonnageMeasureType : MeasureType1
 	{
 	}
 
@@ -1994,7 +1989,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NetNetWeightMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NetNetWeightMeasureType : MeasureType1
+	public class NetNetWeightMeasureType : MeasureType1
 	{
 	}
 
@@ -2005,7 +2000,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumMeasureType : MeasureType1
+	public class MinimumMeasureType : MeasureType1
 	{
 	}
 
@@ -2016,7 +2011,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "MeasureType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Measure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeasureType2 : MeasureType1
+	public class MeasureType2 : MeasureType1
 	{
 	}
 
@@ -2027,7 +2022,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumMeasureType : MeasureType1
+	public class MaximumMeasureType : MeasureType1
 	{
 	}
 
@@ -2038,7 +2033,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LongitudeMinutesMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LongitudeMinutesMeasureType : MeasureType1
+	public class LongitudeMinutesMeasureType : MeasureType1
 	{
 	}
 
@@ -2049,7 +2044,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LongitudeDegreesMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LongitudeDegreesMeasureType : MeasureType1
+	public class LongitudeDegreesMeasureType : MeasureType1
 	{
 	}
 
@@ -2060,7 +2055,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LoadingLengthMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LoadingLengthMeasureType : MeasureType1
+	public class LoadingLengthMeasureType : MeasureType1
 	{
 	}
 
@@ -2071,7 +2066,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LeadTimeMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LeadTimeMeasureType : MeasureType1
+	public class LeadTimeMeasureType : MeasureType1
 	{
 	}
 
@@ -2082,7 +2077,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatitudeMinutesMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatitudeMinutesMeasureType : MeasureType1
+	public class LatitudeMinutesMeasureType : MeasureType1
 	{
 	}
 
@@ -2093,7 +2088,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatitudeDegreesMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatitudeDegreesMeasureType : MeasureType1
+	public class LatitudeDegreesMeasureType : MeasureType1
 	{
 	}
 
@@ -2104,7 +2099,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GrossWeightMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GrossWeightMeasureType : MeasureType1
+	public class GrossWeightMeasureType : MeasureType1
 	{
 	}
 
@@ -2115,7 +2110,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GrossVolumeMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GrossVolumeMeasureType : MeasureType1
+	public class GrossVolumeMeasureType : MeasureType1
 	{
 	}
 
@@ -2126,7 +2121,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GrossTonnageMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GrossTonnageMeasureType : MeasureType1
+	public class GrossTonnageMeasureType : MeasureType1
 	{
 	}
 
@@ -2137,7 +2132,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DurationMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DurationMeasureType : MeasureType1
+	public class DurationMeasureType : MeasureType1
 	{
 	}
 
@@ -2148,7 +2143,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ComparedValueMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ComparedValueMeasureType : MeasureType1
+	public class ComparedValueMeasureType : MeasureType1
 	{
 	}
 
@@ -2159,7 +2154,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChargeableWeightMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChargeableWeightMeasureType : MeasureType1
+	public class ChargeableWeightMeasureType : MeasureType1
 	{
 	}
 
@@ -2170,7 +2165,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BaseUnitMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BaseUnitMeasureType : MeasureType1
+	public class BaseUnitMeasureType : MeasureType1
 	{
 	}
 
@@ -2181,7 +2176,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AltitudeMeasure", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AltitudeMeasureType : MeasureType1
+	public class AltitudeMeasureType : MeasureType1
 	{
 	}
 
@@ -2192,7 +2187,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VariantConstraintIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VariantConstraintIndicatorType : IndicatorType
+	public class VariantConstraintIndicatorType : IndicatorType
 	{
 	}
 
@@ -2203,7 +2198,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UnknownPriceIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UnknownPriceIndicatorType : IndicatorType
+	public class UnknownPriceIndicatorType : IndicatorType
 	{
 	}
 
@@ -2214,7 +2209,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ToOrderIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ToOrderIndicatorType : IndicatorType
+	public class ToOrderIndicatorType : IndicatorType
 	{
 	}
 
@@ -2225,7 +2220,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ThirdPartyPayerIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ThirdPartyPayerIndicatorType : IndicatorType
+	public class ThirdPartyPayerIndicatorType : IndicatorType
 	{
 	}
 
@@ -2236,7 +2231,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxIncludedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxIncludedIndicatorType : IndicatorType
+	public class TaxIncludedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2247,7 +2242,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxEvidenceIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxEvidenceIndicatorType : IndicatorType
+	public class TaxEvidenceIndicatorType : IndicatorType
 	{
 	}
 
@@ -2258,7 +2253,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StatusAvailableIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StatusAvailableIndicatorType : IndicatorType
+	public class StatusAvailableIndicatorType : IndicatorType
 	{
 	}
 
@@ -2269,7 +2264,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SplitConsignmentIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SplitConsignmentIndicatorType : IndicatorType
+	public class SplitConsignmentIndicatorType : IndicatorType
 	{
 	}
 
@@ -2280,7 +2275,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecialSecurityIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecialSecurityIndicatorType : IndicatorType
+	public class SpecialSecurityIndicatorType : IndicatorType
 	{
 	}
 
@@ -2291,7 +2286,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SoleProprietorshipIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SoleProprietorshipIndicatorType : IndicatorType
+	public class SoleProprietorshipIndicatorType : IndicatorType
 	{
 	}
 
@@ -2302,7 +2297,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReturnableMaterialIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReturnableMaterialIndicatorType : IndicatorType
+	public class ReturnableMaterialIndicatorType : IndicatorType
 	{
 	}
 
@@ -2313,7 +2308,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReturnabilityIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReturnabilityIndicatorType : IndicatorType
+	public class ReturnabilityIndicatorType : IndicatorType
 	{
 	}
 
@@ -2324,7 +2319,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequiredCurriculaIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequiredCurriculaIndicatorType : IndicatorType
+	public class RequiredCurriculaIndicatorType : IndicatorType
 	{
 	}
 
@@ -2335,7 +2330,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RefrigerationOnIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RefrigerationOnIndicatorType : IndicatorType
+	public class RefrigerationOnIndicatorType : IndicatorType
 	{
 	}
 
@@ -2346,7 +2341,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RefrigeratedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RefrigeratedIndicatorType : IndicatorType
+	public class RefrigeratedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2357,7 +2352,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PublishAwardIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PublishAwardIndicatorType : IndicatorType
+	public class PublishAwardIndicatorType : IndicatorType
 	{
 	}
 
@@ -2368,7 +2363,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrizeIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrizeIndicatorType : IndicatorType
+	public class PrizeIndicatorType : IndicatorType
 	{
 	}
 
@@ -2379,7 +2374,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PricingUpdateRequestIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PricingUpdateRequestIndicatorType : IndicatorType
+	public class PricingUpdateRequestIndicatorType : IndicatorType
 	{
 	}
 
@@ -2390,7 +2385,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrepaidIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrepaidIndicatorType : IndicatorType
+	public class PrepaidIndicatorType : IndicatorType
 	{
 	}
 
@@ -2401,7 +2396,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreCarriageIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreCarriageIndicatorType : IndicatorType
+	public class PreCarriageIndicatorType : IndicatorType
 	{
 	}
 
@@ -2412,7 +2407,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PowerIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PowerIndicatorType : IndicatorType
+	public class PowerIndicatorType : IndicatorType
 	{
 	}
 
@@ -2423,7 +2418,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartialDeliveryIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartialDeliveryIndicatorType : IndicatorType
+	public class PartialDeliveryIndicatorType : IndicatorType
 	{
 	}
 
@@ -2434,7 +2429,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OtherConditionsIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OtherConditionsIndicatorType : IndicatorType
+	public class OtherConditionsIndicatorType : IndicatorType
 	{
 	}
 
@@ -2445,7 +2440,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderableIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderableIndicatorType : IndicatorType
+	public class OrderableIndicatorType : IndicatorType
 	{
 	}
 
@@ -2456,7 +2451,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OptionalLineItemIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OptionalLineItemIndicatorType : IndicatorType
+	public class OptionalLineItemIndicatorType : IndicatorType
 	{
 	}
 
@@ -2467,7 +2462,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OnCarriageIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OnCarriageIndicatorType : IndicatorType
+	public class OnCarriageIndicatorType : IndicatorType
 	{
 	}
 
@@ -2478,7 +2473,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarkCareIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarkCareIndicatorType : IndicatorType
+	public class MarkCareIndicatorType : IndicatorType
 	{
 	}
 
@@ -2489,7 +2484,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarkAttentionIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarkAttentionIndicatorType : IndicatorType
+	public class MarkAttentionIndicatorType : IndicatorType
 	{
 	}
 
@@ -2500,7 +2495,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LivestockIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LivestockIndicatorType : IndicatorType
+	public class LivestockIndicatorType : IndicatorType
 	{
 	}
 
@@ -2511,7 +2506,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LegalStatusIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LegalStatusIndicatorType : IndicatorType
+	public class LegalStatusIndicatorType : IndicatorType
 	{
 	}
 
@@ -2522,7 +2517,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ItemUpdateRequestIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ItemUpdateRequestIndicatorType : IndicatorType
+	public class ItemUpdateRequestIndicatorType : IndicatorType
 	{
 	}
 
@@ -2533,7 +2528,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IndicationIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IndicationIndicatorType : IndicatorType
+	public class IndicationIndicatorType : IndicatorType
 	{
 	}
 
@@ -2544,7 +2539,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HumanFoodIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HumanFoodIndicatorType : IndicatorType
+	public class HumanFoodIndicatorType : IndicatorType
 	{
 	}
 
@@ -2555,7 +2550,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HumanFoodApprovedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HumanFoodApprovedIndicatorType : IndicatorType
+	public class HumanFoodApprovedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2566,7 +2561,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardousRiskIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HazardousRiskIndicatorType : IndicatorType
+	public class HazardousRiskIndicatorType : IndicatorType
 	{
 	}
 
@@ -2577,7 +2572,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GovernmentAgreementConstraintIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GovernmentAgreementConstraintIndicatorType : IndicatorType
+	public class GovernmentAgreementConstraintIndicatorType : IndicatorType
 	{
 	}
 
@@ -2588,7 +2583,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GeneralCargoIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GeneralCargoIndicatorType : IndicatorType
+	public class GeneralCargoIndicatorType : IndicatorType
 	{
 	}
 
@@ -2599,7 +2594,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FullyPaidSharesIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FullyPaidSharesIndicatorType : IndicatorType
+	public class FullyPaidSharesIndicatorType : IndicatorType
 	{
 	}
 
@@ -2610,7 +2605,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FrozenDocumentIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FrozenDocumentIndicatorType : IndicatorType
+	public class FrozenDocumentIndicatorType : IndicatorType
 	{
 	}
 
@@ -2621,7 +2616,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FreeOfChargeIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FreeOfChargeIndicatorType : IndicatorType
+	public class FreeOfChargeIndicatorType : IndicatorType
 	{
 	}
 
@@ -2632,7 +2627,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FollowupContractIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FollowupContractIndicatorType : IndicatorType
+	public class FollowupContractIndicatorType : IndicatorType
 	{
 	}
 
@@ -2643,7 +2638,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DangerousGoodsApprovedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DangerousGoodsApprovedIndicatorType : IndicatorType
+	public class DangerousGoodsApprovedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2654,7 +2649,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomsImportClassifiedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomsImportClassifiedIndicatorType : IndicatorType
+	public class CustomsImportClassifiedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2665,7 +2660,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CopyIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CopyIndicatorType : IndicatorType
+	public class CopyIndicatorType : IndicatorType
 	{
 	}
 
@@ -2676,7 +2671,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContainerizedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContainerizedIndicatorType : IndicatorType
+	public class ContainerizedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2687,7 +2682,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsolidatableIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsolidatableIndicatorType : IndicatorType
+	public class ConsolidatableIndicatorType : IndicatorType
 	{
 	}
 
@@ -2698,7 +2693,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CompletionIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CompletionIndicatorType : IndicatorType
+	public class CompletionIndicatorType : IndicatorType
 	{
 	}
 
@@ -2709,7 +2704,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChargeIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChargeIndicatorType : IndicatorType
+	public class ChargeIndicatorType : IndicatorType
 	{
 	}
 
@@ -2720,7 +2715,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CatalogueIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CatalogueIndicatorType : IndicatorType
+	public class CatalogueIndicatorType : IndicatorType
 	{
 	}
 
@@ -2731,7 +2726,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CandidateReductionConstraintIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CandidateReductionConstraintIndicatorType : IndicatorType
+	public class CandidateReductionConstraintIndicatorType : IndicatorType
 	{
 	}
 
@@ -2742,7 +2737,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BulkCargoIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BulkCargoIndicatorType : IndicatorType
+	public class BulkCargoIndicatorType : IndicatorType
 	{
 	}
 
@@ -2753,7 +2748,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BindingOnBuyerIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BindingOnBuyerIndicatorType : IndicatorType
+	public class BindingOnBuyerIndicatorType : IndicatorType
 	{
 	}
 
@@ -2764,7 +2759,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BasedOnConsensusIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BasedOnConsensusIndicatorType : IndicatorType
+	public class BasedOnConsensusIndicatorType : IndicatorType
 	{
 	}
 
@@ -2775,7 +2770,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BalanceBroughtForwardIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BalanceBroughtForwardIndicatorType : IndicatorType
+	public class BalanceBroughtForwardIndicatorType : IndicatorType
 	{
 	}
 
@@ -2786,7 +2781,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BackOrderAllowedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BackOrderAllowedIndicatorType : IndicatorType
+	public class BackOrderAllowedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2797,7 +2792,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AuctionConstraintIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AuctionConstraintIndicatorType : IndicatorType
+	public class AuctionConstraintIndicatorType : IndicatorType
 	{
 	}
 
@@ -2808,7 +2803,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AnimalFoodIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AnimalFoodIndicatorType : IndicatorType
+	public class AnimalFoodIndicatorType : IndicatorType
 	{
 	}
 
@@ -2819,7 +2814,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AnimalFoodApprovedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AnimalFoodApprovedIndicatorType : IndicatorType
+	public class AnimalFoodApprovedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2830,7 +2825,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdValoremIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdValoremIndicatorType : IndicatorType
+	public class AdValoremIndicatorType : IndicatorType
 	{
 	}
 
@@ -2841,7 +2836,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AcceptedIndicator", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AcceptedIndicatorType : IndicatorType
+	public class AcceptedIndicatorType : IndicatorType
 	{
 	}
 
@@ -2852,7 +2847,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VesselName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VesselNameType : NameType
+	public class VesselNameType : NameType
 	{
 	}
 
@@ -2863,7 +2858,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TechnicalName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TechnicalNameType : NameType
+	public class TechnicalNameType : NameType
 	{
 	}
 
@@ -2874,7 +2869,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StreetName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StreetNameType : NameType
+	public class StreetNameType : NameType
 	{
 	}
 
@@ -2885,7 +2880,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ServiceNameType : NameType
+	public class ServiceNameType : NameType
 	{
 	}
 
@@ -2896,7 +2891,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RoamingPartnerName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RoamingPartnerNameType : NameType
+	public class RoamingPartnerNameType : NameType
 	{
 	}
 
@@ -2907,7 +2902,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RetailEventName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RetailEventNameType : NameType
+	public class RetailEventNameType : NameType
 	{
 	}
 
@@ -2918,7 +2913,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationNameType : NameType
+	public class RegistrationNameType : NameType
 	{
 	}
 
@@ -2929,7 +2924,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OtherName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OtherNameType : NameType
+	public class OtherNameType : NameType
 	{
 	}
 
@@ -2940,7 +2935,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "NameType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Name", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NameType1 : NameType
+	public class NameType1 : NameType
 	{
 	}
 
@@ -2951,7 +2946,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ModelName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ModelNameType : NameType
+	public class ModelNameType : NameType
 	{
 	}
 
@@ -2962,7 +2957,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MiddleName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MiddleNameType : NameType
+	public class MiddleNameType : NameType
 	{
 	}
 
@@ -2973,7 +2968,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HolderName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HolderNameType : NameType
+	public class HolderNameType : NameType
 	{
 	}
 
@@ -2984,7 +2979,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FirstName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FirstNameType : NameType
+	public class FirstNameType : NameType
 	{
 	}
 
@@ -2995,7 +2990,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FileName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FileNameType : NameType
+	public class FileNameType : NameType
 	{
 	}
 
@@ -3006,7 +3001,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FamilyName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FamilyNameType : NameType
+	public class FamilyNameType : NameType
 	{
 	}
 
@@ -3017,7 +3012,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CitySubdivisionName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CitySubdivisionNameType : NameType
+	public class CitySubdivisionNameType : NameType
 	{
 	}
 
@@ -3028,7 +3023,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CityName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CityNameType : NameType
+	public class CityNameType : NameType
 	{
 	}
 
@@ -3039,7 +3034,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CategoryName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CategoryNameType : NameType
+	public class CategoryNameType : NameType
 	{
 	}
 
@@ -3050,7 +3045,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BuildingName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BuildingNameType : NameType
+	public class BuildingNameType : NameType
 	{
 	}
 
@@ -3061,7 +3056,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BrandName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BrandNameType : NameType
+	public class BrandNameType : NameType
 	{
 	}
 
@@ -3072,7 +3067,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BlockName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BlockNameType : NameType
+	public class BlockNameType : NameType
 	{
 	}
 
@@ -3083,7 +3078,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AliasName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AliasNameType : NameType
+	public class AliasNameType : NameType
 	{
 	}
 
@@ -3094,7 +3089,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalStreetName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdditionalStreetNameType : NameType
+	public class AdditionalStreetNameType : NameType
 	{
 	}
 
@@ -3106,7 +3101,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("XPath", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class XPathType : TextType1
+	public class XPathType : TextType1
 	{
 	}
 
@@ -3117,7 +3112,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WorkPhase", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WorkPhaseType : TextType1
+	public class WorkPhaseType : TextType1
 	{
 	}
 
@@ -3128,7 +3123,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Weight", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WeightType : TextType1
+	public class WeightType : TextType1
 	{
 	}
 
@@ -3139,7 +3134,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WarrantyInformation", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WarrantyInformationType : TextType1
+	public class WarrantyInformationType : TextType1
 	{
 	}
 
@@ -3150,7 +3145,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Value", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValueType : TextType1
+	public class ValueType : TextType1
 	{
 	}
 
@@ -3161,7 +3156,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValueQualifier", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValueQualifierType : TextType1
+	public class ValueQualifierType : TextType1
 	{
 	}
 
@@ -3172,7 +3167,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidateToolVersion", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidateToolVersionType : TextType1
+	public class ValidateToolVersionType : TextType1
 	{
 	}
 
@@ -3183,7 +3178,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidateTool", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidateToolType : TextType1
+	public class ValidateToolType : TextType1
 	{
 	}
 
@@ -3194,7 +3189,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidateProcess", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidateProcessType : TextType1
+	public class ValidateProcessType : TextType1
 	{
 	}
 
@@ -3205,7 +3200,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportationServiceDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportationServiceDescriptionType : TextType1
+	public class TransportationServiceDescriptionType : TextType1
 	{
 	}
 
@@ -3216,7 +3211,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportUserSpecialTerms", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportUserSpecialTermsType : TextType1
+	public class TransportUserSpecialTermsType : TextType1
 	{
 	}
 
@@ -3227,7 +3222,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportUserRemarks", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportUserRemarksType : TextType1
+	public class TransportUserRemarksType : TextType1
 	{
 	}
 
@@ -3238,7 +3233,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportServiceProviderSpecialTerms", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportServiceProviderSpecialTermsType : TextType1
+	public class TransportServiceProviderSpecialTermsType : TextType1
 	{
 	}
 
@@ -3249,7 +3244,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportServiceProviderRemarks", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportServiceProviderRemarksType : TextType1
+	public class TransportServiceProviderRemarksType : TextType1
 	{
 	}
 
@@ -3260,7 +3255,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TradingRestrictions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TradingRestrictionsType : TextType1
+	public class TradingRestrictionsType : TextType1
 	{
 	}
 
@@ -3271,7 +3266,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Title", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TitleType : TextType1
+	public class TitleType : TextType1
 	{
 	}
 
@@ -3282,7 +3277,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimingComplaint", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimingComplaintType : TextType1
+	public class TimingComplaintType : TextType1
 	{
 	}
 
@@ -3293,7 +3288,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimezoneOffset", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimezoneOffsetType : TextType1
+	public class TimezoneOffsetType : TextType1
 	{
 	}
 
@@ -3304,7 +3299,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimeAmount", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimeAmountType : TextType1
+	public class TimeAmountType : TextType1
 	{
 	}
 
@@ -3315,7 +3310,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TierRange", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TierRangeType : TextType1
+	public class TierRangeType : TextType1
 	{
 	}
 
@@ -3326,7 +3321,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "TextType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Text", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TextType2 : TextType1
+	public class TextType2 : TextType1
 	{
 	}
 
@@ -3337,7 +3332,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TestMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TestMethodType : TextType1
+	public class TestMethodType : TextType1
 	{
 	}
 
@@ -3348,7 +3343,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Telephone", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelephoneType : TextType1
+	public class TelephoneType : TextType1
 	{
 	}
 
@@ -3359,7 +3354,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Telefax", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelefaxType : TextType1
+	public class TelefaxType : TextType1
 	{
 	}
 
@@ -3370,7 +3365,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsSupplyType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsSupplyTypeType : TextType1
+	public class TelecommunicationsSupplyTypeType : TextType1
 	{
 	}
 
@@ -3381,7 +3376,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsServiceCategory", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsServiceCategoryType : TextType1
+	public class TelecommunicationsServiceCategoryType : TextType1
 	{
 	}
 
@@ -3392,7 +3387,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsServiceCall", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsServiceCallType : TextType1
+	public class TelecommunicationsServiceCallType : TextType1
 	{
 	}
 
@@ -3403,7 +3398,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TechnicalCommitteeDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TechnicalCommitteeDescriptionType : TextType1
+	public class TechnicalCommitteeDescriptionType : TextType1
 	{
 	}
 
@@ -3414,7 +3409,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxExemptionReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxExemptionReasonType : TextType1
+	public class TaxExemptionReasonType : TextType1
 	{
 	}
 
@@ -3425,7 +3420,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TariffDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TariffDescriptionType : TextType1
+	public class TariffDescriptionType : TextType1
 	{
 	}
 
@@ -3436,7 +3431,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SummaryDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SummaryDescriptionType : TextType1
+	public class SummaryDescriptionType : TextType1
 	{
 	}
 
@@ -3447,7 +3442,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubscriberType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubscriberTypeType : TextType1
+	public class SubscriberTypeType : TextType1
 	{
 	}
 
@@ -3458,7 +3453,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StatusReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StatusReasonType : TextType1
+	public class StatusReasonType : TextType1
 	{
 	}
 
@@ -3469,7 +3464,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecialTransportRequirements", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecialTransportRequirementsType : TextType1
+	public class SpecialTransportRequirementsType : TextType1
 	{
 	}
 
@@ -3480,7 +3475,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecialTerms", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecialTermsType : TextType1
+	public class SpecialTermsType : TextType1
 	{
 	}
 
@@ -3491,7 +3486,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecialServiceInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecialServiceInstructionsType : TextType1
+	public class SpecialServiceInstructionsType : TextType1
 	{
 	}
 
@@ -3502,7 +3497,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecialInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecialInstructionsType : TextType1
+	public class SpecialInstructionsType : TextType1
 	{
 	}
 
@@ -3513,7 +3508,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SignatureMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SignatureMethodType : TextType1
+	public class SignatureMethodType : TextType1
 	{
 	}
 
@@ -3524,7 +3519,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShipsRequirements", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShipsRequirementsType : TextType1
+	public class ShipsRequirementsType : TextType1
 	{
 	}
 
@@ -3535,7 +3530,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShippingMarks", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShippingMarksType : TextType1
+	public class ShippingMarksType : TextType1
 	{
 	}
 
@@ -3546,7 +3541,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ServiceTypeType : TextType1
+	public class ServiceTypeType : TextType1
 	{
 	}
 
@@ -3557,7 +3552,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceNumberCalled", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ServiceNumberCalledType : TextType1
+	public class ServiceNumberCalledType : TextType1
 	{
 	}
 
@@ -3568,7 +3563,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SealingPartyType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SealingPartyTypeType : TextType1
+	public class SealingPartyTypeType : TextType1
 	{
 	}
 
@@ -3579,7 +3574,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Room", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RoomType : TextType1
+	public class RoomType : TextType1
 	{
 	}
 
@@ -3590,7 +3585,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RoleDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RoleDescriptionType : TextType1
+	public class RoleDescriptionType : TextType1
 	{
 	}
 
@@ -3601,7 +3596,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Resolution", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResolutionType : TextType1
+	public class ResolutionType : TextType1
 	{
 	}
 
@@ -3612,7 +3607,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResidenceType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResidenceTypeType : TextType1
+	public class ResidenceTypeType : TextType1
 	{
 	}
 
@@ -3623,7 +3618,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReplenishmentOwnerDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReplenishmentOwnerDescriptionType : TextType1
+	public class ReplenishmentOwnerDescriptionType : TextType1
 	{
 	}
 
@@ -3634,7 +3629,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Remarks", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RemarksType : TextType1
+	public class RemarksType : TextType1
 	{
 	}
 
@@ -3645,7 +3640,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RejectionNote", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RejectionNoteType : TextType1
+	public class RejectionNoteType : TextType1
 	{
 	}
 
@@ -3656,7 +3651,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RejectReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RejectReasonType : TextType1
+	public class RejectReasonType : TextType1
 	{
 	}
 
@@ -3667,7 +3662,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegulatoryDomain", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegulatoryDomainType : TextType1
+	public class RegulatoryDomainType : TextType1
 	{
 	}
 
@@ -3678,7 +3673,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationNationality", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationNationalityType : TextType1
+	public class RegistrationNationalityType : TextType1
 	{
 	}
 
@@ -3689,7 +3684,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Region", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegionType : TextType1
+	public class RegionType : TextType1
 	{
 	}
 
@@ -3700,7 +3695,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Reference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferenceType : TextType1
+	public class ReferenceType : TextType1
 	{
 	}
 
@@ -3711,7 +3706,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Rank", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RankType : TextType1
+	public class RankType : TextType1
 	{
 	}
 
@@ -3722,7 +3717,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Purpose", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PurposeType : TextType1
+	public class PurposeType : TextType1
 	{
 	}
 
@@ -3733,7 +3728,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcessReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcessReasonType : TextType1
+	public class ProcessReasonType : TextType1
 	{
 	}
 
@@ -3744,7 +3739,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcessDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcessDescriptionType : TextType1
+	public class ProcessDescriptionType : TextType1
 	{
 	}
 
@@ -3755,7 +3750,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrizeDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrizeDescriptionType : TextType1
+	public class PrizeDescriptionType : TextType1
 	{
 	}
 
@@ -3766,7 +3761,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Priority", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriorityType : TextType1
+	public class PriorityType : TextType1
 	{
 	}
 
@@ -3777,7 +3772,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrintQualifier", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrintQualifierType : TextType1
+	public class PrintQualifierType : TextType1
 	{
 	}
 
@@ -3788,7 +3783,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceTypeType : TextType1
+	public class PriceTypeType : TextType1
 	{
 	}
 
@@ -3799,7 +3794,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceRevisionFormulaDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceRevisionFormulaDescriptionType : TextType1
+	public class PriceRevisionFormulaDescriptionType : TextType1
 	{
 	}
 
@@ -3810,7 +3805,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceChangeReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceChangeReasonType : TextType1
+	public class PriceChangeReasonType : TextType1
 	{
 	}
 
@@ -3821,7 +3816,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousMeterReadingMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousMeterReadingMethodType : TextType1
+	public class PreviousMeterReadingMethodType : TextType1
 	{
 	}
 
@@ -3832,7 +3827,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Postbox", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PostboxType : TextType1
+	public class PostboxType : TextType1
 	{
 	}
 
@@ -3843,7 +3838,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PostalZone", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PostalZoneType : TextType1
+	public class PostalZoneType : TextType1
 	{
 	}
 
@@ -3854,7 +3849,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PlotIdentification", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PlotIdentificationType : TextType1
+	public class PlotIdentificationType : TextType1
 	{
 	}
 
@@ -3865,7 +3860,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PlacardNotation", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PlacardNotationType : TextType1
+	public class PlacardNotationType : TextType1
 	{
 	}
 
@@ -3876,7 +3871,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PlacardEndorsement", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PlacardEndorsementType : TextType1
+	public class PlacardEndorsementType : TextType1
 	{
 	}
 
@@ -3887,7 +3882,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PhoneNumber", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PhoneNumberType : TextType1
+	public class PhoneNumberType : TextType1
 	{
 	}
 
@@ -3898,7 +3893,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PersonalSituation", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PersonalSituationType : TextType1
+	public class PersonalSituationType : TextType1
 	{
 	}
 
@@ -3909,7 +3904,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentOrderReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentOrderReferenceType : TextType1
+	public class PaymentOrderReferenceType : TextType1
 	{
 	}
 
@@ -3920,7 +3915,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentNote", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentNoteType : TextType1
+	public class PaymentNoteType : TextType1
 	{
 	}
 
@@ -3931,7 +3926,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentDescriptionType : TextType1
+	public class PaymentDescriptionType : TextType1
 	{
 	}
 
@@ -3942,7 +3937,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PayerReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PayerReferenceType : TextType1
+	public class PayerReferenceType : TextType1
 	{
 	}
 
@@ -3953,7 +3948,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PayPerView", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PayPerViewType : TextType1
+	public class PayPerViewType : TextType1
 	{
 	}
 
@@ -3964,7 +3959,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Password", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PasswordType : TextType1
+	public class PasswordType : TextType1
 	{
 	}
 
@@ -3975,7 +3970,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartyType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartyTypeType : TextType1
+	public class PartyTypeType : TextType1
 	{
 	}
 
@@ -3986,7 +3981,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackingMaterial", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackingMaterialType : TextType1
+	public class PackingMaterialType : TextType1
 	{
 	}
 
@@ -3997,7 +3992,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OutstandingReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OutstandingReasonType : TextType1
+	public class OutstandingReasonType : TextType1
 	{
 	}
 
@@ -4008,7 +4003,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OtherInstruction", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OtherInstructionType : TextType1
+	public class OtherInstructionType : TextType1
 	{
 	}
 
@@ -4019,7 +4014,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrganizationDepartment", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrganizationDepartmentType : TextType1
+	public class OrganizationDepartmentType : TextType1
 	{
 	}
 
@@ -4030,7 +4025,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderableUnit", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderableUnitType : TextType1
+	public class OrderableUnitType : TextType1
 	{
 	}
 
@@ -4041,7 +4036,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OptionsDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OptionsDescriptionType : TextType1
+	public class OptionsDescriptionType : TextType1
 	{
 	}
 
@@ -4052,7 +4047,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OneTimeChargeType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OneTimeChargeTypeType : TextType1
+	public class OneTimeChargeTypeType : TextType1
 	{
 	}
 
@@ -4063,7 +4058,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Note", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NoteType : TextType1
+	public class NoteType : TextType1
 	{
 	}
 
@@ -4074,7 +4069,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NegotiationDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NegotiationDescriptionType : TextType1
+	public class NegotiationDescriptionType : TextType1
 	{
 	}
 
@@ -4085,7 +4080,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NameSuffix", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NameSuffixType : TextType1
+	public class NameSuffixType : TextType1
 	{
 	}
 
@@ -4096,7 +4091,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MovieTitle", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MovieTitleType : TextType1
+	public class MovieTitleType : TextType1
 	{
 	}
 
@@ -4107,7 +4102,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MonetaryScope", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MonetaryScopeType : TextType1
+	public class MonetaryScopeType : TextType1
 	{
 	}
 
@@ -4118,7 +4113,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumValue", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumValueType : TextType1
+	public class MinimumValueType : TextType1
 	{
 	}
 
@@ -4129,7 +4124,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MinimumImprovementBid", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MinimumImprovementBidType : TextType1
+	public class MinimumImprovementBidType : TextType1
 	{
 	}
 
@@ -4140,7 +4135,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterReadingType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterReadingTypeType : TextType1
+	public class MeterReadingTypeType : TextType1
 	{
 	}
 
@@ -4151,7 +4146,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterReadingComments", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterReadingCommentsType : TextType1
+	public class MeterReadingCommentsType : TextType1
 	{
 	}
 
@@ -4162,7 +4157,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterNumber", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterNumberType : TextType1
+	public class MeterNumberType : TextType1
 	{
 	}
 
@@ -4173,7 +4168,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterNameType : TextType1
+	public class MeterNameType : TextType1
 	{
 	}
 
@@ -4184,7 +4179,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterConstant", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterConstantType : TextType1
+	public class MeterConstantType : TextType1
 	{
 	}
 
@@ -4195,7 +4190,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MaximumValue", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MaximumValueType : TextType1
+	public class MaximumValueType : TextType1
 	{
 	}
 
@@ -4206,7 +4201,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarkCare", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarkCareType : TextType1
+	public class MarkCareType : TextType1
 	{
 	}
 
@@ -4217,7 +4212,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarkAttention", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarkAttentionType : TextType1
+	public class MarkAttentionType : TextType1
 	{
 	}
 
@@ -4228,7 +4223,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LowTendersDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LowTendersDescriptionType : TextType1
+	public class LowTendersDescriptionType : TextType1
 	{
 	}
 
@@ -4239,7 +4234,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LossRisk", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LossRiskType : TextType1
+	public class LossRiskType : TextType1
 	{
 	}
 
@@ -4250,7 +4245,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Login", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LoginType : TextType1
+	public class LoginType : TextType1
 	{
 	}
 
@@ -4261,7 +4256,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Location", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LocationType : TextType1
+	public class LocationType : TextType1
 	{
 	}
 
@@ -4272,7 +4267,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ListValue", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ListValueType : TextType1
+	public class ListValueType : TextType1
 	{
 	}
 
@@ -4283,7 +4278,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Line", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineType : TextType1
+	public class LineType : TextType1
 	{
 	}
 
@@ -4294,7 +4289,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LimitationDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LimitationDescriptionType : TextType1
+	public class LimitationDescriptionType : TextType1
 	{
 	}
 
@@ -4305,7 +4300,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LegalReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LegalReferenceType : TextType1
+	public class LegalReferenceType : TextType1
 	{
 	}
 
@@ -4316,7 +4311,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestMeterReadingMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestMeterReadingMethodType : TextType1
+	public class LatestMeterReadingMethodType : TextType1
 	{
 	}
 
@@ -4327,7 +4322,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Keyword", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class KeywordType : TextType1
+	public class KeywordType : TextType1
 	{
 	}
 
@@ -4338,7 +4333,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Justification", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class JustificationType : TextType1
+	public class JustificationType : TextType1
 	{
 	}
 
@@ -4349,7 +4344,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("JustificationDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class JustificationDescriptionType : TextType1
+	public class JustificationDescriptionType : TextType1
 	{
 	}
 
@@ -4360,7 +4355,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("JobTitle", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class JobTitleType : TextType1
+	public class JobTitleType : TextType1
 	{
 	}
 
@@ -4371,7 +4366,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InvoicingPartyReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InvoicingPartyReferenceType : TextType1
+	public class InvoicingPartyReferenceType : TextType1
 	{
 	}
 
@@ -4382,7 +4377,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Instructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InstructionsType : TextType1
+	public class InstructionsType : TextType1
 	{
 	}
 
@@ -4393,7 +4388,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InstructionNote", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InstructionNoteType : TextType1
+	public class InstructionNoteType : TextType1
 	{
 	}
 
@@ -4404,7 +4399,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InhouseMail", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InhouseMailType : TextType1
+	public class InhouseMailType : TextType1
 	{
 	}
 
@@ -4415,7 +4410,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Information", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InformationType : TextType1
+	public class InformationType : TextType1
 	{
 	}
 
@@ -4426,7 +4421,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HeatingType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HeatingTypeType : TextType1
+	public class HeatingTypeType : TextType1
 	{
 	}
 
@@ -4437,7 +4432,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HaulageInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HaulageInstructionsType : TextType1
+	public class HaulageInstructionsType : TextType1
 	{
 	}
 
@@ -4448,7 +4443,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HashAlgorithmMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HashAlgorithmMethodType : TextType1
+	public class HashAlgorithmMethodType : TextType1
 	{
 	}
 
@@ -4459,7 +4454,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HandlingInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HandlingInstructionsType : TextType1
+	public class HandlingInstructionsType : TextType1
 	{
 	}
 
@@ -4470,7 +4465,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FundingProgram", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FundingProgramType : TextType1
+	public class FundingProgramType : TextType1
 	{
 	}
 
@@ -4481,7 +4476,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Frequency", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FrequencyType : TextType1
+	public class FrequencyType : TextType1
 	{
 	}
 
@@ -4492,7 +4487,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForwarderServiceInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ForwarderServiceInstructionsType : TextType1
+	public class ForwarderServiceInstructionsType : TextType1
 	{
 	}
 
@@ -4503,7 +4498,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Floor", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FloorType : TextType1
+	public class FloorType : TextType1
 	{
 	}
 
@@ -4514,7 +4509,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FeeDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FeeDescriptionType : TextType1
+	public class FeeDescriptionType : TextType1
 	{
 	}
 
@@ -4525,7 +4520,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Extension", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExtensionType : TextType1
+	public class ExtensionType : TextType1
 	{
 	}
 
@@ -4536,7 +4531,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Expression", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpressionType : TextType1
+	public class ExpressionType : TextType1
 	{
 	}
 
@@ -4547,7 +4542,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExemptionReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExemptionReasonType : TextType1
+	public class ExemptionReasonType : TextType1
 	{
 	}
 
@@ -4558,7 +4553,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExclusionReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExclusionReasonType : TextType1
+	public class ExclusionReasonType : TextType1
 	{
 	}
 
@@ -4569,7 +4564,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ElectronicMail", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ElectronicMailType : TextType1
+	public class ElectronicMailType : TextType1
 	{
 	}
 
@@ -4580,7 +4575,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ElectronicDeviceDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ElectronicDeviceDescriptionType : TextType1
+	public class ElectronicDeviceDescriptionType : TextType1
 	{
 	}
 
@@ -4591,7 +4586,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Duty", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DutyType : TextType1
+	public class DutyType : TextType1
 	{
 	}
 
@@ -4602,7 +4597,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentTypeType : TextType1
+	public class DocumentTypeType : TextType1
 	{
 	}
 
@@ -4613,7 +4608,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentStatusReasonDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentStatusReasonDescriptionType : TextType1
+	public class DocumentStatusReasonDescriptionType : TextType1
 	{
 	}
 
@@ -4624,7 +4619,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentHash", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentHashType : TextType1
+	public class DocumentHashType : TextType1
 	{
 	}
 
@@ -4635,7 +4630,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentDescriptionType : TextType1
+	public class DocumentDescriptionType : TextType1
 	{
 	}
 
@@ -4646,7 +4641,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("District", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DistrictType : TextType1
+	public class DistrictType : TextType1
 	{
 	}
 
@@ -4657,7 +4652,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Description", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DescriptionType : TextType1
+	public class DescriptionType : TextType1
 	{
 	}
 
@@ -4668,7 +4663,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Department", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DepartmentType : TextType1
+	public class DepartmentType : TextType1
 	{
 	}
 
@@ -4679,7 +4674,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DemurrageInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DemurrageInstructionsType : TextType1
+	public class DemurrageInstructionsType : TextType1
 	{
 	}
 
@@ -4690,7 +4685,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeliveryInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeliveryInstructionsType : TextType1
+	public class DeliveryInstructionsType : TextType1
 	{
 	}
 
@@ -4701,7 +4696,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DataSendingCapability", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DataSendingCapabilityType : TextType1
+	public class DataSendingCapabilityType : TextType1
 	{
 	}
 
@@ -4712,7 +4707,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DamageRemarks", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DamageRemarksType : TextType1
+	public class DamageRemarksType : TextType1
 	{
 	}
 
@@ -4723,7 +4718,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomsClearanceServiceInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomsClearanceServiceInstructionsType : TextType1
+	public class CustomsClearanceServiceInstructionsType : TextType1
 	{
 	}
 
@@ -4734,7 +4729,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomerReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomerReferenceType : TextType1
+	public class CustomerReferenceType : TextType1
 	{
 	}
 
@@ -4745,7 +4740,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CurrentChargeType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CurrentChargeTypeType : TextType1
+	public class CurrentChargeTypeType : TextType1
 	{
 	}
 
@@ -4756,7 +4751,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CountrySubentity", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CountrySubentityType : TextType1
+	public class CountrySubentityType : TextType1
 	{
 	}
 
@@ -4767,7 +4762,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorrectionType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorrectionTypeType : TextType1
+	public class CorrectionTypeType : TextType1
 	{
 	}
 
@@ -4778,7 +4773,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractTypeType : TextType1
+	public class ContractTypeType : TextType1
 	{
 	}
 
@@ -4789,7 +4784,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractSubdivision", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractSubdivisionType : TextType1
+	public class ContractSubdivisionType : TextType1
 	{
 	}
 
@@ -4800,7 +4795,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractNameType : TextType1
+	public class ContractNameType : TextType1
 	{
 	}
 
@@ -4811,7 +4806,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Content", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContentType : TextType1
+	public class ContentType : TextType1
 	{
 	}
 
@@ -4822,7 +4817,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionTypeType : TextType1
+	public class ConsumptionTypeType : TextType1
 	{
 	}
 
@@ -4833,7 +4828,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionLevel", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionLevelType : TextType1
+	public class ConsumptionLevelType : TextType1
 	{
 	}
 
@@ -4844,7 +4839,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumersEnergyLevel", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumersEnergyLevelType : TextType1
+	public class ConsumersEnergyLevelType : TextType1
 	{
 	}
 
@@ -4855,7 +4850,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Conditions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConditionsType : TextType1
+	public class ConditionsType : TextType1
 	{
 	}
 
@@ -4866,7 +4861,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConditionsDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConditionsDescriptionType : TextType1
+	public class ConditionsDescriptionType : TextType1
 	{
 	}
 
@@ -4877,7 +4872,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Condition", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConditionType : TextType1
+	public class ConditionType : TextType1
 	{
 	}
 
@@ -4888,7 +4883,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CompanyLegalForm", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CompanyLegalFormType : TextType1
+	public class CompanyLegalFormType : TextType1
 	{
 	}
 
@@ -4899,7 +4894,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Comment", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CommentType : TextType1
+	public class CommentType : TextType1
 	{
 	}
 
@@ -4910,7 +4905,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CodeValue", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CodeValueType : TextType1
+	public class CodeValueType : TextType1
 	{
 	}
 
@@ -4921,7 +4916,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Characteristics", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CharacteristicsType : TextType1
+	public class CharacteristicsType : TextType1
 	{
 	}
 
@@ -4932,7 +4927,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Channel", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChannelType : TextType1
+	public class ChannelType : TextType1
 	{
 	}
 
@@ -4943,7 +4938,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChangeConditions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChangeConditionsType : TextType1
+	public class ChangeConditionsType : TextType1
 	{
 	}
 
@@ -4954,7 +4949,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CertificateType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CertificateTypeType : TextType1
+	public class CertificateTypeType : TextType1
 	{
 	}
 
@@ -4965,7 +4960,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CarrierServiceInstructions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CarrierServiceInstructionsType : TextType1
+	public class CarrierServiceInstructionsType : TextType1
 	{
 	}
 
@@ -4976,7 +4971,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CanonicalizationMethod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CanonicalizationMethodType : TextType1
+	public class CanonicalizationMethodType : TextType1
 	{
 	}
 
@@ -4987,7 +4982,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CandidateStatement", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CandidateStatementType : TextType1
+	public class CandidateStatementType : TextType1
 	{
 	}
 
@@ -4998,7 +4993,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CancellationNote", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CancellationNoteType : TextType1
+	public class CancellationNoteType : TextType1
 	{
 	}
 
@@ -5009,7 +5004,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CalculationExpression", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CalculationExpressionType : TextType1
+	public class CalculationExpressionType : TextType1
 	{
 	}
 
@@ -5020,7 +5015,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BuyerReference", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BuyerReferenceType : TextType1
+	public class BuyerReferenceType : TextType1
 	{
 	}
 
@@ -5031,7 +5026,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BuildingNumber", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BuildingNumberType : TextType1
+	public class BuildingNumberType : TextType1
 	{
 	}
 
@@ -5042,7 +5037,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BirthplaceName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BirthplaceNameType : TextType1
+	public class BirthplaceNameType : TextType1
 	{
 	}
 
@@ -5053,7 +5048,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BackorderReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BackorderReasonType : TextType1
+	public class BackorderReasonType : TextType1
 	{
 	}
 
@@ -5064,7 +5059,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardingCriterionDescriptionType : TextType1
+	public class AwardingCriterionDescriptionType : TextType1
 	{
 	}
 
@@ -5075,7 +5070,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ApprovalStatus", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ApprovalStatusType : TextType1
+	public class ApprovalStatusType : TextType1
 	{
 	}
 
@@ -5086,7 +5081,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AllowanceChargeReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AllowanceChargeReasonType : TextType1
+	public class AllowanceChargeReasonType : TextType1
 	{
 	}
 
@@ -5097,7 +5092,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AgencyName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AgencyNameType : TextType1
+	public class AgencyNameType : TextType1
 	{
 	}
 
@@ -5108,7 +5103,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalInformation", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdditionalInformationType : TextType1
+	public class AdditionalInformationType : TextType1
 	{
 	}
 
@@ -5119,7 +5114,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalConditions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdditionalConditionsType : TextType1
+	public class AdditionalConditionsType : TextType1
 	{
 	}
 
@@ -5130,7 +5125,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActivityType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActivityTypeType : TextType1
+	public class ActivityTypeType : TextType1
 	{
 	}
 
@@ -5141,7 +5136,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountingCost", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AccountingCostType : TextType1
+	public class AccountingCostType : TextType1
 	{
 	}
 
@@ -5152,7 +5147,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AcceptedVariantsDescription", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AcceptedVariantsDescriptionType : TextType1
+	public class AcceptedVariantsDescriptionType : TextType1
 	{
 	}
 
@@ -5163,7 +5158,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WorkPhaseCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WorkPhaseCodeType : CodeType1
+	public class WorkPhaseCodeType : CodeType1
 	{
 	}
 
@@ -5174,7 +5169,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WeightingAlgorithmCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WeightingAlgorithmCodeType : CodeType1
+	public class WeightingAlgorithmCodeType : CodeType1
 	{
 	}
 
@@ -5185,7 +5180,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WeekDayCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WeekDayCodeType : CodeType1
+	public class WeekDayCodeType : CodeType1
 	{
 	}
 
@@ -5196,7 +5191,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidationResultCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidationResultCodeType : CodeType1
+	public class ValidationResultCodeType : CodeType1
 	{
 	}
 
@@ -5207,7 +5202,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UtilityStatementTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UtilityStatementTypeCodeType : CodeType1
+	public class UtilityStatementTypeCodeType : CodeType1
 	{
 	}
 
@@ -5218,7 +5213,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UrgencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UrgencyCodeType : CodeType1
+	public class UrgencyCodeType : CodeType1
 	{
 	}
 
@@ -5229,7 +5224,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UNDGCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UNDGCodeType : CodeType1
+	public class UNDGCodeType : CodeType1
 	{
 	}
 
@@ -5240,7 +5235,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TypeCodeType : CodeType1
+	public class TypeCodeType : CodeType1
 	{
 	}
 
@@ -5251,7 +5246,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportationStatusTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportationStatusTypeCodeType : CodeType1
+	public class TransportationStatusTypeCodeType : CodeType1
 	{
 	}
 
@@ -5262,7 +5257,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportServiceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportServiceCodeType : CodeType1
+	public class TransportServiceCodeType : CodeType1
 	{
 	}
 
@@ -5273,7 +5268,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportModeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportModeCodeType : CodeType1
+	public class TransportModeCodeType : CodeType1
 	{
 	}
 
@@ -5284,7 +5279,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportMeansTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportMeansTypeCodeType : CodeType1
+	public class TransportMeansTypeCodeType : CodeType1
 	{
 	}
 
@@ -5295,7 +5290,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportHandlingUnitTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportHandlingUnitTypeCodeType : CodeType1
+	public class TransportHandlingUnitTypeCodeType : CodeType1
 	{
 	}
 
@@ -5306,7 +5301,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportExecutionStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportExecutionStatusCodeType : CodeType1
+	public class TransportExecutionStatusCodeType : CodeType1
 	{
 	}
 
@@ -5317,7 +5312,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportEventTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportEventTypeCodeType : CodeType1
+	public class TransportEventTypeCodeType : CodeType1
 	{
 	}
 
@@ -5328,7 +5323,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportEquipmentTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportEquipmentTypeCodeType : CodeType1
+	public class TransportEquipmentTypeCodeType : CodeType1
 	{
 	}
 
@@ -5339,7 +5334,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportEmergencyCardCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportEmergencyCardCodeType : CodeType1
+	public class TransportEmergencyCardCodeType : CodeType1
 	{
 	}
 
@@ -5350,7 +5345,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportAuthorizationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportAuthorizationCodeType : CodeType1
+	public class TransportAuthorizationCodeType : CodeType1
 	{
 	}
 
@@ -5361,7 +5356,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransitDirectionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransitDirectionCodeType : CodeType1
+	public class TransitDirectionCodeType : CodeType1
 	{
 	}
 
@@ -5372,7 +5367,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TradeServiceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TradeServiceCodeType : CodeType1
+	public class TradeServiceCodeType : CodeType1
 	{
 	}
 
@@ -5383,7 +5378,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TradeItemPackingLabelingTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TradeItemPackingLabelingTypeCodeType : CodeType1
+	public class TradeItemPackingLabelingTypeCodeType : CodeType1
 	{
 	}
 
@@ -5394,7 +5389,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TrackingDeviceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TrackingDeviceCodeType : CodeType1
+	public class TrackingDeviceCodeType : CodeType1
 	{
 	}
 
@@ -5405,7 +5400,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimingComplaintCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimingComplaintCodeType : CodeType1
+	public class TimingComplaintCodeType : CodeType1
 	{
 	}
 
@@ -5416,7 +5411,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TimeFrequencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TimeFrequencyCodeType : CodeType1
+	public class TimeFrequencyCodeType : CodeType1
 	{
 	}
 
@@ -5427,7 +5422,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ThresholdValueComparisonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ThresholdValueComparisonCodeType : CodeType1
+	public class ThresholdValueComparisonCodeType : CodeType1
 	{
 	}
 
@@ -5438,7 +5433,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TendererRoleCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TendererRoleCodeType : CodeType1
+	public class TendererRoleCodeType : CodeType1
 	{
 	}
 
@@ -5449,7 +5444,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TendererRequirementTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TendererRequirementTypeCodeType : CodeType1
+	public class TendererRequirementTypeCodeType : CodeType1
 	{
 	}
 
@@ -5460,7 +5455,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TenderTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TenderTypeCodeType : CodeType1
+	public class TenderTypeCodeType : CodeType1
 	{
 	}
 
@@ -5471,7 +5466,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TenderResultCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TenderResultCodeType : CodeType1
+	public class TenderResultCodeType : CodeType1
 	{
 	}
 
@@ -5482,7 +5477,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TenderEnvelopeTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TenderEnvelopeTypeCodeType : CodeType1
+	public class TenderEnvelopeTypeCodeType : CodeType1
 	{
 	}
 
@@ -5493,7 +5488,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsSupplyTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsSupplyTypeCodeType : CodeType1
+	public class TelecommunicationsSupplyTypeCodeType : CodeType1
 	{
 	}
 
@@ -5504,7 +5499,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsServiceCategoryCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsServiceCategoryCodeType : CodeType1
+	public class TelecommunicationsServiceCategoryCodeType : CodeType1
 	{
 	}
 
@@ -5515,7 +5510,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TelecommunicationsServiceCallCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TelecommunicationsServiceCallCodeType : CodeType1
+	public class TelecommunicationsServiceCallCodeType : CodeType1
 	{
 	}
 
@@ -5526,7 +5521,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxTypeCodeType : CodeType1
+	public class TaxTypeCodeType : CodeType1
 	{
 	}
 
@@ -5537,7 +5532,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxLevelCodeType : CodeType1
+	public class TaxLevelCodeType : CodeType1
 	{
 	}
 
@@ -5548,7 +5543,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxExemptionReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxExemptionReasonCodeType : CodeType1
+	public class TaxExemptionReasonCodeType : CodeType1
 	{
 	}
 
@@ -5559,7 +5554,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxCurrencyCodeType : CodeType1
+	public class TaxCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -5570,7 +5565,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TariffCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TariffCodeType : CodeType1
+	public class TariffCodeType : CodeType1
 	{
 	}
 
@@ -5581,7 +5576,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TariffClassCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TariffClassCodeType : CodeType1
+	public class TariffClassCodeType : CodeType1
 	{
 	}
 
@@ -5592,7 +5587,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TargetCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TargetCurrencyCodeType : CodeType1
+	public class TargetCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -5603,7 +5598,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SupplyChainActivityTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SupplyChainActivityTypeCodeType : CodeType1
+	public class SupplyChainActivityTypeCodeType : CodeType1
 	{
 	}
 
@@ -5614,7 +5609,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubstitutionStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubstitutionStatusCodeType : CodeType1
+	public class SubstitutionStatusCodeType : CodeType1
 	{
 	}
 
@@ -5625,7 +5620,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubscriberTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubscriberTypeCodeType : CodeType1
+	public class SubscriberTypeCodeType : CodeType1
 	{
 	}
 
@@ -5636,7 +5631,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubmissionMethodCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubmissionMethodCodeType : CodeType1
+	public class SubmissionMethodCodeType : CodeType1
 	{
 	}
 
@@ -5647,7 +5642,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubcontractingConditionsCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubcontractingConditionsCodeType : CodeType1
+	public class SubcontractingConditionsCodeType : CodeType1
 	{
 	}
 
@@ -5658,7 +5653,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StatusReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StatusReasonCodeType : CodeType1
+	public class StatusReasonCodeType : CodeType1
 	{
 	}
 
@@ -5669,7 +5664,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StatusCodeType : CodeType1
+	public class StatusCodeType : CodeType1
 	{
 	}
 
@@ -5680,7 +5675,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StatementTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StatementTypeCodeType : CodeType1
+	public class StatementTypeCodeType : CodeType1
 	{
 	}
 
@@ -5691,7 +5686,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecificationTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecificationTypeCodeType : CodeType1
+	public class SpecificationTypeCodeType : CodeType1
 	{
 	}
 
@@ -5702,7 +5697,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SourceCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SourceCurrencyCodeType : CodeType1
+	public class SourceCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -5713,7 +5708,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SizeTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SizeTypeCodeType : CodeType1
+	public class SizeTypeCodeType : CodeType1
 	{
 	}
 
@@ -5724,7 +5719,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShortageActionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShortageActionCodeType : CodeType1
+	public class ShortageActionCodeType : CodeType1
 	{
 	}
 
@@ -5735,7 +5730,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShippingPriorityLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShippingPriorityLevelCodeType : CodeType1
+	public class ShippingPriorityLevelCodeType : CodeType1
 	{
 	}
 
@@ -5746,7 +5741,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ServiceTypeCodeType : CodeType1
+	public class ServiceTypeCodeType : CodeType1
 	{
 	}
 
@@ -5757,7 +5752,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceInformationPreferenceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ServiceInformationPreferenceCodeType : CodeType1
+	public class ServiceInformationPreferenceCodeType : CodeType1
 	{
 	}
 
@@ -5768,7 +5763,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SecurityClassificationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SecurityClassificationCodeType : CodeType1
+	public class SecurityClassificationCodeType : CodeType1
 	{
 	}
 
@@ -5779,7 +5774,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SealStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SealStatusCodeType : CodeType1
+	public class SealStatusCodeType : CodeType1
 	{
 	}
 
@@ -5790,7 +5785,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SealIssuerTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SealIssuerTypeCodeType : CodeType1
+	public class SealIssuerTypeCodeType : CodeType1
 	{
 	}
 
@@ -5801,7 +5796,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RoleCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RoleCodeType : CodeType1
+	public class RoleCodeType : CodeType1
 	{
 	}
 
@@ -5812,7 +5807,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RevisionStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RevisionStatusCodeType : CodeType1
+	public class RevisionStatusCodeType : CodeType1
 	{
 	}
 
@@ -5823,7 +5818,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RetailEventStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RetailEventStatusCodeType : CodeType1
+	public class RetailEventStatusCodeType : CodeType1
 	{
 	}
 
@@ -5834,7 +5829,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResponseCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResponseCodeType : CodeType1
+	public class ResponseCodeType : CodeType1
 	{
 	}
 
@@ -5845,7 +5840,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResolutionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResolutionCodeType : CodeType1
+	public class ResolutionCodeType : CodeType1
 	{
 	}
 
@@ -5856,7 +5851,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResidenceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResidenceTypeCodeType : CodeType1
+	public class ResidenceTypeCodeType : CodeType1
 	{
 	}
 
@@ -5867,7 +5862,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedInvoiceCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestedInvoiceCurrencyCodeType : CodeType1
+	public class RequestedInvoiceCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -5878,7 +5873,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReminderTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReminderTypeCodeType : CodeType1
+	public class ReminderTypeCodeType : CodeType1
 	{
 	}
 
@@ -5889,7 +5884,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RejectReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RejectReasonCodeType : CodeType1
+	public class RejectReasonCodeType : CodeType1
 	{
 	}
 
@@ -5900,7 +5895,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RejectActionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RejectActionCodeType : CodeType1
+	public class RejectActionCodeType : CodeType1
 	{
 	}
 
@@ -5911,7 +5906,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReferenceEventCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferenceEventCodeType : CodeType1
+	public class ReferenceEventCodeType : CodeType1
 	{
 	}
 
@@ -5922,7 +5917,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceiptAdviceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceiptAdviceTypeCodeType : CodeType1
+	public class ReceiptAdviceTypeCodeType : CodeType1
 	{
 	}
 
@@ -5933,7 +5928,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("QuantityDiscrepancyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class QuantityDiscrepancyCodeType : CodeType1
+	public class QuantityDiscrepancyCodeType : CodeType1
 	{
 	}
 
@@ -5944,7 +5939,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("QualityControlCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class QualityControlCodeType : CodeType1
+	public class QualityControlCodeType : CodeType1
 	{
 	}
 
@@ -5955,7 +5950,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PurposeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PurposeCodeType : CodeType1
+	public class PurposeCodeType : CodeType1
 	{
 	}
 
@@ -5966,7 +5961,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProviderTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProviderTypeCodeType : CodeType1
+	public class ProviderTypeCodeType : CodeType1
 	{
 	}
 
@@ -5977,7 +5972,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PromotionalEventTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PromotionalEventTypeCodeType : CodeType1
+	public class PromotionalEventTypeCodeType : CodeType1
 	{
 	}
 
@@ -5988,7 +5983,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProfileStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProfileStatusCodeType : CodeType1
+	public class ProfileStatusCodeType : CodeType1
 	{
 	}
 
@@ -5999,7 +5994,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcurementTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcurementTypeCodeType : CodeType1
+	public class ProcurementTypeCodeType : CodeType1
 	{
 	}
 
@@ -6010,7 +6005,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcurementSubTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcurementSubTypeCodeType : CodeType1
+	public class ProcurementSubTypeCodeType : CodeType1
 	{
 	}
 
@@ -6021,7 +6016,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcessReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcessReasonCodeType : CodeType1
+	public class ProcessReasonCodeType : CodeType1
 	{
 	}
 
@@ -6032,7 +6027,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcedureCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProcedureCodeType : CodeType1
+	public class ProcedureCodeType : CodeType1
 	{
 	}
 
@@ -6043,7 +6038,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrivacyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrivacyCodeType : CodeType1
+	public class PrivacyCodeType : CodeType1
 	{
 	}
 
@@ -6054,7 +6049,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PricingCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PricingCurrencyCodeType : CodeType1
+	public class PricingCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -6065,7 +6060,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceTypeCodeType : CodeType1
+	public class PriceTypeCodeType : CodeType1
 	{
 	}
 
@@ -6076,7 +6071,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PriceEvaluationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PriceEvaluationCodeType : CodeType1
+	public class PriceEvaluationCodeType : CodeType1
 	{
 	}
 
@@ -6087,7 +6082,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousMeterReadingMethodCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousMeterReadingMethodCodeType : CodeType1
+	public class PreviousMeterReadingMethodCodeType : CodeType1
 	{
 	}
 
@@ -6098,7 +6093,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousCancellationReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousCancellationReasonCodeType : CodeType1
+	public class PreviousCancellationReasonCodeType : CodeType1
 	{
 	}
 
@@ -6109,7 +6104,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreferenceCriterionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreferenceCriterionCodeType : CodeType1
+	public class PreferenceCriterionCodeType : CodeType1
 	{
 	}
 
@@ -6120,7 +6115,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PositionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PositionCodeType : CodeType1
+	public class PositionCodeType : CodeType1
 	{
 	}
 
@@ -6131,7 +6126,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PerformanceMetricTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PerformanceMetricTypeCodeType : CodeType1
+	public class PerformanceMetricTypeCodeType : CodeType1
 	{
 	}
 
@@ -6142,7 +6137,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentPurposeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentPurposeCodeType : CodeType1
+	public class PaymentPurposeCodeType : CodeType1
 	{
 	}
 
@@ -6153,7 +6148,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentMeansCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentMeansCodeType : CodeType1
+	public class PaymentMeansCodeType : CodeType1
 	{
 	}
 
@@ -6164,7 +6159,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentFrequencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentFrequencyCodeType : CodeType1
+	public class PaymentFrequencyCodeType : CodeType1
 	{
 	}
 
@@ -6175,7 +6170,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentCurrencyCodeType : CodeType1
+	public class PaymentCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -6186,7 +6181,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentChannelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentChannelCodeType : CodeType1
+	public class PaymentChannelCodeType : CodeType1
 	{
 	}
 
@@ -6197,7 +6192,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentAlternativeCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentAlternativeCurrencyCodeType : CodeType1
+	public class PaymentAlternativeCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -6208,7 +6203,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartyTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartyTypeCodeType : CodeType1
+	public class PartyTypeCodeType : CodeType1
 	{
 	}
 
@@ -6219,7 +6214,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartPresentationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PartPresentationCodeType : CodeType1
+	public class PartPresentationCodeType : CodeType1
 	{
 	}
 
@@ -6230,7 +6225,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ParentDocumentTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ParentDocumentTypeCodeType : CodeType1
+	public class ParentDocumentTypeCodeType : CodeType1
 	{
 	}
 
@@ -6241,7 +6236,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackingCriteriaCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackingCriteriaCodeType : CodeType1
+	public class PackingCriteriaCodeType : CodeType1
 	{
 	}
 
@@ -6252,7 +6247,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackagingTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackagingTypeCodeType : CodeType1
+	public class PackagingTypeCodeType : CodeType1
 	{
 	}
 
@@ -6263,7 +6258,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackageLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackageLevelCodeType : CodeType1
+	public class PackageLevelCodeType : CodeType1
 	{
 	}
 
@@ -6274,7 +6269,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PackLevelCodeType : CodeType1
+	public class PackLevelCodeType : CodeType1
 	{
 	}
 
@@ -6285,7 +6280,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OwnerTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OwnerTypeCodeType : CodeType1
+	public class OwnerTypeCodeType : CodeType1
 	{
 	}
 
@@ -6296,7 +6291,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderTypeCodeType : CodeType1
+	public class OrderTypeCodeType : CodeType1
 	{
 	}
 
@@ -6307,7 +6302,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderResponseCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OrderResponseCodeType : CodeType1
+	public class OrderResponseCodeType : CodeType1
 	{
 	}
 
@@ -6318,7 +6313,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OneTimeChargeTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OneTimeChargeTypeCodeType : CodeType1
+	public class OneTimeChargeTypeCodeType : CodeType1
 	{
 	}
 
@@ -6329,7 +6324,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NotificationTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NotificationTypeCodeType : CodeType1
+	public class NotificationTypeCodeType : CodeType1
 	{
 	}
 
@@ -6340,7 +6335,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NatureCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NatureCodeType : CodeType1
+	public class NatureCodeType : CodeType1
 	{
 	}
 
@@ -6351,7 +6346,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NameCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NameCodeType : CodeType1
+	public class NameCodeType : CodeType1
 	{
 	}
 
@@ -6362,7 +6357,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MiscellaneousEventTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MiscellaneousEventTypeCodeType : CodeType1
+	public class MiscellaneousEventTypeCodeType : CodeType1
 	{
 	}
 
@@ -6373,7 +6368,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MimeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MimeCodeType : CodeType1
+	public class MimeCodeType : CodeType1
 	{
 	}
 
@@ -6384,7 +6379,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterReadingTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterReadingTypeCodeType : CodeType1
+	public class MeterReadingTypeCodeType : CodeType1
 	{
 	}
 
@@ -6395,7 +6390,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MeterConstantCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MeterConstantCodeType : CodeType1
+	public class MeterConstantCodeType : CodeType1
 	{
 	}
 
@@ -6406,7 +6401,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MedicalFirstAidGuideCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MedicalFirstAidGuideCodeType : CodeType1
+	public class MedicalFirstAidGuideCodeType : CodeType1
 	{
 	}
 
@@ -6417,7 +6412,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MathematicOperatorCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MathematicOperatorCodeType : CodeType1
+	public class MathematicOperatorCodeType : CodeType1
 	{
 	}
 
@@ -6428,7 +6423,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MandateTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MandateTypeCodeType : CodeType1
+	public class MandateTypeCodeType : CodeType1
 	{
 	}
 
@@ -6439,7 +6434,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LossRiskResponsibilityCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LossRiskResponsibilityCodeType : CodeType1
+	public class LossRiskResponsibilityCodeType : CodeType1
 	{
 	}
 
@@ -6450,7 +6445,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LongitudeDirectionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LongitudeDirectionCodeType : CodeType1
+	public class LongitudeDirectionCodeType : CodeType1
 	{
 	}
 
@@ -6461,7 +6456,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LocationTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LocationTypeCodeType : CodeType1
+	public class LocationTypeCodeType : CodeType1
 	{
 	}
 
@@ -6472,7 +6467,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LocaleCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LocaleCodeType : CodeType1
+	public class LocaleCodeType : CodeType1
 	{
 	}
 
@@ -6483,7 +6478,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LineStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineStatusCodeType : CodeType1
+	public class LineStatusCodeType : CodeType1
 	{
 	}
 
@@ -6494,7 +6489,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LifeCycleStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LifeCycleStatusCodeType : CodeType1
+	public class LifeCycleStatusCodeType : CodeType1
 	{
 	}
 
@@ -6505,7 +6500,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatitudeDirectionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatitudeDirectionCodeType : CodeType1
+	public class LatitudeDirectionCodeType : CodeType1
 	{
 	}
 
@@ -6516,7 +6511,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestMeterReadingMethodCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestMeterReadingMethodCodeType : CodeType1
+	public class LatestMeterReadingMethodCodeType : CodeType1
 	{
 	}
 
@@ -6527,7 +6522,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ItemClassificationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ItemClassificationCodeType : CodeType1
+	public class ItemClassificationCodeType : CodeType1
 	{
 	}
 
@@ -6538,7 +6533,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InvoiceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InvoiceTypeCodeType : CodeType1
+	public class InvoiceTypeCodeType : CodeType1
 	{
 	}
 
@@ -6549,7 +6544,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InspectionMethodCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InspectionMethodCodeType : CodeType1
+	public class InspectionMethodCodeType : CodeType1
 	{
 	}
 
@@ -6560,7 +6555,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InhalationToxicityZoneCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InhalationToxicityZoneCodeType : CodeType1
+	public class InhalationToxicityZoneCodeType : CodeType1
 	{
 	}
 
@@ -6571,7 +6566,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IndustryClassificationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IndustryClassificationCodeType : CodeType1
+	public class IndustryClassificationCodeType : CodeType1
 	{
 	}
 
@@ -6582,7 +6577,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ImportanceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ImportanceCodeType : CodeType1
+	public class ImportanceCodeType : CodeType1
 	{
 	}
 
@@ -6593,7 +6588,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IdentificationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IdentificationCodeType : CodeType1
+	public class IdentificationCodeType : CodeType1
 	{
 	}
 
@@ -6604,7 +6599,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HeatingTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HeatingTypeCodeType : CodeType1
+	public class HeatingTypeCodeType : CodeType1
 	{
 	}
 
@@ -6615,7 +6610,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardousRegulationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HazardousRegulationCodeType : CodeType1
+	public class HazardousRegulationCodeType : CodeType1
 	{
 	}
 
@@ -6626,7 +6621,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardousCategoryCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HazardousCategoryCodeType : CodeType1
+	public class HazardousCategoryCodeType : CodeType1
 	{
 	}
 
@@ -6637,7 +6632,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HandlingCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HandlingCodeType : CodeType1
+	public class HandlingCodeType : CodeType1
 	{
 	}
 
@@ -6648,7 +6643,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GuaranteeTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GuaranteeTypeCodeType : CodeType1
+	public class GuaranteeTypeCodeType : CodeType1
 	{
 	}
 
@@ -6659,7 +6654,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GenderCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GenderCodeType : CodeType1
+	public class GenderCodeType : CodeType1
 	{
 	}
 
@@ -6670,7 +6665,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FundingProgramCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FundingProgramCodeType : CodeType1
+	public class FundingProgramCodeType : CodeType1
 	{
 	}
 
@@ -6681,7 +6676,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FullnessIndicationCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FullnessIndicationCodeType : CodeType1
+	public class FullnessIndicationCodeType : CodeType1
 	{
 	}
 
@@ -6692,7 +6687,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FreightRateClassCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FreightRateClassCodeType : CodeType1
+	public class FreightRateClassCodeType : CodeType1
 	{
 	}
 
@@ -6703,7 +6698,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FormatCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FormatCodeType : CodeType1
+	public class FormatCodeType : CodeType1
 	{
 	}
 
@@ -6714,7 +6709,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ForecastTypeCodeType : CodeType1
+	public class ForecastTypeCodeType : CodeType1
 	{
 	}
 
@@ -6725,7 +6720,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastPurposeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ForecastPurposeCodeType : CodeType1
+	public class ForecastPurposeCodeType : CodeType1
 	{
 	}
 
@@ -6736,7 +6731,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FinancingInstrumentCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FinancingInstrumentCodeType : CodeType1
+	public class FinancingInstrumentCodeType : CodeType1
 	{
 	}
 
@@ -6747,7 +6742,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FeatureTacticTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FeatureTacticTypeCodeType : CodeType1
+	public class FeatureTacticTypeCodeType : CodeType1
 	{
 	}
 
@@ -6758,7 +6753,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpressionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpressionCodeType : CodeType1
+	public class ExpressionCodeType : CodeType1
 	{
 	}
 
@@ -6769,7 +6764,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpenseCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpenseCodeType : CodeType1
+	public class ExpenseCodeType : CodeType1
 	{
 	}
 
@@ -6780,7 +6775,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExemptionReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExemptionReasonCodeType : CodeType1
+	public class ExemptionReasonCodeType : CodeType1
 	{
 	}
 
@@ -6791,7 +6786,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExecutionRequirementCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExecutionRequirementCodeType : CodeType1
+	public class ExecutionRequirementCodeType : CodeType1
 	{
 	}
 
@@ -6802,7 +6797,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExceptionStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExceptionStatusCodeType : CodeType1
+	public class ExceptionStatusCodeType : CodeType1
 	{
 	}
 
@@ -6813,7 +6808,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExceptionResolutionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExceptionResolutionCodeType : CodeType1
+	public class ExceptionResolutionCodeType : CodeType1
 	{
 	}
 
@@ -6824,7 +6819,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EvidenceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EvidenceTypeCodeType : CodeType1
+	public class EvidenceTypeCodeType : CodeType1
 	{
 	}
 
@@ -6835,7 +6830,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EvaluationCriterionTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EvaluationCriterionTypeCodeType : CodeType1
+	public class EvaluationCriterionTypeCodeType : CodeType1
 	{
 	}
 
@@ -6846,7 +6841,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EnvironmentalEmissionTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EnvironmentalEmissionTypeCodeType : CodeType1
+	public class EnvironmentalEmissionTypeCodeType : CodeType1
 	{
 	}
 
@@ -6857,7 +6852,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EncodingCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EncodingCodeType : CodeType1
+	public class EncodingCodeType : CodeType1
 	{
 	}
 
@@ -6868,7 +6863,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EmergencyProceduresCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EmergencyProceduresCodeType : CodeType1
+	public class EmergencyProceduresCodeType : CodeType1
 	{
 	}
 
@@ -6879,7 +6874,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DutyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DutyCodeType : CodeType1
+	public class DutyCodeType : CodeType1
 	{
 	}
 
@@ -6890,7 +6885,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentTypeCodeType : CodeType1
+	public class DocumentTypeCodeType : CodeType1
 	{
 	}
 
@@ -6901,7 +6896,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentStatusReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentStatusReasonCodeType : CodeType1
+	public class DocumentStatusReasonCodeType : CodeType1
 	{
 	}
 
@@ -6912,7 +6907,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentStatusCodeType : CodeType1
+	public class DocumentStatusCodeType : CodeType1
 	{
 	}
 
@@ -6923,7 +6918,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentCurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentCurrencyCodeType : CodeType1
+	public class DocumentCurrencyCodeType : CodeType1
 	{
 	}
 
@@ -6934,7 +6929,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DispositionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DispositionCodeType : CodeType1
+	public class DispositionCodeType : CodeType1
 	{
 	}
 
@@ -6945,7 +6940,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DisplayTacticTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DisplayTacticTypeCodeType : CodeType1
+	public class DisplayTacticTypeCodeType : CodeType1
 	{
 	}
 
@@ -6956,7 +6951,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DirectionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DirectionCodeType : CodeType1
+	public class DirectionCodeType : CodeType1
 	{
 	}
 
@@ -6967,7 +6962,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DespatchAdviceTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DespatchAdviceTypeCodeType : CodeType1
+	public class DespatchAdviceTypeCodeType : CodeType1
 	{
 	}
 
@@ -6978,7 +6973,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DescriptionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DescriptionCodeType : CodeType1
+	public class DescriptionCodeType : CodeType1
 	{
 	}
 
@@ -6989,7 +6984,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeclarationTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DeclarationTypeCodeType : CodeType1
+	public class DeclarationTypeCodeType : CodeType1
 	{
 	}
 
@@ -7000,7 +6995,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DataSourceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DataSourceCodeType : CodeType1
+	public class DataSourceCodeType : CodeType1
 	{
 	}
 
@@ -7011,7 +7006,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomsStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomsStatusCodeType : CodeType1
+	public class CustomsStatusCodeType : CodeType1
 	{
 	}
 
@@ -7022,7 +7017,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CurrentChargeTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CurrentChargeTypeCodeType : CodeType1
+	public class CurrentChargeTypeCodeType : CodeType1
 	{
 	}
 
@@ -7033,7 +7028,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CurrencyCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CurrencyCodeType : CodeType1
+	public class CurrencyCodeType : CodeType1
 	{
 	}
 
@@ -7044,7 +7039,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CreditNoteTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CreditNoteTypeCodeType : CodeType1
+	public class CreditNoteTypeCodeType : CodeType1
 	{
 	}
 
@@ -7055,7 +7050,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CountrySubentityCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CountrySubentityCodeType : CodeType1
+	public class CountrySubentityCodeType : CodeType1
 	{
 	}
 
@@ -7066,7 +7061,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorrectionTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorrectionTypeCodeType : CodeType1
+	public class CorrectionTypeCodeType : CodeType1
 	{
 	}
 
@@ -7077,7 +7072,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorporateRegistrationTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CorporateRegistrationTypeCodeType : CodeType1
+	public class CorporateRegistrationTypeCodeType : CodeType1
 	{
 	}
 
@@ -7088,7 +7083,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CoordinateSystemCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CoordinateSystemCodeType : CodeType1
+	public class CoordinateSystemCodeType : CodeType1
 	{
 	}
 
@@ -7099,7 +7094,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractingSystemCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractingSystemCodeType : CodeType1
+	public class ContractingSystemCodeType : CodeType1
 	{
 	}
 
@@ -7110,7 +7105,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractTypeCodeType : CodeType1
+	public class ContractTypeCodeType : CodeType1
 	{
 	}
 
@@ -7121,7 +7116,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionTypeCodeType : CodeType1
+	public class ConsumptionTypeCodeType : CodeType1
 	{
 	}
 
@@ -7132,7 +7127,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionLevelCodeType : CodeType1
+	public class ConsumptionLevelCodeType : CodeType1
 	{
 	}
 
@@ -7143,7 +7138,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumersEnergyLevelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumersEnergyLevelCodeType : CodeType1
+	public class ConsumersEnergyLevelCodeType : CodeType1
 	{
 	}
 
@@ -7154,7 +7149,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumerIncentiveTacticTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumerIncentiveTacticTypeCodeType : CodeType1
+	public class ConsumerIncentiveTacticTypeCodeType : CodeType1
 	{
 	}
 
@@ -7165,7 +7160,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConstitutionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConstitutionCodeType : CodeType1
+	public class ConstitutionCodeType : CodeType1
 	{
 	}
 
@@ -7176,7 +7171,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConditionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConditionCodeType : CodeType1
+	public class ConditionCodeType : CodeType1
 	{
 	}
 
@@ -7187,7 +7182,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ComparisonDataSourceCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ComparisonDataSourceCodeType : CodeType1
+	public class ComparisonDataSourceCodeType : CodeType1
 	{
 	}
 
@@ -7198,7 +7193,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ComparisonDataCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ComparisonDataCodeType : CodeType1
+	public class ComparisonDataCodeType : CodeType1
 	{
 	}
 
@@ -7209,7 +7204,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CompanyLiquidationStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CompanyLiquidationStatusCodeType : CodeType1
+	public class CompanyLiquidationStatusCodeType : CodeType1
 	{
 	}
 
@@ -7220,7 +7215,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CompanyLegalFormCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CompanyLegalFormCodeType : CodeType1
+	public class CompanyLegalFormCodeType : CodeType1
 	{
 	}
 
@@ -7231,7 +7226,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CommodityCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CommodityCodeType : CodeType1
+	public class CommodityCodeType : CodeType1
 	{
 	}
 
@@ -7242,7 +7237,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CollaborationPriorityCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CollaborationPriorityCodeType : CodeType1
+	public class CollaborationPriorityCodeType : CodeType1
 	{
 	}
 
@@ -7253,7 +7248,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CharacterSetCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CharacterSetCodeType : CodeType1
+	public class CharacterSetCodeType : CodeType1
 	{
 	}
 
@@ -7264,7 +7259,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChannelCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChannelCodeType : CodeType1
+	public class ChannelCodeType : CodeType1
 	{
 	}
 
@@ -7275,7 +7270,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CertificateTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CertificateTypeCodeType : CodeType1
+	public class CertificateTypeCodeType : CodeType1
 	{
 	}
 
@@ -7286,7 +7281,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CargoTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CargoTypeCodeType : CodeType1
+	public class CargoTypeCodeType : CodeType1
 	{
 	}
 
@@ -7297,7 +7292,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CardTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CardTypeCodeType : CodeType1
+	public class CardTypeCodeType : CodeType1
 	{
 	}
 
@@ -7308,7 +7303,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CardChipCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CardChipCodeType : CodeType1
+	public class CardChipCodeType : CodeType1
 	{
 	}
 
@@ -7319,7 +7314,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CapabilityTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CapabilityTypeCodeType : CodeType1
+	public class CapabilityTypeCodeType : CodeType1
 	{
 	}
 
@@ -7330,7 +7325,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CalculationMethodCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CalculationMethodCodeType : CodeType1
+	public class CalculationMethodCodeType : CodeType1
 	{
 	}
 
@@ -7341,7 +7336,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CalculationExpressionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CalculationExpressionCodeType : CodeType1
+	public class CalculationExpressionCodeType : CodeType1
 	{
 	}
 
@@ -7352,7 +7347,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingMethodTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardingMethodTypeCodeType : CodeType1
+	public class AwardingMethodTypeCodeType : CodeType1
 	{
 	}
 
@@ -7363,7 +7358,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardingCriterionTypeCodeType : CodeType1
+	public class AwardingCriterionTypeCodeType : CodeType1
 	{
 	}
 
@@ -7374,7 +7369,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AvailabilityStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AvailabilityStatusCodeType : CodeType1
+	public class AvailabilityStatusCodeType : CodeType1
 	{
 	}
 
@@ -7385,7 +7380,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ApplicationStatusCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ApplicationStatusCodeType : CodeType1
+	public class ApplicationStatusCodeType : CodeType1
 	{
 	}
 
@@ -7396,7 +7391,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AllowanceChargeReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AllowanceChargeReasonCodeType : CodeType1
+	public class AllowanceChargeReasonCodeType : CodeType1
 	{
 	}
 
@@ -7407,7 +7402,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdmissionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdmissionCodeType : CodeType1
+	public class AdmissionCodeType : CodeType1
 	{
 	}
 
@@ -7418,7 +7413,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdjustmentReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdjustmentReasonCodeType : CodeType1
+	public class AdjustmentReasonCodeType : CodeType1
 	{
 	}
 
@@ -7429,7 +7424,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AddressTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AddressTypeCodeType : CodeType1
+	public class AddressTypeCodeType : CodeType1
 	{
 	}
 
@@ -7440,7 +7435,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AddressFormatCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AddressFormatCodeType : CodeType1
+	public class AddressFormatCodeType : CodeType1
 	{
 	}
 
@@ -7451,7 +7446,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActivityTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActivityTypeCodeType : CodeType1
+	public class ActivityTypeCodeType : CodeType1
 	{
 	}
 
@@ -7462,7 +7457,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActionCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActionCodeType : CodeType1
+	public class ActionCodeType : CodeType1
 	{
 	}
 
@@ -7473,7 +7468,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountingCostCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AccountingCostCodeType : CodeType1
+	public class AccountingCostCodeType : CodeType1
 	{
 	}
 
@@ -7484,7 +7479,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountTypeCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AccountTypeCodeType : CodeType1
+	public class AccountTypeCodeType : CodeType1
 	{
 	}
 
@@ -7495,7 +7490,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountFormatCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AccountFormatCodeType : CodeType1
+	public class AccountFormatCodeType : CodeType1
 	{
 	}
 
@@ -7506,7 +7501,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidationTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidationTimeType : TimeType
+	public class ValidationTimeType : TimeType
 	{
 	}
 
@@ -7517,7 +7512,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StartTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StartTimeType : TimeType
+	public class StartTimeType : TimeType
 	{
 	}
 
@@ -7528,7 +7523,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SourceForecastIssueTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SourceForecastIssueTimeType : TimeType
+	public class SourceForecastIssueTimeType : TimeType
 	{
 	}
 
@@ -7539,7 +7534,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RevisionTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RevisionTimeType : TimeType
+	public class RevisionTimeType : TimeType
 	{
 	}
 
@@ -7550,7 +7545,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResponseTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResponseTimeType : TimeType
+	public class ResponseTimeType : TimeType
 	{
 	}
 
@@ -7561,7 +7556,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResolutionTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResolutionTimeType : TimeType
+	public class ResolutionTimeType : TimeType
 	{
 	}
 
@@ -7572,7 +7567,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequiredDeliveryTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequiredDeliveryTimeType : TimeType
+	public class RequiredDeliveryTimeType : TimeType
 	{
 	}
 
@@ -7583,7 +7578,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedDespatchTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestedDespatchTimeType : TimeType
+	public class RequestedDespatchTimeType : TimeType
 	{
 	}
 
@@ -7594,7 +7589,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegisteredTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegisteredTimeType : TimeType
+	public class RegisteredTimeType : TimeType
 	{
 	}
 
@@ -7605,7 +7600,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReferenceTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferenceTimeType : TimeType
+	public class ReferenceTimeType : TimeType
 	{
 	}
 
@@ -7616,7 +7611,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaidTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaidTimeType : TimeType
+	public class PaidTimeType : TimeType
 	{
 	}
 
@@ -7627,7 +7622,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OccurrenceTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OccurrenceTimeType : TimeType
+	public class OccurrenceTimeType : TimeType
 	{
 	}
 
@@ -7638,7 +7633,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NominationTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NominationTimeType : TimeType
+	public class NominationTimeType : TimeType
 	{
 	}
 
@@ -7649,7 +7644,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ManufactureTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ManufactureTimeType : TimeType
+	public class ManufactureTimeType : TimeType
 	{
 	}
 
@@ -7660,7 +7655,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestPickupTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestPickupTimeType : TimeType
+	public class LatestPickupTimeType : TimeType
 	{
 	}
 
@@ -7671,7 +7666,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestDeliveryTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestDeliveryTimeType : TimeType
+	public class LatestDeliveryTimeType : TimeType
 	{
 	}
 
@@ -7682,7 +7677,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LastRevisionTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LastRevisionTimeType : TimeType
+	public class LastRevisionTimeType : TimeType
 	{
 	}
 
@@ -7693,7 +7688,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IssueTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IssueTimeType : TimeType
+	public class IssueTimeType : TimeType
 	{
 	}
 
@@ -7704,7 +7699,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GuaranteedDespatchTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GuaranteedDespatchTimeType : TimeType
+	public class GuaranteedDespatchTimeType : TimeType
 	{
 	}
 
@@ -7715,7 +7710,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpiryTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpiryTimeType : TimeType
+	public class ExpiryTimeType : TimeType
 	{
 	}
 
@@ -7726,7 +7721,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedDespatchTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedDespatchTimeType : TimeType
+	public class EstimatedDespatchTimeType : TimeType
 	{
 	}
 
@@ -7737,7 +7732,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedDeliveryTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedDeliveryTimeType : TimeType
+	public class EstimatedDeliveryTimeType : TimeType
 	{
 	}
 
@@ -7748,7 +7743,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EndTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EndTimeType : TimeType
+	public class EndTimeType : TimeType
 	{
 	}
 
@@ -7759,7 +7754,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EffectiveTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EffectiveTimeType : TimeType
+	public class EffectiveTimeType : TimeType
 	{
 	}
 
@@ -7770,7 +7765,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EarliestPickupTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EarliestPickupTimeType : TimeType
+	public class EarliestPickupTimeType : TimeType
 	{
 	}
 
@@ -7781,7 +7776,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ComparisonForecastIssueTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ComparisonForecastIssueTimeType : TimeType
+	public class ComparisonForecastIssueTimeType : TimeType
 	{
 	}
 
@@ -7792,7 +7787,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CallTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CallTimeType : TimeType
+	public class CallTimeType : TimeType
 	{
 	}
 
@@ -7803,7 +7798,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardTimeType : TimeType
+	public class AwardTimeType : TimeType
 	{
 	}
 
@@ -7814,7 +7809,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualPickupTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualPickupTimeType : TimeType
+	public class ActualPickupTimeType : TimeType
 	{
 	}
 
@@ -7825,7 +7820,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualDespatchTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualDespatchTimeType : TimeType
+	public class ActualDespatchTimeType : TimeType
 	{
 	}
 
@@ -7836,7 +7831,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualDeliveryTime", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualDeliveryTimeType : TimeType
+	public class ActualDeliveryTimeType : TimeType
 	{
 	}
 
@@ -7847,7 +7842,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidityStartDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidityStartDateType : DateType
+	public class ValidityStartDateType : DateType
 	{
 	}
 
@@ -7858,7 +7853,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidationDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidationDateType : DateType
+	public class ValidationDateType : DateType
 	{
 	}
 
@@ -7869,7 +7864,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxPointDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TaxPointDateType : DateType
+	public class TaxPointDateType : DateType
 	{
 	}
 
@@ -7880,7 +7875,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubmissionDueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubmissionDueDateType : DateType
+	public class SubmissionDueDateType : DateType
 	{
 	}
 
@@ -7891,7 +7886,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubmissionDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubmissionDateType : DateType
+	public class SubmissionDateType : DateType
 	{
 	}
 
@@ -7902,7 +7897,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("StartDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class StartDateType : DateType
+	public class StartDateType : DateType
 	{
 	}
 
@@ -7913,7 +7908,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SourceForecastIssueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SourceForecastIssueDateType : DateType
+	public class SourceForecastIssueDateType : DateType
 	{
 	}
 
@@ -7924,7 +7919,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RevisionDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RevisionDateType : DateType
+	public class RevisionDateType : DateType
 	{
 	}
 
@@ -7935,7 +7930,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResponseDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResponseDateType : DateType
+	public class ResponseDateType : DateType
 	{
 	}
 
@@ -7946,7 +7941,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResolutionDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ResolutionDateType : DateType
+	public class ResolutionDateType : DateType
 	{
 	}
 
@@ -7957,7 +7952,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequiredDeliveryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequiredDeliveryDateType : DateType
+	public class RequiredDeliveryDateType : DateType
 	{
 	}
 
@@ -7968,7 +7963,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedPublicationDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestedPublicationDateType : DateType
+	public class RequestedPublicationDateType : DateType
 	{
 	}
 
@@ -7979,7 +7974,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedDespatchDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestedDespatchDateType : DateType
+	public class RequestedDespatchDateType : DateType
 	{
 	}
 
@@ -7990,7 +7985,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedDeliveryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestedDeliveryDateType : DateType
+	public class RequestedDeliveryDateType : DateType
 	{
 	}
 
@@ -8001,7 +7996,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationExpirationDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationExpirationDateType : DateType
+	public class RegistrationExpirationDateType : DateType
 	{
 	}
 
@@ -8012,7 +8007,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationDateType : DateType
+	public class RegistrationDateType : DateType
 	{
 	}
 
@@ -8023,7 +8018,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegisteredDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegisteredDateType : DateType
+	public class RegisteredDateType : DateType
 	{
 	}
 
@@ -8034,7 +8029,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReferenceDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferenceDateType : DateType
+	public class ReferenceDateType : DateType
 	{
 	}
 
@@ -8045,7 +8040,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceivedDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReceivedDateType : DateType
+	public class ReceivedDateType : DateType
 	{
 	}
 
@@ -8056,7 +8051,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousMeterReadingDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousMeterReadingDateType : DateType
+	public class PreviousMeterReadingDateType : DateType
 	{
 	}
 
@@ -8067,7 +8062,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PlannedDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PlannedDateType : DateType
+	public class PlannedDateType : DateType
 	{
 	}
 
@@ -8078,7 +8073,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentDueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentDueDateType : DateType
+	public class PaymentDueDateType : DateType
 	{
 	}
 
@@ -8089,7 +8084,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaidDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaidDateType : DateType
+	public class PaidDateType : DateType
 	{
 	}
 
@@ -8100,7 +8095,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OccurrenceDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OccurrenceDateType : DateType
+	public class OccurrenceDateType : DateType
 	{
 	}
 
@@ -8111,7 +8106,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NominationDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NominationDateType : DateType
+	public class NominationDateType : DateType
 	{
 	}
 
@@ -8122,7 +8117,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ManufactureDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ManufactureDateType : DateType
+	public class ManufactureDateType : DateType
 	{
 	}
 
@@ -8133,7 +8128,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestSecurityClearanceDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestSecurityClearanceDateType : DateType
+	public class LatestSecurityClearanceDateType : DateType
 	{
 	}
 
@@ -8144,7 +8139,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestProposalAcceptanceDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestProposalAcceptanceDateType : DateType
+	public class LatestProposalAcceptanceDateType : DateType
 	{
 	}
 
@@ -8155,7 +8150,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestPickupDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestPickupDateType : DateType
+	public class LatestPickupDateType : DateType
 	{
 	}
 
@@ -8166,7 +8161,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestMeterReadingDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestMeterReadingDateType : DateType
+	public class LatestMeterReadingDateType : DateType
 	{
 	}
 
@@ -8177,7 +8172,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LatestDeliveryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LatestDeliveryDateType : DateType
+	public class LatestDeliveryDateType : DateType
 	{
 	}
 
@@ -8188,7 +8183,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LastRevisionDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LastRevisionDateType : DateType
+	public class LastRevisionDateType : DateType
 	{
 	}
 
@@ -8199,7 +8194,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IssueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IssueDateType : DateType
+	public class IssueDateType : DateType
 	{
 	}
 
@@ -8210,7 +8205,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InstallmentDueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InstallmentDueDateType : DateType
+	public class InstallmentDueDateType : DateType
 	{
 	}
 
@@ -8221,7 +8216,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("GuaranteedDespatchDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class GuaranteedDespatchDateType : DateType
+	public class GuaranteedDespatchDateType : DateType
 	{
 	}
 
@@ -8232,7 +8227,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FirstShipmentAvailibilityDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FirstShipmentAvailibilityDateType : DateType
+	public class FirstShipmentAvailibilityDateType : DateType
 	{
 	}
 
@@ -8243,7 +8238,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExpiryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExpiryDateType : DateType
+	public class ExpiryDateType : DateType
 	{
 	}
 
@@ -8254,7 +8249,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedDespatchDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedDespatchDateType : DateType
+	public class EstimatedDespatchDateType : DateType
 	{
 	}
 
@@ -8265,7 +8260,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EstimatedDeliveryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EstimatedDeliveryDateType : DateType
+	public class EstimatedDeliveryDateType : DateType
 	{
 	}
 
@@ -8276,7 +8271,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EndDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EndDateType : DateType
+	public class EndDateType : DateType
 	{
 	}
 
@@ -8287,7 +8282,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EffectiveDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EffectiveDateType : DateType
+	public class EffectiveDateType : DateType
 	{
 	}
 
@@ -8298,7 +8293,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EarliestPickupDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EarliestPickupDateType : DateType
+	public class EarliestPickupDateType : DateType
 	{
 	}
 
@@ -8309,7 +8304,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DueDateType : DateType
+	public class DueDateType : DateType
 	{
 	}
 
@@ -8320,7 +8315,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "DateType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Date", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DateType1 : DateType
+	public class DateType1 : DateType
 	{
 	}
 
@@ -8331,7 +8326,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ComparisonForecastIssueDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ComparisonForecastIssueDateType : DateType
+	public class ComparisonForecastIssueDateType : DateType
 	{
 	}
 
@@ -8342,7 +8337,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CallDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CallDateType : DateType
+	public class CallDateType : DateType
 	{
 	}
 
@@ -8353,7 +8348,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BirthDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BirthDateType : DateType
+	public class BirthDateType : DateType
 	{
 	}
 
@@ -8364,7 +8359,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BestBeforeDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BestBeforeDateType : DateType
+	public class BestBeforeDateType : DateType
 	{
 	}
 
@@ -8375,7 +8370,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardDateType : DateType
+	public class AwardDateType : DateType
 	{
 	}
 
@@ -8386,7 +8381,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AvailabilityDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AvailabilityDateType : DateType
+	public class AvailabilityDateType : DateType
 	{
 	}
 
@@ -8397,7 +8392,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ApprovalDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ApprovalDateType : DateType
+	public class ApprovalDateType : DateType
 	{
 	}
 
@@ -8408,7 +8403,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualPickupDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualPickupDateType : DateType
+	public class ActualPickupDateType : DateType
 	{
 	}
 
@@ -8419,7 +8414,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualDespatchDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualDespatchDateType : DateType
+	public class ActualDespatchDateType : DateType
 	{
 	}
 
@@ -8430,7 +8425,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualDeliveryDate", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ActualDeliveryDateType : DateType
+	public class ActualDeliveryDateType : DateType
 	{
 	}
 
@@ -8441,7 +8436,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WebsiteURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class WebsiteURIType : IdentifierType1
+	public class WebsiteURIType : IdentifierType1
 	{
 	}
 
@@ -8452,7 +8447,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VesselID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VesselIDType : IdentifierType1
+	public class VesselIDType : IdentifierType1
 	{
 	}
 
@@ -8463,7 +8458,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VersionIDType : IdentifierType1
+	public class VersionIDType : IdentifierType1
 	{
 	}
 
@@ -8474,7 +8469,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("VariantID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class VariantIDType : IdentifierType1
+	public class VariantIDType : IdentifierType1
 	{
 	}
 
@@ -8485,7 +8480,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ValidatorID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ValidatorIDType : IdentifierType1
+	public class ValidatorIDType : IdentifierType1
 	{
 	}
 
@@ -8496,7 +8491,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UpperOrangeHazardPlacardID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UpperOrangeHazardPlacardIDType : IdentifierType1
+	public class UpperOrangeHazardPlacardIDType : IdentifierType1
 	{
 	}
 
@@ -8507,7 +8502,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UUID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UUIDType : IdentifierType1
+	public class UUIDType : IdentifierType1
 	{
 	}
 
@@ -8518,7 +8513,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("URI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class URIType : IdentifierType1
+	public class URIType : IdentifierType1
 	{
 	}
 
@@ -8529,7 +8524,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UBLVersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class UBLVersionIDType : IdentifierType1
+	public class UBLVersionIDType : IdentifierType1
 	{
 	}
 
@@ -8540,7 +8535,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportationServiceDetailsURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportationServiceDetailsURIType : IdentifierType1
+	public class TransportationServiceDetailsURIType : IdentifierType1
 	{
 	}
 
@@ -8551,7 +8546,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportExecutionPlanReferenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TransportExecutionPlanReferenceIDType : IdentifierType1
+	public class TransportExecutionPlanReferenceIDType : IdentifierType1
 	{
 	}
 
@@ -8562,7 +8557,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TrainID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TrainIDType : IdentifierType1
+	public class TrainIDType : IdentifierType1
 	{
 	}
 
@@ -8573,7 +8568,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TrackingID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TrackingIDType : IdentifierType1
+	public class TrackingIDType : IdentifierType1
 	{
 	}
 
@@ -8584,7 +8579,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TraceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TraceIDType : IdentifierType1
+	public class TraceIDType : IdentifierType1
 	{
 	}
 
@@ -8595,7 +8590,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TenderEnvelopeID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class TenderEnvelopeIDType : IdentifierType1
+	public class TenderEnvelopeIDType : IdentifierType1
 	{
 	}
 
@@ -8606,7 +8601,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SupplierAssignedAccountID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SupplierAssignedAccountIDType : IdentifierType1
+	public class SupplierAssignedAccountIDType : IdentifierType1
 	{
 	}
 
@@ -8617,7 +8612,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SuccessiveSequenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SuccessiveSequenceIDType : IdentifierType1
+	public class SuccessiveSequenceIDType : IdentifierType1
 	{
 	}
 
@@ -8628,7 +8623,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubscriberID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SubscriberIDType : IdentifierType1
+	public class SubscriberIDType : IdentifierType1
 	{
 	}
 
@@ -8639,7 +8634,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecificationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SpecificationIDType : IdentifierType1
+	public class SpecificationIDType : IdentifierType1
 	{
 	}
 
@@ -8650,7 +8645,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SignatureID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SignatureIDType : IdentifierType1
+	public class SignatureIDType : IdentifierType1
 	{
 	}
 
@@ -8661,7 +8656,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ShippingOrderID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ShippingOrderIDType : IdentifierType1
+	public class ShippingOrderIDType : IdentifierType1
 	{
 	}
 
@@ -8672,7 +8667,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SerialID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SerialIDType : IdentifierType1
+	public class SerialIDType : IdentifierType1
 	{
 	}
 
@@ -8683,7 +8678,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SequenceNumberID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SequenceNumberIDType : IdentifierType1
+	public class SequenceNumberIDType : IdentifierType1
 	{
 	}
 
@@ -8694,7 +8689,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SequenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SequenceIDType : IdentifierType1
+	public class SequenceIDType : IdentifierType1
 	{
 	}
 
@@ -8705,7 +8700,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SellerEventID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SellerEventIDType : IdentifierType1
+	public class SellerEventIDType : IdentifierType1
 	{
 	}
 
@@ -8716,7 +8711,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SecurityID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SecurityIDType : IdentifierType1
+	public class SecurityIDType : IdentifierType1
 	{
 	}
 
@@ -8727,7 +8722,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SchemeURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SchemeURIType : IdentifierType1
+	public class SchemeURIType : IdentifierType1
 	{
 	}
 
@@ -8738,7 +8733,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SalesOrderLineID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SalesOrderLineIDType : IdentifierType1
+	public class SalesOrderLineIDType : IdentifierType1
 	{
 	}
 
@@ -8749,7 +8744,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SalesOrderID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class SalesOrderIDType : IdentifierType1
+	public class SalesOrderIDType : IdentifierType1
 	{
 	}
 
@@ -8760,7 +8755,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RevisedForecastLineID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RevisedForecastLineIDType : IdentifierType1
+	public class RevisedForecastLineIDType : IdentifierType1
 	{
 	}
 
@@ -8771,7 +8766,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequiredCustomsID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequiredCustomsIDType : IdentifierType1
+	public class RequiredCustomsIDType : IdentifierType1
 	{
 	}
 
@@ -8782,7 +8777,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestForQuotationLineID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RequestForQuotationLineIDType : IdentifierType1
+	public class RequestForQuotationLineIDType : IdentifierType1
 	{
 	}
 
@@ -8793,7 +8788,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReleaseID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReleaseIDType : IdentifierType1
+	public class ReleaseIDType : IdentifierType1
 	{
 	}
 
@@ -8804,7 +8799,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationNationalityID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationNationalityIDType : IdentifierType1
+	public class RegistrationNationalityIDType : IdentifierType1
 	{
 	}
 
@@ -8815,7 +8810,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RegistrationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RegistrationIDType : IdentifierType1
+	public class RegistrationIDType : IdentifierType1
 	{
 	}
 
@@ -8826,7 +8821,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReferencedConsignmentID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferencedConsignmentIDType : IdentifierType1
+	public class ReferencedConsignmentIDType : IdentifierType1
 	{
 	}
 
@@ -8837,7 +8832,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReferenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ReferenceIDType : IdentifierType1
+	public class ReferenceIDType : IdentifierType1
 	{
 	}
 
@@ -8848,7 +8843,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RailCarID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RailCarIDType : IdentifierType1
+	public class RailCarIDType : IdentifierType1
 	{
 	}
 
@@ -8859,7 +8854,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RadioCallSignID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class RadioCallSignIDType : IdentifierType1
+	public class RadioCallSignIDType : IdentifierType1
 	{
 	}
 
@@ -8870,7 +8865,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProfileID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProfileIDType : IdentifierType1
+	public class ProfileIDType : IdentifierType1
 	{
 	}
 
@@ -8881,7 +8876,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProfileExecutionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProfileExecutionIDType : IdentifierType1
+	public class ProfileExecutionIDType : IdentifierType1
 	{
 	}
 
@@ -8892,7 +8887,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProductTraceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ProductTraceIDType : IdentifierType1
+	public class ProductTraceIDType : IdentifierType1
 	{
 	}
 
@@ -8903,7 +8898,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrimaryAccountNumberID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrimaryAccountNumberIDType : IdentifierType1
+	public class PrimaryAccountNumberIDType : IdentifierType1
 	{
 	}
 
@@ -8914,7 +8909,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousVersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousVersionIDType : IdentifierType1
+	public class PreviousVersionIDType : IdentifierType1
 	{
 	}
 
@@ -8925,7 +8920,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousJobID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PreviousJobIDType : IdentifierType1
+	public class PreviousJobIDType : IdentifierType1
 	{
 	}
 
@@ -8936,7 +8931,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PrepaidPaymentReferenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PrepaidPaymentReferenceIDType : IdentifierType1
+	public class PrepaidPaymentReferenceIDType : IdentifierType1
 	{
 	}
 
@@ -8947,7 +8942,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PerformingCarrierAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PerformingCarrierAssignedIDType : IdentifierType1
+	public class PerformingCarrierAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -8958,7 +8953,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentTermsDetailsURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentTermsDetailsURIType : IdentifierType1
+	public class PaymentTermsDetailsURIType : IdentifierType1
 	{
 	}
 
@@ -8969,7 +8964,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentMeansID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentMeansIDType : IdentifierType1
+	public class PaymentMeansIDType : IdentifierType1
 	{
 	}
 
@@ -8980,7 +8975,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class PaymentIDType : IdentifierType1
+	public class PaymentIDType : IdentifierType1
 	{
 	}
 
@@ -8991,7 +8986,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ParentDocumentVersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ParentDocumentVersionIDType : IdentifierType1
+	public class ParentDocumentVersionIDType : IdentifierType1
 	{
 	}
 
@@ -9002,7 +8997,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ParentDocumentLineReferenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ParentDocumentLineReferenceIDType : IdentifierType1
+	public class ParentDocumentLineReferenceIDType : IdentifierType1
 	{
 	}
 
@@ -9013,7 +9008,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ParentDocumentID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ParentDocumentIDType : IdentifierType1
+	public class ParentDocumentIDType : IdentifierType1
 	{
 	}
 
@@ -9024,7 +9019,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OriginalJobID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OriginalJobIDType : IdentifierType1
+	public class OriginalJobIDType : IdentifierType1
 	{
 	}
 
@@ -9035,7 +9030,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OriginalContractingSystemID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OriginalContractingSystemIDType : IdentifierType1
+	public class OriginalContractingSystemIDType : IdentifierType1
 	{
 	}
 
@@ -9046,7 +9041,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OpenTenderID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OpenTenderIDType : IdentifierType1
+	public class OpenTenderIDType : IdentifierType1
 	{
 	}
 
@@ -9057,7 +9052,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OntologyURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class OntologyURIType : IdentifierType1
+	public class OntologyURIType : IdentifierType1
 	{
 	}
 
@@ -9068,7 +9063,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NetworkID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NetworkIDType : IdentifierType1
+	public class NetworkIDType : IdentifierType1
 	{
 	}
 
@@ -9079,7 +9074,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NationalityID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class NationalityIDType : IdentifierType1
+	public class NationalityIDType : IdentifierType1
 	{
 	}
 
@@ -9090,7 +9085,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MarkingID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class MarkingIDType : IdentifierType1
+	public class MarkingIDType : IdentifierType1
 	{
 	}
 
@@ -9101,7 +9096,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LowerOrangeHazardPlacardID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LowerOrangeHazardPlacardIDType : IdentifierType1
+	public class LowerOrangeHazardPlacardIDType : IdentifierType1
 	{
 	}
 
@@ -9112,7 +9107,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LotNumberID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LotNumberIDType : IdentifierType1
+	public class LotNumberIDType : IdentifierType1
 	{
 	}
 
@@ -9123,7 +9118,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LogoReferenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LogoReferenceIDType : IdentifierType1
+	public class LogoReferenceIDType : IdentifierType1
 	{
 	}
 
@@ -9134,7 +9129,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LocationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LocationIDType : IdentifierType1
+	public class LocationIDType : IdentifierType1
 	{
 	}
 
@@ -9145,7 +9140,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LoadingSequenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LoadingSequenceIDType : IdentifierType1
+	public class LoadingSequenceIDType : IdentifierType1
 	{
 	}
 
@@ -9156,7 +9151,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LineID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LineIDType : IdentifierType1
+	public class LineIDType : IdentifierType1
 	{
 	}
 
@@ -9167,7 +9162,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LicensePlateID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LicensePlateIDType : IdentifierType1
+	public class LicensePlateIDType : IdentifierType1
 	{
 	}
 
@@ -9178,7 +9173,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LanguageID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class LanguageIDType : IdentifierType1
+	public class LanguageIDType : IdentifierType1
 	{
 	}
 
@@ -9189,7 +9184,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("JourneyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class JourneyIDType : IdentifierType1
+	public class JourneyIDType : IdentifierType1
 	{
 	}
 
@@ -9200,7 +9195,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IssuerID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IssuerIDType : IdentifierType1
+	public class IssuerIDType : IdentifierType1
 	{
 	}
 
@@ -9211,7 +9206,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("IssueNumberID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IssueNumberIDType : IdentifierType1
+	public class IssueNumberIDType : IdentifierType1
 	{
 	}
 
@@ -9222,7 +9217,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InstructionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InstructionIDType : IdentifierType1
+	public class InstructionIDType : IdentifierType1
 	{
 	}
 
@@ -9233,7 +9228,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InformationURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class InformationURIType : IdentifierType1
+	public class InformationURIType : IdentifierType1
 	{
 	}
 
@@ -9244,7 +9239,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ImmobilizationCertificateID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ImmobilizationCertificateIDType : IdentifierType1
+	public class ImmobilizationCertificateIDType : IdentifierType1
 	{
 	}
 
@@ -9255,7 +9250,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class IDType : IdentifierType1
+	public class IDType : IdentifierType1
 	{
 	}
 
@@ -9266,7 +9261,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardClassID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class HazardClassIDType : IdentifierType1
+	public class HazardClassIDType : IdentifierType1
 	{
 	}
 
@@ -9277,7 +9272,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FreightForwarderAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class FreightForwarderAssignedIDType : IdentifierType1
+	public class FreightForwarderAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9288,7 +9283,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtendedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExtendedIDType : IdentifierType1
+	public class ExtendedIDType : IdentifierType1
 	{
 	}
 
@@ -9299,7 +9294,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExchangeMarketID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ExchangeMarketIDType : IdentifierType1
+	public class ExchangeMarketIDType : IdentifierType1
 	{
 	}
 
@@ -9310,7 +9305,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EndpointID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EndpointIDType : IdentifierType1
+	public class EndpointIDType : IdentifierType1
 	{
 	}
 
@@ -9321,7 +9316,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EconomicOperatorRegistryURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class EconomicOperatorRegistryURIType : IdentifierType1
+	public class EconomicOperatorRegistryURIType : IdentifierType1
 	{
 	}
 
@@ -9332,7 +9327,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DocumentID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class DocumentIDType : IdentifierType1
+	public class DocumentIDType : IdentifierType1
 	{
 	}
 
@@ -9343,7 +9338,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomizationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomizationIDType : IdentifierType1
+	public class CustomizationIDType : IdentifierType1
 	{
 	}
 
@@ -9354,7 +9349,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CustomerAssignedAccountID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CustomerAssignedAccountIDType : IdentifierType1
+	public class CustomerAssignedAccountIDType : IdentifierType1
 	{
 	}
 
@@ -9365,7 +9360,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractedCarrierAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractedCarrierAssignedIDType : IdentifierType1
+	public class ContractedCarrierAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9376,7 +9371,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractFolderID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ContractFolderIDType : IdentifierType1
+	public class ContractFolderIDType : IdentifierType1
 	{
 	}
 
@@ -9387,7 +9382,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionReportID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionReportIDType : IdentifierType1
+	public class ConsumptionReportIDType : IdentifierType1
 	{
 	}
 
@@ -9398,7 +9393,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsumptionIDType : IdentifierType1
+	public class ConsumptionIDType : IdentifierType1
 	{
 	}
 
@@ -9409,7 +9404,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsignorAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsignorAssignedIDType : IdentifierType1
+	public class ConsignorAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9420,7 +9415,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsigneeAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ConsigneeAssignedIDType : IdentifierType1
+	public class ConsigneeAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9431,7 +9426,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CompanyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CompanyIDType : IdentifierType1
+	public class CompanyIDType : IdentifierType1
 	{
 	}
 
@@ -9442,7 +9437,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ChipApplicationID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class ChipApplicationIDType : IdentifierType1
+	public class ChipApplicationIDType : IdentifierType1
 	{
 	}
 
@@ -9453,7 +9448,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CarrierAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CarrierAssignedIDType : IdentifierType1
+	public class CarrierAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9464,7 +9459,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CV2ID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class CV2IDType : IdentifierType1
+	public class CV2IDType : IdentifierType1
 	{
 	}
 
@@ -9475,7 +9470,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BuyerProfileURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BuyerProfileURIType : IdentifierType1
+	public class BuyerProfileURIType : IdentifierType1
 	{
 	}
 
@@ -9486,7 +9481,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BuyerEventID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BuyerEventIDType : IdentifierType1
+	public class BuyerEventIDType : IdentifierType1
 	{
 	}
 
@@ -9497,7 +9492,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BusinessIdentityEvidenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BusinessIdentityEvidenceIDType : IdentifierType1
+	public class BusinessIdentityEvidenceIDType : IdentifierType1
 	{
 	}
 
@@ -9508,7 +9503,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BusinessClassificationEvidenceID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BusinessClassificationEvidenceIDType : IdentifierType1
+	public class BusinessClassificationEvidenceIDType : IdentifierType1
 	{
 	}
 
@@ -9519,7 +9514,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BrokerAssignedID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BrokerAssignedIDType : IdentifierType1
+	public class BrokerAssignedIDType : IdentifierType1
 	{
 	}
 
@@ -9530,7 +9525,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BarcodeSymbologyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class BarcodeSymbologyIDType : IdentifierType1
+	public class BarcodeSymbologyIDType : IdentifierType1
 	{
 	}
 
@@ -9541,7 +9536,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AwardingCriterionIDType : IdentifierType1
+	public class AwardingCriterionIDType : IdentifierType1
 	{
 	}
 
@@ -9552,7 +9547,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AuctionURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AuctionURIType : IdentifierType1
+	public class AuctionURIType : IdentifierType1
 	{
 	}
 
@@ -9563,7 +9558,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AttributeID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AttributeIDType : IdentifierType1
+	public class AttributeIDType : IdentifierType1
 	{
 	}
 
@@ -9574,7 +9569,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AircraftID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AircraftIDType : IdentifierType1
+	public class AircraftIDType : IdentifierType1
 	{
 	}
 
@@ -9585,7 +9580,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AgencyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AgencyIDType : IdentifierType1
+	public class AgencyIDType : IdentifierType1
 	{
 	}
 
@@ -9596,7 +9591,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalAccountID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AdditionalAccountIDType : IdentifierType1
+	public class AdditionalAccountIDType : IdentifierType1
 	{
 	}
 
@@ -9607,7 +9602,7 @@ namespace GeckoUBL.Ubl21.Cbc
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", IsNullable = false)]
-	public partial class AccountIDType : IdentifierType1
+	public class AccountIDType : IdentifierType1
 	{
 	}
 }

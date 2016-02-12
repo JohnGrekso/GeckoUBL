@@ -1,72 +1,75 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AppealTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class AppealTermsType {
-    
-	private DescriptionType[] descriptionField;
-    
-	private PeriodType presentationPeriodField;
-    
-	private PartyType appealInformationPartyField;
-    
-	private PartyType appealReceiverPartyField;
-    
-	private PartyType mediationPartyField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AppealTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class AppealTermsType {
     
-	/// <remarks/>
-	public PeriodType PresentationPeriod {
-		get {
-			return this.presentationPeriodField;
-		}
-		set {
-			this.presentationPeriodField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	public PartyType AppealInformationParty {
-		get {
-			return this.appealInformationPartyField;
-		}
-		set {
-			this.appealInformationPartyField = value;
-		}
-	}
+		private PeriodType presentationPeriodField;
     
-	/// <remarks/>
-	public PartyType AppealReceiverParty {
-		get {
-			return this.appealReceiverPartyField;
-		}
-		set {
-			this.appealReceiverPartyField = value;
-		}
-	}
+		private PartyType appealInformationPartyField;
     
-	/// <remarks/>
-	public PartyType MediationParty {
-		get {
-			return this.mediationPartyField;
+		private PartyType appealReceiverPartyField;
+    
+		private PartyType mediationPartyField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
 		}
-		set {
-			this.mediationPartyField = value;
+    
+		/// <remarks/>
+		public PeriodType PresentationPeriod {
+			get {
+				return presentationPeriodField;
+			}
+			set {
+				presentationPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType AppealInformationParty {
+			get {
+				return appealInformationPartyField;
+			}
+			set {
+				appealInformationPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType AppealReceiverParty {
+			get {
+				return appealReceiverPartyField;
+			}
+			set {
+				appealReceiverPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType MediationParty {
+			get {
+				return mediationPartyField;
+			}
+			set {
+				mediationPartyField = value;
+			}
 		}
 	}
 }

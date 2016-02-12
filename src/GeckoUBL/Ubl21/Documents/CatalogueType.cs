@@ -3,18 +3,19 @@ using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
+using GeckoUBL.Ubl21.Cac;
 using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Cec;
 
 namespace GeckoUBL.Ubl21.Documents
 {
 	[GeneratedCode("xsd", "4.0.30319.33440")]
-	[Serializable()]
-	[DebuggerStepThrough()]
+	[Serializable]
+	[DebuggerStepThrough]
 	[DesignerCategory("code")]
 	[XmlType(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2")]
 	[XmlRoot("Catalogue", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2", IsNullable = false)]
-	public class CatalogueType
+	public class CatalogueType : BaseUblDocument
 	{
 		[XmlArray(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 		[XmlArrayItem("UBLExtension", IsNullable = false)]

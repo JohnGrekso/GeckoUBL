@@ -1,50 +1,53 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("PromotionalSpecification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class PromotionalSpecificationType {
-    
-	private SpecificationIDType specificationIDField;
-    
-	private PromotionalEventLineItemType[] promotionalEventLineItemField;
-    
-	private EventTacticType[] eventTacticField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public SpecificationIDType SpecificationID {
-		get {
-			return this.specificationIDField;
-		}
-		set {
-			this.specificationIDField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("PromotionalSpecification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class PromotionalSpecificationType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("PromotionalEventLineItem")]
-	public PromotionalEventLineItemType[] PromotionalEventLineItem {
-		get {
-			return this.promotionalEventLineItemField;
-		}
-		set {
-			this.promotionalEventLineItemField = value;
-		}
-	}
+		private SpecificationIDType specificationIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("EventTactic")]
-	public EventTacticType[] EventTactic {
-		get {
-			return this.eventTacticField;
+		private PromotionalEventLineItemType[] promotionalEventLineItemField;
+    
+		private EventTacticType[] eventTacticField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public SpecificationIDType SpecificationID {
+			get {
+				return specificationIDField;
+			}
+			set {
+				specificationIDField = value;
+			}
 		}
-		set {
-			this.eventTacticField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("PromotionalEventLineItem")]
+		public PromotionalEventLineItemType[] PromotionalEventLineItem {
+			get {
+				return promotionalEventLineItemField;
+			}
+			set {
+				promotionalEventLineItemField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("EventTactic")]
+		public EventTacticType[] EventTactic {
+			get {
+				return eventTacticField;
+			}
+			set {
+				eventTacticField = value;
+			}
 		}
 	}
 }

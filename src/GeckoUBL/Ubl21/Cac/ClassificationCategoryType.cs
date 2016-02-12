@@ -1,63 +1,66 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("CategorizesClassificationCategory", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ClassificationCategoryType {
-    
-	private NameType1 nameField;
-    
-	private CodeValueType codeValueField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private ClassificationCategoryType[] categorizesClassificationCategoryField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NameType1 Name {
-		get {
-			return this.nameField;
-		}
-		set {
-			this.nameField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("CategorizesClassificationCategory", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ClassificationCategoryType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CodeValueType CodeValue {
-		get {
-			return this.codeValueField;
-		}
-		set {
-			this.codeValueField = value;
-		}
-	}
+		private NameType1 nameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private CodeValueType codeValueField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("CategorizesClassificationCategory")]
-	public ClassificationCategoryType[] CategorizesClassificationCategory {
-		get {
-			return this.categorizesClassificationCategoryField;
+		private DescriptionType[] descriptionField;
+    
+		private ClassificationCategoryType[] categorizesClassificationCategoryField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NameType1 Name {
+			get {
+				return nameField;
+			}
+			set {
+				nameField = value;
+			}
 		}
-		set {
-			this.categorizesClassificationCategoryField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CodeValueType CodeValue {
+			get {
+				return codeValueField;
+			}
+			set {
+				codeValueField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("CategorizesClassificationCategory")]
+		public ClassificationCategoryType[] CategorizesClassificationCategory {
+			get {
+				return categorizesClassificationCategoryField;
+			}
+			set {
+				categorizesClassificationCategoryField = value;
+			}
 		}
 	}
 }

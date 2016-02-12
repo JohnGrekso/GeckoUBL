@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GeckoUBL.Ubl21.Cbc;
+﻿using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cec
@@ -15,7 +10,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionReasonType : TextType1
+	public class ExtensionReasonType : TextType1
 	{
 	}
 
@@ -26,7 +21,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionAgencyNameType : TextType1
+	public class ExtensionAgencyNameType : TextType1
 	{
 	}
 
@@ -37,7 +32,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionReasonCodeType : CodeType1
+	public class ExtensionReasonCodeType : CodeType1
 	{
 	}
 
@@ -48,7 +43,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionVersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionVersionIDType : IdentifierType1
+	public class ExtensionVersionIDType : IdentifierType1
 	{
 	}
 
@@ -59,7 +54,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionURIType : IdentifierType1
+	public class ExtensionURIType : IdentifierType1
 	{
 	}
 
@@ -70,7 +65,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionAgencyURIType : IdentifierType1
+	public class ExtensionAgencyURIType : IdentifierType1
 	{
 	}
 
@@ -81,7 +76,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class ExtensionAgencyIDType : IdentifierType1
+	public class ExtensionAgencyIDType : IdentifierType1
 	{
 	}
 
@@ -92,7 +87,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UBLExtensions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class UBLExtensionsType
+	public class UBLExtensionsType
 	{
 
 		private UBLExtensionType[] uBLExtensionField;
@@ -103,11 +98,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.uBLExtensionField;
+				return uBLExtensionField;
 			}
 			set
 			{
-				this.uBLExtensionField = value;
+				uBLExtensionField = value;
 			}
 		}
 	}
@@ -119,7 +114,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UBLExtension", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public partial class UBLExtensionType
+	public class UBLExtensionType
 	{
 
 		private IDType idField;
@@ -148,11 +143,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.idField;
+				return idField;
 			}
 			set
 			{
-				this.idField = value;
+				idField = value;
 			}
 		}
 
@@ -162,11 +157,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.nameField;
+				return nameField;
 			}
 			set
 			{
-				this.nameField = value;
+				nameField = value;
 			}
 		}
 
@@ -175,11 +170,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionAgencyIDField;
+				return extensionAgencyIDField;
 			}
 			set
 			{
-				this.extensionAgencyIDField = value;
+				extensionAgencyIDField = value;
 			}
 		}
 
@@ -188,11 +183,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionAgencyNameField;
+				return extensionAgencyNameField;
 			}
 			set
 			{
-				this.extensionAgencyNameField = value;
+				extensionAgencyNameField = value;
 			}
 		}
 
@@ -201,11 +196,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionVersionIDField;
+				return extensionVersionIDField;
 			}
 			set
 			{
-				this.extensionVersionIDField = value;
+				extensionVersionIDField = value;
 			}
 		}
 
@@ -214,11 +209,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionAgencyURIField;
+				return extensionAgencyURIField;
 			}
 			set
 			{
-				this.extensionAgencyURIField = value;
+				extensionAgencyURIField = value;
 			}
 		}
 
@@ -227,11 +222,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionURIField;
+				return extensionURIField;
 			}
 			set
 			{
-				this.extensionURIField = value;
+				extensionURIField = value;
 			}
 		}
 
@@ -240,11 +235,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionReasonCodeField;
+				return extensionReasonCodeField;
 			}
 			set
 			{
-				this.extensionReasonCodeField = value;
+				extensionReasonCodeField = value;
 			}
 		}
 
@@ -253,11 +248,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionReasonField;
+				return extensionReasonField;
 			}
 			set
 			{
-				this.extensionReasonField = value;
+				extensionReasonField = value;
 			}
 		}
 
@@ -266,11 +261,11 @@ namespace GeckoUBL.Ubl21.Cec
 		{
 			get
 			{
-				return this.extensionContentField;
+				return extensionContentField;
 			}
 			set
 			{
-				this.extensionContentField = value;
+				extensionContentField = value;
 			}
 		}
 	}

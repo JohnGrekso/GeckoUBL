@@ -1,75 +1,78 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("FinalFinancialGuarantee", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class FinancialGuaranteeType {
-    
-	private GuaranteeTypeCodeType guaranteeTypeCodeField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private LiabilityAmountType liabilityAmountField;
-    
-	private AmountRateType amountRateField;
-    
-	private PeriodType constitutionPeriodField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public GuaranteeTypeCodeType GuaranteeTypeCode {
-		get {
-			return this.guaranteeTypeCodeField;
-		}
-		set {
-			this.guaranteeTypeCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("FinalFinancialGuarantee", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class FinancialGuaranteeType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private GuaranteeTypeCodeType guaranteeTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public LiabilityAmountType LiabilityAmount {
-		get {
-			return this.liabilityAmountField;
-		}
-		set {
-			this.liabilityAmountField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AmountRateType AmountRate {
-		get {
-			return this.amountRateField;
-		}
-		set {
-			this.amountRateField = value;
-		}
-	}
+		private LiabilityAmountType liabilityAmountField;
     
-	/// <remarks/>
-	public PeriodType ConstitutionPeriod {
-		get {
-			return this.constitutionPeriodField;
+		private AmountRateType amountRateField;
+    
+		private PeriodType constitutionPeriodField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public GuaranteeTypeCodeType GuaranteeTypeCode {
+			get {
+				return guaranteeTypeCodeField;
+			}
+			set {
+				guaranteeTypeCodeField = value;
+			}
 		}
-		set {
-			this.constitutionPeriodField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public LiabilityAmountType LiabilityAmount {
+			get {
+				return liabilityAmountField;
+			}
+			set {
+				liabilityAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AmountRateType AmountRate {
+			get {
+				return amountRateField;
+			}
+			set {
+				amountRateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType ConstitutionPeriod {
+			get {
+				return constitutionPeriodField;
+			}
+			set {
+				constitutionPeriodField = value;
+			}
 		}
 	}
 }

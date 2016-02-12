@@ -1,48 +1,51 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("DependentPriceReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class DependentPriceReferenceType {
-    
-	private PercentType1 percentField;
-    
-	private AddressType locationAddressField;
-    
-	private LineReferenceType dependentLineReferenceField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PercentType1 Percent {
-		get {
-			return this.percentField;
-		}
-		set {
-			this.percentField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("DependentPriceReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class DependentPriceReferenceType {
     
-	/// <remarks/>
-	public AddressType LocationAddress {
-		get {
-			return this.locationAddressField;
-		}
-		set {
-			this.locationAddressField = value;
-		}
-	}
+		private PercentType1 percentField;
     
-	/// <remarks/>
-	public LineReferenceType DependentLineReference {
-		get {
-			return this.dependentLineReferenceField;
+		private AddressType locationAddressField;
+    
+		private LineReferenceType dependentLineReferenceField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PercentType1 Percent {
+			get {
+				return percentField;
+			}
+			set {
+				percentField = value;
+			}
 		}
-		set {
-			this.dependentLineReferenceField = value;
+    
+		/// <remarks/>
+		public AddressType LocationAddress {
+			get {
+				return locationAddressField;
+			}
+			set {
+				locationAddressField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public LineReferenceType DependentLineReference {
+			get {
+				return dependentLineReferenceField;
+			}
+			set {
+				dependentLineReferenceField = value;
+			}
 		}
 	}
 }

@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GeckoUBL.Ubl21.Cbc;
+﻿using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Ccts;
 using GeckoUBL.Ubl21.Cec;
+using GeckoUBL.Ubl21.Signature;
 
 namespace GeckoUBL.Ubl21.Udt
 {
@@ -127,7 +124,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "IdentifierType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class IdentifierType1 : IdentifierType
+	public class IdentifierType1 : IdentifierType
 	{
 	}
 
@@ -137,7 +134,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class VideoType : BinaryObjectType
+	public class VideoType : BinaryObjectType
 	{
 	}
 
@@ -147,7 +144,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class SoundType : BinaryObjectType
+	public class SoundType : BinaryObjectType
 	{
 	}
 
@@ -157,7 +154,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class PictureType : BinaryObjectType
+	public class PictureType : BinaryObjectType
 	{
 	}
 
@@ -167,7 +164,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class GraphicType : BinaryObjectType
+	public class GraphicType : BinaryObjectType
 	{
 	}
 
@@ -178,7 +175,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "BinaryObjectType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class BinaryObjectType1 : BinaryObjectType
+	public class BinaryObjectType1 : BinaryObjectType
 	{
 	}
 
@@ -194,7 +191,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class RateType : NumericType
+	public class RateType : NumericType
 	{
 	}
 
@@ -218,7 +215,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class PercentType : NumericType
+	public class PercentType : NumericType
 	{
 	}
 
@@ -228,7 +225,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "ValueType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class ValueType1 : NumericType
+	public class ValueType1 : NumericType
 	{
 	}
 
@@ -255,7 +252,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "NumericType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class NumericType1 : NumericType
+	public class NumericType1 : NumericType
 	{
 	}
 
@@ -333,7 +330,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "AmountType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class AmountType1 : AmountType
+	public class AmountType1 : AmountType
 	{
 	}
 
@@ -408,7 +405,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "QuantityType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class QuantityType1 : QuantityType
+	public class QuantityType1 : QuantityType
 	{
 	}
 
@@ -444,7 +441,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "MeasureType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class MeasureType1 : MeasureType
+	public class MeasureType1 : MeasureType
 	{
 	}
 
@@ -514,7 +511,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class IndicatorType
+	public class IndicatorType
 	{
 
 		private bool valueField;
@@ -525,11 +522,11 @@ namespace GeckoUBL.Ubl21.Udt
 		{
 			get
 			{
-				return this.valueField;
+				return valueField;
 			}
 			set
 			{
-				this.valueField = value;
+				valueField = value;
 			}
 		}
 	}
@@ -563,7 +560,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class NameType : TextType
+	public class NameType : TextType
 	{
 	}
 
@@ -762,7 +759,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "TextType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class TextType1 : TextType
+	public class TextType1 : TextType
 	{
 	}
 
@@ -986,7 +983,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName = "CodeType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class CodeType1 : CodeType
+	public class CodeType1 : CodeType
 	{
 	}
 
@@ -1027,7 +1024,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class TimeType
+	public class TimeType
 	{
 
 		private System.DateTime valueField;
@@ -1038,11 +1035,11 @@ namespace GeckoUBL.Ubl21.Udt
 		{
 			get
 			{
-				return this.valueField;
+				return valueField;
 			}
 			set
 			{
-				this.valueField = value;
+				valueField = value;
 			}
 		}
 	}
@@ -1107,7 +1104,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public partial class DateType
+	public class DateType
 	{
 
 		private System.DateTime valueField;
@@ -1118,11 +1115,11 @@ namespace GeckoUBL.Ubl21.Udt
 		{
 			get
 			{
-				return this.valueField;
+				return valueField;
 			}
 			set
 			{
-				this.valueField = value;
+				valueField = value;
 			}
 		}
 	}

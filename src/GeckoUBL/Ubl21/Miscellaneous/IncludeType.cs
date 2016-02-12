@@ -1,48 +1,51 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
-[System.Xml.Serialization.XmlRootAttribute("Include", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
-public partial class IncludeType {
-    
-	private string uRIField;
-    
-	private bool referencedDataField;
-    
-	private bool referencedDataFieldSpecified;
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-	public string URI {
-		get {
-			return this.uRIField;
-		}
-		set {
-			this.uRIField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
+	[System.Xml.Serialization.XmlRootAttribute("Include", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
+	public class IncludeType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public bool referencedData {
-		get {
-			return this.referencedDataField;
-		}
-		set {
-			this.referencedDataField = value;
-		}
-	}
+		private string uRIField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlIgnoreAttribute()]
-	public bool referencedDataSpecified {
-		get {
-			return this.referencedDataFieldSpecified;
+		private bool referencedDataField;
+    
+		private bool referencedDataFieldSpecified;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+		public string URI {
+			get {
+				return uRIField;
+			}
+			set {
+				uRIField = value;
+			}
 		}
-		set {
-			this.referencedDataFieldSpecified = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAttributeAttribute()]
+		public bool referencedData {
+			get {
+				return referencedDataField;
+			}
+			set {
+				referencedDataField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlIgnoreAttribute()]
+		public bool referencedDataSpecified {
+			get {
+				return referencedDataFieldSpecified;
+			}
+			set {
+				referencedDataFieldSpecified = value;
+			}
 		}
 	}
 }

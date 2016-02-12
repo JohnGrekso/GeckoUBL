@@ -1,75 +1,78 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ContractExtension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ContractExtensionType {
-    
-	private OptionsDescriptionType[] optionsDescriptionField;
-    
-	private MinimumNumberNumericType minimumNumberNumericField;
-    
-	private MaximumNumberNumericType maximumNumberNumericField;
-    
-	private PeriodType optionValidityPeriodField;
-    
-	private RenewalType[] renewalField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("OptionsDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public OptionsDescriptionType[] OptionsDescription {
-		get {
-			return this.optionsDescriptionField;
-		}
-		set {
-			this.optionsDescriptionField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ContractExtension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ContractExtensionType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MinimumNumberNumericType MinimumNumberNumeric {
-		get {
-			return this.minimumNumberNumericField;
-		}
-		set {
-			this.minimumNumberNumericField = value;
-		}
-	}
+		private OptionsDescriptionType[] optionsDescriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public MaximumNumberNumericType MaximumNumberNumeric {
-		get {
-			return this.maximumNumberNumericField;
-		}
-		set {
-			this.maximumNumberNumericField = value;
-		}
-	}
+		private MinimumNumberNumericType minimumNumberNumericField;
     
-	/// <remarks/>
-	public PeriodType OptionValidityPeriod {
-		get {
-			return this.optionValidityPeriodField;
-		}
-		set {
-			this.optionValidityPeriodField = value;
-		}
-	}
+		private MaximumNumberNumericType maximumNumberNumericField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Renewal")]
-	public RenewalType[] Renewal {
-		get {
-			return this.renewalField;
+		private PeriodType optionValidityPeriodField;
+    
+		private RenewalType[] renewalField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("OptionsDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public OptionsDescriptionType[] OptionsDescription {
+			get {
+				return optionsDescriptionField;
+			}
+			set {
+				optionsDescriptionField = value;
+			}
 		}
-		set {
-			this.renewalField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MinimumNumberNumericType MinimumNumberNumeric {
+			get {
+				return minimumNumberNumericField;
+			}
+			set {
+				minimumNumberNumericField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public MaximumNumberNumericType MaximumNumberNumeric {
+			get {
+				return maximumNumberNumericField;
+			}
+			set {
+				maximumNumberNumericField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType OptionValidityPeriod {
+			get {
+				return optionValidityPeriodField;
+			}
+			set {
+				optionValidityPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Renewal")]
+		public RenewalType[] Renewal {
+			get {
+				return renewalField;
+			}
+			set {
+				renewalField = value;
+			}
 		}
 	}
 }

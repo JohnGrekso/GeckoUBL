@@ -12,18 +12,11 @@ namespace GeckoUBL.Ubl21.Extensions
 	{
 		public static string ToXml(this BaseUblDocument doc)
 		{
-			var settings = new XmlWriterSettings
-			{
-				CloseOutput = false,
-				Indent = true,
-				NamespaceHandling = NamespaceHandling.OmitDuplicates
-			};
-
 			var serializer = new XmlSerializer(doc.GetType());
 
 			using (var stringWriter = new StringWriter())
 			{
-				using (var xmlWriter = XmlWriter.Create(stringWriter, settings))
+				using (var xmlWriter = XmlWriter.Create(stringWriter))
 				{
 					serializer.Serialize(xmlWriter, doc, doc.Xmlns);
 				}

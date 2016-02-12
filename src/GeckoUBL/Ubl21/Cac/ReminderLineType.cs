@@ -1,192 +1,195 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ReminderLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ReminderLineType {
-    
-	private IDType idField;
-    
-	private NoteType[] noteField;
-    
-	private UUIDType uUIDField;
-    
-	private BalanceBroughtForwardIndicatorType balanceBroughtForwardIndicatorField;
-    
-	private DebitLineAmountType debitLineAmountField;
-    
-	private CreditLineAmountType creditLineAmountField;
-    
-	private AccountingCostCodeType accountingCostCodeField;
-    
-	private AccountingCostType accountingCostField;
-    
-	private PenaltySurchargePercentType penaltySurchargePercentField;
-    
-	private AmountType2 amountField;
-    
-	private PaymentPurposeCodeType paymentPurposeCodeField;
-    
-	private PeriodType[] reminderPeriodField;
-    
-	private BillingReferenceType[] billingReferenceField;
-    
-	private ExchangeRateType exchangeRateField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ReminderLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ReminderLineType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NoteType[] Note {
-		get {
-			return this.noteField;
-		}
-		set {
-			this.noteField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public UUIDType UUID {
-		get {
-			return this.uUIDField;
-		}
-		set {
-			this.uUIDField = value;
-		}
-	}
+		private NoteType[] noteField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public BalanceBroughtForwardIndicatorType BalanceBroughtForwardIndicator {
-		get {
-			return this.balanceBroughtForwardIndicatorField;
-		}
-		set {
-			this.balanceBroughtForwardIndicatorField = value;
-		}
-	}
+		private UUIDType uUIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DebitLineAmountType DebitLineAmount {
-		get {
-			return this.debitLineAmountField;
-		}
-		set {
-			this.debitLineAmountField = value;
-		}
-	}
+		private BalanceBroughtForwardIndicatorType balanceBroughtForwardIndicatorField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CreditLineAmountType CreditLineAmount {
-		get {
-			return this.creditLineAmountField;
-		}
-		set {
-			this.creditLineAmountField = value;
-		}
-	}
+		private DebitLineAmountType debitLineAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AccountingCostCodeType AccountingCostCode {
-		get {
-			return this.accountingCostCodeField;
-		}
-		set {
-			this.accountingCostCodeField = value;
-		}
-	}
+		private CreditLineAmountType creditLineAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AccountingCostType AccountingCost {
-		get {
-			return this.accountingCostField;
-		}
-		set {
-			this.accountingCostField = value;
-		}
-	}
+		private AccountingCostCodeType accountingCostCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PenaltySurchargePercentType PenaltySurchargePercent {
-		get {
-			return this.penaltySurchargePercentField;
-		}
-		set {
-			this.penaltySurchargePercentField = value;
-		}
-	}
+		private AccountingCostType accountingCostField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AmountType2 Amount {
-		get {
-			return this.amountField;
-		}
-		set {
-			this.amountField = value;
-		}
-	}
+		private PenaltySurchargePercentType penaltySurchargePercentField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PaymentPurposeCodeType PaymentPurposeCode {
-		get {
-			return this.paymentPurposeCodeField;
-		}
-		set {
-			this.paymentPurposeCodeField = value;
-		}
-	}
+		private AmountType2 amountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("ReminderPeriod")]
-	public PeriodType[] ReminderPeriod {
-		get {
-			return this.reminderPeriodField;
-		}
-		set {
-			this.reminderPeriodField = value;
-		}
-	}
+		private PaymentPurposeCodeType paymentPurposeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("BillingReference")]
-	public BillingReferenceType[] BillingReference {
-		get {
-			return this.billingReferenceField;
-		}
-		set {
-			this.billingReferenceField = value;
-		}
-	}
+		private PeriodType[] reminderPeriodField;
     
-	/// <remarks/>
-	public ExchangeRateType ExchangeRate {
-		get {
-			return this.exchangeRateField;
+		private BillingReferenceType[] billingReferenceField;
+    
+		private ExchangeRateType exchangeRateField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.exchangeRateField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NoteType[] Note {
+			get {
+				return noteField;
+			}
+			set {
+				noteField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public UUIDType UUID {
+			get {
+				return uUIDField;
+			}
+			set {
+				uUIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public BalanceBroughtForwardIndicatorType BalanceBroughtForwardIndicator {
+			get {
+				return balanceBroughtForwardIndicatorField;
+			}
+			set {
+				balanceBroughtForwardIndicatorField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DebitLineAmountType DebitLineAmount {
+			get {
+				return debitLineAmountField;
+			}
+			set {
+				debitLineAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CreditLineAmountType CreditLineAmount {
+			get {
+				return creditLineAmountField;
+			}
+			set {
+				creditLineAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AccountingCostCodeType AccountingCostCode {
+			get {
+				return accountingCostCodeField;
+			}
+			set {
+				accountingCostCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AccountingCostType AccountingCost {
+			get {
+				return accountingCostField;
+			}
+			set {
+				accountingCostField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PenaltySurchargePercentType PenaltySurchargePercent {
+			get {
+				return penaltySurchargePercentField;
+			}
+			set {
+				penaltySurchargePercentField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AmountType2 Amount {
+			get {
+				return amountField;
+			}
+			set {
+				amountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PaymentPurposeCodeType PaymentPurposeCode {
+			get {
+				return paymentPurposeCodeField;
+			}
+			set {
+				paymentPurposeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("ReminderPeriod")]
+		public PeriodType[] ReminderPeriod {
+			get {
+				return reminderPeriodField;
+			}
+			set {
+				reminderPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("BillingReference")]
+		public BillingReferenceType[] BillingReference {
+			get {
+				return billingReferenceField;
+			}
+			set {
+				billingReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ExchangeRateType ExchangeRate {
+			get {
+				return exchangeRateField;
+			}
+			set {
+				exchangeRateField = value;
+			}
 		}
 	}
 }

@@ -1,49 +1,52 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
-[System.Xml.Serialization.XmlRootAttribute("Transform", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
-public partial class TransformType {
-    
-	private object[] itemsField;
-    
-	private string[] textField;
-    
-	private string algorithmField;
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlAnyElementAttribute()]
-	[System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
-	public object[] Items {
-		get {
-			return this.itemsField;
-		}
-		set {
-			this.itemsField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
+	[System.Xml.Serialization.XmlRootAttribute("Transform", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
+	public class TransformType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlTextAttribute()]
-	public string[] Text {
-		get {
-			return this.textField;
-		}
-		set {
-			this.textField = value;
-		}
-	}
+		private object[] itemsField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-	public string Algorithm {
-		get {
-			return this.algorithmField;
+		private string[] textField;
+    
+		private string algorithmField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAnyElementAttribute()]
+		[System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
+		public object[] Items {
+			get {
+				return itemsField;
+			}
+			set {
+				itemsField = value;
+			}
 		}
-		set {
-			this.algorithmField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlTextAttribute()]
+		public string[] Text {
+			get {
+				return textField;
+			}
+			set {
+				textField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+		public string Algorithm {
+			get {
+				return algorithmField;
+			}
+			set {
+				algorithmField = value;
+			}
 		}
 	}
 }

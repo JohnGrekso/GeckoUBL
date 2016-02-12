@@ -1,89 +1,92 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("NotificationRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class NotificationRequirementType {
-    
-	private NotificationTypeCodeType notificationTypeCodeField;
-    
-	private PostEventNotificationDurationMeasureType postEventNotificationDurationMeasureField;
-    
-	private PreEventNotificationDurationMeasureType preEventNotificationDurationMeasureField;
-    
-	private PartyType[] notifyPartyField;
-    
-	private PeriodType[] notificationPeriodField;
-    
-	private LocationType1[] notificationLocationField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NotificationTypeCodeType NotificationTypeCode {
-		get {
-			return this.notificationTypeCodeField;
-		}
-		set {
-			this.notificationTypeCodeField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("NotificationRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class NotificationRequirementType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PostEventNotificationDurationMeasureType PostEventNotificationDurationMeasure {
-		get {
-			return this.postEventNotificationDurationMeasureField;
-		}
-		set {
-			this.postEventNotificationDurationMeasureField = value;
-		}
-	}
+		private NotificationTypeCodeType notificationTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PreEventNotificationDurationMeasureType PreEventNotificationDurationMeasure {
-		get {
-			return this.preEventNotificationDurationMeasureField;
-		}
-		set {
-			this.preEventNotificationDurationMeasureField = value;
-		}
-	}
+		private PostEventNotificationDurationMeasureType postEventNotificationDurationMeasureField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("NotifyParty")]
-	public PartyType[] NotifyParty {
-		get {
-			return this.notifyPartyField;
-		}
-		set {
-			this.notifyPartyField = value;
-		}
-	}
+		private PreEventNotificationDurationMeasureType preEventNotificationDurationMeasureField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("NotificationPeriod")]
-	public PeriodType[] NotificationPeriod {
-		get {
-			return this.notificationPeriodField;
-		}
-		set {
-			this.notificationPeriodField = value;
-		}
-	}
+		private PartyType[] notifyPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("NotificationLocation")]
-	public LocationType1[] NotificationLocation {
-		get {
-			return this.notificationLocationField;
+		private PeriodType[] notificationPeriodField;
+    
+		private LocationType1[] notificationLocationField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NotificationTypeCodeType NotificationTypeCode {
+			get {
+				return notificationTypeCodeField;
+			}
+			set {
+				notificationTypeCodeField = value;
+			}
 		}
-		set {
-			this.notificationLocationField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PostEventNotificationDurationMeasureType PostEventNotificationDurationMeasure {
+			get {
+				return postEventNotificationDurationMeasureField;
+			}
+			set {
+				postEventNotificationDurationMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PreEventNotificationDurationMeasureType PreEventNotificationDurationMeasure {
+			get {
+				return preEventNotificationDurationMeasureField;
+			}
+			set {
+				preEventNotificationDurationMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("NotifyParty")]
+		public PartyType[] NotifyParty {
+			get {
+				return notifyPartyField;
+			}
+			set {
+				notifyPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("NotificationPeriod")]
+		public PeriodType[] NotificationPeriod {
+			get {
+				return notificationPeriodField;
+			}
+			set {
+				notificationPeriodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("NotificationLocation")]
+		public LocationType1[] NotificationLocation {
+			get {
+				return notificationLocationField;
+			}
+			set {
+				notificationLocationField = value;
+			}
 		}
 	}
 }

@@ -1,126 +1,129 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("FinancialAccount", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class FinancialAccountType {
-    
-	private IDType idField;
-    
-	private NameType1 nameField;
-    
-	private AliasNameType aliasNameField;
-    
-	private AccountTypeCodeType accountTypeCodeField;
-    
-	private AccountFormatCodeType accountFormatCodeField;
-    
-	private CurrencyCodeType currencyCodeField;
-    
-	private PaymentNoteType[] paymentNoteField;
-    
-	private BranchType financialInstitutionBranchField;
-    
-	private CountryType countryField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("FinancialAccount", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class FinancialAccountType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NameType1 Name {
-		get {
-			return this.nameField;
-		}
-		set {
-			this.nameField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AliasNameType AliasName {
-		get {
-			return this.aliasNameField;
-		}
-		set {
-			this.aliasNameField = value;
-		}
-	}
+		private NameType1 nameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AccountTypeCodeType AccountTypeCode {
-		get {
-			return this.accountTypeCodeField;
-		}
-		set {
-			this.accountTypeCodeField = value;
-		}
-	}
+		private AliasNameType aliasNameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AccountFormatCodeType AccountFormatCode {
-		get {
-			return this.accountFormatCodeField;
-		}
-		set {
-			this.accountFormatCodeField = value;
-		}
-	}
+		private AccountTypeCodeType accountTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public CurrencyCodeType CurrencyCode {
-		get {
-			return this.currencyCodeField;
-		}
-		set {
-			this.currencyCodeField = value;
-		}
-	}
+		private AccountFormatCodeType accountFormatCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("PaymentNote", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public PaymentNoteType[] PaymentNote {
-		get {
-			return this.paymentNoteField;
-		}
-		set {
-			this.paymentNoteField = value;
-		}
-	}
+		private CurrencyCodeType currencyCodeField;
     
-	/// <remarks/>
-	public BranchType FinancialInstitutionBranch {
-		get {
-			return this.financialInstitutionBranchField;
-		}
-		set {
-			this.financialInstitutionBranchField = value;
-		}
-	}
+		private PaymentNoteType[] paymentNoteField;
     
-	/// <remarks/>
-	public CountryType Country {
-		get {
-			return this.countryField;
+		private BranchType financialInstitutionBranchField;
+    
+		private CountryType countryField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.countryField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NameType1 Name {
+			get {
+				return nameField;
+			}
+			set {
+				nameField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AliasNameType AliasName {
+			get {
+				return aliasNameField;
+			}
+			set {
+				aliasNameField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AccountTypeCodeType AccountTypeCode {
+			get {
+				return accountTypeCodeField;
+			}
+			set {
+				accountTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AccountFormatCodeType AccountFormatCode {
+			get {
+				return accountFormatCodeField;
+			}
+			set {
+				accountFormatCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public CurrencyCodeType CurrencyCode {
+			get {
+				return currencyCodeField;
+			}
+			set {
+				currencyCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("PaymentNote", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public PaymentNoteType[] PaymentNote {
+			get {
+				return paymentNoteField;
+			}
+			set {
+				paymentNoteField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public BranchType FinancialInstitutionBranch {
+			get {
+				return financialInstitutionBranchField;
+			}
+			set {
+				financialInstitutionBranchField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public CountryType Country {
+			get {
+				return countryField;
+			}
+			set {
+				countryField = value;
+			}
 		}
 	}
 }

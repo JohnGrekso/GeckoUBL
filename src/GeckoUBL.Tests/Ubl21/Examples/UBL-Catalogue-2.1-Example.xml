@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Catalogue xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:a="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" xmlns:ccts="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentParameters-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2  ../UBL%202.1%20schema/maindoc/UBL-Catalogue-2.1.xsd">
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">  
 	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
 	<cbc:ID>1234</cbc:ID>
 	<cbc:ActionCode>Add</cbc:ActionCode>

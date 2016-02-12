@@ -1,32 +1,35 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
-public partial class CRLRefType {
-    
-	private DigestAlgAndValueType digestAlgAndValueField;
-    
-	private CRLIdentifierType cRLIdentifierField;
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	public DigestAlgAndValueType DigestAlgAndValue {
-		get {
-			return this.digestAlgAndValueField;
-		}
-		set {
-			this.digestAlgAndValueField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
+	public class CRLRefType {
     
-	/// <remarks/>
-	public CRLIdentifierType CRLIdentifier {
-		get {
-			return this.cRLIdentifierField;
+		private DigestAlgAndValueType digestAlgAndValueField;
+    
+		private CRLIdentifierType cRLIdentifierField;
+    
+		/// <remarks/>
+		public DigestAlgAndValueType DigestAlgAndValue {
+			get {
+				return digestAlgAndValueField;
+			}
+			set {
+				digestAlgAndValueField = value;
+			}
 		}
-		set {
-			this.cRLIdentifierField = value;
+    
+		/// <remarks/>
+		public CRLIdentifierType CRLIdentifier {
+			get {
+				return cRLIdentifierField;
+			}
+			set {
+				cRLIdentifierField = value;
+			}
 		}
 	}
 }

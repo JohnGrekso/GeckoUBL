@@ -1,102 +1,105 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class AwardingCriterionResponseType {
-    
-	private IDType idField;
-    
-	private AwardingCriterionIDType awardingCriterionIDField;
-    
-	private AwardingCriterionDescriptionType[] awardingCriterionDescriptionField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private QuantityType2 quantityField;
-    
-	private AmountType2 amountField;
-    
-	private AwardingCriterionResponseType[] subordinateAwardingCriterionResponseField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class AwardingCriterionResponseType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AwardingCriterionIDType AwardingCriterionID {
-		get {
-			return this.awardingCriterionIDField;
-		}
-		set {
-			this.awardingCriterionIDField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AwardingCriterionDescriptionType[] AwardingCriterionDescription {
-		get {
-			return this.awardingCriterionDescriptionField;
-		}
-		set {
-			this.awardingCriterionDescriptionField = value;
-		}
-	}
+		private AwardingCriterionIDType awardingCriterionIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private AwardingCriterionDescriptionType[] awardingCriterionDescriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public QuantityType2 Quantity {
-		get {
-			return this.quantityField;
-		}
-		set {
-			this.quantityField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public AmountType2 Amount {
-		get {
-			return this.amountField;
-		}
-		set {
-			this.amountField = value;
-		}
-	}
+		private QuantityType2 quantityField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("SubordinateAwardingCriterionResponse")]
-	public AwardingCriterionResponseType[] SubordinateAwardingCriterionResponse {
-		get {
-			return this.subordinateAwardingCriterionResponseField;
+		private AmountType2 amountField;
+    
+		private AwardingCriterionResponseType[] subordinateAwardingCriterionResponseField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.subordinateAwardingCriterionResponseField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AwardingCriterionIDType AwardingCriterionID {
+			get {
+				return awardingCriterionIDField;
+			}
+			set {
+				awardingCriterionIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AwardingCriterionDescriptionType[] AwardingCriterionDescription {
+			get {
+				return awardingCriterionDescriptionField;
+			}
+			set {
+				awardingCriterionDescriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public QuantityType2 Quantity {
+			get {
+				return quantityField;
+			}
+			set {
+				quantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public AmountType2 Amount {
+			get {
+				return amountField;
+			}
+			set {
+				amountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("SubordinateAwardingCriterionResponse")]
+		public AwardingCriterionResponseType[] SubordinateAwardingCriterionResponse {
+			get {
+				return subordinateAwardingCriterionResponseField;
+			}
+			set {
+				subordinateAwardingCriterionResponseField = value;
+			}
 		}
 	}
 }

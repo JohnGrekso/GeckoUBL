@@ -1,102 +1,105 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ActivityPeriod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class PeriodType {
-    
-	private StartDateType startDateField;
-    
-	private StartTimeType startTimeField;
-    
-	private EndDateType endDateField;
-    
-	private EndTimeType endTimeField;
-    
-	private DurationMeasureType durationMeasureField;
-    
-	private DescriptionCodeType[] descriptionCodeField;
-    
-	private DescriptionType[] descriptionField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public StartDateType StartDate {
-		get {
-			return this.startDateField;
-		}
-		set {
-			this.startDateField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ActivityPeriod", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class PeriodType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public StartTimeType StartTime {
-		get {
-			return this.startTimeField;
-		}
-		set {
-			this.startTimeField = value;
-		}
-	}
+		private StartDateType startDateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public EndDateType EndDate {
-		get {
-			return this.endDateField;
-		}
-		set {
-			this.endDateField = value;
-		}
-	}
+		private StartTimeType startTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public EndTimeType EndTime {
-		get {
-			return this.endTimeField;
-		}
-		set {
-			this.endTimeField = value;
-		}
-	}
+		private EndDateType endDateField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DurationMeasureType DurationMeasure {
-		get {
-			return this.durationMeasureField;
-		}
-		set {
-			this.durationMeasureField = value;
-		}
-	}
+		private EndTimeType endTimeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("DescriptionCode", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionCodeType[] DescriptionCode {
-		get {
-			return this.descriptionCodeField;
-		}
-		set {
-			this.descriptionCodeField = value;
-		}
-	}
+		private DurationMeasureType durationMeasureField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
+		private DescriptionCodeType[] descriptionCodeField;
+    
+		private DescriptionType[] descriptionField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public StartDateType StartDate {
+			get {
+				return startDateField;
+			}
+			set {
+				startDateField = value;
+			}
 		}
-		set {
-			this.descriptionField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public StartTimeType StartTime {
+			get {
+				return startTimeField;
+			}
+			set {
+				startTimeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public EndDateType EndDate {
+			get {
+				return endDateField;
+			}
+			set {
+				endDateField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public EndTimeType EndTime {
+			get {
+				return endTimeField;
+			}
+			set {
+				endTimeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DurationMeasureType DurationMeasure {
+			get {
+				return durationMeasureField;
+			}
+			set {
+				durationMeasureField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("DescriptionCode", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionCodeType[] DescriptionCode {
+			get {
+				return descriptionCodeField;
+			}
+			set {
+				descriptionCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
 		}
 	}
 }

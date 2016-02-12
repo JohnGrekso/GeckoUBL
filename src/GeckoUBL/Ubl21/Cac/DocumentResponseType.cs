@@ -1,71 +1,74 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AdditionalDocumentResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class DocumentResponseType {
-    
-	private ResponseType responseField;
-    
-	private DocumentReferenceType[] documentReferenceField;
-    
-	private PartyType issuerPartyField;
-    
-	private PartyType recipientPartyField;
-    
-	private LineResponseType[] lineResponseField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	public ResponseType Response {
-		get {
-			return this.responseField;
-		}
-		set {
-			this.responseField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AdditionalDocumentResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class DocumentResponseType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-	public DocumentReferenceType[] DocumentReference {
-		get {
-			return this.documentReferenceField;
-		}
-		set {
-			this.documentReferenceField = value;
-		}
-	}
+		private ResponseType responseField;
     
-	/// <remarks/>
-	public PartyType IssuerParty {
-		get {
-			return this.issuerPartyField;
-		}
-		set {
-			this.issuerPartyField = value;
-		}
-	}
+		private DocumentReferenceType[] documentReferenceField;
     
-	/// <remarks/>
-	public PartyType RecipientParty {
-		get {
-			return this.recipientPartyField;
-		}
-		set {
-			this.recipientPartyField = value;
-		}
-	}
+		private PartyType issuerPartyField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("LineResponse")]
-	public LineResponseType[] LineResponse {
-		get {
-			return this.lineResponseField;
+		private PartyType recipientPartyField;
+    
+		private LineResponseType[] lineResponseField;
+    
+		/// <remarks/>
+		public ResponseType Response {
+			get {
+				return responseField;
+			}
+			set {
+				responseField = value;
+			}
 		}
-		set {
-			this.lineResponseField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
+		public DocumentReferenceType[] DocumentReference {
+			get {
+				return documentReferenceField;
+			}
+			set {
+				documentReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType IssuerParty {
+			get {
+				return issuerPartyField;
+			}
+			set {
+				issuerPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PartyType RecipientParty {
+			get {
+				return recipientPartyField;
+			}
+			set {
+				recipientPartyField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("LineResponse")]
+		public LineResponseType[] LineResponse {
+			get {
+				return lineResponseField;
+			}
+			set {
+				lineResponseField = value;
+			}
 		}
 	}
 }

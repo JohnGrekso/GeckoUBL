@@ -1,150 +1,153 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("ConsumptionLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class ConsumptionLineType {
-    
-	private IDType idField;
-    
-	private ParentDocumentLineReferenceIDType parentDocumentLineReferenceIDField;
-    
-	private InvoicedQuantityType invoicedQuantityField;
-    
-	private LineExtensionAmountType lineExtensionAmountField;
-    
-	private PeriodType periodField;
-    
-	private DeliveryType[] deliveryField;
-    
-	private AllowanceChargeType[] allowanceChargeField;
-    
-	private TaxTotalType[] taxTotalField;
-    
-	private UtilityItemType utilityItemField;
-    
-	private PriceType priceField;
-    
-	private UnstructuredPriceType unstructuredPriceField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public IDType ID {
-		get {
-			return this.idField;
-		}
-		set {
-			this.idField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("ConsumptionLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class ConsumptionLineType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public ParentDocumentLineReferenceIDType ParentDocumentLineReferenceID {
-		get {
-			return this.parentDocumentLineReferenceIDField;
-		}
-		set {
-			this.parentDocumentLineReferenceIDField = value;
-		}
-	}
+		private IDType idField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public InvoicedQuantityType InvoicedQuantity {
-		get {
-			return this.invoicedQuantityField;
-		}
-		set {
-			this.invoicedQuantityField = value;
-		}
-	}
+		private ParentDocumentLineReferenceIDType parentDocumentLineReferenceIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public LineExtensionAmountType LineExtensionAmount {
-		get {
-			return this.lineExtensionAmountField;
-		}
-		set {
-			this.lineExtensionAmountField = value;
-		}
-	}
+		private InvoicedQuantityType invoicedQuantityField;
     
-	/// <remarks/>
-	public PeriodType Period {
-		get {
-			return this.periodField;
-		}
-		set {
-			this.periodField = value;
-		}
-	}
+		private LineExtensionAmountType lineExtensionAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Delivery")]
-	public DeliveryType[] Delivery {
-		get {
-			return this.deliveryField;
-		}
-		set {
-			this.deliveryField = value;
-		}
-	}
+		private PeriodType periodField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-	public AllowanceChargeType[] AllowanceCharge {
-		get {
-			return this.allowanceChargeField;
-		}
-		set {
-			this.allowanceChargeField = value;
-		}
-	}
+		private DeliveryType[] deliveryField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-	public TaxTotalType[] TaxTotal {
-		get {
-			return this.taxTotalField;
-		}
-		set {
-			this.taxTotalField = value;
-		}
-	}
+		private AllowanceChargeType[] allowanceChargeField;
     
-	/// <remarks/>
-	public UtilityItemType UtilityItem {
-		get {
-			return this.utilityItemField;
-		}
-		set {
-			this.utilityItemField = value;
-		}
-	}
+		private TaxTotalType[] taxTotalField;
     
-	/// <remarks/>
-	public PriceType Price {
-		get {
-			return this.priceField;
-		}
-		set {
-			this.priceField = value;
-		}
-	}
+		private UtilityItemType utilityItemField;
     
-	/// <remarks/>
-	public UnstructuredPriceType UnstructuredPrice {
-		get {
-			return this.unstructuredPriceField;
+		private PriceType priceField;
+    
+		private UnstructuredPriceType unstructuredPriceField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IDType ID {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
-		set {
-			this.unstructuredPriceField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public ParentDocumentLineReferenceIDType ParentDocumentLineReferenceID {
+			get {
+				return parentDocumentLineReferenceIDField;
+			}
+			set {
+				parentDocumentLineReferenceIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public InvoicedQuantityType InvoicedQuantity {
+			get {
+				return invoicedQuantityField;
+			}
+			set {
+				invoicedQuantityField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public LineExtensionAmountType LineExtensionAmount {
+			get {
+				return lineExtensionAmountField;
+			}
+			set {
+				lineExtensionAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PeriodType Period {
+			get {
+				return periodField;
+			}
+			set {
+				periodField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Delivery")]
+		public DeliveryType[] Delivery {
+			get {
+				return deliveryField;
+			}
+			set {
+				deliveryField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
+		public AllowanceChargeType[] AllowanceCharge {
+			get {
+				return allowanceChargeField;
+			}
+			set {
+				allowanceChargeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
+		public TaxTotalType[] TaxTotal {
+			get {
+				return taxTotalField;
+			}
+			set {
+				taxTotalField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public UtilityItemType UtilityItem {
+			get {
+				return utilityItemField;
+			}
+			set {
+				utilityItemField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public PriceType Price {
+			get {
+				return priceField;
+			}
+			set {
+				priceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public UnstructuredPriceType UnstructuredPrice {
+			get {
+				return unstructuredPriceField;
+			}
+			set {
+				unstructuredPriceField = value;
+			}
 		}
 	}
 }

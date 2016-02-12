@@ -1,152 +1,155 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("AwardedTenderedProject", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TenderedProjectType {
-    
-	private VariantIDType variantIDField;
-    
-	private FeeAmountType feeAmountField;
-    
-	private FeeDescriptionType[] feeDescriptionField;
-    
-	private TenderEnvelopeIDType tenderEnvelopeIDField;
-    
-	private TenderEnvelopeTypeCodeType tenderEnvelopeTypeCodeField;
-    
-	private ProcurementProjectLotType procurementProjectLotField;
-    
-	private DocumentReferenceType[] evidenceDocumentReferenceField;
-    
-	private TaxTotalType[] taxTotalField;
-    
-	private MonetaryTotalType legalMonetaryTotalField;
-    
-	private TenderLineType[] tenderLineField;
-    
-	private AwardingCriterionResponseType[] awardingCriterionResponseField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public VariantIDType VariantID {
-		get {
-			return this.variantIDField;
-		}
-		set {
-			this.variantIDField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("AwardedTenderedProject", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TenderedProjectType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public FeeAmountType FeeAmount {
-		get {
-			return this.feeAmountField;
-		}
-		set {
-			this.feeAmountField = value;
-		}
-	}
+		private VariantIDType variantIDField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("FeeDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public FeeDescriptionType[] FeeDescription {
-		get {
-			return this.feeDescriptionField;
-		}
-		set {
-			this.feeDescriptionField = value;
-		}
-	}
+		private FeeAmountType feeAmountField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TenderEnvelopeIDType TenderEnvelopeID {
-		get {
-			return this.tenderEnvelopeIDField;
-		}
-		set {
-			this.tenderEnvelopeIDField = value;
-		}
-	}
+		private FeeDescriptionType[] feeDescriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TenderEnvelopeTypeCodeType TenderEnvelopeTypeCode {
-		get {
-			return this.tenderEnvelopeTypeCodeField;
-		}
-		set {
-			this.tenderEnvelopeTypeCodeField = value;
-		}
-	}
+		private TenderEnvelopeIDType tenderEnvelopeIDField;
     
-	/// <remarks/>
-	public ProcurementProjectLotType ProcurementProjectLot {
-		get {
-			return this.procurementProjectLotField;
-		}
-		set {
-			this.procurementProjectLotField = value;
-		}
-	}
+		private TenderEnvelopeTypeCodeType tenderEnvelopeTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("EvidenceDocumentReference")]
-	public DocumentReferenceType[] EvidenceDocumentReference {
-		get {
-			return this.evidenceDocumentReferenceField;
-		}
-		set {
-			this.evidenceDocumentReferenceField = value;
-		}
-	}
+		private ProcurementProjectLotType procurementProjectLotField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-	public TaxTotalType[] TaxTotal {
-		get {
-			return this.taxTotalField;
-		}
-		set {
-			this.taxTotalField = value;
-		}
-	}
+		private DocumentReferenceType[] evidenceDocumentReferenceField;
     
-	/// <remarks/>
-	public MonetaryTotalType LegalMonetaryTotal {
-		get {
-			return this.legalMonetaryTotalField;
-		}
-		set {
-			this.legalMonetaryTotalField = value;
-		}
-	}
+		private TaxTotalType[] taxTotalField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("TenderLine")]
-	public TenderLineType[] TenderLine {
-		get {
-			return this.tenderLineField;
-		}
-		set {
-			this.tenderLineField = value;
-		}
-	}
+		private MonetaryTotalType legalMonetaryTotalField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionResponse")]
-	public AwardingCriterionResponseType[] AwardingCriterionResponse {
-		get {
-			return this.awardingCriterionResponseField;
+		private TenderLineType[] tenderLineField;
+    
+		private AwardingCriterionResponseType[] awardingCriterionResponseField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public VariantIDType VariantID {
+			get {
+				return variantIDField;
+			}
+			set {
+				variantIDField = value;
+			}
 		}
-		set {
-			this.awardingCriterionResponseField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public FeeAmountType FeeAmount {
+			get {
+				return feeAmountField;
+			}
+			set {
+				feeAmountField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("FeeDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public FeeDescriptionType[] FeeDescription {
+			get {
+				return feeDescriptionField;
+			}
+			set {
+				feeDescriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TenderEnvelopeIDType TenderEnvelopeID {
+			get {
+				return tenderEnvelopeIDField;
+			}
+			set {
+				tenderEnvelopeIDField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TenderEnvelopeTypeCodeType TenderEnvelopeTypeCode {
+			get {
+				return tenderEnvelopeTypeCodeField;
+			}
+			set {
+				tenderEnvelopeTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public ProcurementProjectLotType ProcurementProjectLot {
+			get {
+				return procurementProjectLotField;
+			}
+			set {
+				procurementProjectLotField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("EvidenceDocumentReference")]
+		public DocumentReferenceType[] EvidenceDocumentReference {
+			get {
+				return evidenceDocumentReferenceField;
+			}
+			set {
+				evidenceDocumentReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
+		public TaxTotalType[] TaxTotal {
+			get {
+				return taxTotalField;
+			}
+			set {
+				taxTotalField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public MonetaryTotalType LegalMonetaryTotal {
+			get {
+				return legalMonetaryTotalField;
+			}
+			set {
+				legalMonetaryTotalField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("TenderLine")]
+		public TenderLineType[] TenderLine {
+			get {
+				return tenderLineField;
+			}
+			set {
+				tenderLineField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionResponse")]
+		public AwardingCriterionResponseType[] AwardingCriterionResponse {
+			get {
+				return awardingCriterionResponseField;
+			}
+			set {
+				awardingCriterionResponseField = value;
+			}
 		}
 	}
 }

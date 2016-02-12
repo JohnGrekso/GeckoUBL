@@ -1,71 +1,74 @@
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="SignatureType", Namespace="http://www.w3.org/2000/09/xmldsig#")]
-[System.Xml.Serialization.XmlRootAttribute("Signature", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
-public partial class SignatureType1 {
-    
-	private SignedInfoType signedInfoField;
-    
-	private SignatureValueType signatureValueField;
-    
-	private KeyInfoType keyInfoField;
-    
-	private ObjectType[] objectField;
-    
-	private string idField;
-    
+namespace GeckoUBL.Ubl21.Miscellaneous
+{
 	/// <remarks/>
-	public SignedInfoType SignedInfo {
-		get {
-			return this.signedInfoField;
-		}
-		set {
-			this.signedInfoField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(TypeName="SignatureType", Namespace="http://www.w3.org/2000/09/xmldsig#")]
+	[System.Xml.Serialization.XmlRootAttribute("Signature", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
+	public class SignatureType1 {
     
-	/// <remarks/>
-	public SignatureValueType SignatureValue {
-		get {
-			return this.signatureValueField;
-		}
-		set {
-			this.signatureValueField = value;
-		}
-	}
+		private SignedInfoType signedInfoField;
     
-	/// <remarks/>
-	public KeyInfoType KeyInfo {
-		get {
-			return this.keyInfoField;
-		}
-		set {
-			this.keyInfoField = value;
-		}
-	}
+		private SignatureValueType signatureValueField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Object")]
-	public ObjectType[] Object {
-		get {
-			return this.objectField;
-		}
-		set {
-			this.objectField = value;
-		}
-	}
+		private KeyInfoType keyInfoField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-	public string Id {
-		get {
-			return this.idField;
+		private ObjectType[] objectField;
+    
+		private string idField;
+    
+		/// <remarks/>
+		public SignedInfoType SignedInfo {
+			get {
+				return signedInfoField;
+			}
+			set {
+				signedInfoField = value;
+			}
 		}
-		set {
-			this.idField = value;
+    
+		/// <remarks/>
+		public SignatureValueType SignatureValue {
+			get {
+				return signatureValueField;
+			}
+			set {
+				signatureValueField = value;
+			}
+		}
+    
+		/// <remarks/>
+		public KeyInfoType KeyInfo {
+			get {
+				return keyInfoField;
+			}
+			set {
+				keyInfoField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Object")]
+		public ObjectType[] Object {
+			get {
+				return objectField;
+			}
+			set {
+				objectField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+		public string Id {
+			get {
+				return idField;
+			}
+			set {
+				idField = value;
+			}
 		}
 	}
 }

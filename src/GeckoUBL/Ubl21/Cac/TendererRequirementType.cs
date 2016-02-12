@@ -1,76 +1,79 @@
 using GeckoUBL.Ubl21.Cbc;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
-[System.Xml.Serialization.XmlRootAttribute("SpecificTendererRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
-public partial class TendererRequirementType {
-    
-	private NameType1[] nameField;
-    
-	private TendererRequirementTypeCodeType tendererRequirementTypeCodeField;
-    
-	private DescriptionType[] descriptionField;
-    
-	private LegalReferenceType legalReferenceField;
-    
-	private EvidenceType[] suggestedEvidenceField;
-    
+namespace GeckoUBL.Ubl21.Cac
+{
 	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Name", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public NameType1[] Name {
-		get {
-			return this.nameField;
-		}
-		set {
-			this.nameField = value;
-		}
-	}
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute()]
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
+	[System.Xml.Serialization.XmlRootAttribute("SpecificTendererRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
+	public class TendererRequirementType {
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public TendererRequirementTypeCodeType TendererRequirementTypeCode {
-		get {
-			return this.tendererRequirementTypeCodeField;
-		}
-		set {
-			this.tendererRequirementTypeCodeField = value;
-		}
-	}
+		private NameType1[] nameField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public DescriptionType[] Description {
-		get {
-			return this.descriptionField;
-		}
-		set {
-			this.descriptionField = value;
-		}
-	}
+		private TendererRequirementTypeCodeType tendererRequirementTypeCodeField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-	public LegalReferenceType LegalReference {
-		get {
-			return this.legalReferenceField;
-		}
-		set {
-			this.legalReferenceField = value;
-		}
-	}
+		private DescriptionType[] descriptionField;
     
-	/// <remarks/>
-	[System.Xml.Serialization.XmlElementAttribute("SuggestedEvidence")]
-	public EvidenceType[] SuggestedEvidence {
-		get {
-			return this.suggestedEvidenceField;
+		private LegalReferenceType legalReferenceField;
+    
+		private EvidenceType[] suggestedEvidenceField;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Name", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public NameType1[] Name {
+			get {
+				return nameField;
+			}
+			set {
+				nameField = value;
+			}
 		}
-		set {
-			this.suggestedEvidenceField = value;
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public TendererRequirementTypeCodeType TendererRequirementTypeCode {
+			get {
+				return tendererRequirementTypeCodeField;
+			}
+			set {
+				tendererRequirementTypeCodeField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public DescriptionType[] Description {
+			get {
+				return descriptionField;
+			}
+			set {
+				descriptionField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public LegalReferenceType LegalReference {
+			get {
+				return legalReferenceField;
+			}
+			set {
+				legalReferenceField = value;
+			}
+		}
+    
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute("SuggestedEvidence")]
+		public EvidenceType[] SuggestedEvidence {
+			get {
+				return suggestedEvidenceField;
+			}
+			set {
+				suggestedEvidenceField = value;
+			}
 		}
 	}
 }
