@@ -1,17 +1,12 @@
-﻿using System;
-using System.CodeDom.Compiler;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
-namespace GeckoUBL.Ubl21.Ccts
+namespace GeckoUBL.Ubl21.Udt
 {
-
-	[GeneratedCode("xsd", "4.0.30319.33440")]
-	[Serializable]
-	[DebuggerStepThrough]
-	[DesignerCategory("code")]
-	[XmlType(Namespace = "urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2")]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+	[System.SerializableAttribute]
+	[System.Diagnostics.DebuggerStepThroughAttribute]
+	[System.ComponentModel.DesignerCategoryAttribute("code")]
+	[XmlTypeAttribute(TypeName = "IdentifierType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
 	public class IdentifierType
 	{
 		[XmlAttribute(DataType = "normalizedString")]

@@ -25,6 +25,6 @@ namespace GeckoUBL.Ubl21.Signature
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[XmlType(Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2")]
 	[XmlRoot("ReferencedSignatureID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2", IsNullable=false)]
-	public partial class ReferencedSignatureIDType : IdentifierType1 {
+	public partial class ReferencedSignatureIDType : IdentifierType {
 	}
 }

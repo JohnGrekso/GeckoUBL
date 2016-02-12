@@ -10,7 +10,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionReason", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionReasonType : TextType1
+	public class ExtensionReasonType : TextType
 	{
 	}
 
@@ -21,7 +21,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyName", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionAgencyNameType : TextType1
+	public class ExtensionAgencyNameType : TextType
 	{
 	}
 
@@ -32,7 +32,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionReasonCode", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionReasonCodeType : CodeType1
+	public class ExtensionReasonCodeType : CodeType
 	{
 	}
 
@@ -43,7 +43,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionVersionID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionVersionIDType : IdentifierType1
+	public class ExtensionVersionIDType : IdentifierType
 	{
 	}
 
@@ -54,7 +54,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionURIType : IdentifierType1
+	public class ExtensionURIType : IdentifierType
 	{
 	}
 
@@ -65,7 +65,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyURI", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionAgencyURIType : IdentifierType1
+	public class ExtensionAgencyURIType : IdentifierType
 	{
 	}
 
@@ -76,7 +76,7 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExtensionAgencyID", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
-	public class ExtensionAgencyIDType : IdentifierType1
+	public class ExtensionAgencyIDType : IdentifierType
 	{
 	}
 

@@ -79,14 +79,6 @@
     <Compile Include="Ubl21\Cac\CatalogueRequestLineType.cs" />
     <Compile Include="Ubl21\Documents\CatalogueRequestType.cs" />
     <Compile Include="Ubl21\Cbc\Cbc.cs" />
-    <Compile Include="Ubl21\Ccts\AmountType.cs" />
-    <Compile Include="Ubl21\Ccts\BinaryObjectType.cs" />
-    <Compile Include="Ubl21\Ccts\CodeType.cs" />
-    <Compile Include="Ubl21\Ccts\IdentifierType.cs" />
-    <Compile Include="Ubl21\Ccts\MeasureType.cs" />
-    <Compile Include="Ubl21\Ccts\NumericType.cs" />
-    <Compile Include="Ubl21\Ccts\QuantityType.cs" />
-    <Compile Include="Ubl21\Ccts\TextType.cs" />
     <Compile Include="Ubl21\Cec\Cec.cs" />
     <Compile Include="Ubl21\Miscellaneous\CertIDListType.cs" />
     <Compile Include="Ubl21\Miscellaneous\CertIDType.cs" />
@@ -400,7 +392,23 @@
     <Compile Include="Ubl21\Documents\TransportServiceDescriptionRequestType.cs" />
     <Compile Include="Ubl21\Documents\TransportServiceDescriptionType.cs" />
     <Compile Include="Ubl21\Signature\UBLDocumentSignaturesType.cs" />
-    <Compile Include="Ubl21\Udt\Unqualified.cs" />
+    <Compile Include="Ubl21\Udt\AmountType.cs" />
+    <Compile Include="Ubl21\Udt\BinaryObjectType.cs" />
+    <Compile Include="Ubl21\Udt\CodeType.cs" />
+    <Compile Include="Ubl21\Udt\DateType.cs" />
+    <Compile Include="Ubl21\Udt\GraphicType.cs" />
+    <Compile Include="Ubl21\Udt\IndicatorType.cs" />
+    <Compile Include="Ubl21\Udt\MeasureType.cs" />
+    <Compile Include="Ubl21\Udt\NameType.cs" />
+    <Compile Include="Ubl21\Udt\NumericType.cs" />
+    <Compile Include="Ubl21\Udt\PercentType.cs" />
+    <Compile Include="Ubl21\Udt\PictureType.cs" />
+    <Compile Include="Ubl21\Udt\QuantityType.cs" />
+    <Compile Include="Ubl21\Udt\RateType.cs" />
+    <Compile Include="Ubl21\Udt\SoundType.cs" />
+    <Compile Include="Ubl21\Udt\TextType.cs" />
+    <Compile Include="Ubl21\Udt\TimeType.cs" />
+    <Compile Include="Ubl21\Udt\IdentifierType.cs" />
     <Compile Include="Ubl21\Documents\UnawardedNotificationType.cs" />
     <Compile Include="Ubl21\Miscellaneous\UnsignedDataObjectPropertiesType.cs" />
     <Compile Include="Ubl21\Miscellaneous\UnsignedPropertiesType.cs" />
@@ -417,10 +425,10 @@
     <Compile Include="Ubl21\Miscellaneous\X509IssuerSerialType.cs" />
     <Compile Include="Ubl21\Miscellaneous\XAdESTimeStampType.cs" />
     <Compile Include="Ubl21\Signature\ReferencedSignatureIDType.cs" />
+    <Compile Include="Ubl21\Udt\ValueType.cs" />
+    <Compile Include="Ubl21\Udt\VideoType.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ubl21\Qdt\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
