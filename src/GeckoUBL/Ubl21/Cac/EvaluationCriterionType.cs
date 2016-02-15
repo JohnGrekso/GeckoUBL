@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,108 +10,35 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EvaluationCriterion", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EvaluationCriterionType {
-    
-		private EvaluationCriterionTypeCodeType evaluationCriterionTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private ThresholdAmountType thresholdAmountField;
-    
-		private ThresholdQuantityType thresholdQuantityField;
-    
-		private ExpressionCodeType expressionCodeField;
-    
-		private ExpressionType[] expressionField;
-    
-		private PeriodType durationPeriodField;
-    
-		private EvidenceType[] suggestedEvidenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EvaluationCriterionTypeCodeType EvaluationCriterionTypeCode {
-			get {
-				return evaluationCriterionTypeCodeField;
-			}
-			set {
-				evaluationCriterionTypeCodeField = value;
-			}
-		}
-    
+		public CodeType EvaluationCriterionTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ThresholdAmountType ThresholdAmount {
-			get {
-				return thresholdAmountField;
-			}
-			set {
-				thresholdAmountField = value;
-			}
-		}
-    
+		public AmountType ThresholdAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ThresholdQuantityType ThresholdQuantity {
-			get {
-				return thresholdQuantityField;
-			}
-			set {
-				thresholdQuantityField = value;
-			}
-		}
-    
+		public QuantityType ThresholdQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpressionCodeType ExpressionCode {
-			get {
-				return expressionCodeField;
-			}
-			set {
-				expressionCodeField = value;
-			}
-		}
-    
+		public CodeType ExpressionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Expression", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpressionType[] Expression {
-			get {
-				return expressionField;
-			}
-			set {
-				expressionField = value;
-			}
-		}
-    
+		public TextType[] Expression { get; set; }
+
 		/// <remarks/>
-		public PeriodType DurationPeriod {
-			get {
-				return durationPeriodField;
-			}
-			set {
-				durationPeriodField = value;
-			}
-		}
-    
+		public PeriodType DurationPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SuggestedEvidence")]
-		public EvidenceType[] SuggestedEvidence {
-			get {
-				return suggestedEvidenceField;
-			}
-			set {
-				suggestedEvidenceField = value;
-			}
-		}
+		public EvidenceType[] SuggestedEvidence { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,55 +10,18 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EndorserParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EndorserPartyType {
-    
-		private RoleCodeType roleCodeField;
-    
-		private SequenceNumericType sequenceNumericField;
-    
-		private PartyType partyField;
-    
-		private ContactType signatoryContactField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RoleCodeType RoleCode {
-			get {
-				return roleCodeField;
-			}
-			set {
-				roleCodeField = value;
-			}
-		}
-    
+		public CodeType RoleCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SequenceNumericType SequenceNumeric {
-			get {
-				return sequenceNumericField;
-			}
-			set {
-				sequenceNumericField = value;
-			}
-		}
-    
+		public NumericType SequenceNumeric { get; set; }
+
 		/// <remarks/>
-		public PartyType Party {
-			get {
-				return partyField;
-			}
-			set {
-				partyField = value;
-			}
-		}
-    
+		public PartyType Party { get; set; }
+
 		/// <remarks/>
-		public ContactType SignatoryContact {
-			get {
-				return signatoryContactField;
-			}
-			set {
-				signatoryContactField = value;
-			}
-		}
+		public ContactType SignatoryContact { get; set; }
 	}
 }

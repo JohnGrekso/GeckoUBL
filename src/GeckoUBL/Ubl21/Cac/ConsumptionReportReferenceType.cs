@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,69 +10,23 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionReportReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionReportReferenceType {
-    
-		private ConsumptionReportIDType consumptionReportIDField;
-    
-		private ConsumptionTypeType consumptionTypeField;
-    
-		private ConsumptionTypeCodeType consumptionTypeCodeField;
-    
-		private TotalConsumedQuantityType totalConsumedQuantityField;
-    
-		private PeriodType periodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionReportIDType ConsumptionReportID {
-			get {
-				return consumptionReportIDField;
-			}
-			set {
-				consumptionReportIDField = value;
-			}
-		}
-    
+		public IdentifierType ConsumptionReportID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionTypeType ConsumptionType {
-			get {
-				return consumptionTypeField;
-			}
-			set {
-				consumptionTypeField = value;
-			}
-		}
-    
+		public TextType ConsumptionType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionTypeCodeType ConsumptionTypeCode {
-			get {
-				return consumptionTypeCodeField;
-			}
-			set {
-				consumptionTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ConsumptionTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalConsumedQuantityType TotalConsumedQuantity {
-			get {
-				return totalConsumedQuantityField;
-			}
-			set {
-				totalConsumedQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalConsumedQuantity { get; set; }
+
 		/// <remarks/>
-		public PeriodType Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
+		public PeriodType Period { get; set; }
 	}
 }

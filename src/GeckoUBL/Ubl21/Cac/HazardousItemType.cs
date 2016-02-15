@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,301 +10,93 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardousItem", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class HazardousItemType {
-    
-		private IDType idField;
-    
-		private PlacardNotationType placardNotationField;
-    
-		private PlacardEndorsementType placardEndorsementField;
-    
-		private AdditionalInformationType[] additionalInformationField;
-    
-		private UNDGCodeType uNDGCodeField;
-    
-		private EmergencyProceduresCodeType emergencyProceduresCodeField;
-    
-		private MedicalFirstAidGuideCodeType medicalFirstAidGuideCodeField;
-    
-		private TechnicalNameType technicalNameField;
-    
-		private CategoryNameType categoryNameField;
-    
-		private HazardousCategoryCodeType hazardousCategoryCodeField;
-    
-		private UpperOrangeHazardPlacardIDType upperOrangeHazardPlacardIDField;
-    
-		private LowerOrangeHazardPlacardIDType lowerOrangeHazardPlacardIDField;
-    
-		private MarkingIDType markingIDField;
-    
-		private HazardClassIDType hazardClassIDField;
-    
-		private NetWeightMeasureType netWeightMeasureField;
-    
-		private NetVolumeMeasureType netVolumeMeasureField;
-    
-		private QuantityType2 quantityField;
-    
-		private PartyType contactPartyField;
-    
-		private SecondaryHazardType[] secondaryHazardField;
-    
-		private HazardousGoodsTransitType[] hazardousGoodsTransitField;
-    
-		private TemperatureType emergencyTemperatureField;
-    
-		private TemperatureType flashpointTemperatureField;
-    
-		private TemperatureType[] additionalTemperatureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PlacardNotationType PlacardNotation {
-			get {
-				return placardNotationField;
-			}
-			set {
-				placardNotationField = value;
-			}
-		}
-    
+		public TextType PlacardNotation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PlacardEndorsementType PlacardEndorsement {
-			get {
-				return placardEndorsementField;
-			}
-			set {
-				placardEndorsementField = value;
-			}
-		}
-    
+		public TextType PlacardEndorsement { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AdditionalInformation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AdditionalInformationType[] AdditionalInformation {
-			get {
-				return additionalInformationField;
-			}
-			set {
-				additionalInformationField = value;
-			}
-		}
-    
+		public TextType[] AdditionalInformation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UNDGCodeType UNDGCode {
-			get {
-				return uNDGCodeField;
-			}
-			set {
-				uNDGCodeField = value;
-			}
-		}
-    
+		public CodeType UNDGCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EmergencyProceduresCodeType EmergencyProceduresCode {
-			get {
-				return emergencyProceduresCodeField;
-			}
-			set {
-				emergencyProceduresCodeField = value;
-			}
-		}
-    
+		public CodeType EmergencyProceduresCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MedicalFirstAidGuideCodeType MedicalFirstAidGuideCode {
-			get {
-				return medicalFirstAidGuideCodeField;
-			}
-			set {
-				medicalFirstAidGuideCodeField = value;
-			}
-		}
-    
+		public CodeType MedicalFirstAidGuideCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TechnicalNameType TechnicalName {
-			get {
-				return technicalNameField;
-			}
-			set {
-				technicalNameField = value;
-			}
-		}
-    
+		public NameType TechnicalName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CategoryNameType CategoryName {
-			get {
-				return categoryNameField;
-			}
-			set {
-				categoryNameField = value;
-			}
-		}
-    
+		public NameType CategoryName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardousCategoryCodeType HazardousCategoryCode {
-			get {
-				return hazardousCategoryCodeField;
-			}
-			set {
-				hazardousCategoryCodeField = value;
-			}
-		}
-    
+		public CodeType HazardousCategoryCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UpperOrangeHazardPlacardIDType UpperOrangeHazardPlacardID {
-			get {
-				return upperOrangeHazardPlacardIDField;
-			}
-			set {
-				upperOrangeHazardPlacardIDField = value;
-			}
-		}
-    
+		public IdentifierType UpperOrangeHazardPlacardID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LowerOrangeHazardPlacardIDType LowerOrangeHazardPlacardID {
-			get {
-				return lowerOrangeHazardPlacardIDField;
-			}
-			set {
-				lowerOrangeHazardPlacardIDField = value;
-			}
-		}
-    
+		public IdentifierType LowerOrangeHazardPlacardID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MarkingIDType MarkingID {
-			get {
-				return markingIDField;
-			}
-			set {
-				markingIDField = value;
-			}
-		}
-    
+		public IdentifierType MarkingID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardClassIDType HazardClassID {
-			get {
-				return hazardClassIDField;
-			}
-			set {
-				hazardClassIDField = value;
-			}
-		}
-    
+		public IdentifierType HazardClassID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NetWeightMeasureType NetWeightMeasure {
-			get {
-				return netWeightMeasureField;
-			}
-			set {
-				netWeightMeasureField = value;
-			}
-		}
-    
+		public MeasureType NetWeightMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NetVolumeMeasureType NetVolumeMeasure {
-			get {
-				return netVolumeMeasureField;
-			}
-			set {
-				netVolumeMeasureField = value;
-			}
-		}
-    
+		public MeasureType NetVolumeMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
-		public PartyType ContactParty {
-			get {
-				return contactPartyField;
-			}
-			set {
-				contactPartyField = value;
-			}
-		}
-    
+		public PartyType ContactParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SecondaryHazard")]
-		public SecondaryHazardType[] SecondaryHazard {
-			get {
-				return secondaryHazardField;
-			}
-			set {
-				secondaryHazardField = value;
-			}
-		}
-    
+		public SecondaryHazardType[] SecondaryHazard { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("HazardousGoodsTransit")]
-		public HazardousGoodsTransitType[] HazardousGoodsTransit {
-			get {
-				return hazardousGoodsTransitField;
-			}
-			set {
-				hazardousGoodsTransitField = value;
-			}
-		}
-    
+		public HazardousGoodsTransitType[] HazardousGoodsTransit { get; set; }
+
 		/// <remarks/>
-		public TemperatureType EmergencyTemperature {
-			get {
-				return emergencyTemperatureField;
-			}
-			set {
-				emergencyTemperatureField = value;
-			}
-		}
-    
+		public TemperatureType EmergencyTemperature { get; set; }
+
 		/// <remarks/>
-		public TemperatureType FlashpointTemperature {
-			get {
-				return flashpointTemperatureField;
-			}
-			set {
-				flashpointTemperatureField = value;
-			}
-		}
-    
+		public TemperatureType FlashpointTemperature { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AdditionalTemperature")]
-		public TemperatureType[] AdditionalTemperature {
-			get {
-				return additionalTemperatureField;
-			}
-			set {
-				additionalTemperatureField = value;
-			}
-		}
+		public TemperatureType[] AdditionalTemperature { get; set; }
 	}
 }

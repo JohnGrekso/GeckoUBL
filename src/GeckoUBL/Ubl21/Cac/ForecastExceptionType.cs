@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,109 +10,36 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastException", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ForecastExceptionType {
-    
-		private ForecastPurposeCodeType forecastPurposeCodeField;
-    
-		private ForecastTypeCodeType forecastTypeCodeField;
-    
-		private IssueDateType issueDateField;
-    
-		private IssueTimeType issueTimeField;
-    
-		private DataSourceCodeType dataSourceCodeField;
-    
-		private ComparisonDataCodeType comparisonDataCodeField;
-    
-		private ComparisonForecastIssueTimeType comparisonForecastIssueTimeField;
-    
-		private ComparisonForecastIssueDateType comparisonForecastIssueDateField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ForecastPurposeCodeType ForecastPurposeCode {
-			get {
-				return forecastPurposeCodeField;
-			}
-			set {
-				forecastPurposeCodeField = value;
-			}
-		}
-    
+		public CodeType ForecastPurposeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ForecastTypeCodeType ForecastTypeCode {
-			get {
-				return forecastTypeCodeField;
-			}
-			set {
-				forecastTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ForecastTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate {
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueTimeType IssueTime {
-			get {
-				return issueTimeField;
-			}
-			set {
-				issueTimeField = value;
-			}
-		}
-    
+		public TimeType IssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DataSourceCodeType DataSourceCode {
-			get {
-				return dataSourceCodeField;
-			}
-			set {
-				dataSourceCodeField = value;
-			}
-		}
-    
+		public CodeType DataSourceCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ComparisonDataCodeType ComparisonDataCode {
-			get {
-				return comparisonDataCodeField;
-			}
-			set {
-				comparisonDataCodeField = value;
-			}
-		}
-    
+		public CodeType ComparisonDataCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ComparisonForecastIssueTimeType ComparisonForecastIssueTime {
-			get {
-				return comparisonForecastIssueTimeField;
-			}
-			set {
-				comparisonForecastIssueTimeField = value;
-			}
-		}
-    
+		public TimeType ComparisonForecastIssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ComparisonForecastIssueDateType ComparisonForecastIssueDate {
-			get {
-				return comparisonForecastIssueDateField;
-			}
-			set {
-				comparisonForecastIssueDateField = value;
-			}
-		}
+		public DateType ComparisonForecastIssueDate { get; set; }
 	}
 }

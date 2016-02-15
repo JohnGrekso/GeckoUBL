@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,95 +10,31 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ImmobilizedSecurity", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ImmobilizedSecurityType {
-    
-		private ImmobilizationCertificateIDType immobilizationCertificateIDField;
-    
-		private SecurityIDType securityIDField;
-    
-		private IssueDateType issueDateField;
-    
-		private FaceValueAmountType faceValueAmountField;
-    
-		private MarketValueAmountType marketValueAmountField;
-    
-		private SharesNumberQuantityType sharesNumberQuantityField;
-    
-		private PartyType issuerPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ImmobilizationCertificateIDType ImmobilizationCertificateID {
-			get {
-				return immobilizationCertificateIDField;
-			}
-			set {
-				immobilizationCertificateIDField = value;
-			}
-		}
-    
+		public IdentifierType ImmobilizationCertificateID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SecurityIDType SecurityID {
-			get {
-				return securityIDField;
-			}
-			set {
-				securityIDField = value;
-			}
-		}
-    
+		public IdentifierType SecurityID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate {
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FaceValueAmountType FaceValueAmount {
-			get {
-				return faceValueAmountField;
-			}
-			set {
-				faceValueAmountField = value;
-			}
-		}
-    
+		public AmountType FaceValueAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MarketValueAmountType MarketValueAmount {
-			get {
-				return marketValueAmountField;
-			}
-			set {
-				marketValueAmountField = value;
-			}
-		}
-    
+		public AmountType MarketValueAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SharesNumberQuantityType SharesNumberQuantity {
-			get {
-				return sharesNumberQuantityField;
-			}
-			set {
-				sharesNumberQuantityField = value;
-			}
-		}
-    
+		public QuantityType SharesNumberQuantity { get; set; }
+
 		/// <remarks/>
-		public PartyType IssuerParty {
-			get {
-				return issuerPartyField;
-			}
-			set {
-				issuerPartyField = value;
-			}
-		}
+		public PartyType IssuerParty { get; set; }
 	}
 }

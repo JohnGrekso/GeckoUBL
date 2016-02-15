@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,96 +10,32 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AccountingContact", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ContactType {
-    
-		private IDType idField;
-    
-		private NameType1 nameField;
-    
-		private TelephoneType telephoneField;
-    
-		private TelefaxType telefaxField;
-    
-		private ElectronicMailType electronicMailField;
-    
-		private NoteType[] noteField;
-    
-		private CommunicationType[] otherCommunicationField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TelephoneType Telephone {
-			get {
-				return telephoneField;
-			}
-			set {
-				telephoneField = value;
-			}
-		}
-    
+		public TextType Telephone { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TelefaxType Telefax {
-			get {
-				return telefaxField;
-			}
-			set {
-				telefaxField = value;
-			}
-		}
-    
+		public TextType Telefax { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ElectronicMailType ElectronicMail {
-			get {
-				return electronicMailField;
-			}
-			set {
-				electronicMailField = value;
-			}
-		}
-    
+		public TextType ElectronicMail { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("OtherCommunication")]
-		public CommunicationType[] OtherCommunication {
-			get {
-				return otherCommunicationField;
-			}
-			set {
-				otherCommunicationField = value;
-			}
-		}
+		public CommunicationType[] OtherCommunication { get; set; }
 	}
 }

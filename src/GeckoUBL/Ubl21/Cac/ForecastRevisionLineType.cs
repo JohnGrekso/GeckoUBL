@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,120 +10,38 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastRevisionLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ForecastRevisionLineType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private RevisedForecastLineIDType revisedForecastLineIDField;
-    
-		private SourceForecastIssueDateType sourceForecastIssueDateField;
-    
-		private SourceForecastIssueTimeType sourceForecastIssueTimeField;
-    
-		private AdjustmentReasonCodeType adjustmentReasonCodeField;
-    
-		private PeriodType forecastPeriodField;
-    
-		private SalesItemType salesItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RevisedForecastLineIDType RevisedForecastLineID {
-			get {
-				return revisedForecastLineIDField;
-			}
-			set {
-				revisedForecastLineIDField = value;
-			}
-		}
-    
+		public IdentifierType RevisedForecastLineID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SourceForecastIssueDateType SourceForecastIssueDate {
-			get {
-				return sourceForecastIssueDateField;
-			}
-			set {
-				sourceForecastIssueDateField = value;
-			}
-		}
-    
+		public DateType SourceForecastIssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SourceForecastIssueTimeType SourceForecastIssueTime {
-			get {
-				return sourceForecastIssueTimeField;
-			}
-			set {
-				sourceForecastIssueTimeField = value;
-			}
-		}
-    
+		public TimeType SourceForecastIssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AdjustmentReasonCodeType AdjustmentReasonCode {
-			get {
-				return adjustmentReasonCodeField;
-			}
-			set {
-				adjustmentReasonCodeField = value;
-			}
-		}
-    
+		public CodeType AdjustmentReasonCode { get; set; }
+
 		/// <remarks/>
-		public PeriodType ForecastPeriod {
-			get {
-				return forecastPeriodField;
-			}
-			set {
-				forecastPeriodField = value;
-			}
-		}
-    
+		public PeriodType ForecastPeriod { get; set; }
+
 		/// <remarks/>
-		public SalesItemType SalesItem {
-			get {
-				return salesItemField;
-			}
-			set {
-				salesItemField = value;
-			}
-		}
+		public SalesItemType SalesItem { get; set; }
 	}
 }

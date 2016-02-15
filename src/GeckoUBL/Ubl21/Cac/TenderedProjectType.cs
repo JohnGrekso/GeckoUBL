@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,146 +10,46 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardedTenderedProject", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TenderedProjectType {
-    
-		private VariantIDType variantIDField;
-    
-		private FeeAmountType feeAmountField;
-    
-		private FeeDescriptionType[] feeDescriptionField;
-    
-		private TenderEnvelopeIDType tenderEnvelopeIDField;
-    
-		private TenderEnvelopeTypeCodeType tenderEnvelopeTypeCodeField;
-    
-		private ProcurementProjectLotType procurementProjectLotField;
-    
-		private DocumentReferenceType[] evidenceDocumentReferenceField;
-    
-		private TaxTotalType[] taxTotalField;
-    
-		private MonetaryTotalType legalMonetaryTotalField;
-    
-		private TenderLineType[] tenderLineField;
-    
-		private AwardingCriterionResponseType[] awardingCriterionResponseField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public VariantIDType VariantID {
-			get {
-				return variantIDField;
-			}
-			set {
-				variantIDField = value;
-			}
-		}
-    
+		public IdentifierType VariantID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FeeAmountType FeeAmount {
-			get {
-				return feeAmountField;
-			}
-			set {
-				feeAmountField = value;
-			}
-		}
-    
+		public AmountType FeeAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("FeeDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FeeDescriptionType[] FeeDescription {
-			get {
-				return feeDescriptionField;
-			}
-			set {
-				feeDescriptionField = value;
-			}
-		}
-    
+		public TextType[] FeeDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TenderEnvelopeIDType TenderEnvelopeID {
-			get {
-				return tenderEnvelopeIDField;
-			}
-			set {
-				tenderEnvelopeIDField = value;
-			}
-		}
-    
+		public IdentifierType TenderEnvelopeID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TenderEnvelopeTypeCodeType TenderEnvelopeTypeCode {
-			get {
-				return tenderEnvelopeTypeCodeField;
-			}
-			set {
-				tenderEnvelopeTypeCodeField = value;
-			}
-		}
-    
+		public CodeType TenderEnvelopeTypeCode { get; set; }
+
 		/// <remarks/>
-		public ProcurementProjectLotType ProcurementProjectLot {
-			get {
-				return procurementProjectLotField;
-			}
-			set {
-				procurementProjectLotField = value;
-			}
-		}
-    
+		public ProcurementProjectLotType ProcurementProjectLot { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EvidenceDocumentReference")]
-		public DocumentReferenceType[] EvidenceDocumentReference {
-			get {
-				return evidenceDocumentReferenceField;
-			}
-			set {
-				evidenceDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] EvidenceDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-		public TaxTotalType[] TaxTotal {
-			get {
-				return taxTotalField;
-			}
-			set {
-				taxTotalField = value;
-			}
-		}
-    
+		public TaxTotalType[] TaxTotal { get; set; }
+
 		/// <remarks/>
-		public MonetaryTotalType LegalMonetaryTotal {
-			get {
-				return legalMonetaryTotalField;
-			}
-			set {
-				legalMonetaryTotalField = value;
-			}
-		}
-    
+		public MonetaryTotalType LegalMonetaryTotal { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TenderLine")]
-		public TenderLineType[] TenderLine {
-			get {
-				return tenderLineField;
-			}
-			set {
-				tenderLineField = value;
-			}
-		}
-    
+		public TenderLineType[] TenderLine { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionResponse")]
-		public AwardingCriterionResponseType[] AwardingCriterionResponse {
-			get {
-				return awardingCriterionResponseField;
-			}
-			set {
-				awardingCriterionResponseField = value;
-			}
-		}
+		public AwardingCriterionResponseType[] AwardingCriterionResponse { get; set; }
 	}
 }

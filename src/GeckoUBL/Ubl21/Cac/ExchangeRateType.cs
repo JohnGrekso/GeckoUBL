@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,121 +10,39 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExchangeRate", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ExchangeRateType {
-    
-		private SourceCurrencyCodeType sourceCurrencyCodeField;
-    
-		private SourceCurrencyBaseRateType sourceCurrencyBaseRateField;
-    
-		private TargetCurrencyCodeType targetCurrencyCodeField;
-    
-		private TargetCurrencyBaseRateType targetCurrencyBaseRateField;
-    
-		private ExchangeMarketIDType exchangeMarketIDField;
-    
-		private CalculationRateType calculationRateField;
-    
-		private MathematicOperatorCodeType mathematicOperatorCodeField;
-    
-		private DateType1 dateField;
-    
-		private ContractType foreignExchangeContractField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SourceCurrencyCodeType SourceCurrencyCode {
-			get {
-				return sourceCurrencyCodeField;
-			}
-			set {
-				sourceCurrencyCodeField = value;
-			}
-		}
-    
+		public CodeType SourceCurrencyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SourceCurrencyBaseRateType SourceCurrencyBaseRate {
-			get {
-				return sourceCurrencyBaseRateField;
-			}
-			set {
-				sourceCurrencyBaseRateField = value;
-			}
-		}
-    
+		public RateType SourceCurrencyBaseRate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TargetCurrencyCodeType TargetCurrencyCode {
-			get {
-				return targetCurrencyCodeField;
-			}
-			set {
-				targetCurrencyCodeField = value;
-			}
-		}
-    
+		public CodeType TargetCurrencyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TargetCurrencyBaseRateType TargetCurrencyBaseRate {
-			get {
-				return targetCurrencyBaseRateField;
-			}
-			set {
-				targetCurrencyBaseRateField = value;
-			}
-		}
-    
+		public RateType TargetCurrencyBaseRate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExchangeMarketIDType ExchangeMarketID {
-			get {
-				return exchangeMarketIDField;
-			}
-			set {
-				exchangeMarketIDField = value;
-			}
-		}
-    
+		public IdentifierType ExchangeMarketID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CalculationRateType CalculationRate {
-			get {
-				return calculationRateField;
-			}
-			set {
-				calculationRateField = value;
-			}
-		}
-    
+		public RateType CalculationRate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MathematicOperatorCodeType MathematicOperatorCode {
-			get {
-				return mathematicOperatorCodeField;
-			}
-			set {
-				mathematicOperatorCodeField = value;
-			}
-		}
-    
+		public CodeType MathematicOperatorCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DateType1 Date {
-			get {
-				return dateField;
-			}
-			set {
-				dateField = value;
-			}
-		}
-    
+		public DateType Date { get; set; }
+
 		/// <remarks/>
-		public ContractType ForeignExchangeContract {
-			get {
-				return foreignExchangeContractField;
-			}
-			set {
-				foreignExchangeContractField = value;
-			}
-		}
+		public ContractType ForeignExchangeContract { get; set; }
 	}
 }

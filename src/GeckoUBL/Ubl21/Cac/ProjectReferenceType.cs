@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProjectReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ProjectReferenceType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private IssueDateType issueDateField;
-    
-		private WorkPhaseReferenceType[] workPhaseReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate {
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WorkPhaseReference")]
-		public WorkPhaseReferenceType[] WorkPhaseReference {
-			get {
-				return workPhaseReferenceField;
-			}
-			set {
-				workPhaseReferenceField = value;
-			}
-		}
+		public WorkPhaseReferenceType[] WorkPhaseReference { get; set; }
 	}
 }

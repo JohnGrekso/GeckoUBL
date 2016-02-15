@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,94 +10,30 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("HazardousGoodsTransit", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class HazardousGoodsTransitType {
-    
-		private TransportEmergencyCardCodeType transportEmergencyCardCodeField;
-    
-		private PackingCriteriaCodeType packingCriteriaCodeField;
-    
-		private HazardousRegulationCodeType hazardousRegulationCodeField;
-    
-		private InhalationToxicityZoneCodeType inhalationToxicityZoneCodeField;
-    
-		private TransportAuthorizationCodeType transportAuthorizationCodeField;
-    
-		private TemperatureType maximumTemperatureField;
-    
-		private TemperatureType minimumTemperatureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportEmergencyCardCodeType TransportEmergencyCardCode {
-			get {
-				return transportEmergencyCardCodeField;
-			}
-			set {
-				transportEmergencyCardCodeField = value;
-			}
-		}
-    
+		public CodeType TransportEmergencyCardCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackingCriteriaCodeType PackingCriteriaCode {
-			get {
-				return packingCriteriaCodeField;
-			}
-			set {
-				packingCriteriaCodeField = value;
-			}
-		}
-    
+		public CodeType PackingCriteriaCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardousRegulationCodeType HazardousRegulationCode {
-			get {
-				return hazardousRegulationCodeField;
-			}
-			set {
-				hazardousRegulationCodeField = value;
-			}
-		}
-    
+		public CodeType HazardousRegulationCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InhalationToxicityZoneCodeType InhalationToxicityZoneCode {
-			get {
-				return inhalationToxicityZoneCodeField;
-			}
-			set {
-				inhalationToxicityZoneCodeField = value;
-			}
-		}
-    
+		public CodeType InhalationToxicityZoneCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportAuthorizationCodeType TransportAuthorizationCode {
-			get {
-				return transportAuthorizationCodeField;
-			}
-			set {
-				transportAuthorizationCodeField = value;
-			}
-		}
-    
+		public CodeType TransportAuthorizationCode { get; set; }
+
 		/// <remarks/>
-		public TemperatureType MaximumTemperature {
-			get {
-				return maximumTemperatureField;
-			}
-			set {
-				maximumTemperatureField = value;
-			}
-		}
-    
+		public TemperatureType MaximumTemperature { get; set; }
+
 		/// <remarks/>
-		public TemperatureType MinimumTemperature {
-			get {
-				return minimumTemperatureField;
-			}
-			set {
-				minimumTemperatureField = value;
-			}
-		}
+		public TemperatureType MinimumTemperature { get; set; }
 	}
 }

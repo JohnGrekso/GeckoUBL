@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,92 +10,28 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Consumption", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionType {
-    
-		private UtilityStatementTypeCodeType utilityStatementTypeCodeField;
-    
-		private PeriodType mainPeriodField;
-    
-		private AllowanceChargeType[] allowanceChargeField;
-    
-		private TaxTotalType[] taxTotalField;
-    
-		private EnergyWaterSupplyType energyWaterSupplyField;
-    
-		private TelecommunicationsSupplyType telecommunicationsSupplyField;
-    
-		private MonetaryTotalType legalMonetaryTotalField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UtilityStatementTypeCodeType UtilityStatementTypeCode {
-			get {
-				return utilityStatementTypeCodeField;
-			}
-			set {
-				utilityStatementTypeCodeField = value;
-			}
-		}
-    
+		public CodeType UtilityStatementTypeCode { get; set; }
+
 		/// <remarks/>
-		public PeriodType MainPeriod {
-			get {
-				return mainPeriodField;
-			}
-			set {
-				mainPeriodField = value;
-			}
-		}
-    
+		public PeriodType MainPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-		public AllowanceChargeType[] AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] AllowanceCharge { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-		public TaxTotalType[] TaxTotal {
-			get {
-				return taxTotalField;
-			}
-			set {
-				taxTotalField = value;
-			}
-		}
-    
+		public TaxTotalType[] TaxTotal { get; set; }
+
 		/// <remarks/>
-		public EnergyWaterSupplyType EnergyWaterSupply {
-			get {
-				return energyWaterSupplyField;
-			}
-			set {
-				energyWaterSupplyField = value;
-			}
-		}
-    
+		public EnergyWaterSupplyType EnergyWaterSupply { get; set; }
+
 		/// <remarks/>
-		public TelecommunicationsSupplyType TelecommunicationsSupply {
-			get {
-				return telecommunicationsSupplyField;
-			}
-			set {
-				telecommunicationsSupplyField = value;
-			}
-		}
-    
+		public TelecommunicationsSupplyType TelecommunicationsSupply { get; set; }
+
 		/// <remarks/>
-		public MonetaryTotalType LegalMonetaryTotal {
-			get {
-				return legalMonetaryTotalField;
-			}
-			set {
-				legalMonetaryTotalField = value;
-			}
-		}
+		public MonetaryTotalType LegalMonetaryTotal { get; set; }
 	}
 }

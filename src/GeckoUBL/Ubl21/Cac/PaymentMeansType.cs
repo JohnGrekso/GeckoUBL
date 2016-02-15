@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,168 +10,50 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PaymentMeans", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PaymentMeansType {
-    
-		private IDType idField;
-    
-		private PaymentMeansCodeType paymentMeansCodeField;
-    
-		private PaymentDueDateType paymentDueDateField;
-    
-		private PaymentChannelCodeType paymentChannelCodeField;
-    
-		private InstructionIDType instructionIDField;
-    
-		private InstructionNoteType[] instructionNoteField;
-    
-		private PaymentIDType[] paymentIDField;
-    
-		private CardAccountType cardAccountField;
-    
-		private FinancialAccountType payerFinancialAccountField;
-    
-		private FinancialAccountType payeeFinancialAccountField;
-    
-		private CreditAccountType creditAccountField;
-    
-		private PaymentMandateType paymentMandateField;
-    
-		private TradeFinancingType tradeFinancingField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentMeansCodeType PaymentMeansCode {
-			get {
-				return paymentMeansCodeField;
-			}
-			set {
-				paymentMeansCodeField = value;
-			}
-		}
-    
+		public CodeType PaymentMeansCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentDueDateType PaymentDueDate {
-			get {
-				return paymentDueDateField;
-			}
-			set {
-				paymentDueDateField = value;
-			}
-		}
-    
+		public DateType PaymentDueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentChannelCodeType PaymentChannelCode {
-			get {
-				return paymentChannelCodeField;
-			}
-			set {
-				paymentChannelCodeField = value;
-			}
-		}
-    
+		public CodeType PaymentChannelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InstructionIDType InstructionID {
-			get {
-				return instructionIDField;
-			}
-			set {
-				instructionIDField = value;
-			}
-		}
-    
+		public IdentifierType InstructionID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("InstructionNote", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InstructionNoteType[] InstructionNote {
-			get {
-				return instructionNoteField;
-			}
-			set {
-				instructionNoteField = value;
-			}
-		}
-    
+		public TextType[] InstructionNote { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentIDType[] PaymentID {
-			get {
-				return paymentIDField;
-			}
-			set {
-				paymentIDField = value;
-			}
-		}
-    
+		public IdentifierType[] PaymentID { get; set; }
+
 		/// <remarks/>
-		public CardAccountType CardAccount {
-			get {
-				return cardAccountField;
-			}
-			set {
-				cardAccountField = value;
-			}
-		}
-    
+		public CardAccountType CardAccount { get; set; }
+
 		/// <remarks/>
-		public FinancialAccountType PayerFinancialAccount {
-			get {
-				return payerFinancialAccountField;
-			}
-			set {
-				payerFinancialAccountField = value;
-			}
-		}
-    
+		public FinancialAccountType PayerFinancialAccount { get; set; }
+
 		/// <remarks/>
-		public FinancialAccountType PayeeFinancialAccount {
-			get {
-				return payeeFinancialAccountField;
-			}
-			set {
-				payeeFinancialAccountField = value;
-			}
-		}
-    
+		public FinancialAccountType PayeeFinancialAccount { get; set; }
+
 		/// <remarks/>
-		public CreditAccountType CreditAccount {
-			get {
-				return creditAccountField;
-			}
-			set {
-				creditAccountField = value;
-			}
-		}
-    
+		public CreditAccountType CreditAccount { get; set; }
+
 		/// <remarks/>
-		public PaymentMandateType PaymentMandate {
-			get {
-				return paymentMandateField;
-			}
-			set {
-				paymentMandateField = value;
-			}
-		}
-    
+		public PaymentMandateType PaymentMandate { get; set; }
+
 		/// <remarks/>
-		public TradeFinancingType TradeFinancing {
-			get {
-				return tradeFinancingField;
-			}
-			set {
-				tradeFinancingField = value;
-			}
-		}
+		public TradeFinancingType TradeFinancing { get; set; }
 	}
 }

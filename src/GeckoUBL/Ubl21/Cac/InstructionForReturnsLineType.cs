@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,68 +10,22 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("InstructionForReturnsLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class InstructionForReturnsLineType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private QuantityType2 quantityField;
-    
-		private PartyType manufacturerPartyField;
-    
-		private ItemType itemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
-		public PartyType ManufacturerParty {
-			get {
-				return manufacturerPartyField;
-			}
-			set {
-				manufacturerPartyField = value;
-			}
-		}
-    
+		public PartyType ManufacturerParty { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
+		public ItemType Item { get; set; }
 	}
 }

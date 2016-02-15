@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,79 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SupplierConsumption", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class SupplierConsumptionType {
-    
-		private DescriptionType[] descriptionField;
-    
-		private PartyType utilitySupplierPartyField;
-    
-		private PartyType utilityCustomerPartyField;
-    
-		private ConsumptionType consumptionField;
-    
-		private ContractType contractField;
-    
-		private ConsumptionLineType[] consumptionLineField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
-		public PartyType UtilitySupplierParty {
-			get {
-				return utilitySupplierPartyField;
-			}
-			set {
-				utilitySupplierPartyField = value;
-			}
-		}
-    
+		public PartyType UtilitySupplierParty { get; set; }
+
 		/// <remarks/>
-		public PartyType UtilityCustomerParty {
-			get {
-				return utilityCustomerPartyField;
-			}
-			set {
-				utilityCustomerPartyField = value;
-			}
-		}
-    
+		public PartyType UtilityCustomerParty { get; set; }
+
 		/// <remarks/>
-		public ConsumptionType Consumption {
-			get {
-				return consumptionField;
-			}
-			set {
-				consumptionField = value;
-			}
-		}
-    
+		public ConsumptionType Consumption { get; set; }
+
 		/// <remarks/>
-		public ContractType Contract {
-			get {
-				return contractField;
-			}
-			set {
-				contractField = value;
-			}
-		}
-    
+		public ContractType Contract { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ConsumptionLine")]
-		public ConsumptionLineType[] ConsumptionLine {
-			get {
-				return consumptionLineField;
-			}
-			set {
-				consumptionLineField = value;
-			}
-		}
+		public ConsumptionLineType[] ConsumptionLine { get; set; }
 	}
 }

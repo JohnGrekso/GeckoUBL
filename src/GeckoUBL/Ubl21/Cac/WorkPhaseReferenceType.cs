@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,96 +10,32 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WorkPhaseReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class WorkPhaseReferenceType {
-    
-		private IDType idField;
-    
-		private WorkPhaseCodeType workPhaseCodeField;
-    
-		private WorkPhaseType[] workPhaseField;
-    
-		private ProgressPercentType progressPercentField;
-    
-		private StartDateType startDateField;
-    
-		private EndDateType endDateField;
-    
-		private DocumentReferenceType[] workOrderDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WorkPhaseCodeType WorkPhaseCode {
-			get {
-				return workPhaseCodeField;
-			}
-			set {
-				workPhaseCodeField = value;
-			}
-		}
-    
+		public CodeType WorkPhaseCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WorkPhase", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WorkPhaseType[] WorkPhase {
-			get {
-				return workPhaseField;
-			}
-			set {
-				workPhaseField = value;
-			}
-		}
-    
+		public TextType[] WorkPhase { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProgressPercentType ProgressPercent {
-			get {
-				return progressPercentField;
-			}
-			set {
-				progressPercentField = value;
-			}
-		}
-    
+		public PercentType ProgressPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public StartDateType StartDate {
-			get {
-				return startDateField;
-			}
-			set {
-				startDateField = value;
-			}
-		}
-    
+		public DateType StartDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EndDateType EndDate {
-			get {
-				return endDateField;
-			}
-			set {
-				endDateField = value;
-			}
-		}
-    
+		public DateType EndDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WorkOrderDocumentReference")]
-		public DocumentReferenceType[] WorkOrderDocumentReference {
-			get {
-				return workOrderDocumentReferenceField;
-			}
-			set {
-				workOrderDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType[] WorkOrderDocumentReference { get; set; }
 	}
 }

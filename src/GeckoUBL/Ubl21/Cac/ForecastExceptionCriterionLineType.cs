@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastExceptionCriterionLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ForecastExceptionCriterionLineType {
-    
-		private ForecastPurposeCodeType forecastPurposeCodeField;
-    
-		private ForecastTypeCodeType forecastTypeCodeField;
-    
-		private ComparisonDataSourceCodeType comparisonDataSourceCodeField;
-    
-		private DataSourceCodeType dataSourceCodeField;
-    
-		private TimeDeltaDaysQuantityType timeDeltaDaysQuantityField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ForecastPurposeCodeType ForecastPurposeCode {
-			get {
-				return forecastPurposeCodeField;
-			}
-			set {
-				forecastPurposeCodeField = value;
-			}
-		}
-    
+		public CodeType ForecastPurposeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ForecastTypeCodeType ForecastTypeCode {
-			get {
-				return forecastTypeCodeField;
-			}
-			set {
-				forecastTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ForecastTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ComparisonDataSourceCodeType ComparisonDataSourceCode {
-			get {
-				return comparisonDataSourceCodeField;
-			}
-			set {
-				comparisonDataSourceCodeField = value;
-			}
-		}
-    
+		public CodeType ComparisonDataSourceCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DataSourceCodeType DataSourceCode {
-			get {
-				return dataSourceCodeField;
-			}
-			set {
-				dataSourceCodeField = value;
-			}
-		}
-    
+		public CodeType DataSourceCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TimeDeltaDaysQuantityType TimeDeltaDaysQuantity {
-			get {
-				return timeDeltaDaysQuantityField;
-			}
-			set {
-				timeDeltaDaysQuantityField = value;
-			}
-		}
+		public QuantityType TimeDeltaDaysQuantity { get; set; }
 	}
 }

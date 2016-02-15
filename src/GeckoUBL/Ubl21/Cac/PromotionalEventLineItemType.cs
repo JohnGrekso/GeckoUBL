@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,30 +10,11 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PromotionalEventLineItem", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PromotionalEventLineItemType {
-    
-		private AmountType2 amountField;
-    
-		private EventLineItemType eventLineItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
-		public EventLineItemType EventLineItem {
-			get {
-				return eventLineItemField;
-			}
-			set {
-				eventLineItemField = value;
-			}
-		}
+		public EventLineItemType EventLineItem { get; set; }
 	}
 }

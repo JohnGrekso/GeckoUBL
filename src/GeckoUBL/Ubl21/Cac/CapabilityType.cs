@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,82 +10,27 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Capability", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CapabilityType {
-    
-		private CapabilityTypeCodeType capabilityTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private ValueAmountType valueAmountField;
-    
-		private ValueQuantityType valueQuantityField;
-    
-		private EvidenceSuppliedType[] evidenceSuppliedField;
-    
-		private PeriodType validityPeriodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CapabilityTypeCodeType CapabilityTypeCode {
-			get {
-				return capabilityTypeCodeField;
-			}
-			set {
-				capabilityTypeCodeField = value;
-			}
-		}
-    
+		public CodeType CapabilityTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueAmountType ValueAmount {
-			get {
-				return valueAmountField;
-			}
-			set {
-				valueAmountField = value;
-			}
-		}
-    
+		public AmountType ValueAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueQuantityType ValueQuantity {
-			get {
-				return valueQuantityField;
-			}
-			set {
-				valueQuantityField = value;
-			}
-		}
-    
+		public QuantityType ValueQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EvidenceSupplied")]
-		public EvidenceSuppliedType[] EvidenceSupplied {
-			get {
-				return evidenceSuppliedField;
-			}
-			set {
-				evidenceSuppliedField = value;
-			}
-		}
-    
+		public EvidenceSuppliedType[] EvidenceSupplied { get; set; }
+
 		/// <remarks/>
-		public PeriodType ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
+		public PeriodType ValidityPeriod { get; set; }
 	}
 }

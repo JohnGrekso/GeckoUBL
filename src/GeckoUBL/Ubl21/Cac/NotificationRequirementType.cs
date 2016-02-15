@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,83 +10,28 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("NotificationRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class NotificationRequirementType {
-    
-		private NotificationTypeCodeType notificationTypeCodeField;
-    
-		private PostEventNotificationDurationMeasureType postEventNotificationDurationMeasureField;
-    
-		private PreEventNotificationDurationMeasureType preEventNotificationDurationMeasureField;
-    
-		private PartyType[] notifyPartyField;
-    
-		private PeriodType[] notificationPeriodField;
-    
-		private LocationType1[] notificationLocationField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NotificationTypeCodeType NotificationTypeCode {
-			get {
-				return notificationTypeCodeField;
-			}
-			set {
-				notificationTypeCodeField = value;
-			}
-		}
-    
+		public CodeType NotificationTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PostEventNotificationDurationMeasureType PostEventNotificationDurationMeasure {
-			get {
-				return postEventNotificationDurationMeasureField;
-			}
-			set {
-				postEventNotificationDurationMeasureField = value;
-			}
-		}
-    
+		public MeasureType PostEventNotificationDurationMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PreEventNotificationDurationMeasureType PreEventNotificationDurationMeasure {
-			get {
-				return preEventNotificationDurationMeasureField;
-			}
-			set {
-				preEventNotificationDurationMeasureField = value;
-			}
-		}
-    
+		public MeasureType PreEventNotificationDurationMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("NotifyParty")]
-		public PartyType[] NotifyParty {
-			get {
-				return notifyPartyField;
-			}
-			set {
-				notifyPartyField = value;
-			}
-		}
-    
+		public PartyType[] NotifyParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("NotificationPeriod")]
-		public PeriodType[] NotificationPeriod {
-			get {
-				return notificationPeriodField;
-			}
-			set {
-				notificationPeriodField = value;
-			}
-		}
-    
+		public PeriodType[] NotificationPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("NotificationLocation")]
-		public LocationType1[] NotificationLocation {
-			get {
-				return notificationLocationField;
-			}
-			set {
-				notificationLocationField = value;
-			}
-		}
+		public LocationType1[] NotificationLocation { get; set; }
 	}
 }

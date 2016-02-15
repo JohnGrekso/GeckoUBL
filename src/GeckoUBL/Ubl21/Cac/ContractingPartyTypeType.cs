@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,31 +10,12 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractingPartyType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ContractingPartyTypeType {
-    
-		private PartyTypeCodeType partyTypeCodeField;
-    
-		private PartyTypeType partyTypeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PartyTypeCodeType PartyTypeCode {
-			get {
-				return partyTypeCodeField;
-			}
-			set {
-				partyTypeCodeField = value;
-			}
-		}
-    
+		public CodeType PartyTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PartyTypeType PartyType {
-			get {
-				return partyTypeField;
-			}
-			set {
-				partyTypeField = value;
-			}
-		}
+		public TextType PartyType { get; set; }
 	}
 }

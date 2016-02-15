@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Dimension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DimensionType {
-    
-		private AttributeIDType attributeIDField;
-    
-		private MeasureType2 measureField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private MinimumMeasureType minimumMeasureField;
-    
-		private MaximumMeasureType maximumMeasureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AttributeIDType AttributeID {
-			get {
-				return attributeIDField;
-			}
-			set {
-				attributeIDField = value;
-			}
-		}
-    
+		public IdentifierType AttributeID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MeasureType2 Measure {
-			get {
-				return measureField;
-			}
-			set {
-				measureField = value;
-			}
-		}
-    
+		public MeasureType Measure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumMeasureType MinimumMeasure {
-			get {
-				return minimumMeasureField;
-			}
-			set {
-				minimumMeasureField = value;
-			}
-		}
-    
+		public MeasureType MinimumMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumMeasureType MaximumMeasure {
-			get {
-				return maximumMeasureField;
-			}
-			set {
-				maximumMeasureField = value;
-			}
-		}
+		public MeasureType MaximumMeasure { get; set; }
 	}
 }

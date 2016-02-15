@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Stowage", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class StowageType {
-    
-		private LocationIDType locationIDField;
-    
-		private LocationType[] locationField;
-    
-		private DimensionType[] measurementDimensionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LocationIDType LocationID {
-			get {
-				return locationIDField;
-			}
-			set {
-				locationIDField = value;
-			}
-		}
-    
+		public IdentifierType LocationID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Location", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LocationType[] Location {
-			get {
-				return locationField;
-			}
-			set {
-				locationField = value;
-			}
-		}
-    
+		public TextType[] Location { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
-		public DimensionType[] MeasurementDimension {
-			get {
-				return measurementDimensionField;
-			}
-			set {
-				measurementDimensionField = value;
-			}
-		}
+		public DimensionType[] MeasurementDimension { get; set; }
 	}
 }

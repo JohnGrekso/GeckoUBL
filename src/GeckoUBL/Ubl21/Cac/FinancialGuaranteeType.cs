@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,69 +10,23 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FinalFinancialGuarantee", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class FinancialGuaranteeType {
-    
-		private GuaranteeTypeCodeType guaranteeTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private LiabilityAmountType liabilityAmountField;
-    
-		private AmountRateType amountRateField;
-    
-		private PeriodType constitutionPeriodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public GuaranteeTypeCodeType GuaranteeTypeCode {
-			get {
-				return guaranteeTypeCodeField;
-			}
-			set {
-				guaranteeTypeCodeField = value;
-			}
-		}
-    
+		public CodeType GuaranteeTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LiabilityAmountType LiabilityAmount {
-			get {
-				return liabilityAmountField;
-			}
-			set {
-				liabilityAmountField = value;
-			}
-		}
-    
+		public AmountType LiabilityAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountRateType AmountRate {
-			get {
-				return amountRateField;
-			}
-			set {
-				amountRateField = value;
-			}
-		}
-    
+		public RateType AmountRate { get; set; }
+
 		/// <remarks/>
-		public PeriodType ConstitutionPeriod {
-			get {
-				return constitutionPeriodField;
-			}
-			set {
-				constitutionPeriodField = value;
-			}
-		}
+		public PeriodType ConstitutionPeriod { get; set; }
 	}
 }

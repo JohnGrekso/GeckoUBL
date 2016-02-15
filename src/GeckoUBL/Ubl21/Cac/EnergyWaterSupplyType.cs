@@ -8,57 +8,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EnergyWaterSupply", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EnergyWaterSupplyType {
-    
-		private ConsumptionReportType[] consumptionReportField;
-    
-		private EnergyTaxReportType[] energyTaxReportField;
-    
-		private ConsumptionAverageType[] consumptionAverageField;
-    
-		private ConsumptionCorrectionType[] energyWaterConsumptionCorrectionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ConsumptionReport")]
-		public ConsumptionReportType[] ConsumptionReport {
-			get {
-				return consumptionReportField;
-			}
-			set {
-				consumptionReportField = value;
-			}
-		}
-    
+		public ConsumptionReportType[] ConsumptionReport { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EnergyTaxReport")]
-		public EnergyTaxReportType[] EnergyTaxReport {
-			get {
-				return energyTaxReportField;
-			}
-			set {
-				energyTaxReportField = value;
-			}
-		}
-    
+		public EnergyTaxReportType[] EnergyTaxReport { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ConsumptionAverage")]
-		public ConsumptionAverageType[] ConsumptionAverage {
-			get {
-				return consumptionAverageField;
-			}
-			set {
-				consumptionAverageField = value;
-			}
-		}
-    
+		public ConsumptionAverageType[] ConsumptionAverage { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EnergyWaterConsumptionCorrection")]
-		public ConsumptionCorrectionType[] EnergyWaterConsumptionCorrection {
-			get {
-				return energyWaterConsumptionCorrectionField;
-			}
-			set {
-				energyWaterConsumptionCorrectionField = value;
-			}
-		}
+		public ConsumptionCorrectionType[] EnergyWaterConsumptionCorrection { get; set; }
 	}
 }

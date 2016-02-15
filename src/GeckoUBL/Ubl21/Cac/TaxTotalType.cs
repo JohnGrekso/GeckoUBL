@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TaxTotal", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TaxTotalType {
-    
-		private TaxAmountType taxAmountField;
-    
-		private RoundingAmountType roundingAmountField;
-    
-		private TaxEvidenceIndicatorType taxEvidenceIndicatorField;
-    
-		private TaxIncludedIndicatorType taxIncludedIndicatorField;
-    
-		private TaxSubtotalType[] taxSubtotalField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxAmountType TaxAmount {
-			get {
-				return taxAmountField;
-			}
-			set {
-				taxAmountField = value;
-			}
-		}
-    
+		public AmountType TaxAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RoundingAmountType RoundingAmount {
-			get {
-				return roundingAmountField;
-			}
-			set {
-				roundingAmountField = value;
-			}
-		}
-    
+		public AmountType RoundingAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxEvidenceIndicatorType TaxEvidenceIndicator {
-			get {
-				return taxEvidenceIndicatorField;
-			}
-			set {
-				taxEvidenceIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType TaxEvidenceIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxIncludedIndicatorType TaxIncludedIndicator {
-			get {
-				return taxIncludedIndicatorField;
-			}
-			set {
-				taxIncludedIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType TaxIncludedIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxSubtotal")]
-		public TaxSubtotalType[] TaxSubtotal {
-			get {
-				return taxSubtotalField;
-			}
-			set {
-				taxSubtotalField = value;
-			}
-		}
+		public TaxSubtotalType[] TaxSubtotal { get; set; }
 	}
 }

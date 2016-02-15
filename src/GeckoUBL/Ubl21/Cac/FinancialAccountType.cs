@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,120 +10,38 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("FinancialAccount", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class FinancialAccountType {
-    
-		private IDType idField;
-    
-		private NameType1 nameField;
-    
-		private AliasNameType aliasNameField;
-    
-		private AccountTypeCodeType accountTypeCodeField;
-    
-		private AccountFormatCodeType accountFormatCodeField;
-    
-		private CurrencyCodeType currencyCodeField;
-    
-		private PaymentNoteType[] paymentNoteField;
-    
-		private BranchType financialInstitutionBranchField;
-    
-		private CountryType countryField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AliasNameType AliasName {
-			get {
-				return aliasNameField;
-			}
-			set {
-				aliasNameField = value;
-			}
-		}
-    
+		public NameType AliasName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountTypeCodeType AccountTypeCode {
-			get {
-				return accountTypeCodeField;
-			}
-			set {
-				accountTypeCodeField = value;
-			}
-		}
-    
+		public CodeType AccountTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountFormatCodeType AccountFormatCode {
-			get {
-				return accountFormatCodeField;
-			}
-			set {
-				accountFormatCodeField = value;
-			}
-		}
-    
+		public CodeType AccountFormatCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CurrencyCodeType CurrencyCode {
-			get {
-				return currencyCodeField;
-			}
-			set {
-				currencyCodeField = value;
-			}
-		}
-    
+		public CodeType CurrencyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentNote", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentNoteType[] PaymentNote {
-			get {
-				return paymentNoteField;
-			}
-			set {
-				paymentNoteField = value;
-			}
-		}
-    
+		public TextType[] PaymentNote { get; set; }
+
 		/// <remarks/>
-		public BranchType FinancialInstitutionBranch {
-			get {
-				return financialInstitutionBranchField;
-			}
-			set {
-				financialInstitutionBranchField = value;
-			}
-		}
-    
+		public BranchType FinancialInstitutionBranch { get; set; }
+
 		/// <remarks/>
-		public CountryType Country {
-			get {
-				return countryField;
-			}
-			set {
-				countryField = value;
-			}
-		}
+		public CountryType Country { get; set; }
 	}
 }

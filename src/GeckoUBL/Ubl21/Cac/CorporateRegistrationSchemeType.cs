@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CorporateRegistrationScheme", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CorporateRegistrationSchemeType {
-    
-		private IDType idField;
-    
-		private NameType1 nameField;
-    
-		private CorporateRegistrationTypeCodeType corporateRegistrationTypeCodeField;
-    
-		private AddressType[] jurisdictionRegionAddressField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CorporateRegistrationTypeCodeType CorporateRegistrationTypeCode {
-			get {
-				return corporateRegistrationTypeCodeField;
-			}
-			set {
-				corporateRegistrationTypeCodeField = value;
-			}
-		}
-    
+		public CodeType CorporateRegistrationTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("JurisdictionRegionAddress")]
-		public AddressType[] JurisdictionRegionAddress {
-			get {
-				return jurisdictionRegionAddressField;
-			}
-			set {
-				jurisdictionRegionAddressField = value;
-			}
-		}
+		public AddressType[] JurisdictionRegionAddress { get; set; }
 	}
 }

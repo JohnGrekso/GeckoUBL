@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,158 +10,49 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ItemLocationQuantity", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ItemLocationQuantityType {
-    
-		private LeadTimeMeasureType leadTimeMeasureField;
-    
-		private MinimumQuantityType minimumQuantityField;
-    
-		private MaximumQuantityType maximumQuantityField;
-    
-		private HazardousRiskIndicatorType hazardousRiskIndicatorField;
-    
-		private TradingRestrictionsType[] tradingRestrictionsField;
-    
-		private AddressType[] applicableTerritoryAddressField;
-    
-		private PriceType priceField;
-    
-		private DeliveryUnitType[] deliveryUnitField;
-    
-		private TaxCategoryType[] applicableTaxCategoryField;
-    
-		private PackageType packageField;
-    
-		private AllowanceChargeType[] allowanceChargeField;
-    
-		private DependentPriceReferenceType dependentPriceReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LeadTimeMeasureType LeadTimeMeasure {
-			get {
-				return leadTimeMeasureField;
-			}
-			set {
-				leadTimeMeasureField = value;
-			}
-		}
-    
+		public MeasureType LeadTimeMeasure { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumQuantityType MinimumQuantity {
-			get {
-				return minimumQuantityField;
-			}
-			set {
-				minimumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumQuantityType MaximumQuantity {
-			get {
-				return maximumQuantityField;
-			}
-			set {
-				maximumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardousRiskIndicatorType HazardousRiskIndicator {
-			get {
-				return hazardousRiskIndicatorField;
-			}
-			set {
-				hazardousRiskIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType HazardousRiskIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TradingRestrictions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TradingRestrictionsType[] TradingRestrictions {
-			get {
-				return tradingRestrictionsField;
-			}
-			set {
-				tradingRestrictionsField = value;
-			}
-		}
-    
+		public TextType[] TradingRestrictions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ApplicableTerritoryAddress")]
-		public AddressType[] ApplicableTerritoryAddress {
-			get {
-				return applicableTerritoryAddressField;
-			}
-			set {
-				applicableTerritoryAddressField = value;
-			}
-		}
-    
+		public AddressType[] ApplicableTerritoryAddress { get; set; }
+
 		/// <remarks/>
-		public PriceType Price {
-			get {
-				return priceField;
-			}
-			set {
-				priceField = value;
-			}
-		}
-    
+		public PriceType Price { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DeliveryUnit")]
-		public DeliveryUnitType[] DeliveryUnit {
-			get {
-				return deliveryUnitField;
-			}
-			set {
-				deliveryUnitField = value;
-			}
-		}
-    
+		public DeliveryUnitType[] DeliveryUnit { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ApplicableTaxCategory")]
-		public TaxCategoryType[] ApplicableTaxCategory {
-			get {
-				return applicableTaxCategoryField;
-			}
-			set {
-				applicableTaxCategoryField = value;
-			}
-		}
-    
+		public TaxCategoryType[] ApplicableTaxCategory { get; set; }
+
 		/// <remarks/>
-		public PackageType Package {
-			get {
-				return packageField;
-			}
-			set {
-				packageField = value;
-			}
-		}
-    
+		public PackageType Package { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-		public AllowanceChargeType[] AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] AllowanceCharge { get; set; }
+
 		/// <remarks/>
-		public DependentPriceReferenceType DependentPriceReference {
-			get {
-				return dependentPriceReferenceField;
-			}
-			set {
-				dependentPriceReferenceField = value;
-			}
-		}
+		public DependentPriceReferenceType DependentPriceReference { get; set; }
 	}
 }

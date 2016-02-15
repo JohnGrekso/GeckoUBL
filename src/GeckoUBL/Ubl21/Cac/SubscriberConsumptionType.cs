@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,119 +10,37 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubscriberConsumption", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class SubscriberConsumptionType {
-    
-		private ConsumptionIDType consumptionIDField;
-    
-		private SpecificationTypeCodeType specificationTypeCodeField;
-    
-		private NoteType[] noteField;
-    
-		private TotalMeteredQuantityType totalMeteredQuantityField;
-    
-		private PartyType subscriberPartyField;
-    
-		private ConsumptionPointType utilityConsumptionPointField;
-    
-		private OnAccountPaymentType[] onAccountPaymentField;
-    
-		private ConsumptionType consumptionField;
-    
-		private SupplierConsumptionType[] supplierConsumptionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionIDType ConsumptionID {
-			get {
-				return consumptionIDField;
-			}
-			set {
-				consumptionIDField = value;
-			}
-		}
-    
+		public IdentifierType ConsumptionID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SpecificationTypeCodeType SpecificationTypeCode {
-			get {
-				return specificationTypeCodeField;
-			}
-			set {
-				specificationTypeCodeField = value;
-			}
-		}
-    
+		public CodeType SpecificationTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalMeteredQuantityType TotalMeteredQuantity {
-			get {
-				return totalMeteredQuantityField;
-			}
-			set {
-				totalMeteredQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalMeteredQuantity { get; set; }
+
 		/// <remarks/>
-		public PartyType SubscriberParty {
-			get {
-				return subscriberPartyField;
-			}
-			set {
-				subscriberPartyField = value;
-			}
-		}
-    
+		public PartyType SubscriberParty { get; set; }
+
 		/// <remarks/>
-		public ConsumptionPointType UtilityConsumptionPoint {
-			get {
-				return utilityConsumptionPointField;
-			}
-			set {
-				utilityConsumptionPointField = value;
-			}
-		}
-    
+		public ConsumptionPointType UtilityConsumptionPoint { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("OnAccountPayment")]
-		public OnAccountPaymentType[] OnAccountPayment {
-			get {
-				return onAccountPaymentField;
-			}
-			set {
-				onAccountPaymentField = value;
-			}
-		}
-    
+		public OnAccountPaymentType[] OnAccountPayment { get; set; }
+
 		/// <remarks/>
-		public ConsumptionType Consumption {
-			get {
-				return consumptionField;
-			}
-			set {
-				consumptionField = value;
-			}
-		}
-    
+		public ConsumptionType Consumption { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SupplierConsumption")]
-		public SupplierConsumptionType[] SupplierConsumption {
-			get {
-				return supplierConsumptionField;
-			}
-			set {
-				supplierConsumptionField = value;
-			}
-		}
+		public SupplierConsumptionType[] SupplierConsumption { get; set; }
 	}
 }

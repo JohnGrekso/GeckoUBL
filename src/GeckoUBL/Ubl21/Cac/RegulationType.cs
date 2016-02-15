@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ApplicableRegulation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class RegulationType {
-    
-		private NameType1 nameField;
-    
-		private LegalReferenceType legalReferenceField;
-    
-		private OntologyURIType ontologyURIField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LegalReferenceType LegalReference {
-			get {
-				return legalReferenceField;
-			}
-			set {
-				legalReferenceField = value;
-			}
-		}
-    
+		public TextType LegalReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OntologyURIType OntologyURI {
-			get {
-				return ontologyURIField;
-			}
-			set {
-				ontologyURIField = value;
-			}
-		}
+		public IdentifierType OntologyURI { get; set; }
 	}
 }

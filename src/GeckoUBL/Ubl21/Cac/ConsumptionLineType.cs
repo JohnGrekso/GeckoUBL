@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,144 +10,44 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionLineType {
-    
-		private IDType idField;
-    
-		private ParentDocumentLineReferenceIDType parentDocumentLineReferenceIDField;
-    
-		private InvoicedQuantityType invoicedQuantityField;
-    
-		private LineExtensionAmountType lineExtensionAmountField;
-    
-		private PeriodType periodField;
-    
-		private DeliveryType[] deliveryField;
-    
-		private AllowanceChargeType[] allowanceChargeField;
-    
-		private TaxTotalType[] taxTotalField;
-    
-		private UtilityItemType utilityItemField;
-    
-		private PriceType priceField;
-    
-		private UnstructuredPriceType unstructuredPriceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ParentDocumentLineReferenceIDType ParentDocumentLineReferenceID {
-			get {
-				return parentDocumentLineReferenceIDField;
-			}
-			set {
-				parentDocumentLineReferenceIDField = value;
-			}
-		}
-    
+		public IdentifierType ParentDocumentLineReferenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InvoicedQuantityType InvoicedQuantity {
-			get {
-				return invoicedQuantityField;
-			}
-			set {
-				invoicedQuantityField = value;
-			}
-		}
-    
+		public QuantityType InvoicedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineExtensionAmountType LineExtensionAmount {
-			get {
-				return lineExtensionAmountField;
-			}
-			set {
-				lineExtensionAmountField = value;
-			}
-		}
-    
+		public AmountType LineExtensionAmount { get; set; }
+
 		/// <remarks/>
-		public PeriodType Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
-    
+		public PeriodType Period { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Delivery")]
-		public DeliveryType[] Delivery {
-			get {
-				return deliveryField;
-			}
-			set {
-				deliveryField = value;
-			}
-		}
-    
+		public DeliveryType[] Delivery { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-		public AllowanceChargeType[] AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] AllowanceCharge { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-		public TaxTotalType[] TaxTotal {
-			get {
-				return taxTotalField;
-			}
-			set {
-				taxTotalField = value;
-			}
-		}
-    
+		public TaxTotalType[] TaxTotal { get; set; }
+
 		/// <remarks/>
-		public UtilityItemType UtilityItem {
-			get {
-				return utilityItemField;
-			}
-			set {
-				utilityItemField = value;
-			}
-		}
-    
+		public UtilityItemType UtilityItem { get; set; }
+
 		/// <remarks/>
-		public PriceType Price {
-			get {
-				return priceField;
-			}
-			set {
-				priceField = value;
-			}
-		}
-    
+		public PriceType Price { get; set; }
+
 		/// <remarks/>
-		public UnstructuredPriceType UnstructuredPrice {
-			get {
-				return unstructuredPriceField;
-			}
-			set {
-				unstructuredPriceField = value;
-			}
-		}
+		public UnstructuredPriceType UnstructuredPrice { get; set; }
 	}
 }

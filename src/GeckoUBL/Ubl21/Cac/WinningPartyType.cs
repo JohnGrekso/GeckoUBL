@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,30 +10,11 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WinningParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class WinningPartyType {
-    
-		private RankType rankField;
-    
-		private PartyType partyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RankType Rank {
-			get {
-				return rankField;
-			}
-			set {
-				rankField = value;
-			}
-		}
-    
+		public TextType Rank { get; set; }
+
 		/// <remarks/>
-		public PartyType Party {
-			get {
-				return partyField;
-			}
-			set {
-				partyField = value;
-			}
-		}
+		public PartyType Party { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,199 +10,63 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AllowanceCharge", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class AllowanceChargeType {
-    
-		private IDType idField;
-    
-		private ChargeIndicatorType chargeIndicatorField;
-    
-		private AllowanceChargeReasonCodeType allowanceChargeReasonCodeField;
-    
-		private AllowanceChargeReasonType[] allowanceChargeReasonField;
-    
-		private MultiplierFactorNumericType multiplierFactorNumericField;
-    
-		private PrepaidIndicatorType prepaidIndicatorField;
-    
-		private SequenceNumericType sequenceNumericField;
-    
-		private AmountType2 amountField;
-    
-		private BaseAmountType baseAmountField;
-    
-		private AccountingCostCodeType accountingCostCodeField;
-    
-		private AccountingCostType accountingCostField;
-    
-		private PerUnitAmountType perUnitAmountField;
-    
-		private TaxCategoryType[] taxCategoryField;
-    
-		private TaxTotalType taxTotalField;
-    
-		private PaymentMeansType[] paymentMeansField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ChargeIndicatorType ChargeIndicator {
-			get {
-				return chargeIndicatorField;
-			}
-			set {
-				chargeIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType ChargeIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AllowanceChargeReasonCodeType AllowanceChargeReasonCode {
-			get {
-				return allowanceChargeReasonCodeField;
-			}
-			set {
-				allowanceChargeReasonCodeField = value;
-			}
-		}
-    
+		public CodeType AllowanceChargeReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceChargeReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AllowanceChargeReasonType[] AllowanceChargeReason {
-			get {
-				return allowanceChargeReasonField;
-			}
-			set {
-				allowanceChargeReasonField = value;
-			}
-		}
-    
+		public TextType[] AllowanceChargeReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MultiplierFactorNumericType MultiplierFactorNumeric {
-			get {
-				return multiplierFactorNumericField;
-			}
-			set {
-				multiplierFactorNumericField = value;
-			}
-		}
-    
+		public NumericType MultiplierFactorNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PrepaidIndicatorType PrepaidIndicator {
-			get {
-				return prepaidIndicatorField;
-			}
-			set {
-				prepaidIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType PrepaidIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SequenceNumericType SequenceNumeric {
-			get {
-				return sequenceNumericField;
-			}
-			set {
-				sequenceNumericField = value;
-			}
-		}
-    
+		public NumericType SequenceNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BaseAmountType BaseAmount {
-			get {
-				return baseAmountField;
-			}
-			set {
-				baseAmountField = value;
-			}
-		}
-    
+		public AmountType BaseAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostCodeType AccountingCostCode {
-			get {
-				return accountingCostCodeField;
-			}
-			set {
-				accountingCostCodeField = value;
-			}
-		}
-    
+		public CodeType AccountingCostCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostType AccountingCost {
-			get {
-				return accountingCostField;
-			}
-			set {
-				accountingCostField = value;
-			}
-		}
-    
+		public TextType AccountingCost { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PerUnitAmountType PerUnitAmount {
-			get {
-				return perUnitAmountField;
-			}
-			set {
-				perUnitAmountField = value;
-			}
-		}
-    
+		public AmountType PerUnitAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxCategory")]
-		public TaxCategoryType[] TaxCategory {
-			get {
-				return taxCategoryField;
-			}
-			set {
-				taxCategoryField = value;
-			}
-		}
-    
+		public TaxCategoryType[] TaxCategory { get; set; }
+
 		/// <remarks/>
-		public TaxTotalType TaxTotal {
-			get {
-				return taxTotalField;
-			}
-			set {
-				taxTotalField = value;
-			}
-		}
-    
+		public TaxTotalType TaxTotal { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentMeans")]
-		public PaymentMeansType[] PaymentMeans {
-			get {
-				return paymentMeansField;
-			}
-			set {
-				paymentMeansField = value;
-			}
-		}
+		public PaymentMeansType[] PaymentMeans { get; set; }
 	}
 }

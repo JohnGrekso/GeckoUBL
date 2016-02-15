@@ -1,5 +1,4 @@
-﻿using GeckoUBL.Ubl21.Cbc;
-using GeckoUBL.Ubl21.Udt;
+﻿using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cec
 {
@@ -117,9 +116,9 @@ namespace GeckoUBL.Ubl21.Cec
 	public class UBLExtensionType
 	{
 
-		private IDType idField;
+		private IdentifierType idField;
 
-		private NameType1 nameField;
+		private NameType nameField;
 
 		private ExtensionAgencyIDType extensionAgencyIDField;
 
@@ -139,7 +138,7 @@ namespace GeckoUBL.Ubl21.Cec
 
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID
+		public IdentifierType ID
 		{
 			get
 			{
@@ -153,7 +152,7 @@ namespace GeckoUBL.Ubl21.Cec
 
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name
+		public NameType Name
 		{
 			get
 			{

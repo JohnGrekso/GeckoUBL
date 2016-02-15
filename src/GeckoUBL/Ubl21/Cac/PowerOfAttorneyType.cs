@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,107 +10,34 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PowerOfAttorney", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PowerOfAttorneyType {
-    
-		private IDType idField;
-    
-		private IssueDateType issueDateField;
-    
-		private IssueTimeType issueTimeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private PartyType notaryPartyField;
-    
-		private PartyType agentPartyField;
-    
-		private PartyType[] witnessPartyField;
-    
-		private DocumentReferenceType[] mandateDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate {
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueTimeType IssueTime {
-			get {
-				return issueTimeField;
-			}
-			set {
-				issueTimeField = value;
-			}
-		}
-    
+		public TimeType IssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
-		public PartyType NotaryParty {
-			get {
-				return notaryPartyField;
-			}
-			set {
-				notaryPartyField = value;
-			}
-		}
-    
+		public PartyType NotaryParty { get; set; }
+
 		/// <remarks/>
-		public PartyType AgentParty {
-			get {
-				return agentPartyField;
-			}
-			set {
-				agentPartyField = value;
-			}
-		}
-    
+		public PartyType AgentParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WitnessParty")]
-		public PartyType[] WitnessParty {
-			get {
-				return witnessPartyField;
-			}
-			set {
-				witnessPartyField = value;
-			}
-		}
-    
+		public PartyType[] WitnessParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MandateDocumentReference")]
-		public DocumentReferenceType[] MandateDocumentReference {
-			get {
-				return mandateDocumentReferenceField;
-			}
-			set {
-				mandateDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType[] MandateDocumentReference { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,120 +10,38 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Pickup", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PickupType {
-    
-		private IDType idField;
-    
-		private ActualPickupDateType actualPickupDateField;
-    
-		private ActualPickupTimeType actualPickupTimeField;
-    
-		private EarliestPickupDateType earliestPickupDateField;
-    
-		private EarliestPickupTimeType earliestPickupTimeField;
-    
-		private LatestPickupDateType latestPickupDateField;
-    
-		private LatestPickupTimeType latestPickupTimeField;
-    
-		private LocationType1 pickupLocationField;
-    
-		private PartyType pickupPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ActualPickupDateType ActualPickupDate {
-			get {
-				return actualPickupDateField;
-			}
-			set {
-				actualPickupDateField = value;
-			}
-		}
-    
+		public DateType ActualPickupDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ActualPickupTimeType ActualPickupTime {
-			get {
-				return actualPickupTimeField;
-			}
-			set {
-				actualPickupTimeField = value;
-			}
-		}
-    
+		public TimeType ActualPickupTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EarliestPickupDateType EarliestPickupDate {
-			get {
-				return earliestPickupDateField;
-			}
-			set {
-				earliestPickupDateField = value;
-			}
-		}
-    
+		public DateType EarliestPickupDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EarliestPickupTimeType EarliestPickupTime {
-			get {
-				return earliestPickupTimeField;
-			}
-			set {
-				earliestPickupTimeField = value;
-			}
-		}
-    
+		public TimeType EarliestPickupTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LatestPickupDateType LatestPickupDate {
-			get {
-				return latestPickupDateField;
-			}
-			set {
-				latestPickupDateField = value;
-			}
-		}
-    
+		public DateType LatestPickupDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LatestPickupTimeType LatestPickupTime {
-			get {
-				return latestPickupTimeField;
-			}
-			set {
-				latestPickupTimeField = value;
-			}
-		}
-    
+		public TimeType LatestPickupTime { get; set; }
+
 		/// <remarks/>
-		public LocationType1 PickupLocation {
-			get {
-				return pickupLocationField;
-			}
-			set {
-				pickupLocationField = value;
-			}
-		}
-    
+		public LocationType1 PickupLocation { get; set; }
+
 		/// <remarks/>
-		public PartyType PickupParty {
-			get {
-				return pickupPartyField;
-			}
-			set {
-				pickupPartyField = value;
-			}
-		}
+		public PartyType PickupParty { get; set; }
 	}
 }

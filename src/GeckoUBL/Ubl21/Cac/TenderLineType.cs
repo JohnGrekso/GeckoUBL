@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,273 +10,83 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SubTenderLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TenderLineType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private QuantityType2 quantityField;
-    
-		private LineExtensionAmountType lineExtensionAmountField;
-    
-		private TotalTaxAmountType totalTaxAmountField;
-    
-		private OrderableUnitType orderableUnitField;
-    
-		private ContentUnitQuantityType contentUnitQuantityField;
-    
-		private OrderQuantityIncrementNumericType orderQuantityIncrementNumericField;
-    
-		private MinimumOrderQuantityType minimumOrderQuantityField;
-    
-		private MaximumOrderQuantityType maximumOrderQuantityField;
-    
-		private WarrantyInformationType[] warrantyInformationField;
-    
-		private PackLevelCodeType packLevelCodeField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private ItemType itemField;
-    
-		private ItemLocationQuantityType[] offeredItemLocationQuantityField;
-    
-		private RelatedItemType[] replacementRelatedItemField;
-    
-		private PartyType warrantyPartyField;
-    
-		private PeriodType warrantyValidityPeriodField;
-    
-		private TenderLineType[] subTenderLineField;
-    
-		private LineReferenceType callForTendersLineReferenceField;
-    
-		private DocumentReferenceType callForTendersDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineExtensionAmountType LineExtensionAmount {
-			get {
-				return lineExtensionAmountField;
-			}
-			set {
-				lineExtensionAmountField = value;
-			}
-		}
-    
+		public AmountType LineExtensionAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalTaxAmountType TotalTaxAmount {
-			get {
-				return totalTaxAmountField;
-			}
-			set {
-				totalTaxAmountField = value;
-			}
-		}
-    
+		public AmountType TotalTaxAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderableUnitType OrderableUnit {
-			get {
-				return orderableUnitField;
-			}
-			set {
-				orderableUnitField = value;
-			}
-		}
-    
+		public TextType OrderableUnit { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ContentUnitQuantityType ContentUnitQuantity {
-			get {
-				return contentUnitQuantityField;
-			}
-			set {
-				contentUnitQuantityField = value;
-			}
-		}
-    
+		public QuantityType ContentUnitQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderQuantityIncrementNumericType OrderQuantityIncrementNumeric {
-			get {
-				return orderQuantityIncrementNumericField;
-			}
-			set {
-				orderQuantityIncrementNumericField = value;
-			}
-		}
-    
+		public NumericType OrderQuantityIncrementNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumOrderQuantityType MinimumOrderQuantity {
-			get {
-				return minimumOrderQuantityField;
-			}
-			set {
-				minimumOrderQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumOrderQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumOrderQuantityType MaximumOrderQuantity {
-			get {
-				return maximumOrderQuantityField;
-			}
-			set {
-				maximumOrderQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumOrderQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WarrantyInformation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WarrantyInformationType[] WarrantyInformation {
-			get {
-				return warrantyInformationField;
-			}
-			set {
-				warrantyInformationField = value;
-			}
-		}
-    
+		public TextType[] WarrantyInformation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackLevelCodeType PackLevelCode {
-			get {
-				return packLevelCodeField;
-			}
-			set {
-				packLevelCodeField = value;
-			}
-		}
-    
+		public CodeType PackLevelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType Item { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("OfferedItemLocationQuantity")]
-		public ItemLocationQuantityType[] OfferedItemLocationQuantity {
-			get {
-				return offeredItemLocationQuantityField;
-			}
-			set {
-				offeredItemLocationQuantityField = value;
-			}
-		}
-    
+		public ItemLocationQuantityType[] OfferedItemLocationQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReplacementRelatedItem")]
-		public RelatedItemType[] ReplacementRelatedItem {
-			get {
-				return replacementRelatedItemField;
-			}
-			set {
-				replacementRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] ReplacementRelatedItem { get; set; }
+
 		/// <remarks/>
-		public PartyType WarrantyParty {
-			get {
-				return warrantyPartyField;
-			}
-			set {
-				warrantyPartyField = value;
-			}
-		}
-    
+		public PartyType WarrantyParty { get; set; }
+
 		/// <remarks/>
-		public PeriodType WarrantyValidityPeriod {
-			get {
-				return warrantyValidityPeriodField;
-			}
-			set {
-				warrantyValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType WarrantyValidityPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubTenderLine")]
-		public TenderLineType[] SubTenderLine {
-			get {
-				return subTenderLineField;
-			}
-			set {
-				subTenderLineField = value;
-			}
-		}
-    
+		public TenderLineType[] SubTenderLine { get; set; }
+
 		/// <remarks/>
-		public LineReferenceType CallForTendersLineReference {
-			get {
-				return callForTendersLineReferenceField;
-			}
-			set {
-				callForTendersLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType CallForTendersLineReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType CallForTendersDocumentReference {
-			get {
-				return callForTendersDocumentReferenceField;
-			}
-			set {
-				callForTendersDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType CallForTendersDocumentReference { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,196 +10,60 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActualPackage", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PackageType {
-    
-		private IDType idField;
-    
-		private QuantityType2 quantityField;
-    
-		private ReturnableMaterialIndicatorType returnableMaterialIndicatorField;
-    
-		private PackageLevelCodeType packageLevelCodeField;
-    
-		private PackagingTypeCodeType packagingTypeCodeField;
-    
-		private PackingMaterialType[] packingMaterialField;
-    
-		private TraceIDType traceIDField;
-    
-		private PackageType[] containedPackageField;
-    
-		private TransportEquipmentType containingTransportEquipmentField;
-    
-		private GoodsItemType[] goodsItemField;
-    
-		private DimensionType[] measurementDimensionField;
-    
-		private DeliveryUnitType[] deliveryUnitField;
-    
-		private DeliveryType deliveryField;
-    
-		private PickupType pickupField;
-    
-		private DespatchType despatchField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReturnableMaterialIndicatorType ReturnableMaterialIndicator {
-			get {
-				return returnableMaterialIndicatorField;
-			}
-			set {
-				returnableMaterialIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType ReturnableMaterialIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackageLevelCodeType PackageLevelCode {
-			get {
-				return packageLevelCodeField;
-			}
-			set {
-				packageLevelCodeField = value;
-			}
-		}
-    
+		public CodeType PackageLevelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackagingTypeCodeType PackagingTypeCode {
-			get {
-				return packagingTypeCodeField;
-			}
-			set {
-				packagingTypeCodeField = value;
-			}
-		}
-    
+		public CodeType PackagingTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PackingMaterial", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackingMaterialType[] PackingMaterial {
-			get {
-				return packingMaterialField;
-			}
-			set {
-				packingMaterialField = value;
-			}
-		}
-    
+		public TextType[] PackingMaterial { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TraceIDType TraceID {
-			get {
-				return traceIDField;
-			}
-			set {
-				traceIDField = value;
-			}
-		}
-    
+		public IdentifierType TraceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ContainedPackage")]
-		public PackageType[] ContainedPackage {
-			get {
-				return containedPackageField;
-			}
-			set {
-				containedPackageField = value;
-			}
-		}
-    
+		public PackageType[] ContainedPackage { get; set; }
+
 		/// <remarks/>
-		public TransportEquipmentType ContainingTransportEquipment {
-			get {
-				return containingTransportEquipmentField;
-			}
-			set {
-				containingTransportEquipmentField = value;
-			}
-		}
-    
+		public TransportEquipmentType ContainingTransportEquipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("GoodsItem")]
-		public GoodsItemType[] GoodsItem {
-			get {
-				return goodsItemField;
-			}
-			set {
-				goodsItemField = value;
-			}
-		}
-    
+		public GoodsItemType[] GoodsItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
-		public DimensionType[] MeasurementDimension {
-			get {
-				return measurementDimensionField;
-			}
-			set {
-				measurementDimensionField = value;
-			}
-		}
-    
+		public DimensionType[] MeasurementDimension { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DeliveryUnit")]
-		public DeliveryUnitType[] DeliveryUnit {
-			get {
-				return deliveryUnitField;
-			}
-			set {
-				deliveryUnitField = value;
-			}
-		}
-    
+		public DeliveryUnitType[] DeliveryUnit { get; set; }
+
 		/// <remarks/>
-		public DeliveryType Delivery {
-			get {
-				return deliveryField;
-			}
-			set {
-				deliveryField = value;
-			}
-		}
-    
+		public DeliveryType Delivery { get; set; }
+
 		/// <remarks/>
-		public PickupType Pickup {
-			get {
-				return pickupField;
-			}
-			set {
-				pickupField = value;
-			}
-		}
-    
+		public PickupType Pickup { get; set; }
+
 		/// <remarks/>
-		public DespatchType Despatch {
-			get {
-				return despatchField;
-			}
-			set {
-				despatchField = value;
-			}
-		}
+		public DespatchType Despatch { get; set; }
 	}
 }

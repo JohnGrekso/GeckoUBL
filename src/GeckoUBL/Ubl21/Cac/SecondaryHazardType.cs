@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SecondaryHazard", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class SecondaryHazardType {
-    
-		private IDType idField;
-    
-		private PlacardNotationType placardNotationField;
-    
-		private PlacardEndorsementType placardEndorsementField;
-    
-		private EmergencyProceduresCodeType emergencyProceduresCodeField;
-    
-		private ExtensionType[] extensionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PlacardNotationType PlacardNotation {
-			get {
-				return placardNotationField;
-			}
-			set {
-				placardNotationField = value;
-			}
-		}
-    
+		public TextType PlacardNotation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PlacardEndorsementType PlacardEndorsement {
-			get {
-				return placardEndorsementField;
-			}
-			set {
-				placardEndorsementField = value;
-			}
-		}
-    
+		public TextType PlacardEndorsement { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EmergencyProceduresCodeType EmergencyProceduresCode {
-			get {
-				return emergencyProceduresCodeField;
-			}
-			set {
-				emergencyProceduresCodeField = value;
-			}
-		}
-    
+		public CodeType EmergencyProceduresCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Extension", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExtensionType[] Extension {
-			get {
-				return extensionField;
-			}
-			set {
-				extensionField = value;
-			}
-		}
+		public TextType[] Extension { get; set; }
 	}
 }

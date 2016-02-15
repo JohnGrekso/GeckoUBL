@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("SpecificTendererRequirement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TendererRequirementType {
-    
-		private NameType1[] nameField;
-    
-		private TendererRequirementTypeCodeType tendererRequirementTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private LegalReferenceType legalReferenceField;
-    
-		private EvidenceType[] suggestedEvidenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Name", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1[] Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType[] Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TendererRequirementTypeCodeType TendererRequirementTypeCode {
-			get {
-				return tendererRequirementTypeCodeField;
-			}
-			set {
-				tendererRequirementTypeCodeField = value;
-			}
-		}
-    
+		public CodeType TendererRequirementTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LegalReferenceType LegalReference {
-			get {
-				return legalReferenceField;
-			}
-			set {
-				legalReferenceField = value;
-			}
-		}
-    
+		public TextType LegalReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SuggestedEvidence")]
-		public EvidenceType[] SuggestedEvidence {
-			get {
-				return suggestedEvidenceField;
-			}
-			set {
-				suggestedEvidenceField = value;
-			}
-		}
+		public EvidenceType[] SuggestedEvidence { get; set; }
 	}
 }

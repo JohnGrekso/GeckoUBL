@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,132 +10,41 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ItemManagementProfile", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ItemManagementProfileType {
-    
-		private FrozenPeriodDaysNumericType frozenPeriodDaysNumericField;
-    
-		private MinimumInventoryQuantityType minimumInventoryQuantityField;
-    
-		private MultipleOrderQuantityType multipleOrderQuantityField;
-    
-		private OrderIntervalDaysNumericType orderIntervalDaysNumericField;
-    
-		private ReplenishmentOwnerDescriptionType[] replenishmentOwnerDescriptionField;
-    
-		private TargetServicePercentType targetServicePercentField;
-    
-		private TargetInventoryQuantityType targetInventoryQuantityField;
-    
-		private PeriodType effectivePeriodField;
-    
-		private ItemType itemField;
-    
-		private ItemLocationQuantityType itemLocationQuantityField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FrozenPeriodDaysNumericType FrozenPeriodDaysNumeric {
-			get {
-				return frozenPeriodDaysNumericField;
-			}
-			set {
-				frozenPeriodDaysNumericField = value;
-			}
-		}
-    
+		public NumericType FrozenPeriodDaysNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumInventoryQuantityType MinimumInventoryQuantity {
-			get {
-				return minimumInventoryQuantityField;
-			}
-			set {
-				minimumInventoryQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumInventoryQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MultipleOrderQuantityType MultipleOrderQuantity {
-			get {
-				return multipleOrderQuantityField;
-			}
-			set {
-				multipleOrderQuantityField = value;
-			}
-		}
-    
+		public QuantityType MultipleOrderQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderIntervalDaysNumericType OrderIntervalDaysNumeric {
-			get {
-				return orderIntervalDaysNumericField;
-			}
-			set {
-				orderIntervalDaysNumericField = value;
-			}
-		}
-    
+		public NumericType OrderIntervalDaysNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReplenishmentOwnerDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReplenishmentOwnerDescriptionType[] ReplenishmentOwnerDescription {
-			get {
-				return replenishmentOwnerDescriptionField;
-			}
-			set {
-				replenishmentOwnerDescriptionField = value;
-			}
-		}
-    
+		public TextType[] ReplenishmentOwnerDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TargetServicePercentType TargetServicePercent {
-			get {
-				return targetServicePercentField;
-			}
-			set {
-				targetServicePercentField = value;
-			}
-		}
-    
+		public PercentType TargetServicePercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TargetInventoryQuantityType TargetInventoryQuantity {
-			get {
-				return targetInventoryQuantityField;
-			}
-			set {
-				targetInventoryQuantityField = value;
-			}
-		}
-    
+		public QuantityType TargetInventoryQuantity { get; set; }
+
 		/// <remarks/>
-		public PeriodType EffectivePeriod {
-			get {
-				return effectivePeriodField;
-			}
-			set {
-				effectivePeriodField = value;
-			}
-		}
-    
+		public PeriodType EffectivePeriod { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType Item { get; set; }
+
 		/// <remarks/>
-		public ItemLocationQuantityType ItemLocationQuantity {
-			get {
-				return itemLocationQuantityField;
-			}
-			set {
-				itemLocationQuantityField = value;
-			}
-		}
+		public ItemLocationQuantityType ItemLocationQuantity { get; set; }
 	}
 }

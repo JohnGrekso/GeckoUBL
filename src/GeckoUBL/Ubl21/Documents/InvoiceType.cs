@@ -4,8 +4,8 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
 using GeckoUBL.Ubl21.Cac;
-using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Cec;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Documents
 {
@@ -22,70 +22,70 @@ namespace GeckoUBL.Ubl21.Documents
 		public UBLExtensionType[] UBLExtensions { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UBLVersionIDType UBLVersionID { get; set; }
+		public IdentifierType UBLVersionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CustomizationIDType CustomizationID { get; set; }
+		public IdentifierType CustomizationID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProfileIDType ProfileID { get; set; }
+		public IdentifierType ProfileID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProfileExecutionIDType ProfileExecutionID { get; set; }
+		public IdentifierType ProfileExecutionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID { get; set; }
+		public IdentifierType ID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CopyIndicatorType CopyIndicator { get; set; }
+		public IndicatorType CopyIndicator { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID { get; set; }
+		public IdentifierType UUID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate { get; set; }
+		public DateType IssueDate { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueTimeType IssueTime { get; set; }
+		public TimeType IssueTime { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DueDateType DueDate { get; set; }
+		public DateType DueDate { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InvoiceTypeCodeType InvoiceTypeCode { get; set; }
+		public CodeType InvoiceTypeCode { get; set; }
 
 		[XmlElement("Note", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note { get; set; }
+		public TextType[] Note { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxPointDateType TaxPointDate { get; set; }
+		public DateType TaxPointDate { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentCurrencyCodeType DocumentCurrencyCode { get; set; }
+		public CodeType DocumentCurrencyCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxCurrencyCodeType TaxCurrencyCode { get; set; }
+		public CodeType TaxCurrencyCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PricingCurrencyCodeType PricingCurrencyCode { get; set; }
+		public CodeType PricingCurrencyCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentCurrencyCodeType PaymentCurrencyCode { get; set; }
+		public CodeType PaymentCurrencyCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentAlternativeCurrencyCodeType PaymentAlternativeCurrencyCode { get; set; }
+		public CodeType PaymentAlternativeCurrencyCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostCodeType AccountingCostCode { get; set; }
+		public CodeType AccountingCostCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostType AccountingCost { get; set; }
+		public TextType AccountingCost { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineCountNumericType LineCountNumeric { get; set; }
+		public NumericType LineCountNumeric { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BuyerReferenceType BuyerReference { get; set; }
+		public TextType BuyerReference { get; set; }
 
 		[XmlElement("InvoicePeriod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 		public PeriodType[] InvoicePeriod { get; set; }

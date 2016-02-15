@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,184 +10,57 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalQualifyingParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class QualifyingPartyType {
-    
-		private ParticipationPercentType participationPercentField;
-    
-		private PersonalSituationType[] personalSituationField;
-    
-		private OperatingYearsQuantityType operatingYearsQuantityField;
-    
-		private EmployeeQuantityType employeeQuantityField;
-    
-		private BusinessClassificationEvidenceIDType businessClassificationEvidenceIDField;
-    
-		private BusinessIdentityEvidenceIDType businessIdentityEvidenceIDField;
-    
-		private TendererRoleCodeType tendererRoleCodeField;
-    
-		private ClassificationSchemeType businessClassificationSchemeField;
-    
-		private CapabilityType[] technicalCapabilityField;
-    
-		private CapabilityType[] financialCapabilityField;
-    
-		private CompletedTaskType[] completedTaskField;
-    
-		private DeclarationType[] declarationField;
-    
-		private PartyType partyField;
-    
-		private EconomicOperatorRoleType economicOperatorRoleField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ParticipationPercentType ParticipationPercent {
-			get {
-				return participationPercentField;
-			}
-			set {
-				participationPercentField = value;
-			}
-		}
-    
+		public PercentType ParticipationPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PersonalSituation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PersonalSituationType[] PersonalSituation {
-			get {
-				return personalSituationField;
-			}
-			set {
-				personalSituationField = value;
-			}
-		}
-    
+		public TextType[] PersonalSituation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OperatingYearsQuantityType OperatingYearsQuantity {
-			get {
-				return operatingYearsQuantityField;
-			}
-			set {
-				operatingYearsQuantityField = value;
-			}
-		}
-    
+		public QuantityType OperatingYearsQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EmployeeQuantityType EmployeeQuantity {
-			get {
-				return employeeQuantityField;
-			}
-			set {
-				employeeQuantityField = value;
-			}
-		}
-    
+		public QuantityType EmployeeQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BusinessClassificationEvidenceIDType BusinessClassificationEvidenceID {
-			get {
-				return businessClassificationEvidenceIDField;
-			}
-			set {
-				businessClassificationEvidenceIDField = value;
-			}
-		}
-    
+		public IdentifierType BusinessClassificationEvidenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BusinessIdentityEvidenceIDType BusinessIdentityEvidenceID {
-			get {
-				return businessIdentityEvidenceIDField;
-			}
-			set {
-				businessIdentityEvidenceIDField = value;
-			}
-		}
-    
+		public IdentifierType BusinessIdentityEvidenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TendererRoleCodeType TendererRoleCode {
-			get {
-				return tendererRoleCodeField;
-			}
-			set {
-				tendererRoleCodeField = value;
-			}
-		}
-    
+		public CodeType TendererRoleCode { get; set; }
+
 		/// <remarks/>
-		public ClassificationSchemeType BusinessClassificationScheme {
-			get {
-				return businessClassificationSchemeField;
-			}
-			set {
-				businessClassificationSchemeField = value;
-			}
-		}
-    
+		public ClassificationSchemeType BusinessClassificationScheme { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TechnicalCapability")]
-		public CapabilityType[] TechnicalCapability {
-			get {
-				return technicalCapabilityField;
-			}
-			set {
-				technicalCapabilityField = value;
-			}
-		}
-    
+		public CapabilityType[] TechnicalCapability { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("FinancialCapability")]
-		public CapabilityType[] FinancialCapability {
-			get {
-				return financialCapabilityField;
-			}
-			set {
-				financialCapabilityField = value;
-			}
-		}
-    
+		public CapabilityType[] FinancialCapability { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CompletedTask")]
-		public CompletedTaskType[] CompletedTask {
-			get {
-				return completedTaskField;
-			}
-			set {
-				completedTaskField = value;
-			}
-		}
-    
+		public CompletedTaskType[] CompletedTask { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Declaration")]
-		public DeclarationType[] Declaration {
-			get {
-				return declarationField;
-			}
-			set {
-				declarationField = value;
-			}
-		}
-    
+		public DeclarationType[] Declaration { get; set; }
+
 		/// <remarks/>
-		public PartyType Party {
-			get {
-				return partyField;
-			}
-			set {
-				partyField = value;
-			}
-		}
-    
+		public PartyType Party { get; set; }
+
 		/// <remarks/>
-		public EconomicOperatorRoleType EconomicOperatorRole {
-			get {
-				return economicOperatorRoleField;
-			}
-			set {
-				economicOperatorRoleField = value;
-			}
-		}
+		public EconomicOperatorRoleType EconomicOperatorRole { get; set; }
 	}
 }

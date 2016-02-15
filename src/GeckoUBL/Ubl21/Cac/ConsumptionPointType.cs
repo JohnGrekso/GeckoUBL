@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,120 +10,38 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionPoint", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionPointType {
-    
-		private IDType idField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private SubscriberIDType subscriberIDField;
-    
-		private SubscriberTypeType subscriberTypeField;
-    
-		private SubscriberTypeCodeType subscriberTypeCodeField;
-    
-		private TotalDeliveredQuantityType totalDeliveredQuantityField;
-    
-		private AddressType addressField;
-    
-		private WebSiteAccessType webSiteAccessField;
-    
-		private MeterType[] utilityMeterField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubscriberIDType SubscriberID {
-			get {
-				return subscriberIDField;
-			}
-			set {
-				subscriberIDField = value;
-			}
-		}
-    
+		public IdentifierType SubscriberID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubscriberTypeType SubscriberType {
-			get {
-				return subscriberTypeField;
-			}
-			set {
-				subscriberTypeField = value;
-			}
-		}
-    
+		public TextType SubscriberType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubscriberTypeCodeType SubscriberTypeCode {
-			get {
-				return subscriberTypeCodeField;
-			}
-			set {
-				subscriberTypeCodeField = value;
-			}
-		}
-    
+		public CodeType SubscriberTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalDeliveredQuantityType TotalDeliveredQuantity {
-			get {
-				return totalDeliveredQuantityField;
-			}
-			set {
-				totalDeliveredQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalDeliveredQuantity { get; set; }
+
 		/// <remarks/>
-		public AddressType Address {
-			get {
-				return addressField;
-			}
-			set {
-				addressField = value;
-			}
-		}
-    
+		public AddressType Address { get; set; }
+
 		/// <remarks/>
-		public WebSiteAccessType WebSiteAccess {
-			get {
-				return webSiteAccessField;
-			}
-			set {
-				webSiteAccessField = value;
-			}
-		}
-    
+		public WebSiteAccessType WebSiteAccess { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("UtilityMeter")]
-		public MeterType[] UtilityMeter {
-			get {
-				return utilityMeterField;
-			}
-			set {
-				utilityMeterField = value;
-			}
-		}
+		public MeterType[] UtilityMeter { get; set; }
 	}
 }

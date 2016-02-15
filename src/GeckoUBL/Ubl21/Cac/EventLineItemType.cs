@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,55 +10,18 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EventLineItem", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EventLineItemType {
-    
-		private LineNumberNumericType lineNumberNumericField;
-    
-		private LocationType1 participatingLocationsLocationField;
-    
-		private RetailPlannedImpactType[] retailPlannedImpactField;
-    
-		private ItemType supplyItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineNumberNumericType LineNumberNumeric {
-			get {
-				return lineNumberNumericField;
-			}
-			set {
-				lineNumberNumericField = value;
-			}
-		}
-    
+		public NumericType LineNumberNumeric { get; set; }
+
 		/// <remarks/>
-		public LocationType1 ParticipatingLocationsLocation {
-			get {
-				return participatingLocationsLocationField;
-			}
-			set {
-				participatingLocationsLocationField = value;
-			}
-		}
-    
+		public LocationType1 ParticipatingLocationsLocation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RetailPlannedImpact")]
-		public RetailPlannedImpactType[] RetailPlannedImpact {
-			get {
-				return retailPlannedImpactField;
-			}
-			set {
-				retailPlannedImpactField = value;
-			}
-		}
-    
+		public RetailPlannedImpactType[] RetailPlannedImpact { get; set; }
+
 		/// <remarks/>
-		public ItemType SupplyItem {
-			get {
-				return supplyItemField;
-			}
-			set {
-				supplyItemField = value;
-			}
-		}
+		public ItemType SupplyItem { get; set; }
 	}
 }

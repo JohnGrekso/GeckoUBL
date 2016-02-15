@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,762 +10,212 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("MainCarriageShipmentStage", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ShipmentStageType {
-    
-		private IDType idField;
-    
-		private TransportModeCodeType transportModeCodeField;
-    
-		private TransportMeansTypeCodeType transportMeansTypeCodeField;
-    
-		private TransitDirectionCodeType transitDirectionCodeField;
-    
-		private PreCarriageIndicatorType preCarriageIndicatorField;
-    
-		private OnCarriageIndicatorType onCarriageIndicatorField;
-    
-		private EstimatedDeliveryDateType estimatedDeliveryDateField;
-    
-		private EstimatedDeliveryTimeType estimatedDeliveryTimeField;
-    
-		private RequiredDeliveryDateType requiredDeliveryDateField;
-    
-		private RequiredDeliveryTimeType requiredDeliveryTimeField;
-    
-		private LoadingSequenceIDType loadingSequenceIDField;
-    
-		private SuccessiveSequenceIDType successiveSequenceIDField;
-    
-		private InstructionsType[] instructionsField;
-    
-		private DemurrageInstructionsType[] demurrageInstructionsField;
-    
-		private CrewQuantityType crewQuantityField;
-    
-		private PassengerQuantityType passengerQuantityField;
-    
-		private PeriodType transitPeriodField;
-    
-		private PartyType[] carrierPartyField;
-    
-		private TransportMeansType transportMeansField;
-    
-		private LocationType1 loadingPortLocationField;
-    
-		private LocationType1 unloadingPortLocationField;
-    
-		private LocationType1 transshipPortLocationField;
-    
-		private TransportEventType loadingTransportEventField;
-    
-		private TransportEventType examinationTransportEventField;
-    
-		private TransportEventType availabilityTransportEventField;
-    
-		private TransportEventType exportationTransportEventField;
-    
-		private TransportEventType dischargeTransportEventField;
-    
-		private TransportEventType warehousingTransportEventField;
-    
-		private TransportEventType takeoverTransportEventField;
-    
-		private TransportEventType optionalTakeoverTransportEventField;
-    
-		private TransportEventType dropoffTransportEventField;
-    
-		private TransportEventType actualPickupTransportEventField;
-    
-		private TransportEventType deliveryTransportEventField;
-    
-		private TransportEventType receiptTransportEventField;
-    
-		private TransportEventType storageTransportEventField;
-    
-		private TransportEventType acceptanceTransportEventField;
-    
-		private PartyType terminalOperatorPartyField;
-    
-		private PartyType customsAgentPartyField;
-    
-		private PeriodType estimatedTransitPeriodField;
-    
-		private AllowanceChargeType[] freightAllowanceChargeField;
-    
-		private LocationType1 freightChargeLocationField;
-    
-		private TransportEventType[] detentionTransportEventField;
-    
-		private TransportEventType requestedDepartureTransportEventField;
-    
-		private TransportEventType requestedArrivalTransportEventField;
-    
-		private TransportEventType[] requestedWaypointTransportEventField;
-    
-		private TransportEventType plannedDepartureTransportEventField;
-    
-		private TransportEventType plannedArrivalTransportEventField;
-    
-		private TransportEventType[] plannedWaypointTransportEventField;
-    
-		private TransportEventType actualDepartureTransportEventField;
-    
-		private TransportEventType actualWaypointTransportEventField;
-    
-		private TransportEventType actualArrivalTransportEventField;
-    
-		private TransportEventType[] transportEventField;
-    
-		private TransportEventType estimatedDepartureTransportEventField;
-    
-		private TransportEventType estimatedArrivalTransportEventField;
-    
-		private PersonType[] passengerPersonField;
-    
-		private PersonType[] driverPersonField;
-    
-		private PersonType reportingPersonField;
-    
-		private PersonType[] crewMemberPersonField;
-    
-		private PersonType securityOfficerPersonField;
-    
-		private PersonType masterPersonField;
-    
-		private PersonType shipsSurgeonPersonField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportModeCodeType TransportModeCode {
-			get {
-				return transportModeCodeField;
-			}
-			set {
-				transportModeCodeField = value;
-			}
-		}
-    
+		public CodeType TransportModeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportMeansTypeCodeType TransportMeansTypeCode {
-			get {
-				return transportMeansTypeCodeField;
-			}
-			set {
-				transportMeansTypeCodeField = value;
-			}
-		}
-    
+		public CodeType TransportMeansTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransitDirectionCodeType TransitDirectionCode {
-			get {
-				return transitDirectionCodeField;
-			}
-			set {
-				transitDirectionCodeField = value;
-			}
-		}
-    
+		public CodeType TransitDirectionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PreCarriageIndicatorType PreCarriageIndicator {
-			get {
-				return preCarriageIndicatorField;
-			}
-			set {
-				preCarriageIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType PreCarriageIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OnCarriageIndicatorType OnCarriageIndicator {
-			get {
-				return onCarriageIndicatorField;
-			}
-			set {
-				onCarriageIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType OnCarriageIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EstimatedDeliveryDateType EstimatedDeliveryDate {
-			get {
-				return estimatedDeliveryDateField;
-			}
-			set {
-				estimatedDeliveryDateField = value;
-			}
-		}
-    
+		public DateType EstimatedDeliveryDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EstimatedDeliveryTimeType EstimatedDeliveryTime {
-			get {
-				return estimatedDeliveryTimeField;
-			}
-			set {
-				estimatedDeliveryTimeField = value;
-			}
-		}
-    
+		public TimeType EstimatedDeliveryTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RequiredDeliveryDateType RequiredDeliveryDate {
-			get {
-				return requiredDeliveryDateField;
-			}
-			set {
-				requiredDeliveryDateField = value;
-			}
-		}
-    
+		public DateType RequiredDeliveryDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RequiredDeliveryTimeType RequiredDeliveryTime {
-			get {
-				return requiredDeliveryTimeField;
-			}
-			set {
-				requiredDeliveryTimeField = value;
-			}
-		}
-    
+		public TimeType RequiredDeliveryTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LoadingSequenceIDType LoadingSequenceID {
-			get {
-				return loadingSequenceIDField;
-			}
-			set {
-				loadingSequenceIDField = value;
-			}
-		}
-    
+		public IdentifierType LoadingSequenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SuccessiveSequenceIDType SuccessiveSequenceID {
-			get {
-				return successiveSequenceIDField;
-			}
-			set {
-				successiveSequenceIDField = value;
-			}
-		}
-    
+		public IdentifierType SuccessiveSequenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Instructions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InstructionsType[] Instructions {
-			get {
-				return instructionsField;
-			}
-			set {
-				instructionsField = value;
-			}
-		}
-    
+		public TextType[] Instructions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DemurrageInstructions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DemurrageInstructionsType[] DemurrageInstructions {
-			get {
-				return demurrageInstructionsField;
-			}
-			set {
-				demurrageInstructionsField = value;
-			}
-		}
-    
+		public TextType[] DemurrageInstructions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CrewQuantityType CrewQuantity {
-			get {
-				return crewQuantityField;
-			}
-			set {
-				crewQuantityField = value;
-			}
-		}
-    
+		public QuantityType CrewQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PassengerQuantityType PassengerQuantity {
-			get {
-				return passengerQuantityField;
-			}
-			set {
-				passengerQuantityField = value;
-			}
-		}
-    
+		public QuantityType PassengerQuantity { get; set; }
+
 		/// <remarks/>
-		public PeriodType TransitPeriod {
-			get {
-				return transitPeriodField;
-			}
-			set {
-				transitPeriodField = value;
-			}
-		}
-    
+		public PeriodType TransitPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CarrierParty")]
-		public PartyType[] CarrierParty {
-			get {
-				return carrierPartyField;
-			}
-			set {
-				carrierPartyField = value;
-			}
-		}
-    
+		public PartyType[] CarrierParty { get; set; }
+
 		/// <remarks/>
-		public TransportMeansType TransportMeans {
-			get {
-				return transportMeansField;
-			}
-			set {
-				transportMeansField = value;
-			}
-		}
-    
+		public TransportMeansType TransportMeans { get; set; }
+
 		/// <remarks/>
-		public LocationType1 LoadingPortLocation {
-			get {
-				return loadingPortLocationField;
-			}
-			set {
-				loadingPortLocationField = value;
-			}
-		}
-    
+		public LocationType1 LoadingPortLocation { get; set; }
+
 		/// <remarks/>
-		public LocationType1 UnloadingPortLocation {
-			get {
-				return unloadingPortLocationField;
-			}
-			set {
-				unloadingPortLocationField = value;
-			}
-		}
-    
+		public LocationType1 UnloadingPortLocation { get; set; }
+
 		/// <remarks/>
-		public LocationType1 TransshipPortLocation {
-			get {
-				return transshipPortLocationField;
-			}
-			set {
-				transshipPortLocationField = value;
-			}
-		}
-    
+		public LocationType1 TransshipPortLocation { get; set; }
+
 		/// <remarks/>
-		public TransportEventType LoadingTransportEvent {
-			get {
-				return loadingTransportEventField;
-			}
-			set {
-				loadingTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType LoadingTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ExaminationTransportEvent {
-			get {
-				return examinationTransportEventField;
-			}
-			set {
-				examinationTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ExaminationTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType AvailabilityTransportEvent {
-			get {
-				return availabilityTransportEventField;
-			}
-			set {
-				availabilityTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType AvailabilityTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ExportationTransportEvent {
-			get {
-				return exportationTransportEventField;
-			}
-			set {
-				exportationTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ExportationTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType DischargeTransportEvent {
-			get {
-				return dischargeTransportEventField;
-			}
-			set {
-				dischargeTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType DischargeTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType WarehousingTransportEvent {
-			get {
-				return warehousingTransportEventField;
-			}
-			set {
-				warehousingTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType WarehousingTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType TakeoverTransportEvent {
-			get {
-				return takeoverTransportEventField;
-			}
-			set {
-				takeoverTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType TakeoverTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType OptionalTakeoverTransportEvent {
-			get {
-				return optionalTakeoverTransportEventField;
-			}
-			set {
-				optionalTakeoverTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType OptionalTakeoverTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType DropoffTransportEvent {
-			get {
-				return dropoffTransportEventField;
-			}
-			set {
-				dropoffTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType DropoffTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ActualPickupTransportEvent {
-			get {
-				return actualPickupTransportEventField;
-			}
-			set {
-				actualPickupTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ActualPickupTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType DeliveryTransportEvent {
-			get {
-				return deliveryTransportEventField;
-			}
-			set {
-				deliveryTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType DeliveryTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ReceiptTransportEvent {
-			get {
-				return receiptTransportEventField;
-			}
-			set {
-				receiptTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ReceiptTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType StorageTransportEvent {
-			get {
-				return storageTransportEventField;
-			}
-			set {
-				storageTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType StorageTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType AcceptanceTransportEvent {
-			get {
-				return acceptanceTransportEventField;
-			}
-			set {
-				acceptanceTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType AcceptanceTransportEvent { get; set; }
+
 		/// <remarks/>
-		public PartyType TerminalOperatorParty {
-			get {
-				return terminalOperatorPartyField;
-			}
-			set {
-				terminalOperatorPartyField = value;
-			}
-		}
-    
+		public PartyType TerminalOperatorParty { get; set; }
+
 		/// <remarks/>
-		public PartyType CustomsAgentParty {
-			get {
-				return customsAgentPartyField;
-			}
-			set {
-				customsAgentPartyField = value;
-			}
-		}
-    
+		public PartyType CustomsAgentParty { get; set; }
+
 		/// <remarks/>
-		public PeriodType EstimatedTransitPeriod {
-			get {
-				return estimatedTransitPeriodField;
-			}
-			set {
-				estimatedTransitPeriodField = value;
-			}
-		}
-    
+		public PeriodType EstimatedTransitPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("FreightAllowanceCharge")]
-		public AllowanceChargeType[] FreightAllowanceCharge {
-			get {
-				return freightAllowanceChargeField;
-			}
-			set {
-				freightAllowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] FreightAllowanceCharge { get; set; }
+
 		/// <remarks/>
-		public LocationType1 FreightChargeLocation {
-			get {
-				return freightChargeLocationField;
-			}
-			set {
-				freightChargeLocationField = value;
-			}
-		}
-    
+		public LocationType1 FreightChargeLocation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DetentionTransportEvent")]
-		public TransportEventType[] DetentionTransportEvent {
-			get {
-				return detentionTransportEventField;
-			}
-			set {
-				detentionTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType[] DetentionTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType RequestedDepartureTransportEvent {
-			get {
-				return requestedDepartureTransportEventField;
-			}
-			set {
-				requestedDepartureTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType RequestedDepartureTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType RequestedArrivalTransportEvent {
-			get {
-				return requestedArrivalTransportEventField;
-			}
-			set {
-				requestedArrivalTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType RequestedArrivalTransportEvent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RequestedWaypointTransportEvent")]
-		public TransportEventType[] RequestedWaypointTransportEvent {
-			get {
-				return requestedWaypointTransportEventField;
-			}
-			set {
-				requestedWaypointTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType[] RequestedWaypointTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType PlannedDepartureTransportEvent {
-			get {
-				return plannedDepartureTransportEventField;
-			}
-			set {
-				plannedDepartureTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType PlannedDepartureTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType PlannedArrivalTransportEvent {
-			get {
-				return plannedArrivalTransportEventField;
-			}
-			set {
-				plannedArrivalTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType PlannedArrivalTransportEvent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PlannedWaypointTransportEvent")]
-		public TransportEventType[] PlannedWaypointTransportEvent {
-			get {
-				return plannedWaypointTransportEventField;
-			}
-			set {
-				plannedWaypointTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType[] PlannedWaypointTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ActualDepartureTransportEvent {
-			get {
-				return actualDepartureTransportEventField;
-			}
-			set {
-				actualDepartureTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ActualDepartureTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ActualWaypointTransportEvent {
-			get {
-				return actualWaypointTransportEventField;
-			}
-			set {
-				actualWaypointTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ActualWaypointTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType ActualArrivalTransportEvent {
-			get {
-				return actualArrivalTransportEventField;
-			}
-			set {
-				actualArrivalTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType ActualArrivalTransportEvent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TransportEvent")]
-		public TransportEventType[] TransportEvent {
-			get {
-				return transportEventField;
-			}
-			set {
-				transportEventField = value;
-			}
-		}
-    
+		public TransportEventType[] TransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType EstimatedDepartureTransportEvent {
-			get {
-				return estimatedDepartureTransportEventField;
-			}
-			set {
-				estimatedDepartureTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType EstimatedDepartureTransportEvent { get; set; }
+
 		/// <remarks/>
-		public TransportEventType EstimatedArrivalTransportEvent {
-			get {
-				return estimatedArrivalTransportEventField;
-			}
-			set {
-				estimatedArrivalTransportEventField = value;
-			}
-		}
-    
+		public TransportEventType EstimatedArrivalTransportEvent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PassengerPerson")]
-		public PersonType[] PassengerPerson {
-			get {
-				return passengerPersonField;
-			}
-			set {
-				passengerPersonField = value;
-			}
-		}
-    
+		public PersonType[] PassengerPerson { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DriverPerson")]
-		public PersonType[] DriverPerson {
-			get {
-				return driverPersonField;
-			}
-			set {
-				driverPersonField = value;
-			}
-		}
-    
+		public PersonType[] DriverPerson { get; set; }
+
 		/// <remarks/>
-		public PersonType ReportingPerson {
-			get {
-				return reportingPersonField;
-			}
-			set {
-				reportingPersonField = value;
-			}
-		}
-    
+		public PersonType ReportingPerson { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CrewMemberPerson")]
-		public PersonType[] CrewMemberPerson {
-			get {
-				return crewMemberPersonField;
-			}
-			set {
-				crewMemberPersonField = value;
-			}
-		}
-    
+		public PersonType[] CrewMemberPerson { get; set; }
+
 		/// <remarks/>
-		public PersonType SecurityOfficerPerson {
-			get {
-				return securityOfficerPersonField;
-			}
-			set {
-				securityOfficerPersonField = value;
-			}
-		}
-    
+		public PersonType SecurityOfficerPerson { get; set; }
+
 		/// <remarks/>
-		public PersonType MasterPerson {
-			get {
-				return masterPersonField;
-			}
-			set {
-				masterPersonField = value;
-			}
-		}
-    
+		public PersonType MasterPerson { get; set; }
+
 		/// <remarks/>
-		public PersonType ShipsSurgeonPerson {
-			get {
-				return shipsSurgeonPersonField;
-			}
-			set {
-				shipsSurgeonPersonField = value;
-			}
-		}
+		public PersonType ShipsSurgeonPerson { get; set; }
 	}
 }

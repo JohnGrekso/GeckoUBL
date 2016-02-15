@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,56 +10,19 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PreviousPriceList", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PriceListType {
-    
-		private IDType idField;
-    
-		private StatusCodeType statusCodeField;
-    
-		private PeriodType[] validityPeriodField;
-    
-		private PriceListType previousPriceListField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public StatusCodeType StatusCode {
-			get {
-				return statusCodeField;
-			}
-			set {
-				statusCodeField = value;
-			}
-		}
-    
+		public CodeType StatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ValidityPeriod")]
-		public PeriodType[] ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
-    
+		public PeriodType[] ValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public PriceListType PreviousPriceList {
-			get {
-				return previousPriceListField;
-			}
-			set {
-				previousPriceListField = value;
-			}
-		}
+		public PriceListType PreviousPriceList { get; set; }
 	}
 }

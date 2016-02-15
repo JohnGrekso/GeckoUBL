@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,96 +10,32 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AllowedSubcontractTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class SubcontractTermsType {
-    
-		private RateType1 rateField;
-    
-		private UnknownPriceIndicatorType unknownPriceIndicatorField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private AmountType2 amountField;
-    
-		private SubcontractingConditionsCodeType subcontractingConditionsCodeField;
-    
-		private MaximumPercentType maximumPercentField;
-    
-		private MinimumPercentType minimumPercentField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RateType1 Rate {
-			get {
-				return rateField;
-			}
-			set {
-				rateField = value;
-			}
-		}
-    
+		public RateType Rate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UnknownPriceIndicatorType UnknownPriceIndicator {
-			get {
-				return unknownPriceIndicatorField;
-			}
-			set {
-				unknownPriceIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType UnknownPriceIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubcontractingConditionsCodeType SubcontractingConditionsCode {
-			get {
-				return subcontractingConditionsCodeField;
-			}
-			set {
-				subcontractingConditionsCodeField = value;
-			}
-		}
-    
+		public CodeType SubcontractingConditionsCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumPercentType MaximumPercent {
-			get {
-				return maximumPercentField;
-			}
-			set {
-				maximumPercentField = value;
-			}
-		}
-    
+		public PercentType MaximumPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumPercentType MinimumPercent {
-			get {
-				return minimumPercentField;
-			}
-			set {
-				minimumPercentField = value;
-			}
-		}
+		public PercentType MinimumPercent { get; set; }
 	}
 }

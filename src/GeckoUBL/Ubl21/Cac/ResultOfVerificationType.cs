@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,108 +10,35 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ResultOfVerification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ResultOfVerificationType {
-    
-		private ValidatorIDType validatorIDField;
-    
-		private ValidationResultCodeType validationResultCodeField;
-    
-		private ValidationDateType validationDateField;
-    
-		private ValidationTimeType validationTimeField;
-    
-		private ValidateProcessType validateProcessField;
-    
-		private ValidateToolType validateToolField;
-    
-		private ValidateToolVersionType validateToolVersionField;
-    
-		private PartyType signatoryPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidatorIDType ValidatorID {
-			get {
-				return validatorIDField;
-			}
-			set {
-				validatorIDField = value;
-			}
-		}
-    
+		public IdentifierType ValidatorID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidationResultCodeType ValidationResultCode {
-			get {
-				return validationResultCodeField;
-			}
-			set {
-				validationResultCodeField = value;
-			}
-		}
-    
+		public CodeType ValidationResultCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidationDateType ValidationDate {
-			get {
-				return validationDateField;
-			}
-			set {
-				validationDateField = value;
-			}
-		}
-    
+		public DateType ValidationDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidationTimeType ValidationTime {
-			get {
-				return validationTimeField;
-			}
-			set {
-				validationTimeField = value;
-			}
-		}
-    
+		public TimeType ValidationTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidateProcessType ValidateProcess {
-			get {
-				return validateProcessField;
-			}
-			set {
-				validateProcessField = value;
-			}
-		}
-    
+		public TextType ValidateProcess { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidateToolType ValidateTool {
-			get {
-				return validateToolField;
-			}
-			set {
-				validateToolField = value;
-			}
-		}
-    
+		public TextType ValidateTool { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidateToolVersionType ValidateToolVersion {
-			get {
-				return validateToolVersionField;
-			}
-			set {
-				validateToolVersionField = value;
-			}
-		}
-    
+		public TextType ValidateToolVersion { get; set; }
+
 		/// <remarks/>
-		public PartyType SignatoryParty {
-			get {
-				return signatoryPartyField;
-			}
-			set {
-				signatoryPartyField = value;
-			}
-		}
+		public PartyType SignatoryParty { get; set; }
 	}
 }

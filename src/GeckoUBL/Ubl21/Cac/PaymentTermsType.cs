@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,248 +10,76 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BonusPaymentTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PaymentTermsType {
-    
-		private IDType idField;
-    
-		private PaymentMeansIDType[] paymentMeansIDField;
-    
-		private PrepaidPaymentReferenceIDType prepaidPaymentReferenceIDField;
-    
-		private NoteType[] noteField;
-    
-		private ReferenceEventCodeType referenceEventCodeField;
-    
-		private SettlementDiscountPercentType settlementDiscountPercentField;
-    
-		private PenaltySurchargePercentType penaltySurchargePercentField;
-    
-		private PaymentPercentType paymentPercentField;
-    
-		private AmountType2 amountField;
-    
-		private SettlementDiscountAmountType settlementDiscountAmountField;
-    
-		private PenaltyAmountType penaltyAmountField;
-    
-		private PaymentTermsDetailsURIType paymentTermsDetailsURIField;
-    
-		private PaymentDueDateType paymentDueDateField;
-    
-		private InstallmentDueDateType installmentDueDateField;
-    
-		private InvoicingPartyReferenceType invoicingPartyReferenceField;
-    
-		private PeriodType settlementPeriodField;
-    
-		private PeriodType penaltyPeriodField;
-    
-		private ExchangeRateType exchangeRateField;
-    
-		private PeriodType validityPeriodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentMeansID", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentMeansIDType[] PaymentMeansID {
-			get {
-				return paymentMeansIDField;
-			}
-			set {
-				paymentMeansIDField = value;
-			}
-		}
-    
+		public IdentifierType[] PaymentMeansID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PrepaidPaymentReferenceIDType PrepaidPaymentReferenceID {
-			get {
-				return prepaidPaymentReferenceIDField;
-			}
-			set {
-				prepaidPaymentReferenceIDField = value;
-			}
-		}
-    
+		public IdentifierType PrepaidPaymentReferenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReferenceEventCodeType ReferenceEventCode {
-			get {
-				return referenceEventCodeField;
-			}
-			set {
-				referenceEventCodeField = value;
-			}
-		}
-    
+		public CodeType ReferenceEventCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SettlementDiscountPercentType SettlementDiscountPercent {
-			get {
-				return settlementDiscountPercentField;
-			}
-			set {
-				settlementDiscountPercentField = value;
-			}
-		}
-    
+		public PercentType SettlementDiscountPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PenaltySurchargePercentType PenaltySurchargePercent {
-			get {
-				return penaltySurchargePercentField;
-			}
-			set {
-				penaltySurchargePercentField = value;
-			}
-		}
-    
+		public PercentType PenaltySurchargePercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentPercentType PaymentPercent {
-			get {
-				return paymentPercentField;
-			}
-			set {
-				paymentPercentField = value;
-			}
-		}
-    
+		public PercentType PaymentPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SettlementDiscountAmountType SettlementDiscountAmount {
-			get {
-				return settlementDiscountAmountField;
-			}
-			set {
-				settlementDiscountAmountField = value;
-			}
-		}
-    
+		public AmountType SettlementDiscountAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PenaltyAmountType PenaltyAmount {
-			get {
-				return penaltyAmountField;
-			}
-			set {
-				penaltyAmountField = value;
-			}
-		}
-    
+		public AmountType PenaltyAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentTermsDetailsURIType PaymentTermsDetailsURI {
-			get {
-				return paymentTermsDetailsURIField;
-			}
-			set {
-				paymentTermsDetailsURIField = value;
-			}
-		}
-    
+		public IdentifierType PaymentTermsDetailsURI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentDueDateType PaymentDueDate {
-			get {
-				return paymentDueDateField;
-			}
-			set {
-				paymentDueDateField = value;
-			}
-		}
-    
+		public DateType PaymentDueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InstallmentDueDateType InstallmentDueDate {
-			get {
-				return installmentDueDateField;
-			}
-			set {
-				installmentDueDateField = value;
-			}
-		}
-    
+		public DateType InstallmentDueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InvoicingPartyReferenceType InvoicingPartyReference {
-			get {
-				return invoicingPartyReferenceField;
-			}
-			set {
-				invoicingPartyReferenceField = value;
-			}
-		}
-    
+		public TextType InvoicingPartyReference { get; set; }
+
 		/// <remarks/>
-		public PeriodType SettlementPeriod {
-			get {
-				return settlementPeriodField;
-			}
-			set {
-				settlementPeriodField = value;
-			}
-		}
-    
+		public PeriodType SettlementPeriod { get; set; }
+
 		/// <remarks/>
-		public PeriodType PenaltyPeriod {
-			get {
-				return penaltyPeriodField;
-			}
-			set {
-				penaltyPeriodField = value;
-			}
-		}
-    
+		public PeriodType PenaltyPeriod { get; set; }
+
 		/// <remarks/>
-		public ExchangeRateType ExchangeRate {
-			get {
-				return exchangeRateField;
-			}
-			set {
-				exchangeRateField = value;
-			}
-		}
-    
+		public ExchangeRateType ExchangeRate { get; set; }
+
 		/// <remarks/>
-		public PeriodType ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
+		public PeriodType ValidityPeriod { get; set; }
 	}
 }

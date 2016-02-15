@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,109 +10,36 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestedTenderTotal", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class RequestedTenderTotalType {
-    
-		private EstimatedOverallContractAmountType estimatedOverallContractAmountField;
-    
-		private TotalAmountType totalAmountField;
-    
-		private TaxIncludedIndicatorType taxIncludedIndicatorField;
-    
-		private MinimumAmountType minimumAmountField;
-    
-		private MaximumAmountType maximumAmountField;
-    
-		private MonetaryScopeType[] monetaryScopeField;
-    
-		private AverageSubsequentContractAmountType averageSubsequentContractAmountField;
-    
-		private TaxCategoryType[] applicableTaxCategoryField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EstimatedOverallContractAmountType EstimatedOverallContractAmount {
-			get {
-				return estimatedOverallContractAmountField;
-			}
-			set {
-				estimatedOverallContractAmountField = value;
-			}
-		}
-    
+		public AmountType EstimatedOverallContractAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalAmountType TotalAmount {
-			get {
-				return totalAmountField;
-			}
-			set {
-				totalAmountField = value;
-			}
-		}
-    
+		public AmountType TotalAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxIncludedIndicatorType TaxIncludedIndicator {
-			get {
-				return taxIncludedIndicatorField;
-			}
-			set {
-				taxIncludedIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType TaxIncludedIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumAmountType MinimumAmount {
-			get {
-				return minimumAmountField;
-			}
-			set {
-				minimumAmountField = value;
-			}
-		}
-    
+		public AmountType MinimumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumAmountType MaximumAmount {
-			get {
-				return maximumAmountField;
-			}
-			set {
-				maximumAmountField = value;
-			}
-		}
-    
+		public AmountType MaximumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MonetaryScope", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MonetaryScopeType[] MonetaryScope {
-			get {
-				return monetaryScopeField;
-			}
-			set {
-				monetaryScopeField = value;
-			}
-		}
-    
+		public TextType[] MonetaryScope { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AverageSubsequentContractAmountType AverageSubsequentContractAmount {
-			get {
-				return averageSubsequentContractAmountField;
-			}
-			set {
-				averageSubsequentContractAmountField = value;
-			}
-		}
-    
+		public AmountType AverageSubsequentContractAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ApplicableTaxCategory")]
-		public TaxCategoryType[] ApplicableTaxCategory {
-			get {
-				return applicableTaxCategoryField;
-			}
-			set {
-				applicableTaxCategoryField = value;
-			}
-		}
+		public TaxCategoryType[] ApplicableTaxCategory { get; set; }
 	}
 }

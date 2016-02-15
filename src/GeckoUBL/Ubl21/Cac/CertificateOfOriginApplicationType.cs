@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,207 +10,62 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CertificateOfOriginApplication", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CertificateOfOriginApplicationType {
-    
-		private ReferenceIDType referenceIDField;
-    
-		private CertificateTypeType certificateTypeField;
-    
-		private ApplicationStatusCodeType applicationStatusCodeField;
-    
-		private OriginalJobIDType originalJobIDField;
-    
-		private PreviousJobIDType previousJobIDField;
-    
-		private RemarksType[] remarksField;
-    
-		private ShipmentType shipmentField;
-    
-		private EndorserPartyType[] endorserPartyField;
-    
-		private PartyType preparationPartyField;
-    
-		private PartyType issuerPartyField;
-    
-		private PartyType exporterPartyField;
-    
-		private PartyType importerPartyField;
-    
-		private CountryType issuingCountryField;
-    
-		private DocumentDistributionType[] documentDistributionField;
-    
-		private DocumentReferenceType[] supportingDocumentReferenceField;
-    
-		private SignatureType[] signatureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReferenceIDType ReferenceID {
-			get {
-				return referenceIDField;
-			}
-			set {
-				referenceIDField = value;
-			}
-		}
-    
+		public IdentifierType ReferenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CertificateTypeType CertificateType {
-			get {
-				return certificateTypeField;
-			}
-			set {
-				certificateTypeField = value;
-			}
-		}
-    
+		public TextType CertificateType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ApplicationStatusCodeType ApplicationStatusCode {
-			get {
-				return applicationStatusCodeField;
-			}
-			set {
-				applicationStatusCodeField = value;
-			}
-		}
-    
+		public CodeType ApplicationStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OriginalJobIDType OriginalJobID {
-			get {
-				return originalJobIDField;
-			}
-			set {
-				originalJobIDField = value;
-			}
-		}
-    
+		public IdentifierType OriginalJobID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PreviousJobIDType PreviousJobID {
-			get {
-				return previousJobIDField;
-			}
-			set {
-				previousJobIDField = value;
-			}
-		}
-    
+		public IdentifierType PreviousJobID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Remarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RemarksType[] Remarks {
-			get {
-				return remarksField;
-			}
-			set {
-				remarksField = value;
-			}
-		}
-    
+		public TextType[] Remarks { get; set; }
+
 		/// <remarks/>
-		public ShipmentType Shipment {
-			get {
-				return shipmentField;
-			}
-			set {
-				shipmentField = value;
-			}
-		}
-    
+		public ShipmentType Shipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EndorserParty")]
-		public EndorserPartyType[] EndorserParty {
-			get {
-				return endorserPartyField;
-			}
-			set {
-				endorserPartyField = value;
-			}
-		}
-    
+		public EndorserPartyType[] EndorserParty { get; set; }
+
 		/// <remarks/>
-		public PartyType PreparationParty {
-			get {
-				return preparationPartyField;
-			}
-			set {
-				preparationPartyField = value;
-			}
-		}
-    
+		public PartyType PreparationParty { get; set; }
+
 		/// <remarks/>
-		public PartyType IssuerParty {
-			get {
-				return issuerPartyField;
-			}
-			set {
-				issuerPartyField = value;
-			}
-		}
-    
+		public PartyType IssuerParty { get; set; }
+
 		/// <remarks/>
-		public PartyType ExporterParty {
-			get {
-				return exporterPartyField;
-			}
-			set {
-				exporterPartyField = value;
-			}
-		}
-    
+		public PartyType ExporterParty { get; set; }
+
 		/// <remarks/>
-		public PartyType ImporterParty {
-			get {
-				return importerPartyField;
-			}
-			set {
-				importerPartyField = value;
-			}
-		}
-    
+		public PartyType ImporterParty { get; set; }
+
 		/// <remarks/>
-		public CountryType IssuingCountry {
-			get {
-				return issuingCountryField;
-			}
-			set {
-				issuingCountryField = value;
-			}
-		}
-    
+		public CountryType IssuingCountry { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentDistribution")]
-		public DocumentDistributionType[] DocumentDistribution {
-			get {
-				return documentDistributionField;
-			}
-			set {
-				documentDistributionField = value;
-			}
-		}
-    
+		public DocumentDistributionType[] DocumentDistribution { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SupportingDocumentReference")]
-		public DocumentReferenceType[] SupportingDocumentReference {
-			get {
-				return supportingDocumentReferenceField;
-			}
-			set {
-				supportingDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] SupportingDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Signature")]
-		public SignatureType[] Signature {
-			get {
-				return signatureField;
-			}
-			set {
-				signatureField = value;
-			}
-		}
+		public SignatureType[] Signature { get; set; }
 	}
 }

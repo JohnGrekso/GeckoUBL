@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,81 +10,26 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ForecastLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ForecastLineType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private FrozenDocumentIndicatorType frozenDocumentIndicatorField;
-    
-		private ForecastTypeCodeType forecastTypeCodeField;
-    
-		private PeriodType forecastPeriodField;
-    
-		private SalesItemType salesItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FrozenDocumentIndicatorType FrozenDocumentIndicator {
-			get {
-				return frozenDocumentIndicatorField;
-			}
-			set {
-				frozenDocumentIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType FrozenDocumentIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ForecastTypeCodeType ForecastTypeCode {
-			get {
-				return forecastTypeCodeField;
-			}
-			set {
-				forecastTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ForecastTypeCode { get; set; }
+
 		/// <remarks/>
-		public PeriodType ForecastPeriod {
-			get {
-				return forecastPeriodField;
-			}
-			set {
-				forecastPeriodField = value;
-			}
-		}
-    
+		public PeriodType ForecastPeriod { get; set; }
+
 		/// <remarks/>
-		public SalesItemType SalesItem {
-			get {
-				return salesItemField;
-			}
-			set {
-				salesItemField = value;
-			}
-		}
+		public SalesItemType SalesItem { get; set; }
 	}
 }

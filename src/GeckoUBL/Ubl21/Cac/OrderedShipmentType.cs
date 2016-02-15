@@ -8,30 +8,11 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderedShipment", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class OrderedShipmentType {
-    
-		private ShipmentType shipmentField;
-    
-		private PackageType[] packageField;
-    
 		/// <remarks/>
-		public ShipmentType Shipment {
-			get {
-				return shipmentField;
-			}
-			set {
-				shipmentField = value;
-			}
-		}
-    
+		public ShipmentType Shipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Package")]
-		public PackageType[] Package {
-			get {
-				return packageField;
-			}
-			set {
-				packageField = value;
-			}
-		}
+		public PackageType[] Package { get; set; }
 	}
 }

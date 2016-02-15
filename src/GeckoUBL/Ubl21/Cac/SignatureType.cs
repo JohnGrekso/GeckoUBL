@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,132 +10,41 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Signature", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class SignatureType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private ValidationDateType validationDateField;
-    
-		private ValidationTimeType validationTimeField;
-    
-		private ValidatorIDType validatorIDField;
-    
-		private CanonicalizationMethodType canonicalizationMethodField;
-    
-		private SignatureMethodType signatureMethodField;
-    
-		private PartyType signatoryPartyField;
-    
-		private AttachmentType digitalSignatureAttachmentField;
-    
-		private DocumentReferenceType originalDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidationDateType ValidationDate {
-			get {
-				return validationDateField;
-			}
-			set {
-				validationDateField = value;
-			}
-		}
-    
+		public DateType ValidationDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidationTimeType ValidationTime {
-			get {
-				return validationTimeField;
-			}
-			set {
-				validationTimeField = value;
-			}
-		}
-    
+		public TimeType ValidationTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValidatorIDType ValidatorID {
-			get {
-				return validatorIDField;
-			}
-			set {
-				validatorIDField = value;
-			}
-		}
-    
+		public IdentifierType ValidatorID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CanonicalizationMethodType CanonicalizationMethod {
-			get {
-				return canonicalizationMethodField;
-			}
-			set {
-				canonicalizationMethodField = value;
-			}
-		}
-    
+		public TextType CanonicalizationMethod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SignatureMethodType SignatureMethod {
-			get {
-				return signatureMethodField;
-			}
-			set {
-				signatureMethodField = value;
-			}
-		}
-    
+		public TextType SignatureMethod { get; set; }
+
 		/// <remarks/>
-		public PartyType SignatoryParty {
-			get {
-				return signatoryPartyField;
-			}
-			set {
-				signatoryPartyField = value;
-			}
-		}
-    
+		public PartyType SignatoryParty { get; set; }
+
 		/// <remarks/>
-		public AttachmentType DigitalSignatureAttachment {
-			get {
-				return digitalSignatureAttachmentField;
-			}
-			set {
-				digitalSignatureAttachmentField = value;
-			}
-		}
-    
+		public AttachmentType DigitalSignatureAttachment { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType OriginalDocumentReference {
-			get {
-				return originalDocumentReferenceField;
-			}
-			set {
-				originalDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType OriginalDocumentReference { get; set; }
 	}
 }

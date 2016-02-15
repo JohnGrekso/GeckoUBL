@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ProcessJustification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ProcessJustificationType {
-    
-		private PreviousCancellationReasonCodeType previousCancellationReasonCodeField;
-    
-		private ProcessReasonCodeType processReasonCodeField;
-    
-		private ProcessReasonType[] processReasonField;
-    
-		private DescriptionType[] descriptionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PreviousCancellationReasonCodeType PreviousCancellationReasonCode {
-			get {
-				return previousCancellationReasonCodeField;
-			}
-			set {
-				previousCancellationReasonCodeField = value;
-			}
-		}
-    
+		public CodeType PreviousCancellationReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProcessReasonCodeType ProcessReasonCode {
-			get {
-				return processReasonCodeField;
-			}
-			set {
-				processReasonCodeField = value;
-			}
-		}
-    
+		public CodeType ProcessReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ProcessReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProcessReasonType[] ProcessReason {
-			get {
-				return processReasonField;
-			}
-			set {
-				processReasonField = value;
-			}
-		}
-    
+		public TextType[] ProcessReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
+		public TextType[] Description { get; set; }
 	}
 }

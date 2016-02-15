@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,82 +10,27 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalItemIdentification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ItemIdentificationType {
-    
-		private IDType idField;
-    
-		private ExtendedIDType extendedIDField;
-    
-		private BarcodeSymbologyIDType barcodeSymbologyIDField;
-    
-		private PhysicalAttributeType[] physicalAttributeField;
-    
-		private DimensionType[] measurementDimensionField;
-    
-		private PartyType issuerPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExtendedIDType ExtendedID {
-			get {
-				return extendedIDField;
-			}
-			set {
-				extendedIDField = value;
-			}
-		}
-    
+		public IdentifierType ExtendedID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BarcodeSymbologyIDType BarcodeSymbologyID {
-			get {
-				return barcodeSymbologyIDField;
-			}
-			set {
-				barcodeSymbologyIDField = value;
-			}
-		}
-    
+		public IdentifierType BarcodeSymbologyID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PhysicalAttribute")]
-		public PhysicalAttributeType[] PhysicalAttribute {
-			get {
-				return physicalAttributeField;
-			}
-			set {
-				physicalAttributeField = value;
-			}
-		}
-    
+		public PhysicalAttributeType[] PhysicalAttribute { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
-		public DimensionType[] MeasurementDimension {
-			get {
-				return measurementDimensionField;
-			}
-			set {
-				measurementDimensionField = value;
-			}
-		}
-    
+		public DimensionType[] MeasurementDimension { get; set; }
+
 		/// <remarks/>
-		public PartyType IssuerParty {
-			get {
-				return issuerPartyField;
-			}
-			set {
-				issuerPartyField = value;
-			}
-		}
+		public PartyType IssuerParty { get; set; }
 	}
 }

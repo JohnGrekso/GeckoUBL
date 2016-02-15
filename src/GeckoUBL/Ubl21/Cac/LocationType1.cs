@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,160 +10,51 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName="LocationType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActivityFinalLocation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class LocationType1 {
-    
-		private IDType idField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private ConditionsType[] conditionsField;
-    
-		private CountrySubentityType countrySubentityField;
-    
-		private CountrySubentityCodeType countrySubentityCodeField;
-    
-		private LocationTypeCodeType locationTypeCodeField;
-    
-		private InformationURIType informationURIField;
-    
-		private NameType1 nameField;
-    
-		private PeriodType[] validityPeriodField;
-    
-		private AddressType addressField;
-    
-		private LocationType1[] subsidiaryLocationField;
-    
-		private LocationCoordinateType[] locationCoordinateField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Conditions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConditionsType[] Conditions {
-			get {
-				return conditionsField;
-			}
-			set {
-				conditionsField = value;
-			}
-		}
-    
+		public TextType[] Conditions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CountrySubentityType CountrySubentity {
-			get {
-				return countrySubentityField;
-			}
-			set {
-				countrySubentityField = value;
-			}
-		}
-    
+		public TextType CountrySubentity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CountrySubentityCodeType CountrySubentityCode {
-			get {
-				return countrySubentityCodeField;
-			}
-			set {
-				countrySubentityCodeField = value;
-			}
-		}
-    
+		public CodeType CountrySubentityCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LocationTypeCodeType LocationTypeCode {
-			get {
-				return locationTypeCodeField;
-			}
-			set {
-				locationTypeCodeField = value;
-			}
-		}
-    
+		public CodeType LocationTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public InformationURIType InformationURI {
-			get {
-				return informationURIField;
-			}
-			set {
-				informationURIField = value;
-			}
-		}
-    
+		public IdentifierType InformationURI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ValidityPeriod")]
-		public PeriodType[] ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
-    
+		public PeriodType[] ValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public AddressType Address {
-			get {
-				return addressField;
-			}
-			set {
-				addressField = value;
-			}
-		}
-    
+		public AddressType Address { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubsidiaryLocation")]
-		public LocationType1[] SubsidiaryLocation {
-			get {
-				return subsidiaryLocationField;
-			}
-			set {
-				subsidiaryLocationField = value;
-			}
-		}
-    
+		public LocationType1[] SubsidiaryLocation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("LocationCoordinate")]
-		public LocationCoordinateType[] LocationCoordinate {
-			get {
-				return locationCoordinateField;
-			}
-			set {
-				locationCoordinateField = value;
-			}
-		}
+		public LocationCoordinateType[] LocationCoordinate { get; set; }
 	}
 }

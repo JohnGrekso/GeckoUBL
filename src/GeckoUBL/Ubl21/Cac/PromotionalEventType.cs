@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PromotionalEvent", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PromotionalEventType {
-    
-		private PromotionalEventTypeCodeType promotionalEventTypeCodeField;
-    
-		private SubmissionDateType submissionDateField;
-    
-		private FirstShipmentAvailibilityDateType firstShipmentAvailibilityDateField;
-    
-		private LatestProposalAcceptanceDateType latestProposalAcceptanceDateField;
-    
-		private PromotionalSpecificationType[] promotionalSpecificationField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PromotionalEventTypeCodeType PromotionalEventTypeCode {
-			get {
-				return promotionalEventTypeCodeField;
-			}
-			set {
-				promotionalEventTypeCodeField = value;
-			}
-		}
-    
+		public CodeType PromotionalEventTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubmissionDateType SubmissionDate {
-			get {
-				return submissionDateField;
-			}
-			set {
-				submissionDateField = value;
-			}
-		}
-    
+		public DateType SubmissionDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FirstShipmentAvailibilityDateType FirstShipmentAvailibilityDate {
-			get {
-				return firstShipmentAvailibilityDateField;
-			}
-			set {
-				firstShipmentAvailibilityDateField = value;
-			}
-		}
-    
+		public DateType FirstShipmentAvailibilityDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LatestProposalAcceptanceDateType LatestProposalAcceptanceDate {
-			get {
-				return latestProposalAcceptanceDateField;
-			}
-			set {
-				latestProposalAcceptanceDateField = value;
-			}
-		}
-    
+		public DateType LatestProposalAcceptanceDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PromotionalSpecification")]
-		public PromotionalSpecificationType[] PromotionalSpecification {
-			get {
-				return promotionalSpecificationField;
-			}
-			set {
-				promotionalSpecificationField = value;
-			}
-		}
+		public PromotionalSpecificationType[] PromotionalSpecification { get; set; }
 	}
 }

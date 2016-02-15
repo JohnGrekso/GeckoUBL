@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,55 +10,18 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EventTactic", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EventTacticType {
-    
-		private CommentType commentField;
-    
-		private QuantityType2 quantityField;
-    
-		private EventTacticEnumerationType eventTacticEnumerationField;
-    
-		private PeriodType periodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CommentType Comment {
-			get {
-				return commentField;
-			}
-			set {
-				commentField = value;
-			}
-		}
-    
+		public TextType Comment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
-		public EventTacticEnumerationType EventTacticEnumeration {
-			get {
-				return eventTacticEnumerationField;
-			}
-			set {
-				eventTacticEnumerationField = value;
-			}
-		}
-    
+		public EventTacticEnumerationType EventTacticEnumeration { get; set; }
+
 		/// <remarks/>
-		public PeriodType Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
+		public PeriodType Period { get; set; }
 	}
 }

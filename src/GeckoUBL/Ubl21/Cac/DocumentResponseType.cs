@@ -8,67 +8,21 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalDocumentResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DocumentResponseType {
-    
-		private ResponseType responseField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private PartyType issuerPartyField;
-    
-		private PartyType recipientPartyField;
-    
-		private LineResponseType[] lineResponseField;
-    
 		/// <remarks/>
-		public ResponseType Response {
-			get {
-				return responseField;
-			}
-			set {
-				responseField = value;
-			}
-		}
-    
+		public ResponseType Response { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public PartyType IssuerParty {
-			get {
-				return issuerPartyField;
-			}
-			set {
-				issuerPartyField = value;
-			}
-		}
-    
+		public PartyType IssuerParty { get; set; }
+
 		/// <remarks/>
-		public PartyType RecipientParty {
-			get {
-				return recipientPartyField;
-			}
-			set {
-				recipientPartyField = value;
-			}
-		}
-    
+		public PartyType RecipientParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("LineResponse")]
-		public LineResponseType[] LineResponse {
-			get {
-				return lineResponseField;
-			}
-			set {
-				lineResponseField = value;
-			}
-		}
+		public LineResponseType[] LineResponse { get; set; }
 	}
 }

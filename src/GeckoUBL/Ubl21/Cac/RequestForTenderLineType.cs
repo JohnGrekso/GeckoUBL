@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,211 +10,66 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestForTenderLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class RequestForTenderLineType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private NoteType[] noteField;
-    
-		private QuantityType2 quantityField;
-    
-		private MinimumQuantityType minimumQuantityField;
-    
-		private MaximumQuantityType maximumQuantityField;
-    
-		private TaxIncludedIndicatorType taxIncludedIndicatorField;
-    
-		private MinimumAmountType minimumAmountField;
-    
-		private MaximumAmountType maximumAmountField;
-    
-		private EstimatedAmountType estimatedAmountField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private PeriodType[] deliveryPeriodField;
-    
-		private ItemLocationQuantityType[] requiredItemLocationQuantityField;
-    
-		private PeriodType warrantyValidityPeriodField;
-    
-		private ItemType itemField;
-    
-		private RequestForTenderLineType[] subRequestForTenderLineField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumQuantityType MinimumQuantity {
-			get {
-				return minimumQuantityField;
-			}
-			set {
-				minimumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumQuantityType MaximumQuantity {
-			get {
-				return maximumQuantityField;
-			}
-			set {
-				maximumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxIncludedIndicatorType TaxIncludedIndicator {
-			get {
-				return taxIncludedIndicatorField;
-			}
-			set {
-				taxIncludedIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType TaxIncludedIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumAmountType MinimumAmount {
-			get {
-				return minimumAmountField;
-			}
-			set {
-				minimumAmountField = value;
-			}
-		}
-    
+		public AmountType MinimumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumAmountType MaximumAmount {
-			get {
-				return maximumAmountField;
-			}
-			set {
-				maximumAmountField = value;
-			}
-		}
-    
+		public AmountType MaximumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EstimatedAmountType EstimatedAmount {
-			get {
-				return estimatedAmountField;
-			}
-			set {
-				estimatedAmountField = value;
-			}
-		}
-    
+		public AmountType EstimatedAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DeliveryPeriod")]
-		public PeriodType[] DeliveryPeriod {
-			get {
-				return deliveryPeriodField;
-			}
-			set {
-				deliveryPeriodField = value;
-			}
-		}
-    
+		public PeriodType[] DeliveryPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RequiredItemLocationQuantity")]
-		public ItemLocationQuantityType[] RequiredItemLocationQuantity {
-			get {
-				return requiredItemLocationQuantityField;
-			}
-			set {
-				requiredItemLocationQuantityField = value;
-			}
-		}
-    
+		public ItemLocationQuantityType[] RequiredItemLocationQuantity { get; set; }
+
 		/// <remarks/>
-		public PeriodType WarrantyValidityPeriod {
-			get {
-				return warrantyValidityPeriodField;
-			}
-			set {
-				warrantyValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType WarrantyValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType Item { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubRequestForTenderLine")]
-		public RequestForTenderLineType[] SubRequestForTenderLine {
-			get {
-				return subRequestForTenderLineField;
-			}
-			set {
-				subRequestForTenderLineField = value;
-			}
-		}
+		public RequestForTenderLineType[] SubRequestForTenderLine { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,174 +10,56 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterion", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class AwardingCriterionType {
-    
-		private IDType idField;
-    
-		private AwardingCriterionTypeCodeType awardingCriterionTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private WeightNumericType weightNumericField;
-    
-		private WeightType[] weightField;
-    
-		private CalculationExpressionType[] calculationExpressionField;
-    
-		private CalculationExpressionCodeType calculationExpressionCodeField;
-    
-		private MinimumQuantityType minimumQuantityField;
-    
-		private MaximumQuantityType maximumQuantityField;
-    
-		private MinimumAmountType minimumAmountField;
-    
-		private MaximumAmountType maximumAmountField;
-    
-		private MinimumImprovementBidType[] minimumImprovementBidField;
-    
-		private AwardingCriterionType[] subordinateAwardingCriterionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AwardingCriterionTypeCodeType AwardingCriterionTypeCode {
-			get {
-				return awardingCriterionTypeCodeField;
-			}
-			set {
-				awardingCriterionTypeCodeField = value;
-			}
-		}
-    
+		public CodeType AwardingCriterionTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WeightNumericType WeightNumeric {
-			get {
-				return weightNumericField;
-			}
-			set {
-				weightNumericField = value;
-			}
-		}
-    
+		public NumericType WeightNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Weight", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WeightType[] Weight {
-			get {
-				return weightField;
-			}
-			set {
-				weightField = value;
-			}
-		}
-    
+		public TextType[] Weight { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CalculationExpression", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CalculationExpressionType[] CalculationExpression {
-			get {
-				return calculationExpressionField;
-			}
-			set {
-				calculationExpressionField = value;
-			}
-		}
-    
+		public TextType[] CalculationExpression { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CalculationExpressionCodeType CalculationExpressionCode {
-			get {
-				return calculationExpressionCodeField;
-			}
-			set {
-				calculationExpressionCodeField = value;
-			}
-		}
-    
+		public CodeType CalculationExpressionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumQuantityType MinimumQuantity {
-			get {
-				return minimumQuantityField;
-			}
-			set {
-				minimumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumQuantityType MaximumQuantity {
-			get {
-				return maximumQuantityField;
-			}
-			set {
-				maximumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumAmountType MinimumAmount {
-			get {
-				return minimumAmountField;
-			}
-			set {
-				minimumAmountField = value;
-			}
-		}
-    
+		public AmountType MinimumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumAmountType MaximumAmount {
-			get {
-				return maximumAmountField;
-			}
-			set {
-				maximumAmountField = value;
-			}
-		}
-    
+		public AmountType MaximumAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MinimumImprovementBid", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumImprovementBidType[] MinimumImprovementBid {
-			get {
-				return minimumImprovementBidField;
-			}
-			set {
-				minimumImprovementBidField = value;
-			}
-		}
-    
+		public TextType[] MinimumImprovementBid { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubordinateAwardingCriterion")]
-		public AwardingCriterionType[] SubordinateAwardingCriterion {
-			get {
-				return subordinateAwardingCriterionField;
-			}
-			set {
-				subordinateAwardingCriterionField = value;
-			}
-		}
+		public AwardingCriterionType[] SubordinateAwardingCriterion { get; set; }
 	}
 }

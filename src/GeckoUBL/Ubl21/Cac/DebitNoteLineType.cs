@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,275 +10,85 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DebitNoteLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DebitNoteLineType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private NoteType[] noteField;
-    
-		private DebitedQuantityType debitedQuantityField;
-    
-		private LineExtensionAmountType lineExtensionAmountField;
-    
-		private TaxPointDateType taxPointDateField;
-    
-		private AccountingCostCodeType accountingCostCodeField;
-    
-		private AccountingCostType accountingCostField;
-    
-		private PaymentPurposeCodeType paymentPurposeCodeField;
-    
-		private ResponseType[] discrepancyResponseField;
-    
-		private LineReferenceType[] despatchLineReferenceField;
-    
-		private LineReferenceType[] receiptLineReferenceField;
-    
-		private BillingReferenceType[] billingReferenceField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private PricingReferenceType pricingReferenceField;
-    
-		private DeliveryType[] deliveryField;
-    
-		private TaxTotalType[] taxTotalField;
-    
-		private AllowanceChargeType[] allowanceChargeField;
-    
-		private ItemType itemField;
-    
-		private PriceType priceField;
-    
-		private DebitNoteLineType[] subDebitNoteLineField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DebitedQuantityType DebitedQuantity {
-			get {
-				return debitedQuantityField;
-			}
-			set {
-				debitedQuantityField = value;
-			}
-		}
-    
+		public QuantityType DebitedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineExtensionAmountType LineExtensionAmount {
-			get {
-				return lineExtensionAmountField;
-			}
-			set {
-				lineExtensionAmountField = value;
-			}
-		}
-    
+		public AmountType LineExtensionAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxPointDateType TaxPointDate {
-			get {
-				return taxPointDateField;
-			}
-			set {
-				taxPointDateField = value;
-			}
-		}
-    
+		public DateType TaxPointDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostCodeType AccountingCostCode {
-			get {
-				return accountingCostCodeField;
-			}
-			set {
-				accountingCostCodeField = value;
-			}
-		}
-    
+		public CodeType AccountingCostCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AccountingCostType AccountingCost {
-			get {
-				return accountingCostField;
-			}
-			set {
-				accountingCostField = value;
-			}
-		}
-    
+		public TextType AccountingCost { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentPurposeCodeType PaymentPurposeCode {
-			get {
-				return paymentPurposeCodeField;
-			}
-			set {
-				paymentPurposeCodeField = value;
-			}
-		}
-    
+		public CodeType PaymentPurposeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DiscrepancyResponse")]
-		public ResponseType[] DiscrepancyResponse {
-			get {
-				return discrepancyResponseField;
-			}
-			set {
-				discrepancyResponseField = value;
-			}
-		}
-    
+		public ResponseType[] DiscrepancyResponse { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DespatchLineReference")]
-		public LineReferenceType[] DespatchLineReference {
-			get {
-				return despatchLineReferenceField;
-			}
-			set {
-				despatchLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType[] DespatchLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReceiptLineReference")]
-		public LineReferenceType[] ReceiptLineReference {
-			get {
-				return receiptLineReferenceField;
-			}
-			set {
-				receiptLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType[] ReceiptLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("BillingReference")]
-		public BillingReferenceType[] BillingReference {
-			get {
-				return billingReferenceField;
-			}
-			set {
-				billingReferenceField = value;
-			}
-		}
-    
+		public BillingReferenceType[] BillingReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public PricingReferenceType PricingReference {
-			get {
-				return pricingReferenceField;
-			}
-			set {
-				pricingReferenceField = value;
-			}
-		}
-    
+		public PricingReferenceType PricingReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Delivery")]
-		public DeliveryType[] Delivery {
-			get {
-				return deliveryField;
-			}
-			set {
-				deliveryField = value;
-			}
-		}
-    
+		public DeliveryType[] Delivery { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TaxTotal")]
-		public TaxTotalType[] TaxTotal {
-			get {
-				return taxTotalField;
-			}
-			set {
-				taxTotalField = value;
-			}
-		}
-    
+		public TaxTotalType[] TaxTotal { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-		public AllowanceChargeType[] AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] AllowanceCharge { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType Item { get; set; }
+
 		/// <remarks/>
-		public PriceType Price {
-			get {
-				return priceField;
-			}
-			set {
-				priceField = value;
-			}
-		}
-    
+		public PriceType Price { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubDebitNoteLine")]
-		public DebitNoteLineType[] SubDebitNoteLine {
-			get {
-				return subDebitNoteLineField;
-			}
-			set {
-				subDebitNoteLineField = value;
-			}
-		}
+		public DebitNoteLineType[] SubDebitNoteLine { get; set; }
 	}
 }

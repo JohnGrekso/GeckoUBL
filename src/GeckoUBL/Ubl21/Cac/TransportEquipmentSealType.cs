@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportEquipmentSeal", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TransportEquipmentSealType {
-    
-		private IDType idField;
-    
-		private SealIssuerTypeCodeType sealIssuerTypeCodeField;
-    
-		private ConditionType conditionField;
-    
-		private SealStatusCodeType sealStatusCodeField;
-    
-		private SealingPartyTypeType sealingPartyTypeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SealIssuerTypeCodeType SealIssuerTypeCode {
-			get {
-				return sealIssuerTypeCodeField;
-			}
-			set {
-				sealIssuerTypeCodeField = value;
-			}
-		}
-    
+		public CodeType SealIssuerTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConditionType Condition {
-			get {
-				return conditionField;
-			}
-			set {
-				conditionField = value;
-			}
-		}
-    
+		public TextType Condition { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SealStatusCodeType SealStatusCode {
-			get {
-				return sealStatusCodeField;
-			}
-			set {
-				sealStatusCodeField = value;
-			}
-		}
-    
+		public CodeType SealStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SealingPartyTypeType SealingPartyType {
-			get {
-				return sealingPartyTypeField;
-			}
-			set {
-				sealingPartyTypeField = value;
-			}
-		}
+		public TextType SealingPartyType { get; set; }
 	}
 }

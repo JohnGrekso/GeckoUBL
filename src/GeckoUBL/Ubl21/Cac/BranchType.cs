@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,55 +10,18 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Branch", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class BranchType {
-    
-		private IDType idField;
-    
-		private NameType1 nameField;
-    
-		private FinancialInstitutionType financialInstitutionField;
-    
-		private AddressType addressField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
-		public FinancialInstitutionType FinancialInstitution {
-			get {
-				return financialInstitutionField;
-			}
-			set {
-				financialInstitutionField = value;
-			}
-		}
-    
+		public FinancialInstitutionType FinancialInstitution { get; set; }
+
 		/// <remarks/>
-		public AddressType Address {
-			get {
-				return addressField;
-			}
-			set {
-				addressField = value;
-			}
-		}
+		public AddressType Address { get; set; }
 	}
 }

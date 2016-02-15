@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,83 +10,28 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DiscrepancyResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ResponseType {
-    
-		private ReferenceIDType referenceIDField;
-    
-		private ResponseCodeType responseCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private EffectiveDateType effectiveDateField;
-    
-		private EffectiveTimeType effectiveTimeField;
-    
-		private StatusType[] statusField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReferenceIDType ReferenceID {
-			get {
-				return referenceIDField;
-			}
-			set {
-				referenceIDField = value;
-			}
-		}
-    
+		public IdentifierType ReferenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResponseCodeType ResponseCode {
-			get {
-				return responseCodeField;
-			}
-			set {
-				responseCodeField = value;
-			}
-		}
-    
+		public CodeType ResponseCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EffectiveDateType EffectiveDate {
-			get {
-				return effectiveDateField;
-			}
-			set {
-				effectiveDateField = value;
-			}
-		}
-    
+		public DateType EffectiveDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EffectiveTimeType EffectiveTime {
-			get {
-				return effectiveTimeField;
-			}
-			set {
-				effectiveTimeField = value;
-			}
-		}
-    
+		public TimeType EffectiveTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Status")]
-		public StatusType[] Status {
-			get {
-				return statusField;
-			}
-			set {
-				statusField = value;
-			}
-		}
+		public StatusType[] Status { get; set; }
 	}
 }

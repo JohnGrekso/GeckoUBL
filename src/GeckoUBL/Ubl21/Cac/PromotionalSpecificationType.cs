@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PromotionalSpecification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PromotionalSpecificationType {
-    
-		private SpecificationIDType specificationIDField;
-    
-		private PromotionalEventLineItemType[] promotionalEventLineItemField;
-    
-		private EventTacticType[] eventTacticField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SpecificationIDType SpecificationID {
-			get {
-				return specificationIDField;
-			}
-			set {
-				specificationIDField = value;
-			}
-		}
-    
+		public IdentifierType SpecificationID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PromotionalEventLineItem")]
-		public PromotionalEventLineItemType[] PromotionalEventLineItem {
-			get {
-				return promotionalEventLineItemField;
-			}
-			set {
-				promotionalEventLineItemField = value;
-			}
-		}
-    
+		public PromotionalEventLineItemType[] PromotionalEventLineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EventTactic")]
-		public EventTacticType[] EventTactic {
-			get {
-				return eventTacticField;
-			}
-			set {
-				eventTacticField = value;
-			}
-		}
+		public EventTacticType[] EventTactic { get; set; }
 	}
 }

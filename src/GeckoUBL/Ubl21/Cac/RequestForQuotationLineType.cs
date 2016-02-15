@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,108 +10,35 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("RequestForQuotationLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class RequestForQuotationLineType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private NoteType[] noteField;
-    
-		private OptionalLineItemIndicatorType optionalLineItemIndicatorField;
-    
-		private PrivacyCodeType privacyCodeField;
-    
-		private SecurityClassificationCodeType securityClassificationCodeField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private LineItemType lineItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OptionalLineItemIndicatorType OptionalLineItemIndicator {
-			get {
-				return optionalLineItemIndicatorField;
-			}
-			set {
-				optionalLineItemIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType OptionalLineItemIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PrivacyCodeType PrivacyCode {
-			get {
-				return privacyCodeField;
-			}
-			set {
-				privacyCodeField = value;
-			}
-		}
-    
+		public CodeType PrivacyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SecurityClassificationCodeType SecurityClassificationCode {
-			get {
-				return securityClassificationCodeField;
-			}
-			set {
-				securityClassificationCodeField = value;
-			}
-		}
-    
+		public CodeType SecurityClassificationCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public LineItemType LineItem {
-			get {
-				return lineItemField;
-			}
-			set {
-				lineItemField = value;
-			}
-		}
+		public LineItemType LineItem { get; set; }
 	}
 }

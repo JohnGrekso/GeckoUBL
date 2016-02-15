@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,184 +10,57 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartyLegalEntity", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PartyLegalEntityType {
-    
-		private RegistrationNameType registrationNameField;
-    
-		private CompanyIDType companyIDField;
-    
-		private RegistrationDateType registrationDateField;
-    
-		private RegistrationExpirationDateType registrationExpirationDateField;
-    
-		private CompanyLegalFormCodeType companyLegalFormCodeField;
-    
-		private CompanyLegalFormType companyLegalFormField;
-    
-		private SoleProprietorshipIndicatorType soleProprietorshipIndicatorField;
-    
-		private CompanyLiquidationStatusCodeType companyLiquidationStatusCodeField;
-    
-		private CorporateStockAmountType corporateStockAmountField;
-    
-		private FullyPaidSharesIndicatorType fullyPaidSharesIndicatorField;
-    
-		private AddressType registrationAddressField;
-    
-		private CorporateRegistrationSchemeType corporateRegistrationSchemeField;
-    
-		private PartyType headOfficePartyField;
-    
-		private ShareholderPartyType[] shareholderPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RegistrationNameType RegistrationName {
-			get {
-				return registrationNameField;
-			}
-			set {
-				registrationNameField = value;
-			}
-		}
-    
+		public NameType RegistrationName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompanyIDType CompanyID {
-			get {
-				return companyIDField;
-			}
-			set {
-				companyIDField = value;
-			}
-		}
-    
+		public IdentifierType CompanyID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RegistrationDateType RegistrationDate {
-			get {
-				return registrationDateField;
-			}
-			set {
-				registrationDateField = value;
-			}
-		}
-    
+		public DateType RegistrationDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RegistrationExpirationDateType RegistrationExpirationDate {
-			get {
-				return registrationExpirationDateField;
-			}
-			set {
-				registrationExpirationDateField = value;
-			}
-		}
-    
+		public DateType RegistrationExpirationDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompanyLegalFormCodeType CompanyLegalFormCode {
-			get {
-				return companyLegalFormCodeField;
-			}
-			set {
-				companyLegalFormCodeField = value;
-			}
-		}
-    
+		public CodeType CompanyLegalFormCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompanyLegalFormType CompanyLegalForm {
-			get {
-				return companyLegalFormField;
-			}
-			set {
-				companyLegalFormField = value;
-			}
-		}
-    
+		public TextType CompanyLegalForm { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SoleProprietorshipIndicatorType SoleProprietorshipIndicator {
-			get {
-				return soleProprietorshipIndicatorField;
-			}
-			set {
-				soleProprietorshipIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType SoleProprietorshipIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompanyLiquidationStatusCodeType CompanyLiquidationStatusCode {
-			get {
-				return companyLiquidationStatusCodeField;
-			}
-			set {
-				companyLiquidationStatusCodeField = value;
-			}
-		}
-    
+		public CodeType CompanyLiquidationStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CorporateStockAmountType CorporateStockAmount {
-			get {
-				return corporateStockAmountField;
-			}
-			set {
-				corporateStockAmountField = value;
-			}
-		}
-    
+		public AmountType CorporateStockAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FullyPaidSharesIndicatorType FullyPaidSharesIndicator {
-			get {
-				return fullyPaidSharesIndicatorField;
-			}
-			set {
-				fullyPaidSharesIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType FullyPaidSharesIndicator { get; set; }
+
 		/// <remarks/>
-		public AddressType RegistrationAddress {
-			get {
-				return registrationAddressField;
-			}
-			set {
-				registrationAddressField = value;
-			}
-		}
-    
+		public AddressType RegistrationAddress { get; set; }
+
 		/// <remarks/>
-		public CorporateRegistrationSchemeType CorporateRegistrationScheme {
-			get {
-				return corporateRegistrationSchemeField;
-			}
-			set {
-				corporateRegistrationSchemeField = value;
-			}
-		}
-    
+		public CorporateRegistrationSchemeType CorporateRegistrationScheme { get; set; }
+
 		/// <remarks/>
-		public PartyType HeadOfficeParty {
-			get {
-				return headOfficePartyField;
-			}
-			set {
-				headOfficePartyField = value;
-			}
-		}
-    
+		public PartyType HeadOfficeParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ShareholderParty")]
-		public ShareholderPartyType[] ShareholderParty {
-			get {
-				return shareholderPartyField;
-			}
-			set {
-				shareholderPartyField = value;
-			}
-		}
+		public ShareholderPartyType[] ShareholderParty { get; set; }
 	}
 }

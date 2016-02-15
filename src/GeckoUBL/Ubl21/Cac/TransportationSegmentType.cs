@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,80 +10,25 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportationSegment", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TransportationSegmentType {
-    
-		private SequenceNumericType sequenceNumericField;
-    
-		private TransportExecutionPlanReferenceIDType transportExecutionPlanReferenceIDField;
-    
-		private TransportationServiceType transportationServiceField;
-    
-		private PartyType transportServiceProviderPartyField;
-    
-		private ConsignmentType referencedConsignmentField;
-    
-		private ShipmentStageType[] shipmentStageField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SequenceNumericType SequenceNumeric {
-			get {
-				return sequenceNumericField;
-			}
-			set {
-				sequenceNumericField = value;
-			}
-		}
-    
+		public NumericType SequenceNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportExecutionPlanReferenceIDType TransportExecutionPlanReferenceID {
-			get {
-				return transportExecutionPlanReferenceIDField;
-			}
-			set {
-				transportExecutionPlanReferenceIDField = value;
-			}
-		}
-    
+		public IdentifierType TransportExecutionPlanReferenceID { get; set; }
+
 		/// <remarks/>
-		public TransportationServiceType TransportationService {
-			get {
-				return transportationServiceField;
-			}
-			set {
-				transportationServiceField = value;
-			}
-		}
-    
+		public TransportationServiceType TransportationService { get; set; }
+
 		/// <remarks/>
-		public PartyType TransportServiceProviderParty {
-			get {
-				return transportServiceProviderPartyField;
-			}
-			set {
-				transportServiceProviderPartyField = value;
-			}
-		}
-    
+		public PartyType TransportServiceProviderParty { get; set; }
+
 		/// <remarks/>
-		public ConsignmentType ReferencedConsignment {
-			get {
-				return referencedConsignmentField;
-			}
-			set {
-				referencedConsignmentField = value;
-			}
-		}
-    
+		public ConsignmentType ReferencedConsignment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ShipmentStage")]
-		public ShipmentStageType[] ShipmentStage {
-			get {
-				return shipmentStageField;
-			}
-			set {
-				shipmentStageField = value;
-			}
-		}
+		public ShipmentStageType[] ShipmentStage { get; set; }
 	}
 }

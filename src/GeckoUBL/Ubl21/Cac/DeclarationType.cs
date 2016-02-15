@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Declaration", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DeclarationType {
-    
-		private NameType1[] nameField;
-    
-		private DeclarationTypeCodeType declarationTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private EvidenceSuppliedType[] evidenceSuppliedField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Name", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1[] Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType[] Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DeclarationTypeCodeType DeclarationTypeCode {
-			get {
-				return declarationTypeCodeField;
-			}
-			set {
-				declarationTypeCodeField = value;
-			}
-		}
-    
+		public CodeType DeclarationTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EvidenceSupplied")]
-		public EvidenceSuppliedType[] EvidenceSupplied {
-			get {
-				return evidenceSuppliedField;
-			}
-			set {
-				evidenceSuppliedField = value;
-			}
-		}
+		public EvidenceSuppliedType[] EvidenceSupplied { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EventTacticEnumeration", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EventTacticEnumerationType {
-    
-		private ConsumerIncentiveTacticTypeCodeType consumerIncentiveTacticTypeCodeField;
-    
-		private DisplayTacticTypeCodeType displayTacticTypeCodeField;
-    
-		private FeatureTacticTypeCodeType featureTacticTypeCodeField;
-    
-		private TradeItemPackingLabelingTypeCodeType tradeItemPackingLabelingTypeCodeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumerIncentiveTacticTypeCodeType ConsumerIncentiveTacticTypeCode {
-			get {
-				return consumerIncentiveTacticTypeCodeField;
-			}
-			set {
-				consumerIncentiveTacticTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ConsumerIncentiveTacticTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DisplayTacticTypeCodeType DisplayTacticTypeCode {
-			get {
-				return displayTacticTypeCodeField;
-			}
-			set {
-				displayTacticTypeCodeField = value;
-			}
-		}
-    
+		public CodeType DisplayTacticTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FeatureTacticTypeCodeType FeatureTacticTypeCode {
-			get {
-				return featureTacticTypeCodeField;
-			}
-			set {
-				featureTacticTypeCodeField = value;
-			}
-		}
-    
+		public CodeType FeatureTacticTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TradeItemPackingLabelingTypeCodeType TradeItemPackingLabelingTypeCode {
-			get {
-				return tradeItemPackingLabelingTypeCodeField;
-			}
-			set {
-				tradeItemPackingLabelingTypeCodeField = value;
-			}
-		}
+		public CodeType TradeItemPackingLabelingTypeCode { get; set; }
 	}
 }

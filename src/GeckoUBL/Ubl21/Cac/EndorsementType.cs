@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,69 +10,23 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EmbassyEndorsement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EndorsementType {
-    
-		private DocumentIDType documentIDField;
-    
-		private ApprovalStatusType approvalStatusField;
-    
-		private RemarksType[] remarksField;
-    
-		private EndorserPartyType endorserPartyField;
-    
-		private SignatureType[] signatureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentIDType DocumentID {
-			get {
-				return documentIDField;
-			}
-			set {
-				documentIDField = value;
-			}
-		}
-    
+		public IdentifierType DocumentID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ApprovalStatusType ApprovalStatus {
-			get {
-				return approvalStatusField;
-			}
-			set {
-				approvalStatusField = value;
-			}
-		}
-    
+		public TextType ApprovalStatus { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Remarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RemarksType[] Remarks {
-			get {
-				return remarksField;
-			}
-			set {
-				remarksField = value;
-			}
-		}
-    
+		public TextType[] Remarks { get; set; }
+
 		/// <remarks/>
-		public EndorserPartyType EndorserParty {
-			get {
-				return endorserPartyField;
-			}
-			set {
-				endorserPartyField = value;
-			}
-		}
-    
+		public EndorserPartyType EndorserParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Signature")]
-		public SignatureType[] Signature {
-			get {
-				return signatureField;
-			}
-			set {
-				signatureField = value;
-			}
-		}
+		public SignatureType[] Signature { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,236 +10,73 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionReport", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionReportType {
-    
-		private IDType idField;
-    
-		private ConsumptionTypeType consumptionTypeField;
-    
-		private ConsumptionTypeCodeType consumptionTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private TotalConsumedQuantityType totalConsumedQuantityField;
-    
-		private BasicConsumedQuantityType basicConsumedQuantityField;
-    
-		private ResidentOccupantsNumericType residentOccupantsNumericField;
-    
-		private ConsumersEnergyLevelCodeType consumersEnergyLevelCodeField;
-    
-		private ConsumersEnergyLevelType consumersEnergyLevelField;
-    
-		private ResidenceTypeType residenceTypeField;
-    
-		private ResidenceTypeCodeType residenceTypeCodeField;
-    
-		private HeatingTypeType heatingTypeField;
-    
-		private HeatingTypeCodeType heatingTypeCodeField;
-    
-		private PeriodType periodField;
-    
-		private DocumentReferenceType guidanceDocumentReferenceField;
-    
-		private DocumentReferenceType documentReferenceField;
-    
-		private ConsumptionReportReferenceType[] consumptionReportReferenceField;
-    
-		private ConsumptionHistoryType[] consumptionHistoryField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionTypeType ConsumptionType {
-			get {
-				return consumptionTypeField;
-			}
-			set {
-				consumptionTypeField = value;
-			}
-		}
-    
+		public TextType ConsumptionType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionTypeCodeType ConsumptionTypeCode {
-			get {
-				return consumptionTypeCodeField;
-			}
-			set {
-				consumptionTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ConsumptionTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalConsumedQuantityType TotalConsumedQuantity {
-			get {
-				return totalConsumedQuantityField;
-			}
-			set {
-				totalConsumedQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalConsumedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BasicConsumedQuantityType BasicConsumedQuantity {
-			get {
-				return basicConsumedQuantityField;
-			}
-			set {
-				basicConsumedQuantityField = value;
-			}
-		}
-    
+		public QuantityType BasicConsumedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResidentOccupantsNumericType ResidentOccupantsNumeric {
-			get {
-				return residentOccupantsNumericField;
-			}
-			set {
-				residentOccupantsNumericField = value;
-			}
-		}
-    
+		public NumericType ResidentOccupantsNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumersEnergyLevelCodeType ConsumersEnergyLevelCode {
-			get {
-				return consumersEnergyLevelCodeField;
-			}
-			set {
-				consumersEnergyLevelCodeField = value;
-			}
-		}
-    
+		public CodeType ConsumersEnergyLevelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumersEnergyLevelType ConsumersEnergyLevel {
-			get {
-				return consumersEnergyLevelField;
-			}
-			set {
-				consumersEnergyLevelField = value;
-			}
-		}
-    
+		public TextType ConsumersEnergyLevel { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResidenceTypeType ResidenceType {
-			get {
-				return residenceTypeField;
-			}
-			set {
-				residenceTypeField = value;
-			}
-		}
-    
+		public TextType ResidenceType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResidenceTypeCodeType ResidenceTypeCode {
-			get {
-				return residenceTypeCodeField;
-			}
-			set {
-				residenceTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ResidenceTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HeatingTypeType HeatingType {
-			get {
-				return heatingTypeField;
-			}
-			set {
-				heatingTypeField = value;
-			}
-		}
-    
+		public TextType HeatingType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HeatingTypeCodeType HeatingTypeCode {
-			get {
-				return heatingTypeCodeField;
-			}
-			set {
-				heatingTypeCodeField = value;
-			}
-		}
-    
+		public CodeType HeatingTypeCode { get; set; }
+
 		/// <remarks/>
-		public PeriodType Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
-    
+		public PeriodType Period { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType GuidanceDocumentReference {
-			get {
-				return guidanceDocumentReferenceField;
-			}
-			set {
-				guidanceDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType GuidanceDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType DocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ConsumptionReportReference")]
-		public ConsumptionReportReferenceType[] ConsumptionReportReference {
-			get {
-				return consumptionReportReferenceField;
-			}
-			set {
-				consumptionReportReferenceField = value;
-			}
-		}
-    
+		public ConsumptionReportReferenceType[] ConsumptionReportReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ConsumptionHistory")]
-		public ConsumptionHistoryType[] ConsumptionHistory {
-			get {
-				return consumptionHistoryField;
-			}
-			set {
-				consumptionHistoryField = value;
-			}
-		}
+		public ConsumptionHistoryType[] ConsumptionHistory { get; set; }
 	}
 }

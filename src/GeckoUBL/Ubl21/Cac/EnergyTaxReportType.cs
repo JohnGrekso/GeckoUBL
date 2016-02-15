@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,56 +10,19 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EnergyTaxReport", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EnergyTaxReportType {
-    
-		private TaxEnergyAmountType taxEnergyAmountField;
-    
-		private TaxEnergyOnAccountAmountType taxEnergyOnAccountAmountField;
-    
-		private TaxEnergyBalanceAmountType taxEnergyBalanceAmountField;
-    
-		private TaxSchemeType taxSchemeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxEnergyAmountType TaxEnergyAmount {
-			get {
-				return taxEnergyAmountField;
-			}
-			set {
-				taxEnergyAmountField = value;
-			}
-		}
-    
+		public AmountType TaxEnergyAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxEnergyOnAccountAmountType TaxEnergyOnAccountAmount {
-			get {
-				return taxEnergyOnAccountAmountField;
-			}
-			set {
-				taxEnergyOnAccountAmountField = value;
-			}
-		}
-    
+		public AmountType TaxEnergyOnAccountAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxEnergyBalanceAmountType TaxEnergyBalanceAmount {
-			get {
-				return taxEnergyBalanceAmountField;
-			}
-			set {
-				taxEnergyBalanceAmountField = value;
-			}
-		}
-    
+		public AmountType TaxEnergyBalanceAmount { get; set; }
+
 		/// <remarks/>
-		public TaxSchemeType TaxScheme {
-			get {
-				return taxSchemeField;
-			}
-			set {
-				taxSchemeField = value;
-			}
-		}
+		public TaxSchemeType TaxScheme { get; set; }
 	}
 }

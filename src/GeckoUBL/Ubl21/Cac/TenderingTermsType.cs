@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,549 +10,161 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TenderingTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TenderingTermsType {
-    
-		private AwardingMethodTypeCodeType awardingMethodTypeCodeField;
-    
-		private PriceEvaluationCodeType priceEvaluationCodeField;
-    
-		private MaximumVariantQuantityType maximumVariantQuantityField;
-    
-		private VariantConstraintIndicatorType variantConstraintIndicatorField;
-    
-		private AcceptedVariantsDescriptionType[] acceptedVariantsDescriptionField;
-    
-		private PriceRevisionFormulaDescriptionType[] priceRevisionFormulaDescriptionField;
-    
-		private FundingProgramCodeType fundingProgramCodeField;
-    
-		private FundingProgramType[] fundingProgramField;
-    
-		private MaximumAdvertisementAmountType maximumAdvertisementAmountField;
-    
-		private NoteType[] noteField;
-    
-		private PaymentFrequencyCodeType paymentFrequencyCodeField;
-    
-		private EconomicOperatorRegistryURIType economicOperatorRegistryURIField;
-    
-		private RequiredCurriculaIndicatorType requiredCurriculaIndicatorField;
-    
-		private OtherConditionsIndicatorType otherConditionsIndicatorField;
-    
-		private AdditionalConditionsType[] additionalConditionsField;
-    
-		private LatestSecurityClearanceDateType latestSecurityClearanceDateField;
-    
-		private DocumentationFeeAmountType documentationFeeAmountField;
-    
-		private ClauseType[] penaltyClauseField;
-    
-		private FinancialGuaranteeType[] requiredFinancialGuaranteeField;
-    
-		private DocumentReferenceType procurementLegislationDocumentReferenceField;
-    
-		private DocumentReferenceType fiscalLegislationDocumentReferenceField;
-    
-		private DocumentReferenceType environmentalLegislationDocumentReferenceField;
-    
-		private DocumentReferenceType employmentLegislationDocumentReferenceField;
-    
-		private DocumentReferenceType[] contractualDocumentReferenceField;
-    
-		private DocumentReferenceType callForTendersDocumentReferenceField;
-    
-		private PeriodType warrantyValidityPeriodField;
-    
-		private PaymentTermsType[] paymentTermsField;
-    
-		private TendererQualificationRequestType[] tendererQualificationRequestField;
-    
-		private SubcontractTermsType[] allowedSubcontractTermsField;
-    
-		private TenderPreparationType[] tenderPreparationField;
-    
-		private ContractExecutionRequirementType[] contractExecutionRequirementField;
-    
-		private AwardingTermsType awardingTermsField;
-    
-		private PartyType additionalInformationPartyField;
-    
-		private PartyType documentProviderPartyField;
-    
-		private PartyType tenderRecipientPartyField;
-    
-		private PartyType contractResponsiblePartyField;
-    
-		private PartyType[] tenderEvaluationPartyField;
-    
-		private PeriodType tenderValidityPeriodField;
-    
-		private PeriodType contractAcceptancePeriodField;
-    
-		private AppealTermsType appealTermsField;
-    
-		private LanguageType[] languageField;
-    
-		private BudgetAccountLineType[] budgetAccountLineField;
-    
-		private DocumentReferenceType replacedNoticeDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AwardingMethodTypeCodeType AwardingMethodTypeCode {
-			get {
-				return awardingMethodTypeCodeField;
-			}
-			set {
-				awardingMethodTypeCodeField = value;
-			}
-		}
-    
+		public CodeType AwardingMethodTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceEvaluationCodeType PriceEvaluationCode {
-			get {
-				return priceEvaluationCodeField;
-			}
-			set {
-				priceEvaluationCodeField = value;
-			}
-		}
-    
+		public CodeType PriceEvaluationCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumVariantQuantityType MaximumVariantQuantity {
-			get {
-				return maximumVariantQuantityField;
-			}
-			set {
-				maximumVariantQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumVariantQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public VariantConstraintIndicatorType VariantConstraintIndicator {
-			get {
-				return variantConstraintIndicatorField;
-			}
-			set {
-				variantConstraintIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType VariantConstraintIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AcceptedVariantsDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AcceptedVariantsDescriptionType[] AcceptedVariantsDescription {
-			get {
-				return acceptedVariantsDescriptionField;
-			}
-			set {
-				acceptedVariantsDescriptionField = value;
-			}
-		}
-    
+		public TextType[] AcceptedVariantsDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PriceRevisionFormulaDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceRevisionFormulaDescriptionType[] PriceRevisionFormulaDescription {
-			get {
-				return priceRevisionFormulaDescriptionField;
-			}
-			set {
-				priceRevisionFormulaDescriptionField = value;
-			}
-		}
-    
+		public TextType[] PriceRevisionFormulaDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FundingProgramCodeType FundingProgramCode {
-			get {
-				return fundingProgramCodeField;
-			}
-			set {
-				fundingProgramCodeField = value;
-			}
-		}
-    
+		public CodeType FundingProgramCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("FundingProgram", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FundingProgramType[] FundingProgram {
-			get {
-				return fundingProgramField;
-			}
-			set {
-				fundingProgramField = value;
-			}
-		}
-    
+		public TextType[] FundingProgram { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumAdvertisementAmountType MaximumAdvertisementAmount {
-			get {
-				return maximumAdvertisementAmountField;
-			}
-			set {
-				maximumAdvertisementAmountField = value;
-			}
-		}
-    
+		public AmountType MaximumAdvertisementAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PaymentFrequencyCodeType PaymentFrequencyCode {
-			get {
-				return paymentFrequencyCodeField;
-			}
-			set {
-				paymentFrequencyCodeField = value;
-			}
-		}
-    
+		public CodeType PaymentFrequencyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EconomicOperatorRegistryURIType EconomicOperatorRegistryURI {
-			get {
-				return economicOperatorRegistryURIField;
-			}
-			set {
-				economicOperatorRegistryURIField = value;
-			}
-		}
-    
+		public IdentifierType EconomicOperatorRegistryURI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RequiredCurriculaIndicatorType RequiredCurriculaIndicator {
-			get {
-				return requiredCurriculaIndicatorField;
-			}
-			set {
-				requiredCurriculaIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType RequiredCurriculaIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OtherConditionsIndicatorType OtherConditionsIndicator {
-			get {
-				return otherConditionsIndicatorField;
-			}
-			set {
-				otherConditionsIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType OtherConditionsIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AdditionalConditions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AdditionalConditionsType[] AdditionalConditions {
-			get {
-				return additionalConditionsField;
-			}
-			set {
-				additionalConditionsField = value;
-			}
-		}
-    
+		public TextType[] AdditionalConditions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LatestSecurityClearanceDateType LatestSecurityClearanceDate {
-			get {
-				return latestSecurityClearanceDateField;
-			}
-			set {
-				latestSecurityClearanceDateField = value;
-			}
-		}
-    
+		public DateType LatestSecurityClearanceDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentationFeeAmountType DocumentationFeeAmount {
-			get {
-				return documentationFeeAmountField;
-			}
-			set {
-				documentationFeeAmountField = value;
-			}
-		}
-    
+		public AmountType DocumentationFeeAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PenaltyClause")]
-		public ClauseType[] PenaltyClause {
-			get {
-				return penaltyClauseField;
-			}
-			set {
-				penaltyClauseField = value;
-			}
-		}
-    
+		public ClauseType[] PenaltyClause { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RequiredFinancialGuarantee")]
-		public FinancialGuaranteeType[] RequiredFinancialGuarantee {
-			get {
-				return requiredFinancialGuaranteeField;
-			}
-			set {
-				requiredFinancialGuaranteeField = value;
-			}
-		}
-    
+		public FinancialGuaranteeType[] RequiredFinancialGuarantee { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType ProcurementLegislationDocumentReference {
-			get {
-				return procurementLegislationDocumentReferenceField;
-			}
-			set {
-				procurementLegislationDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType ProcurementLegislationDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType FiscalLegislationDocumentReference {
-			get {
-				return fiscalLegislationDocumentReferenceField;
-			}
-			set {
-				fiscalLegislationDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType FiscalLegislationDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType EnvironmentalLegislationDocumentReference {
-			get {
-				return environmentalLegislationDocumentReferenceField;
-			}
-			set {
-				environmentalLegislationDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType EnvironmentalLegislationDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType EmploymentLegislationDocumentReference {
-			get {
-				return employmentLegislationDocumentReferenceField;
-			}
-			set {
-				employmentLegislationDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType EmploymentLegislationDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ContractualDocumentReference")]
-		public DocumentReferenceType[] ContractualDocumentReference {
-			get {
-				return contractualDocumentReferenceField;
-			}
-			set {
-				contractualDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] ContractualDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType CallForTendersDocumentReference {
-			get {
-				return callForTendersDocumentReferenceField;
-			}
-			set {
-				callForTendersDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType CallForTendersDocumentReference { get; set; }
+
 		/// <remarks/>
-		public PeriodType WarrantyValidityPeriod {
-			get {
-				return warrantyValidityPeriodField;
-			}
-			set {
-				warrantyValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType WarrantyValidityPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentTerms")]
-		public PaymentTermsType[] PaymentTerms {
-			get {
-				return paymentTermsField;
-			}
-			set {
-				paymentTermsField = value;
-			}
-		}
-    
+		public PaymentTermsType[] PaymentTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TendererQualificationRequest")]
-		public TendererQualificationRequestType[] TendererQualificationRequest {
-			get {
-				return tendererQualificationRequestField;
-			}
-			set {
-				tendererQualificationRequestField = value;
-			}
-		}
-    
+		public TendererQualificationRequestType[] TendererQualificationRequest { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowedSubcontractTerms")]
-		public SubcontractTermsType[] AllowedSubcontractTerms {
-			get {
-				return allowedSubcontractTermsField;
-			}
-			set {
-				allowedSubcontractTermsField = value;
-			}
-		}
-    
+		public SubcontractTermsType[] AllowedSubcontractTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TenderPreparation")]
-		public TenderPreparationType[] TenderPreparation {
-			get {
-				return tenderPreparationField;
-			}
-			set {
-				tenderPreparationField = value;
-			}
-		}
-    
+		public TenderPreparationType[] TenderPreparation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ContractExecutionRequirement")]
-		public ContractExecutionRequirementType[] ContractExecutionRequirement {
-			get {
-				return contractExecutionRequirementField;
-			}
-			set {
-				contractExecutionRequirementField = value;
-			}
-		}
-    
+		public ContractExecutionRequirementType[] ContractExecutionRequirement { get; set; }
+
 		/// <remarks/>
-		public AwardingTermsType AwardingTerms {
-			get {
-				return awardingTermsField;
-			}
-			set {
-				awardingTermsField = value;
-			}
-		}
-    
+		public AwardingTermsType AwardingTerms { get; set; }
+
 		/// <remarks/>
-		public PartyType AdditionalInformationParty {
-			get {
-				return additionalInformationPartyField;
-			}
-			set {
-				additionalInformationPartyField = value;
-			}
-		}
-    
+		public PartyType AdditionalInformationParty { get; set; }
+
 		/// <remarks/>
-		public PartyType DocumentProviderParty {
-			get {
-				return documentProviderPartyField;
-			}
-			set {
-				documentProviderPartyField = value;
-			}
-		}
-    
+		public PartyType DocumentProviderParty { get; set; }
+
 		/// <remarks/>
-		public PartyType TenderRecipientParty {
-			get {
-				return tenderRecipientPartyField;
-			}
-			set {
-				tenderRecipientPartyField = value;
-			}
-		}
-    
+		public PartyType TenderRecipientParty { get; set; }
+
 		/// <remarks/>
-		public PartyType ContractResponsibleParty {
-			get {
-				return contractResponsiblePartyField;
-			}
-			set {
-				contractResponsiblePartyField = value;
-			}
-		}
-    
+		public PartyType ContractResponsibleParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TenderEvaluationParty")]
-		public PartyType[] TenderEvaluationParty {
-			get {
-				return tenderEvaluationPartyField;
-			}
-			set {
-				tenderEvaluationPartyField = value;
-			}
-		}
-    
+		public PartyType[] TenderEvaluationParty { get; set; }
+
 		/// <remarks/>
-		public PeriodType TenderValidityPeriod {
-			get {
-				return tenderValidityPeriodField;
-			}
-			set {
-				tenderValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType TenderValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public PeriodType ContractAcceptancePeriod {
-			get {
-				return contractAcceptancePeriodField;
-			}
-			set {
-				contractAcceptancePeriodField = value;
-			}
-		}
-    
+		public PeriodType ContractAcceptancePeriod { get; set; }
+
 		/// <remarks/>
-		public AppealTermsType AppealTerms {
-			get {
-				return appealTermsField;
-			}
-			set {
-				appealTermsField = value;
-			}
-		}
-    
+		public AppealTermsType AppealTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Language")]
-		public LanguageType[] Language {
-			get {
-				return languageField;
-			}
-			set {
-				languageField = value;
-			}
-		}
-    
+		public LanguageType[] Language { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("BudgetAccountLine")]
-		public BudgetAccountLineType[] BudgetAccountLine {
-			get {
-				return budgetAccountLineField;
-			}
-			set {
-				budgetAccountLineField = value;
-			}
-		}
-    
+		public BudgetAccountLineType[] BudgetAccountLine { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType ReplacedNoticeDocumentReference {
-			get {
-				return replacedNoticeDocumentReferenceField;
-			}
-			set {
-				replacedNoticeDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType ReplacedNoticeDocumentReference { get; set; }
 	}
 }

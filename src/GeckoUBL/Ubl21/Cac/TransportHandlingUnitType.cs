@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,352 +10,108 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PackagedTransportHandlingUnit", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TransportHandlingUnitType {
-    
-		private IDType idField;
-    
-		private TransportHandlingUnitTypeCodeType transportHandlingUnitTypeCodeField;
-    
-		private HandlingCodeType handlingCodeField;
-    
-		private HandlingInstructionsType[] handlingInstructionsField;
-    
-		private HazardousRiskIndicatorType hazardousRiskIndicatorField;
-    
-		private TotalGoodsItemQuantityType totalGoodsItemQuantityField;
-    
-		private TotalPackageQuantityType totalPackageQuantityField;
-    
-		private DamageRemarksType[] damageRemarksField;
-    
-		private ShippingMarksType[] shippingMarksField;
-    
-		private TraceIDType traceIDField;
-    
-		private DespatchLineType[] handlingUnitDespatchLineField;
-    
-		private PackageType[] actualPackageField;
-    
-		private ReceiptLineType[] receivedHandlingUnitReceiptLineField;
-    
-		private TransportEquipmentType[] transportEquipmentField;
-    
-		private TransportMeansType[] transportMeansField;
-    
-		private HazardousGoodsTransitType[] hazardousGoodsTransitField;
-    
-		private DimensionType[] measurementDimensionField;
-    
-		private TemperatureType minimumTemperatureField;
-    
-		private TemperatureType maximumTemperatureField;
-    
-		private GoodsItemType[] goodsItemField;
-    
-		private DimensionType floorSpaceMeasurementDimensionField;
-    
-		private DimensionType palletSpaceMeasurementDimensionField;
-    
-		private DocumentReferenceType[] shipmentDocumentReferenceField;
-    
-		private StatusType[] statusField;
-    
-		private CustomsDeclarationType[] customsDeclarationField;
-    
-		private ShipmentType[] referencedShipmentField;
-    
-		private PackageType[] packageField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportHandlingUnitTypeCodeType TransportHandlingUnitTypeCode {
-			get {
-				return transportHandlingUnitTypeCodeField;
-			}
-			set {
-				transportHandlingUnitTypeCodeField = value;
-			}
-		}
-    
+		public CodeType TransportHandlingUnitTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HandlingCodeType HandlingCode {
-			get {
-				return handlingCodeField;
-			}
-			set {
-				handlingCodeField = value;
-			}
-		}
-    
+		public CodeType HandlingCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("HandlingInstructions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HandlingInstructionsType[] HandlingInstructions {
-			get {
-				return handlingInstructionsField;
-			}
-			set {
-				handlingInstructionsField = value;
-			}
-		}
-    
+		public TextType[] HandlingInstructions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardousRiskIndicatorType HazardousRiskIndicator {
-			get {
-				return hazardousRiskIndicatorField;
-			}
-			set {
-				hazardousRiskIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType HazardousRiskIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalGoodsItemQuantityType TotalGoodsItemQuantity {
-			get {
-				return totalGoodsItemQuantityField;
-			}
-			set {
-				totalGoodsItemQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalGoodsItemQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalPackageQuantityType TotalPackageQuantity {
-			get {
-				return totalPackageQuantityField;
-			}
-			set {
-				totalPackageQuantityField = value;
-			}
-		}
-    
+		public QuantityType TotalPackageQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DamageRemarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DamageRemarksType[] DamageRemarks {
-			get {
-				return damageRemarksField;
-			}
-			set {
-				damageRemarksField = value;
-			}
-		}
-    
+		public TextType[] DamageRemarks { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ShippingMarks", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ShippingMarksType[] ShippingMarks {
-			get {
-				return shippingMarksField;
-			}
-			set {
-				shippingMarksField = value;
-			}
-		}
-    
+		public TextType[] ShippingMarks { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TraceIDType TraceID {
-			get {
-				return traceIDField;
-			}
-			set {
-				traceIDField = value;
-			}
-		}
-    
+		public IdentifierType TraceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("HandlingUnitDespatchLine")]
-		public DespatchLineType[] HandlingUnitDespatchLine {
-			get {
-				return handlingUnitDespatchLineField;
-			}
-			set {
-				handlingUnitDespatchLineField = value;
-			}
-		}
-    
+		public DespatchLineType[] HandlingUnitDespatchLine { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ActualPackage")]
-		public PackageType[] ActualPackage {
-			get {
-				return actualPackageField;
-			}
-			set {
-				actualPackageField = value;
-			}
-		}
-    
+		public PackageType[] ActualPackage { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReceivedHandlingUnitReceiptLine")]
-		public ReceiptLineType[] ReceivedHandlingUnitReceiptLine {
-			get {
-				return receivedHandlingUnitReceiptLineField;
-			}
-			set {
-				receivedHandlingUnitReceiptLineField = value;
-			}
-		}
-    
+		public ReceiptLineType[] ReceivedHandlingUnitReceiptLine { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TransportEquipment")]
-		public TransportEquipmentType[] TransportEquipment {
-			get {
-				return transportEquipmentField;
-			}
-			set {
-				transportEquipmentField = value;
-			}
-		}
-    
+		public TransportEquipmentType[] TransportEquipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TransportMeans")]
-		public TransportMeansType[] TransportMeans {
-			get {
-				return transportMeansField;
-			}
-			set {
-				transportMeansField = value;
-			}
-		}
-    
+		public TransportMeansType[] TransportMeans { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("HazardousGoodsTransit")]
-		public HazardousGoodsTransitType[] HazardousGoodsTransit {
-			get {
-				return hazardousGoodsTransitField;
-			}
-			set {
-				hazardousGoodsTransitField = value;
-			}
-		}
-    
+		public HazardousGoodsTransitType[] HazardousGoodsTransit { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("MeasurementDimension")]
-		public DimensionType[] MeasurementDimension {
-			get {
-				return measurementDimensionField;
-			}
-			set {
-				measurementDimensionField = value;
-			}
-		}
-    
+		public DimensionType[] MeasurementDimension { get; set; }
+
 		/// <remarks/>
-		public TemperatureType MinimumTemperature {
-			get {
-				return minimumTemperatureField;
-			}
-			set {
-				minimumTemperatureField = value;
-			}
-		}
-    
+		public TemperatureType MinimumTemperature { get; set; }
+
 		/// <remarks/>
-		public TemperatureType MaximumTemperature {
-			get {
-				return maximumTemperatureField;
-			}
-			set {
-				maximumTemperatureField = value;
-			}
-		}
-    
+		public TemperatureType MaximumTemperature { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("GoodsItem")]
-		public GoodsItemType[] GoodsItem {
-			get {
-				return goodsItemField;
-			}
-			set {
-				goodsItemField = value;
-			}
-		}
-    
+		public GoodsItemType[] GoodsItem { get; set; }
+
 		/// <remarks/>
-		public DimensionType FloorSpaceMeasurementDimension {
-			get {
-				return floorSpaceMeasurementDimensionField;
-			}
-			set {
-				floorSpaceMeasurementDimensionField = value;
-			}
-		}
-    
+		public DimensionType FloorSpaceMeasurementDimension { get; set; }
+
 		/// <remarks/>
-		public DimensionType PalletSpaceMeasurementDimension {
-			get {
-				return palletSpaceMeasurementDimensionField;
-			}
-			set {
-				palletSpaceMeasurementDimensionField = value;
-			}
-		}
-    
+		public DimensionType PalletSpaceMeasurementDimension { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ShipmentDocumentReference")]
-		public DocumentReferenceType[] ShipmentDocumentReference {
-			get {
-				return shipmentDocumentReferenceField;
-			}
-			set {
-				shipmentDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] ShipmentDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Status")]
-		public StatusType[] Status {
-			get {
-				return statusField;
-			}
-			set {
-				statusField = value;
-			}
-		}
-    
+		public StatusType[] Status { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CustomsDeclaration")]
-		public CustomsDeclarationType[] CustomsDeclaration {
-			get {
-				return customsDeclarationField;
-			}
-			set {
-				customsDeclarationField = value;
-			}
-		}
-    
+		public CustomsDeclarationType[] CustomsDeclaration { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReferencedShipment")]
-		public ShipmentType[] ReferencedShipment {
-			get {
-				return referencedShipmentField;
-			}
-			set {
-				referencedShipmentField = value;
-			}
-		}
-    
+		public ShipmentType[] ReferencedShipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Package")]
-		public PackageType[] Package {
-			get {
-				return packageField;
-			}
-			set {
-				packageField = value;
-			}
-		}
+		public PackageType[] Package { get; set; }
 	}
 }

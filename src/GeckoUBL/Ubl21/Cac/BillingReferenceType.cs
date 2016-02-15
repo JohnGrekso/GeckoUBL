@@ -8,102 +8,29 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BillingReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class BillingReferenceType {
-    
-		private DocumentReferenceType invoiceDocumentReferenceField;
-    
-		private DocumentReferenceType selfBilledInvoiceDocumentReferenceField;
-    
-		private DocumentReferenceType creditNoteDocumentReferenceField;
-    
-		private DocumentReferenceType selfBilledCreditNoteDocumentReferenceField;
-    
-		private DocumentReferenceType debitNoteDocumentReferenceField;
-    
-		private DocumentReferenceType reminderDocumentReferenceField;
-    
-		private DocumentReferenceType additionalDocumentReferenceField;
-    
-		private BillingReferenceLineType[] billingReferenceLineField;
-    
 		/// <remarks/>
-		public DocumentReferenceType InvoiceDocumentReference {
-			get {
-				return invoiceDocumentReferenceField;
-			}
-			set {
-				invoiceDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType InvoiceDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType SelfBilledInvoiceDocumentReference {
-			get {
-				return selfBilledInvoiceDocumentReferenceField;
-			}
-			set {
-				selfBilledInvoiceDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType SelfBilledInvoiceDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType CreditNoteDocumentReference {
-			get {
-				return creditNoteDocumentReferenceField;
-			}
-			set {
-				creditNoteDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType CreditNoteDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType SelfBilledCreditNoteDocumentReference {
-			get {
-				return selfBilledCreditNoteDocumentReferenceField;
-			}
-			set {
-				selfBilledCreditNoteDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType SelfBilledCreditNoteDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType DebitNoteDocumentReference {
-			get {
-				return debitNoteDocumentReferenceField;
-			}
-			set {
-				debitNoteDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType DebitNoteDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType ReminderDocumentReference {
-			get {
-				return reminderDocumentReferenceField;
-			}
-			set {
-				reminderDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType ReminderDocumentReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType AdditionalDocumentReference {
-			get {
-				return additionalDocumentReferenceField;
-			}
-			set {
-				additionalDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType AdditionalDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("BillingReferenceLine")]
-		public BillingReferenceLineType[] BillingReferenceLine {
-			get {
-				return billingReferenceLineField;
-			}
-			set {
-				billingReferenceLineField = value;
-			}
-		}
+		public BillingReferenceLineType[] BillingReferenceLine { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,68 +10,22 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ServiceProviderParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ServiceProviderPartyType {
-    
-		private IDType idField;
-    
-		private ServiceTypeCodeType serviceTypeCodeField;
-    
-		private ServiceTypeType[] serviceTypeField;
-    
-		private PartyType partyField;
-    
-		private ContactType sellerContactField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ServiceTypeCodeType ServiceTypeCode {
-			get {
-				return serviceTypeCodeField;
-			}
-			set {
-				serviceTypeCodeField = value;
-			}
-		}
-    
+		public CodeType ServiceTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ServiceType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ServiceTypeType[] ServiceType {
-			get {
-				return serviceTypeField;
-			}
-			set {
-				serviceTypeField = value;
-			}
-		}
-    
+		public TextType[] ServiceType { get; set; }
+
 		/// <remarks/>
-		public PartyType Party {
-			get {
-				return partyField;
-			}
-			set {
-				partyField = value;
-			}
-		}
-    
+		public PartyType Party { get; set; }
+
 		/// <remarks/>
-		public ContactType SellerContact {
-			get {
-				return sellerContactField;
-			}
-			set {
-				sellerContactField = value;
-			}
-		}
+		public ContactType SellerContact { get; set; }
 	}
 }

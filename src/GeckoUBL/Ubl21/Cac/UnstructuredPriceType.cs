@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,31 +10,12 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UnstructuredPrice", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class UnstructuredPriceType {
-    
-		private PriceAmountType priceAmountField;
-    
-		private TimeAmountType timeAmountField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceAmountType PriceAmount {
-			get {
-				return priceAmountField;
-			}
-			set {
-				priceAmountField = value;
-			}
-		}
-    
+		public AmountType PriceAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TimeAmountType TimeAmount {
-			get {
-				return timeAmountField;
-			}
-			set {
-				timeAmountField = value;
-			}
-		}
+		public TextType TimeAmount { get; set; }
 	}
 }

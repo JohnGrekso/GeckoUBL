@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,264 +10,83 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ReceiptLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ReceiptLineType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private NoteType[] noteField;
-    
-		private ReceivedQuantityType receivedQuantityField;
-    
-		private ShortQuantityType shortQuantityField;
-    
-		private ShortageActionCodeType shortageActionCodeField;
-    
-		private RejectedQuantityType rejectedQuantityField;
-    
-		private RejectReasonCodeType rejectReasonCodeField;
-    
-		private RejectReasonType[] rejectReasonField;
-    
-		private RejectActionCodeType rejectActionCodeField;
-    
-		private QuantityDiscrepancyCodeType quantityDiscrepancyCodeField;
-    
-		private OversupplyQuantityType oversupplyQuantityField;
-    
-		private ReceivedDateType receivedDateField;
-    
-		private TimingComplaintCodeType timingComplaintCodeField;
-    
-		private TimingComplaintType timingComplaintField;
-    
-		private OrderLineReferenceType orderLineReferenceField;
-    
-		private LineReferenceType[] despatchLineReferenceField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private ItemType[] itemField;
-    
-		private ShipmentType[] shipmentField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReceivedQuantityType ReceivedQuantity {
-			get {
-				return receivedQuantityField;
-			}
-			set {
-				receivedQuantityField = value;
-			}
-		}
-    
+		public QuantityType ReceivedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ShortQuantityType ShortQuantity {
-			get {
-				return shortQuantityField;
-			}
-			set {
-				shortQuantityField = value;
-			}
-		}
-    
+		public QuantityType ShortQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ShortageActionCodeType ShortageActionCode {
-			get {
-				return shortageActionCodeField;
-			}
-			set {
-				shortageActionCodeField = value;
-			}
-		}
-    
+		public CodeType ShortageActionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RejectedQuantityType RejectedQuantity {
-			get {
-				return rejectedQuantityField;
-			}
-			set {
-				rejectedQuantityField = value;
-			}
-		}
-    
+		public QuantityType RejectedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RejectReasonCodeType RejectReasonCode {
-			get {
-				return rejectReasonCodeField;
-			}
-			set {
-				rejectReasonCodeField = value;
-			}
-		}
-    
+		public CodeType RejectReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RejectReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RejectReasonType[] RejectReason {
-			get {
-				return rejectReasonField;
-			}
-			set {
-				rejectReasonField = value;
-			}
-		}
-    
+		public TextType[] RejectReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RejectActionCodeType RejectActionCode {
-			get {
-				return rejectActionCodeField;
-			}
-			set {
-				rejectActionCodeField = value;
-			}
-		}
-    
+		public CodeType RejectActionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityDiscrepancyCodeType QuantityDiscrepancyCode {
-			get {
-				return quantityDiscrepancyCodeField;
-			}
-			set {
-				quantityDiscrepancyCodeField = value;
-			}
-		}
-    
+		public CodeType QuantityDiscrepancyCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OversupplyQuantityType OversupplyQuantity {
-			get {
-				return oversupplyQuantityField;
-			}
-			set {
-				oversupplyQuantityField = value;
-			}
-		}
-    
+		public QuantityType OversupplyQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReceivedDateType ReceivedDate {
-			get {
-				return receivedDateField;
-			}
-			set {
-				receivedDateField = value;
-			}
-		}
-    
+		public DateType ReceivedDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TimingComplaintCodeType TimingComplaintCode {
-			get {
-				return timingComplaintCodeField;
-			}
-			set {
-				timingComplaintCodeField = value;
-			}
-		}
-    
+		public CodeType TimingComplaintCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TimingComplaintType TimingComplaint {
-			get {
-				return timingComplaintField;
-			}
-			set {
-				timingComplaintField = value;
-			}
-		}
-    
+		public TextType TimingComplaint { get; set; }
+
 		/// <remarks/>
-		public OrderLineReferenceType OrderLineReference {
-			get {
-				return orderLineReferenceField;
-			}
-			set {
-				orderLineReferenceField = value;
-			}
-		}
-    
+		public OrderLineReferenceType OrderLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DespatchLineReference")]
-		public LineReferenceType[] DespatchLineReference {
-			get {
-				return despatchLineReferenceField;
-			}
-			set {
-				despatchLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType[] DespatchLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Item")]
-		public ItemType[] Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType[] Item { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Shipment")]
-		public ShipmentType[] Shipment {
-			get {
-				return shipmentField;
-			}
-			set {
-				shipmentField = value;
-			}
-		}
+		public ShipmentType[] Shipment { get; set; }
 	}
 }

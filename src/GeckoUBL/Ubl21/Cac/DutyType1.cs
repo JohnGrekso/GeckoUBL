@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,56 +10,19 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName="DutyType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CallDuty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DutyType1 {
-    
-		private AmountType2 amountField;
-    
-		private DutyType dutyField;
-    
-		private DutyCodeType dutyCodeField;
-    
-		private TaxCategoryType taxCategoryField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DutyType Duty {
-			get {
-				return dutyField;
-			}
-			set {
-				dutyField = value;
-			}
-		}
-    
+		public TextType Duty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DutyCodeType DutyCode {
-			get {
-				return dutyCodeField;
-			}
-			set {
-				dutyCodeField = value;
-			}
-		}
-    
+		public CodeType DutyCode { get; set; }
+
 		/// <remarks/>
-		public TaxCategoryType TaxCategory {
-			get {
-				return taxCategoryField;
-			}
-			set {
-				taxCategoryField = value;
-			}
-		}
+		public TaxCategoryType TaxCategory { get; set; }
 	}
 }

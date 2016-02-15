@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,144 +10,44 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportExecutionTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TransportExecutionTermsType {
-    
-		private TransportUserSpecialTermsType[] transportUserSpecialTermsField;
-    
-		private TransportServiceProviderSpecialTermsType[] transportServiceProviderSpecialTermsField;
-    
-		private ChangeConditionsType[] changeConditionsField;
-    
-		private PaymentTermsType[] paymentTermsField;
-    
-		private DeliveryTermsType[] deliveryTermsField;
-    
-		private PaymentTermsType bonusPaymentTermsField;
-    
-		private PaymentTermsType commissionPaymentTermsField;
-    
-		private PaymentTermsType penaltyPaymentTermsField;
-    
-		private EnvironmentalEmissionType[] environmentalEmissionField;
-    
-		private NotificationRequirementType[] notificationRequirementField;
-    
-		private PaymentTermsType serviceChargePaymentTermsField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TransportUserSpecialTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportUserSpecialTermsType[] TransportUserSpecialTerms {
-			get {
-				return transportUserSpecialTermsField;
-			}
-			set {
-				transportUserSpecialTermsField = value;
-			}
-		}
-    
+		public TextType[] TransportUserSpecialTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("TransportServiceProviderSpecialTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportServiceProviderSpecialTermsType[] TransportServiceProviderSpecialTerms {
-			get {
-				return transportServiceProviderSpecialTermsField;
-			}
-			set {
-				transportServiceProviderSpecialTermsField = value;
-			}
-		}
-    
+		public TextType[] TransportServiceProviderSpecialTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ChangeConditions", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ChangeConditionsType[] ChangeConditions {
-			get {
-				return changeConditionsField;
-			}
-			set {
-				changeConditionsField = value;
-			}
-		}
-    
+		public TextType[] ChangeConditions { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PaymentTerms")]
-		public PaymentTermsType[] PaymentTerms {
-			get {
-				return paymentTermsField;
-			}
-			set {
-				paymentTermsField = value;
-			}
-		}
-    
+		public PaymentTermsType[] PaymentTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DeliveryTerms")]
-		public DeliveryTermsType[] DeliveryTerms {
-			get {
-				return deliveryTermsField;
-			}
-			set {
-				deliveryTermsField = value;
-			}
-		}
-    
+		public DeliveryTermsType[] DeliveryTerms { get; set; }
+
 		/// <remarks/>
-		public PaymentTermsType BonusPaymentTerms {
-			get {
-				return bonusPaymentTermsField;
-			}
-			set {
-				bonusPaymentTermsField = value;
-			}
-		}
-    
+		public PaymentTermsType BonusPaymentTerms { get; set; }
+
 		/// <remarks/>
-		public PaymentTermsType CommissionPaymentTerms {
-			get {
-				return commissionPaymentTermsField;
-			}
-			set {
-				commissionPaymentTermsField = value;
-			}
-		}
-    
+		public PaymentTermsType CommissionPaymentTerms { get; set; }
+
 		/// <remarks/>
-		public PaymentTermsType PenaltyPaymentTerms {
-			get {
-				return penaltyPaymentTermsField;
-			}
-			set {
-				penaltyPaymentTermsField = value;
-			}
-		}
-    
+		public PaymentTermsType PenaltyPaymentTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EnvironmentalEmission")]
-		public EnvironmentalEmissionType[] EnvironmentalEmission {
-			get {
-				return environmentalEmissionField;
-			}
-			set {
-				environmentalEmissionField = value;
-			}
-		}
-    
+		public EnvironmentalEmissionType[] EnvironmentalEmission { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("NotificationRequirement")]
-		public NotificationRequirementType[] NotificationRequirement {
-			get {
-				return notificationRequirementField;
-			}
-			set {
-				notificationRequirementField = value;
-			}
-		}
-    
+		public NotificationRequirementType[] NotificationRequirement { get; set; }
+
 		/// <remarks/>
-		public PaymentTermsType ServiceChargePaymentTerms {
-			get {
-				return serviceChargePaymentTermsField;
-			}
-			set {
-				serviceChargePaymentTermsField = value;
-			}
-		}
+		public PaymentTermsType ServiceChargePaymentTerms { get; set; }
 	}
 }

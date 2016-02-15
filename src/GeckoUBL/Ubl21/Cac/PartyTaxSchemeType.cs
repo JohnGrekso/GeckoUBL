@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,94 +10,30 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PartyTaxScheme", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PartyTaxSchemeType {
-    
-		private RegistrationNameType registrationNameField;
-    
-		private CompanyIDType companyIDField;
-    
-		private TaxLevelCodeType taxLevelCodeField;
-    
-		private ExemptionReasonCodeType exemptionReasonCodeField;
-    
-		private ExemptionReasonType[] exemptionReasonField;
-    
-		private AddressType registrationAddressField;
-    
-		private TaxSchemeType taxSchemeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RegistrationNameType RegistrationName {
-			get {
-				return registrationNameField;
-			}
-			set {
-				registrationNameField = value;
-			}
-		}
-    
+		public NameType RegistrationName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompanyIDType CompanyID {
-			get {
-				return companyIDField;
-			}
-			set {
-				companyIDField = value;
-			}
-		}
-    
+		public IdentifierType CompanyID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TaxLevelCodeType TaxLevelCode {
-			get {
-				return taxLevelCodeField;
-			}
-			set {
-				taxLevelCodeField = value;
-			}
-		}
-    
+		public CodeType TaxLevelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExemptionReasonCodeType ExemptionReasonCode {
-			get {
-				return exemptionReasonCodeField;
-			}
-			set {
-				exemptionReasonCodeField = value;
-			}
-		}
-    
+		public CodeType ExemptionReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ExemptionReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExemptionReasonType[] ExemptionReason {
-			get {
-				return exemptionReasonField;
-			}
-			set {
-				exemptionReasonField = value;
-			}
-		}
-    
+		public TextType[] ExemptionReason { get; set; }
+
 		/// <remarks/>
-		public AddressType RegistrationAddress {
-			get {
-				return registrationAddressField;
-			}
-			set {
-				registrationAddressField = value;
-			}
-		}
-    
+		public AddressType RegistrationAddress { get; set; }
+
 		/// <remarks/>
-		public TaxSchemeType TaxScheme {
-			get {
-				return taxSchemeField;
-			}
-			set {
-				taxSchemeField = value;
-			}
-		}
+		public TaxSchemeType TaxScheme { get; set; }
 	}
 }

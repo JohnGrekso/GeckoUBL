@@ -1,9 +1,7 @@
 using System.Xml.Serialization;
-using GeckoUBL.Ubl21.Cbc;
 
 namespace GeckoUBL.Ubl21.Udt
 {
-	[XmlInclude(typeof(EmbeddedDocumentBinaryObjectType))]
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
 	[System.SerializableAttribute]
 	[System.Diagnostics.DebuggerStepThroughAttribute]

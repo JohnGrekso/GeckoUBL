@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,400 +10,120 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CatalogueLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CatalogueLineType {
-    
-		private IDType idField;
-    
-		private ActionCodeType actionCodeField;
-    
-		private LifeCycleStatusCodeType lifeCycleStatusCodeField;
-    
-		private ContractSubdivisionType contractSubdivisionField;
-    
-		private NoteType[] noteField;
-    
-		private OrderableIndicatorType orderableIndicatorField;
-    
-		private OrderableUnitType orderableUnitField;
-    
-		private ContentUnitQuantityType contentUnitQuantityField;
-    
-		private OrderQuantityIncrementNumericType orderQuantityIncrementNumericField;
-    
-		private MinimumOrderQuantityType minimumOrderQuantityField;
-    
-		private MaximumOrderQuantityType maximumOrderQuantityField;
-    
-		private WarrantyInformationType[] warrantyInformationField;
-    
-		private PackLevelCodeType packLevelCodeField;
-    
-		private CustomerPartyType contractorCustomerPartyField;
-    
-		private SupplierPartyType sellerSupplierPartyField;
-    
-		private PartyType warrantyPartyField;
-    
-		private PeriodType warrantyValidityPeriodField;
-    
-		private PeriodType lineValidityPeriodField;
-    
-		private ItemComparisonType[] itemComparisonField;
-    
-		private RelatedItemType[] componentRelatedItemField;
-    
-		private RelatedItemType[] accessoryRelatedItemField;
-    
-		private RelatedItemType[] requiredRelatedItemField;
-    
-		private RelatedItemType[] replacementRelatedItemField;
-    
-		private RelatedItemType[] complementaryRelatedItemField;
-    
-		private RelatedItemType[] replacedRelatedItemField;
-    
-		private ItemLocationQuantityType[] requiredItemLocationQuantityField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private ItemType itemField;
-    
-		private ItemPropertyType[] keywordItemPropertyField;
-    
-		private LineReferenceType callForTendersLineReferenceField;
-    
-		private DocumentReferenceType callForTendersDocumentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ActionCodeType ActionCode {
-			get {
-				return actionCodeField;
-			}
-			set {
-				actionCodeField = value;
-			}
-		}
-    
+		public CodeType ActionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LifeCycleStatusCodeType LifeCycleStatusCode {
-			get {
-				return lifeCycleStatusCodeField;
-			}
-			set {
-				lifeCycleStatusCodeField = value;
-			}
-		}
-    
+		public CodeType LifeCycleStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ContractSubdivisionType ContractSubdivision {
-			get {
-				return contractSubdivisionField;
-			}
-			set {
-				contractSubdivisionField = value;
-			}
-		}
-    
+		public TextType ContractSubdivision { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderableIndicatorType OrderableIndicator {
-			get {
-				return orderableIndicatorField;
-			}
-			set {
-				orderableIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType OrderableIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderableUnitType OrderableUnit {
-			get {
-				return orderableUnitField;
-			}
-			set {
-				orderableUnitField = value;
-			}
-		}
-    
+		public TextType OrderableUnit { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ContentUnitQuantityType ContentUnitQuantity {
-			get {
-				return contentUnitQuantityField;
-			}
-			set {
-				contentUnitQuantityField = value;
-			}
-		}
-    
+		public QuantityType ContentUnitQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderQuantityIncrementNumericType OrderQuantityIncrementNumeric {
-			get {
-				return orderQuantityIncrementNumericField;
-			}
-			set {
-				orderQuantityIncrementNumericField = value;
-			}
-		}
-    
+		public NumericType OrderQuantityIncrementNumeric { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumOrderQuantityType MinimumOrderQuantity {
-			get {
-				return minimumOrderQuantityField;
-			}
-			set {
-				minimumOrderQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumOrderQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumOrderQuantityType MaximumOrderQuantity {
-			get {
-				return maximumOrderQuantityField;
-			}
-			set {
-				maximumOrderQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumOrderQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("WarrantyInformation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public WarrantyInformationType[] WarrantyInformation {
-			get {
-				return warrantyInformationField;
-			}
-			set {
-				warrantyInformationField = value;
-			}
-		}
-    
+		public TextType[] WarrantyInformation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PackLevelCodeType PackLevelCode {
-			get {
-				return packLevelCodeField;
-			}
-			set {
-				packLevelCodeField = value;
-			}
-		}
-    
+		public CodeType PackLevelCode { get; set; }
+
 		/// <remarks/>
-		public CustomerPartyType ContractorCustomerParty {
-			get {
-				return contractorCustomerPartyField;
-			}
-			set {
-				contractorCustomerPartyField = value;
-			}
-		}
-    
+		public CustomerPartyType ContractorCustomerParty { get; set; }
+
 		/// <remarks/>
-		public SupplierPartyType SellerSupplierParty {
-			get {
-				return sellerSupplierPartyField;
-			}
-			set {
-				sellerSupplierPartyField = value;
-			}
-		}
-    
+		public SupplierPartyType SellerSupplierParty { get; set; }
+
 		/// <remarks/>
-		public PartyType WarrantyParty {
-			get {
-				return warrantyPartyField;
-			}
-			set {
-				warrantyPartyField = value;
-			}
-		}
-    
+		public PartyType WarrantyParty { get; set; }
+
 		/// <remarks/>
-		public PeriodType WarrantyValidityPeriod {
-			get {
-				return warrantyValidityPeriodField;
-			}
-			set {
-				warrantyValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType WarrantyValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public PeriodType LineValidityPeriod {
-			get {
-				return lineValidityPeriodField;
-			}
-			set {
-				lineValidityPeriodField = value;
-			}
-		}
-    
+		public PeriodType LineValidityPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ItemComparison")]
-		public ItemComparisonType[] ItemComparison {
-			get {
-				return itemComparisonField;
-			}
-			set {
-				itemComparisonField = value;
-			}
-		}
-    
+		public ItemComparisonType[] ItemComparison { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ComponentRelatedItem")]
-		public RelatedItemType[] ComponentRelatedItem {
-			get {
-				return componentRelatedItemField;
-			}
-			set {
-				componentRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] ComponentRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AccessoryRelatedItem")]
-		public RelatedItemType[] AccessoryRelatedItem {
-			get {
-				return accessoryRelatedItemField;
-			}
-			set {
-				accessoryRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] AccessoryRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RequiredRelatedItem")]
-		public RelatedItemType[] RequiredRelatedItem {
-			get {
-				return requiredRelatedItemField;
-			}
-			set {
-				requiredRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] RequiredRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReplacementRelatedItem")]
-		public RelatedItemType[] ReplacementRelatedItem {
-			get {
-				return replacementRelatedItemField;
-			}
-			set {
-				replacementRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] ReplacementRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ComplementaryRelatedItem")]
-		public RelatedItemType[] ComplementaryRelatedItem {
-			get {
-				return complementaryRelatedItemField;
-			}
-			set {
-				complementaryRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] ComplementaryRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ReplacedRelatedItem")]
-		public RelatedItemType[] ReplacedRelatedItem {
-			get {
-				return replacedRelatedItemField;
-			}
-			set {
-				replacedRelatedItemField = value;
-			}
-		}
-    
+		public RelatedItemType[] ReplacedRelatedItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RequiredItemLocationQuantity")]
-		public ItemLocationQuantityType[] RequiredItemLocationQuantity {
-			get {
-				return requiredItemLocationQuantityField;
-			}
-			set {
-				requiredItemLocationQuantityField = value;
-			}
-		}
-    
+		public ItemLocationQuantityType[] RequiredItemLocationQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public ItemType Item {
-			get {
-				return itemField;
-			}
-			set {
-				itemField = value;
-			}
-		}
-    
+		public ItemType Item { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("KeywordItemProperty")]
-		public ItemPropertyType[] KeywordItemProperty {
-			get {
-				return keywordItemPropertyField;
-			}
-			set {
-				keywordItemPropertyField = value;
-			}
-		}
-    
+		public ItemPropertyType[] KeywordItemProperty { get; set; }
+
 		/// <remarks/>
-		public LineReferenceType CallForTendersLineReference {
-			get {
-				return callForTendersLineReferenceField;
-			}
-			set {
-				callForTendersLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType CallForTendersLineReference { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType CallForTendersDocumentReference {
-			get {
-				return callForTendersDocumentReferenceField;
-			}
-			set {
-				callForTendersDocumentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType CallForTendersDocumentReference { get; set; }
 	}
 }

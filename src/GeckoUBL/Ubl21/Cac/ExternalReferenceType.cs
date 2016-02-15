@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,148 +10,48 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ExternalReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ExternalReferenceType {
-    
-		private URIType uRIField;
-    
-		private DocumentHashType documentHashField;
-    
-		private HashAlgorithmMethodType hashAlgorithmMethodField;
-    
-		private ExpiryDateType expiryDateField;
-    
-		private ExpiryTimeType expiryTimeField;
-    
-		private MimeCodeType mimeCodeField;
-    
-		private FormatCodeType formatCodeField;
-    
-		private EncodingCodeType encodingCodeField;
-    
-		private CharacterSetCodeType characterSetCodeField;
-    
-		private FileNameType fileNameField;
-    
-		private DescriptionType[] descriptionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public URIType URI {
-			get {
-				return uRIField;
-			}
-			set {
-				uRIField = value;
-			}
-		}
-    
+		public IdentifierType URI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentHashType DocumentHash {
-			get {
-				return documentHashField;
-			}
-			set {
-				documentHashField = value;
-			}
-		}
-    
+		public TextType DocumentHash { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HashAlgorithmMethodType HashAlgorithmMethod {
-			get {
-				return hashAlgorithmMethodField;
-			}
-			set {
-				hashAlgorithmMethodField = value;
-			}
-		}
-    
+		public TextType HashAlgorithmMethod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpiryDateType ExpiryDate {
-			get {
-				return expiryDateField;
-			}
-			set {
-				expiryDateField = value;
-			}
-		}
-    
+		public DateType ExpiryDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpiryTimeType ExpiryTime {
-			get {
-				return expiryTimeField;
-			}
-			set {
-				expiryTimeField = value;
-			}
-		}
-    
+		public TimeType ExpiryTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MimeCodeType MimeCode {
-			get {
-				return mimeCodeField;
-			}
-			set {
-				mimeCodeField = value;
-			}
-		}
-    
+		public CodeType MimeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FormatCodeType FormatCode {
-			get {
-				return formatCodeField;
-			}
-			set {
-				formatCodeField = value;
-			}
-		}
-    
+		public CodeType FormatCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EncodingCodeType EncodingCode {
-			get {
-				return encodingCodeField;
-			}
-			set {
-				encodingCodeField = value;
-			}
-		}
-    
+		public CodeType EncodingCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CharacterSetCodeType CharacterSetCode {
-			get {
-				return characterSetCodeField;
-			}
-			set {
-				characterSetCodeField = value;
-			}
-		}
-    
+		public CodeType CharacterSetCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FileNameType FileName {
-			get {
-				return fileNameField;
-			}
-			set {
-				fileNameField = value;
-			}
-		}
-    
+		public NameType FileName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
+		public TextType[] Description { get; set; }
 	}
 }

@@ -78,7 +78,6 @@
     <Compile Include="Ubl21\Cac\CatalogueReferenceType.cs" />
     <Compile Include="Ubl21\Cac\CatalogueRequestLineType.cs" />
     <Compile Include="Ubl21\Documents\CatalogueRequestType.cs" />
-    <Compile Include="Ubl21\Cbc\Cbc.cs" />
     <Compile Include="Ubl21\Cec\Cec.cs" />
     <Compile Include="Ubl21\Miscellaneous\CertIDListType.cs" />
     <Compile Include="Ubl21\Miscellaneous\CertIDType.cs" />

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,95 +10,31 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ConsumptionHistory", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ConsumptionHistoryType {
-    
-		private MeterNumberType meterNumberField;
-    
-		private QuantityType2 quantityField;
-    
-		private AmountType2 amountField;
-    
-		private ConsumptionLevelCodeType consumptionLevelCodeField;
-    
-		private ConsumptionLevelType consumptionLevelField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private PeriodType periodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MeterNumberType MeterNumber {
-			get {
-				return meterNumberField;
-			}
-			set {
-				meterNumberField = value;
-			}
-		}
-    
+		public TextType MeterNumber { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionLevelCodeType ConsumptionLevelCode {
-			get {
-				return consumptionLevelCodeField;
-			}
-			set {
-				consumptionLevelCodeField = value;
-			}
-		}
-    
+		public CodeType ConsumptionLevelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumptionLevelType ConsumptionLevel {
-			get {
-				return consumptionLevelField;
-			}
-			set {
-				consumptionLevelField = value;
-			}
-		}
-    
+		public TextType ConsumptionLevel { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
-		public PeriodType Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
+		public PeriodType Period { get; set; }
 	}
 }

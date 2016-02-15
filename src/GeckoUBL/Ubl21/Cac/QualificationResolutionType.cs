@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,82 +10,27 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("QualificationResolution", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class QualificationResolutionType {
-    
-		private AdmissionCodeType admissionCodeField;
-    
-		private ExclusionReasonType[] exclusionReasonField;
-    
-		private ResolutionType[] resolutionField;
-    
-		private ResolutionDateType resolutionDateField;
-    
-		private ResolutionTimeType resolutionTimeField;
-    
-		private ProcurementProjectLotType procurementProjectLotField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AdmissionCodeType AdmissionCode {
-			get {
-				return admissionCodeField;
-			}
-			set {
-				admissionCodeField = value;
-			}
-		}
-    
+		public CodeType AdmissionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ExclusionReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExclusionReasonType[] ExclusionReason {
-			get {
-				return exclusionReasonField;
-			}
-			set {
-				exclusionReasonField = value;
-			}
-		}
-    
+		public TextType[] ExclusionReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Resolution", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResolutionType[] Resolution {
-			get {
-				return resolutionField;
-			}
-			set {
-				resolutionField = value;
-			}
-		}
-    
+		public TextType[] Resolution { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResolutionDateType ResolutionDate {
-			get {
-				return resolutionDateField;
-			}
-			set {
-				resolutionDateField = value;
-			}
-		}
-    
+		public DateType ResolutionDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ResolutionTimeType ResolutionTime {
-			get {
-				return resolutionTimeField;
-			}
-			set {
-				resolutionTimeField = value;
-			}
-		}
-    
+		public TimeType ResolutionTime { get; set; }
+
 		/// <remarks/>
-		public ProcurementProjectLotType ProcurementProjectLot {
-			get {
-				return procurementProjectLotField;
-			}
-			set {
-				procurementProjectLotField = value;
-			}
-		}
+		public ProcurementProjectLotType ProcurementProjectLot { get; set; }
 	}
 }

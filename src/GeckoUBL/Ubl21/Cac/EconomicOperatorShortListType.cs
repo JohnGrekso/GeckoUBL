@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,70 +10,24 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EconomicOperatorShortList", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EconomicOperatorShortListType {
-    
-		private LimitationDescriptionType[] limitationDescriptionField;
-    
-		private ExpectedQuantityType expectedQuantityField;
-    
-		private MaximumQuantityType maximumQuantityField;
-    
-		private MinimumQuantityType minimumQuantityField;
-    
-		private PartyType[] preSelectedPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("LimitationDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LimitationDescriptionType[] LimitationDescription {
-			get {
-				return limitationDescriptionField;
-			}
-			set {
-				limitationDescriptionField = value;
-			}
-		}
-    
+		public TextType[] LimitationDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpectedQuantityType ExpectedQuantity {
-			get {
-				return expectedQuantityField;
-			}
-			set {
-				expectedQuantityField = value;
-			}
-		}
-    
+		public QuantityType ExpectedQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MaximumQuantityType MaximumQuantity {
-			get {
-				return maximumQuantityField;
-			}
-			set {
-				maximumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MaximumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MinimumQuantityType MinimumQuantity {
-			get {
-				return minimumQuantityField;
-			}
-			set {
-				minimumQuantityField = value;
-			}
-		}
-    
+		public QuantityType MinimumQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PreSelectedParty")]
-		public PartyType[] PreSelectedParty {
-			get {
-				return preSelectedPartyField;
-			}
-			set {
-				preSelectedPartyField = value;
-			}
-		}
+		public PartyType[] PreSelectedParty { get; set; }
 	}
 }

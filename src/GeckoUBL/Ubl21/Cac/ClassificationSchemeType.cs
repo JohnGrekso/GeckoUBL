@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,187 +10,60 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("BusinessClassificationScheme", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ClassificationSchemeType {
-    
-		private IDType idField;
-    
-		private UUIDType uUIDField;
-    
-		private LastRevisionDateType lastRevisionDateField;
-    
-		private LastRevisionTimeType lastRevisionTimeField;
-    
-		private NoteType[] noteField;
-    
-		private NameType1 nameField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private AgencyIDType agencyIDField;
-    
-		private AgencyNameType agencyNameField;
-    
-		private VersionIDType versionIDField;
-    
-		private URIType uRIField;
-    
-		private SchemeURIType schemeURIField;
-    
-		private LanguageIDType languageIDField;
-    
-		private ClassificationCategoryType[] classificationCategoryField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LastRevisionDateType LastRevisionDate {
-			get {
-				return lastRevisionDateField;
-			}
-			set {
-				lastRevisionDateField = value;
-			}
-		}
-    
+		public DateType LastRevisionDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LastRevisionTimeType LastRevisionTime {
-			get {
-				return lastRevisionTimeField;
-			}
-			set {
-				lastRevisionTimeField = value;
-			}
-		}
-    
+		public TimeType LastRevisionTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AgencyIDType AgencyID {
-			get {
-				return agencyIDField;
-			}
-			set {
-				agencyIDField = value;
-			}
-		}
-    
+		public IdentifierType AgencyID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AgencyNameType AgencyName {
-			get {
-				return agencyNameField;
-			}
-			set {
-				agencyNameField = value;
-			}
-		}
-    
+		public TextType AgencyName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public VersionIDType VersionID {
-			get {
-				return versionIDField;
-			}
-			set {
-				versionIDField = value;
-			}
-		}
-    
+		public IdentifierType VersionID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public URIType URI {
-			get {
-				return uRIField;
-			}
-			set {
-				uRIField = value;
-			}
-		}
-    
+		public IdentifierType URI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SchemeURIType SchemeURI {
-			get {
-				return schemeURIField;
-			}
-			set {
-				schemeURIField = value;
-			}
-		}
-    
+		public IdentifierType SchemeURI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LanguageIDType LanguageID {
-			get {
-				return languageIDField;
-			}
-			set {
-				languageIDField = value;
-			}
-		}
-    
+		public IdentifierType LanguageID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ClassificationCategory")]
-		public ClassificationCategoryType[] ClassificationCategory {
-			get {
-				return classificationCategoryField;
-			}
-			set {
-				classificationCategoryField = value;
-			}
-		}
+		public ClassificationCategoryType[] ClassificationCategory { get; set; }
 	}
 }

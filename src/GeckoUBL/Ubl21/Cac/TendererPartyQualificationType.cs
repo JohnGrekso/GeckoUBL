@@ -8,43 +8,15 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TendererPartyQualification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TendererPartyQualificationType {
-    
-		private ProcurementProjectLotType[] interestedProcurementProjectLotField;
-    
-		private QualifyingPartyType mainQualifyingPartyField;
-    
-		private QualifyingPartyType[] additionalQualifyingPartyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("InterestedProcurementProjectLot")]
-		public ProcurementProjectLotType[] InterestedProcurementProjectLot {
-			get {
-				return interestedProcurementProjectLotField;
-			}
-			set {
-				interestedProcurementProjectLotField = value;
-			}
-		}
-    
+		public ProcurementProjectLotType[] InterestedProcurementProjectLot { get; set; }
+
 		/// <remarks/>
-		public QualifyingPartyType MainQualifyingParty {
-			get {
-				return mainQualifyingPartyField;
-			}
-			set {
-				mainQualifyingPartyField = value;
-			}
-		}
-    
+		public QualifyingPartyType MainQualifyingParty { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AdditionalQualifyingParty")]
-		public QualifyingPartyType[] AdditionalQualifyingParty {
-			get {
-				return additionalQualifyingPartyField;
-			}
-			set {
-				additionalQualifyingPartyField = value;
-			}
-		}
+		public QualifyingPartyType[] AdditionalQualifyingParty { get; set; }
 	}
 }

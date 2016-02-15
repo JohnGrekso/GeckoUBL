@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("LotIdentification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class LotIdentificationType {
-    
-		private LotNumberIDType lotNumberIDField;
-    
-		private ExpiryDateType expiryDateField;
-    
-		private ItemPropertyType[] additionalItemPropertyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LotNumberIDType LotNumberID {
-			get {
-				return lotNumberIDField;
-			}
-			set {
-				lotNumberIDField = value;
-			}
-		}
-    
+		public IdentifierType LotNumberID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ExpiryDateType ExpiryDate {
-			get {
-				return expiryDateField;
-			}
-			set {
-				expiryDateField = value;
-			}
-		}
-    
+		public DateType ExpiryDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AdditionalItemProperty")]
-		public ItemPropertyType[] AdditionalItemProperty {
-			get {
-				return additionalItemPropertyField;
-			}
-			set {
-				additionalItemPropertyField = value;
-			}
-		}
+		public ItemPropertyType[] AdditionalItemProperty { get; set; }
 	}
 }

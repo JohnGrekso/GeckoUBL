@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,96 +10,32 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AwardingCriterionResponse", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class AwardingCriterionResponseType {
-    
-		private IDType idField;
-    
-		private AwardingCriterionIDType awardingCriterionIDField;
-    
-		private AwardingCriterionDescriptionType[] awardingCriterionDescriptionField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private QuantityType2 quantityField;
-    
-		private AmountType2 amountField;
-    
-		private AwardingCriterionResponseType[] subordinateAwardingCriterionResponseField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AwardingCriterionIDType AwardingCriterionID {
-			get {
-				return awardingCriterionIDField;
-			}
-			set {
-				awardingCriterionIDField = value;
-			}
-		}
-    
+		public IdentifierType AwardingCriterionID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AwardingCriterionDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AwardingCriterionDescriptionType[] AwardingCriterionDescription {
-			get {
-				return awardingCriterionDescriptionField;
-			}
-			set {
-				awardingCriterionDescriptionField = value;
-			}
-		}
-    
+		public TextType[] AwardingCriterionDescription { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SubordinateAwardingCriterionResponse")]
-		public AwardingCriterionResponseType[] SubordinateAwardingCriterionResponse {
-			get {
-				return subordinateAwardingCriterionResponseField;
-			}
-			set {
-				subordinateAwardingCriterionResponseField = value;
-			}
-		}
+		public AwardingCriterionResponseType[] SubordinateAwardingCriterionResponse { get; set; }
 	}
 }

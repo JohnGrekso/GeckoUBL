@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,161 +10,52 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CurrentStatus", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class StatusType {
-    
-		private ConditionCodeType conditionCodeField;
-    
-		private ReferenceDateType referenceDateField;
-    
-		private ReferenceTimeType referenceTimeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private StatusReasonCodeType statusReasonCodeField;
-    
-		private StatusReasonType[] statusReasonField;
-    
-		private SequenceIDType sequenceIDField;
-    
-		private TextType2[] textField;
-    
-		private IndicationIndicatorType indicationIndicatorField;
-    
-		private PercentType1 percentField;
-    
-		private ReliabilityPercentType reliabilityPercentField;
-    
-		private ConditionType1[] conditionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConditionCodeType ConditionCode {
-			get {
-				return conditionCodeField;
-			}
-			set {
-				conditionCodeField = value;
-			}
-		}
-    
+		public CodeType ConditionCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReferenceDateType ReferenceDate {
-			get {
-				return referenceDateField;
-			}
-			set {
-				referenceDateField = value;
-			}
-		}
-    
+		public DateType ReferenceDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReferenceTimeType ReferenceTime {
-			get {
-				return referenceTimeField;
-			}
-			set {
-				referenceTimeField = value;
-			}
-		}
-    
+		public TimeType ReferenceTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public StatusReasonCodeType StatusReasonCode {
-			get {
-				return statusReasonCodeField;
-			}
-			set {
-				statusReasonCodeField = value;
-			}
-		}
-    
+		public CodeType StatusReasonCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("StatusReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public StatusReasonType[] StatusReason {
-			get {
-				return statusReasonField;
-			}
-			set {
-				statusReasonField = value;
-			}
-		}
-    
+		public TextType[] StatusReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SequenceIDType SequenceID {
-			get {
-				return sequenceIDField;
-			}
-			set {
-				sequenceIDField = value;
-			}
-		}
-    
+		public IdentifierType SequenceID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Text", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TextType2[] Text {
-			get {
-				return textField;
-			}
-			set {
-				textField = value;
-			}
-		}
-    
+		public TextType[] Text { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IndicationIndicatorType IndicationIndicator {
-			get {
-				return indicationIndicatorField;
-			}
-			set {
-				indicationIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType IndicationIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PercentType1 Percent {
-			get {
-				return percentField;
-			}
-			set {
-				percentField = value;
-			}
-		}
-    
+		public PercentType Percent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ReliabilityPercentType ReliabilityPercent {
-			get {
-				return reliabilityPercentField;
-			}
-			set {
-				reliabilityPercentField = value;
-			}
-		}
-    
+		public PercentType ReliabilityPercent { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Condition")]
-		public ConditionType1[] Condition {
-			get {
-				return conditionField;
-			}
-			set {
-				conditionField = value;
-			}
-		}
+		public ConditionType1[] Condition { get; set; }
 	}
 }

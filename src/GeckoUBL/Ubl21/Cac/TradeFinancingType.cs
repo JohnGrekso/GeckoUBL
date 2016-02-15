@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,93 +10,29 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TradeFinancing", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TradeFinancingType {
-    
-		private IDType idField;
-    
-		private FinancingInstrumentCodeType financingInstrumentCodeField;
-    
-		private DocumentReferenceType contractDocumentReferenceField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private PartyType financingPartyField;
-    
-		private FinancialAccountType financingFinancialAccountField;
-    
-		private ClauseType[] clauseField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FinancingInstrumentCodeType FinancingInstrumentCode {
-			get {
-				return financingInstrumentCodeField;
-			}
-			set {
-				financingInstrumentCodeField = value;
-			}
-		}
-    
+		public CodeType FinancingInstrumentCode { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType ContractDocumentReference {
-			get {
-				return contractDocumentReferenceField;
-			}
-			set {
-				contractDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType ContractDocumentReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public PartyType FinancingParty {
-			get {
-				return financingPartyField;
-			}
-			set {
-				financingPartyField = value;
-			}
-		}
-    
+		public PartyType FinancingParty { get; set; }
+
 		/// <remarks/>
-		public FinancialAccountType FinancingFinancialAccount {
-			get {
-				return financingFinancialAccountField;
-			}
-			set {
-				financingFinancialAccountField = value;
-			}
-		}
-    
+		public FinancialAccountType FinancingFinancialAccount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Clause")]
-		public ClauseType[] Clause {
-			get {
-				return clauseField;
-			}
-			set {
-				clauseField = value;
-			}
-		}
+		public ClauseType[] Clause { get; set; }
 	}
 }

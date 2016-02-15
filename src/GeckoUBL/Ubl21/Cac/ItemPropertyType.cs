@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,171 +10,53 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalItemProperty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ItemPropertyType {
-    
-		private IDType idField;
-    
-		private NameType1 nameField;
-    
-		private NameCodeType nameCodeField;
-    
-		private TestMethodType testMethodField;
-    
-		private ValueType valueField;
-    
-		private ValueQuantityType valueQuantityField;
-    
-		private ValueQualifierType[] valueQualifierField;
-    
-		private ImportanceCodeType importanceCodeField;
-    
-		private ListValueType[] listValueField;
-    
-		private PeriodType usabilityPeriodField;
-    
-		private ItemPropertyGroupType[] itemPropertyGroupField;
-    
-		private DimensionType rangeDimensionField;
-    
-		private ItemPropertyRangeType itemPropertyRangeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name {
-			get {
-				return nameField;
-			}
-			set {
-				nameField = value;
-			}
-		}
-    
+		public NameType Name { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameCodeType NameCode {
-			get {
-				return nameCodeField;
-			}
-			set {
-				nameCodeField = value;
-			}
-		}
-    
+		public CodeType NameCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TestMethodType TestMethod {
-			get {
-				return testMethodField;
-			}
-			set {
-				testMethodField = value;
-			}
-		}
-    
+		public TextType TestMethod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueType Value {
-			get {
-				return valueField;
-			}
-			set {
-				valueField = value;
-			}
-		}
-    
+		public ValueType Value { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueQuantityType ValueQuantity {
-			get {
-				return valueQuantityField;
-			}
-			set {
-				valueQuantityField = value;
-			}
-		}
-    
+		public QuantityType ValueQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ValueQualifier", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueQualifierType[] ValueQualifier {
-			get {
-				return valueQualifierField;
-			}
-			set {
-				valueQualifierField = value;
-			}
-		}
-    
+		public TextType[] ValueQualifier { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ImportanceCodeType ImportanceCode {
-			get {
-				return importanceCodeField;
-			}
-			set {
-				importanceCodeField = value;
-			}
-		}
-    
+		public CodeType ImportanceCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ListValue", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ListValueType[] ListValue {
-			get {
-				return listValueField;
-			}
-			set {
-				listValueField = value;
-			}
-		}
-    
+		public TextType[] ListValue { get; set; }
+
 		/// <remarks/>
-		public PeriodType UsabilityPeriod {
-			get {
-				return usabilityPeriodField;
-			}
-			set {
-				usabilityPeriodField = value;
-			}
-		}
-    
+		public PeriodType UsabilityPeriod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ItemPropertyGroup")]
-		public ItemPropertyGroupType[] ItemPropertyGroup {
-			get {
-				return itemPropertyGroupField;
-			}
-			set {
-				itemPropertyGroupField = value;
-			}
-		}
-    
+		public ItemPropertyGroupType[] ItemPropertyGroup { get; set; }
+
 		/// <remarks/>
-		public DimensionType RangeDimension {
-			get {
-				return rangeDimensionField;
-			}
-			set {
-				rangeDimensionField = value;
-			}
-		}
-    
+		public DimensionType RangeDimension { get; set; }
+
 		/// <remarks/>
-		public ItemPropertyRangeType ItemPropertyRange {
-			get {
-				return itemPropertyRangeField;
-			}
-			set {
-				itemPropertyRangeField = value;
-			}
-		}
+		public ItemPropertyRangeType ItemPropertyRange { get; set; }
 	}
 }

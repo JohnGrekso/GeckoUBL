@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("WebSiteAccess", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class WebSiteAccessType {
-    
-		private URIType uRIField;
-    
-		private PasswordType passwordField;
-    
-		private LoginType loginField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public URIType URI {
-			get {
-				return uRIField;
-			}
-			set {
-				uRIField = value;
-			}
-		}
-    
+		public IdentifierType URI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PasswordType Password {
-			get {
-				return passwordField;
-			}
-			set {
-				passwordField = value;
-			}
-		}
-    
+		public TextType Password { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LoginType Login {
-			get {
-				return loginField;
-			}
-			set {
-				loginField = value;
-			}
-		}
+		public TextType Login { get; set; }
 	}
 }

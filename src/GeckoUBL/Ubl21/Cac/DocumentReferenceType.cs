@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,222 +10,68 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalDocumentReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DocumentReferenceType {
-    
-		private IDType idField;
-    
-		private CopyIndicatorType copyIndicatorField;
-    
-		private UUIDType uUIDField;
-    
-		private IssueDateType issueDateField;
-    
-		private IssueTimeType issueTimeField;
-    
-		private DocumentTypeCodeType documentTypeCodeField;
-    
-		private DocumentTypeType documentTypeField;
-    
-		private XPathType[] xPathField;
-    
-		private LanguageIDType languageIDField;
-    
-		private LocaleCodeType localeCodeField;
-    
-		private VersionIDType versionIDField;
-    
-		private DocumentStatusCodeType documentStatusCodeField;
-    
-		private DocumentDescriptionType[] documentDescriptionField;
-    
-		private AttachmentType attachmentField;
-    
-		private PeriodType validityPeriodField;
-    
-		private PartyType issuerPartyField;
-    
-		private ResultOfVerificationType resultOfVerificationField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CopyIndicatorType CopyIndicator {
-			get {
-				return copyIndicatorField;
-			}
-			set {
-				copyIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType CopyIndicator { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID {
-			get {
-				return uUIDField;
-			}
-			set {
-				uUIDField = value;
-			}
-		}
-    
+		public IdentifierType UUID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate {
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueTimeType IssueTime {
-			get {
-				return issueTimeField;
-			}
-			set {
-				issueTimeField = value;
-			}
-		}
-    
+		public TimeType IssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentTypeCodeType DocumentTypeCode {
-			get {
-				return documentTypeCodeField;
-			}
-			set {
-				documentTypeCodeField = value;
-			}
-		}
-    
+		public CodeType DocumentTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentTypeType DocumentType {
-			get {
-				return documentTypeField;
-			}
-			set {
-				documentTypeField = value;
-			}
-		}
-    
+		public TextType DocumentType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("XPath", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public XPathType[] XPath {
-			get {
-				return xPathField;
-			}
-			set {
-				xPathField = value;
-			}
-		}
-    
+		public TextType[] XPath { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LanguageIDType LanguageID {
-			get {
-				return languageIDField;
-			}
-			set {
-				languageIDField = value;
-			}
-		}
-    
+		public IdentifierType LanguageID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LocaleCodeType LocaleCode {
-			get {
-				return localeCodeField;
-			}
-			set {
-				localeCodeField = value;
-			}
-		}
-    
+		public CodeType LocaleCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public VersionIDType VersionID {
-			get {
-				return versionIDField;
-			}
-			set {
-				versionIDField = value;
-			}
-		}
-    
+		public IdentifierType VersionID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentStatusCodeType DocumentStatusCode {
-			get {
-				return documentStatusCodeField;
-			}
-			set {
-				documentStatusCodeField = value;
-			}
-		}
-    
+		public CodeType DocumentStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DocumentDescriptionType[] DocumentDescription {
-			get {
-				return documentDescriptionField;
-			}
-			set {
-				documentDescriptionField = value;
-			}
-		}
-    
+		public TextType[] DocumentDescription { get; set; }
+
 		/// <remarks/>
-		public AttachmentType Attachment {
-			get {
-				return attachmentField;
-			}
-			set {
-				attachmentField = value;
-			}
-		}
-    
+		public AttachmentType Attachment { get; set; }
+
 		/// <remarks/>
-		public PeriodType ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
-    
+		public PeriodType ValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public PartyType IssuerParty {
-			get {
-				return issuerPartyField;
-			}
-			set {
-				issuerPartyField = value;
-			}
-		}
-    
+		public PartyType IssuerParty { get; set; }
+
 		/// <remarks/>
-		public ResultOfVerificationType ResultOfVerification {
-			get {
-				return resultOfVerificationField;
-			}
-			set {
-				resultOfVerificationField = value;
-			}
-		}
+		public ResultOfVerificationType ResultOfVerification { get; set; }
 	}
 }

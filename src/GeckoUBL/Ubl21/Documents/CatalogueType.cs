@@ -4,8 +4,8 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
 using GeckoUBL.Ubl21.Cac;
-using GeckoUBL.Ubl21.Cbc;
 using GeckoUBL.Ubl21.Cec;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Documents
 {
@@ -22,55 +22,55 @@ namespace GeckoUBL.Ubl21.Documents
 		public UBLExtensionType[] UBLExtensions { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UBLVersionIDType UBLVersionID { get; set; }
+		public IdentifierType UBLVersionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CustomizationIDType CustomizationID { get; set; }
+		public IdentifierType CustomizationID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProfileIDType ProfileID { get; set; }
+		public IdentifierType ProfileID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ProfileExecutionIDType ProfileExecutionID { get; set; }
+		public IdentifierType ProfileExecutionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID { get; set; }
+		public IdentifierType ID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public UUIDType UUID { get; set; }
+		public IdentifierType UUID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ActionCodeType ActionCode { get; set; }
+		public CodeType ActionCode { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType1 Name { get; set; }
+		public NameType Name { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueDateType IssueDate { get; set; }
+		public DateType IssueDate { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IssueTimeType IssueTime { get; set; }
+		public TimeType IssueTime { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RevisionDateType RevisionDate { get; set; }
+		public DateType RevisionDate { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RevisionTimeType RevisionTime { get; set; }
+		public TimeType RevisionTime { get; set; }
 
 		[XmlElement("Note", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note { get; set; }
+		public TextType[] Note { get; set; }
 
 		[XmlElement("Description", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description { get; set; }
+		public TextType[] Description { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public VersionIDType VersionID { get; set; }
+		public IdentifierType VersionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PreviousVersionIDType PreviousVersionID { get; set; }
+		public IdentifierType PreviousVersionID { get; set; }
 
 		[XmlElement(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineCountNumericType LineCountNumeric { get; set; }
+		public NumericType LineCountNumeric { get; set; }
 
 		[XmlElement("ValidityPeriod", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 		public PeriodType[] ValidityPeriod { get; set; }

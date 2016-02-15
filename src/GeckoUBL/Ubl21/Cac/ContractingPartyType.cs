@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,56 +10,19 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ContractingParty", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ContractingPartyType {
-    
-		private BuyerProfileURIType buyerProfileURIField;
-    
-		private ContractingPartyTypeType[] contractingPartyType1Field;
-    
-		private ContractingActivityType[] contractingActivityField;
-    
-		private PartyType partyField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BuyerProfileURIType BuyerProfileURI {
-			get {
-				return buyerProfileURIField;
-			}
-			set {
-				buyerProfileURIField = value;
-			}
-		}
-    
+		public IdentifierType BuyerProfileURI { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ContractingPartyType")]
-		public ContractingPartyTypeType[] ContractingPartyType1 {
-			get {
-				return contractingPartyType1Field;
-			}
-			set {
-				contractingPartyType1Field = value;
-			}
-		}
-    
+		public ContractingPartyTypeType[] ContractingPartyType1 { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ContractingActivity")]
-		public ContractingActivityType[] ContractingActivity {
-			get {
-				return contractingActivityField;
-			}
-			set {
-				contractingActivityField = value;
-			}
-		}
-    
+		public ContractingActivityType[] ContractingActivity { get; set; }
+
 		/// <remarks/>
-		public PartyType Party {
-			get {
-				return partyField;
-			}
-			set {
-				partyField = value;
-			}
-		}
+		public PartyType Party { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,132 +10,41 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("OrderLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class OrderLineType {
-    
-		private SubstitutionStatusCodeType substitutionStatusCodeField;
-    
-		private NoteType[] noteField;
-    
-		private LineItemType lineItemField;
-    
-		private LineItemType[] sellerProposedSubstituteLineItemField;
-    
-		private LineItemType[] sellerSubstitutedLineItemField;
-    
-		private LineItemType[] buyerProposedSubstituteLineItemField;
-    
-		private LineReferenceType catalogueLineReferenceField;
-    
-		private LineReferenceType quotationLineReferenceField;
-    
-		private OrderLineReferenceType[] orderLineReferenceField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SubstitutionStatusCodeType SubstitutionStatusCode {
-			get {
-				return substitutionStatusCodeField;
-			}
-			set {
-				substitutionStatusCodeField = value;
-			}
-		}
-    
+		public CodeType SubstitutionStatusCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
-		public LineItemType LineItem {
-			get {
-				return lineItemField;
-			}
-			set {
-				lineItemField = value;
-			}
-		}
-    
+		public LineItemType LineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SellerProposedSubstituteLineItem")]
-		public LineItemType[] SellerProposedSubstituteLineItem {
-			get {
-				return sellerProposedSubstituteLineItemField;
-			}
-			set {
-				sellerProposedSubstituteLineItemField = value;
-			}
-		}
-    
+		public LineItemType[] SellerProposedSubstituteLineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SellerSubstitutedLineItem")]
-		public LineItemType[] SellerSubstitutedLineItem {
-			get {
-				return sellerSubstitutedLineItemField;
-			}
-			set {
-				sellerSubstitutedLineItemField = value;
-			}
-		}
-    
+		public LineItemType[] SellerSubstitutedLineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("BuyerProposedSubstituteLineItem")]
-		public LineItemType[] BuyerProposedSubstituteLineItem {
-			get {
-				return buyerProposedSubstituteLineItemField;
-			}
-			set {
-				buyerProposedSubstituteLineItemField = value;
-			}
-		}
-    
+		public LineItemType[] BuyerProposedSubstituteLineItem { get; set; }
+
 		/// <remarks/>
-		public LineReferenceType CatalogueLineReference {
-			get {
-				return catalogueLineReferenceField;
-			}
-			set {
-				catalogueLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType CatalogueLineReference { get; set; }
+
 		/// <remarks/>
-		public LineReferenceType QuotationLineReference {
-			get {
-				return quotationLineReferenceField;
-			}
-			set {
-				quotationLineReferenceField = value;
-			}
-		}
-    
+		public LineReferenceType QuotationLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("OrderLineReference")]
-		public OrderLineReferenceType[] OrderLineReference {
-			get {
-				return orderLineReferenceField;
-			}
-			set {
-				orderLineReferenceField = value;
-			}
-		}
-    
+		public OrderLineReferenceType[] OrderLineReference { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
+		public DocumentReferenceType[] DocumentReference { get; set; }
 	}
 }

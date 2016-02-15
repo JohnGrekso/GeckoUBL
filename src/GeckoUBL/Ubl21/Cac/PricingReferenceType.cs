@@ -8,30 +8,11 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("PricingReference", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PricingReferenceType {
-    
-		private ItemLocationQuantityType originalItemLocationQuantityField;
-    
-		private PriceType[] alternativeConditionPriceField;
-    
 		/// <remarks/>
-		public ItemLocationQuantityType OriginalItemLocationQuantity {
-			get {
-				return originalItemLocationQuantityField;
-			}
-			set {
-				originalItemLocationQuantityField = value;
-			}
-		}
-    
+		public ItemLocationQuantityType OriginalItemLocationQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AlternativeConditionPrice")]
-		public PriceType[] AlternativeConditionPrice {
-			get {
-				return alternativeConditionPriceField;
-			}
-			set {
-				alternativeConditionPriceField = value;
-			}
-		}
+		public PriceType[] AlternativeConditionPrice { get; set; }
 	}
 }

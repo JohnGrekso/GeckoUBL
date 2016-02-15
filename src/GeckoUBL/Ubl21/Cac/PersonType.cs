@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,223 +10,69 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("CrewMemberPerson", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PersonType {
-    
-		private IDType idField;
-    
-		private FirstNameType firstNameField;
-    
-		private FamilyNameType familyNameField;
-    
-		private TitleType titleField;
-    
-		private MiddleNameType middleNameField;
-    
-		private OtherNameType otherNameField;
-    
-		private NameSuffixType nameSuffixField;
-    
-		private JobTitleType jobTitleField;
-    
-		private NationalityIDType nationalityIDField;
-    
-		private GenderCodeType genderCodeField;
-    
-		private BirthDateType birthDateField;
-    
-		private BirthplaceNameType birthplaceNameField;
-    
-		private OrganizationDepartmentType organizationDepartmentField;
-    
-		private ContactType contactField;
-    
-		private FinancialAccountType financialAccountField;
-    
-		private DocumentReferenceType[] identityDocumentReferenceField;
-    
-		private AddressType residenceAddressField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FirstNameType FirstName {
-			get {
-				return firstNameField;
-			}
-			set {
-				firstNameField = value;
-			}
-		}
-    
+		public NameType FirstName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public FamilyNameType FamilyName {
-			get {
-				return familyNameField;
-			}
-			set {
-				familyNameField = value;
-			}
-		}
-    
+		public NameType FamilyName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TitleType Title {
-			get {
-				return titleField;
-			}
-			set {
-				titleField = value;
-			}
-		}
-    
+		public TextType Title { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public MiddleNameType MiddleName {
-			get {
-				return middleNameField;
-			}
-			set {
-				middleNameField = value;
-			}
-		}
-    
+		public NameType MiddleName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OtherNameType OtherName {
-			get {
-				return otherNameField;
-			}
-			set {
-				otherNameField = value;
-			}
-		}
-    
+		public NameType OtherName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameSuffixType NameSuffix {
-			get {
-				return nameSuffixField;
-			}
-			set {
-				nameSuffixField = value;
-			}
-		}
-    
+		public TextType NameSuffix { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public JobTitleType JobTitle {
-			get {
-				return jobTitleField;
-			}
-			set {
-				jobTitleField = value;
-			}
-		}
-    
+		public TextType JobTitle { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NationalityIDType NationalityID {
-			get {
-				return nationalityIDField;
-			}
-			set {
-				nationalityIDField = value;
-			}
-		}
-    
+		public IdentifierType NationalityID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public GenderCodeType GenderCode {
-			get {
-				return genderCodeField;
-			}
-			set {
-				genderCodeField = value;
-			}
-		}
-    
+		public CodeType GenderCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BirthDateType BirthDate {
-			get {
-				return birthDateField;
-			}
-			set {
-				birthDateField = value;
-			}
-		}
-    
+		public DateType BirthDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BirthplaceNameType BirthplaceName {
-			get {
-				return birthplaceNameField;
-			}
-			set {
-				birthplaceNameField = value;
-			}
-		}
-    
+		public TextType BirthplaceName { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrganizationDepartmentType OrganizationDepartment {
-			get {
-				return organizationDepartmentField;
-			}
-			set {
-				organizationDepartmentField = value;
-			}
-		}
-    
+		public TextType OrganizationDepartment { get; set; }
+
 		/// <remarks/>
-		public ContactType Contact {
-			get {
-				return contactField;
-			}
-			set {
-				contactField = value;
-			}
-		}
-    
+		public ContactType Contact { get; set; }
+
 		/// <remarks/>
-		public FinancialAccountType FinancialAccount {
-			get {
-				return financialAccountField;
-			}
-			set {
-				financialAccountField = value;
-			}
-		}
-    
+		public FinancialAccountType FinancialAccount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("IdentityDocumentReference")]
-		public DocumentReferenceType[] IdentityDocumentReference {
-			get {
-				return identityDocumentReferenceField;
-			}
-			set {
-				identityDocumentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] IdentityDocumentReference { get; set; }
+
 		/// <remarks/>
-		public AddressType ResidenceAddress {
-			get {
-				return residenceAddressField;
-			}
-			set {
-				residenceAddressField = value;
-			}
-		}
+		public AddressType ResidenceAddress { get; set; }
 	}
 }

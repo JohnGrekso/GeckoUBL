@@ -7,7 +7,7 @@ namespace GeckoUBL.Ubl21.Udt
 	[System.Diagnostics.DebuggerStepThroughAttribute]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[XmlType(TypeName = "ValueType", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2")]
-	public class ValueType : NumericType
+	public class ValueType : TextType
 	{
 	}
 }

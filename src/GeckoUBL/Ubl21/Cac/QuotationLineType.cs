@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,146 +10,46 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("QuotationLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class QuotationLineType {
-    
-		private IDType idField;
-    
-		private NoteType[] noteField;
-    
-		private QuantityType2 quantityField;
-    
-		private LineExtensionAmountType lineExtensionAmountField;
-    
-		private TotalTaxAmountType totalTaxAmountField;
-    
-		private RequestForQuotationLineIDType requestForQuotationLineIDField;
-    
-		private DocumentReferenceType[] documentReferenceField;
-    
-		private LineItemType lineItemField;
-    
-		private LineItemType[] sellerProposedSubstituteLineItemField;
-    
-		private LineItemType[] alternativeLineItemField;
-    
-		private LineReferenceType requestLineReferenceField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Note", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NoteType[] Note {
-			get {
-				return noteField;
-			}
-			set {
-				noteField = value;
-			}
-		}
-    
+		public TextType[] Note { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public QuantityType2 Quantity {
-			get {
-				return quantityField;
-			}
-			set {
-				quantityField = value;
-			}
-		}
-    
+		public QuantityType Quantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LineExtensionAmountType LineExtensionAmount {
-			get {
-				return lineExtensionAmountField;
-			}
-			set {
-				lineExtensionAmountField = value;
-			}
-		}
-    
+		public AmountType LineExtensionAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TotalTaxAmountType TotalTaxAmount {
-			get {
-				return totalTaxAmountField;
-			}
-			set {
-				totalTaxAmountField = value;
-			}
-		}
-    
+		public AmountType TotalTaxAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RequestForQuotationLineIDType RequestForQuotationLineID {
-			get {
-				return requestForQuotationLineIDField;
-			}
-			set {
-				requestForQuotationLineIDField = value;
-			}
-		}
-    
+		public IdentifierType RequestForQuotationLineID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("DocumentReference")]
-		public DocumentReferenceType[] DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType[] DocumentReference { get; set; }
+
 		/// <remarks/>
-		public LineItemType LineItem {
-			get {
-				return lineItemField;
-			}
-			set {
-				lineItemField = value;
-			}
-		}
-    
+		public LineItemType LineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SellerProposedSubstituteLineItem")]
-		public LineItemType[] SellerProposedSubstituteLineItem {
-			get {
-				return sellerProposedSubstituteLineItemField;
-			}
-			set {
-				sellerProposedSubstituteLineItemField = value;
-			}
-		}
-    
+		public LineItemType[] SellerProposedSubstituteLineItem { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AlternativeLineItem")]
-		public LineItemType[] AlternativeLineItem {
-			get {
-				return alternativeLineItemField;
-			}
-			set {
-				alternativeLineItemField = value;
-			}
-		}
-    
+		public LineItemType[] AlternativeLineItem { get; set; }
+
 		/// <remarks/>
-		public LineReferenceType RequestLineReference {
-			get {
-				return requestLineReferenceField;
-			}
-			set {
-				requestLineReferenceField = value;
-			}
-		}
+		public LineReferenceType RequestLineReference { get; set; }
 	}
 }

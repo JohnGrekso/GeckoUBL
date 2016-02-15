@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,104 +10,31 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("ActivityDataLine", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class ActivityDataLineType {
-    
-		private IDType idField;
-    
-		private SupplyChainActivityTypeCodeType supplyChainActivityTypeCodeField;
-    
-		private CustomerPartyType buyerCustomerPartyField;
-    
-		private SupplierPartyType sellerSupplierPartyField;
-    
-		private PeriodType activityPeriodField;
-    
-		private LocationType1 activityOriginLocationField;
-    
-		private LocationType1 activityFinalLocationField;
-    
-		private SalesItemType[] salesItemField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SupplyChainActivityTypeCodeType SupplyChainActivityTypeCode {
-			get {
-				return supplyChainActivityTypeCodeField;
-			}
-			set {
-				supplyChainActivityTypeCodeField = value;
-			}
-		}
-    
+		public CodeType SupplyChainActivityTypeCode { get; set; }
+
 		/// <remarks/>
-		public CustomerPartyType BuyerCustomerParty {
-			get {
-				return buyerCustomerPartyField;
-			}
-			set {
-				buyerCustomerPartyField = value;
-			}
-		}
-    
+		public CustomerPartyType BuyerCustomerParty { get; set; }
+
 		/// <remarks/>
-		public SupplierPartyType SellerSupplierParty {
-			get {
-				return sellerSupplierPartyField;
-			}
-			set {
-				sellerSupplierPartyField = value;
-			}
-		}
-    
+		public SupplierPartyType SellerSupplierParty { get; set; }
+
 		/// <remarks/>
-		public PeriodType ActivityPeriod {
-			get {
-				return activityPeriodField;
-			}
-			set {
-				activityPeriodField = value;
-			}
-		}
-    
+		public PeriodType ActivityPeriod { get; set; }
+
 		/// <remarks/>
-		public LocationType1 ActivityOriginLocation {
-			get {
-				return activityOriginLocationField;
-			}
-			set {
-				activityOriginLocationField = value;
-			}
-		}
-    
+		public LocationType1 ActivityOriginLocation { get; set; }
+
 		/// <remarks/>
-		public LocationType1 ActivityFinalLocation {
-			get {
-				return activityFinalLocationField;
-			}
-			set {
-				activityFinalLocationField = value;
-			}
-		}
-    
+		public LocationType1 ActivityFinalLocation { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SalesItem")]
-		public SalesItemType[] SalesItem {
-			get {
-				return salesItemField;
-			}
-			set {
-				salesItemField = value;
-			}
-		}
+		public SalesItemType[] SalesItem { get; set; }
 	}
 }

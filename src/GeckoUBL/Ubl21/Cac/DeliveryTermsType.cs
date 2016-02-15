@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,94 +10,30 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeliveryTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DeliveryTermsType {
-    
-		private IDType idField;
-    
-		private SpecialTermsType[] specialTermsField;
-    
-		private LossRiskResponsibilityCodeType lossRiskResponsibilityCodeField;
-    
-		private LossRiskType[] lossRiskField;
-    
-		private AmountType2 amountField;
-    
-		private LocationType1 deliveryLocationField;
-    
-		private AllowanceChargeType allowanceChargeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SpecialTerms", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public SpecialTermsType[] SpecialTerms {
-			get {
-				return specialTermsField;
-			}
-			set {
-				specialTermsField = value;
-			}
-		}
-    
+		public TextType[] SpecialTerms { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LossRiskResponsibilityCodeType LossRiskResponsibilityCode {
-			get {
-				return lossRiskResponsibilityCodeField;
-			}
-			set {
-				lossRiskResponsibilityCodeField = value;
-			}
-		}
-    
+		public CodeType LossRiskResponsibilityCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("LossRisk", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public LossRiskType[] LossRisk {
-			get {
-				return lossRiskField;
-			}
-			set {
-				lossRiskField = value;
-			}
-		}
-    
+		public TextType[] LossRisk { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public AmountType2 Amount {
-			get {
-				return amountField;
-			}
-			set {
-				amountField = value;
-			}
-		}
-    
+		public AmountType Amount { get; set; }
+
 		/// <remarks/>
-		public LocationType1 DeliveryLocation {
-			get {
-				return deliveryLocationField;
-			}
-			set {
-				deliveryLocationField = value;
-			}
-		}
-    
+		public LocationType1 DeliveryLocation { get; set; }
+
 		/// <remarks/>
-		public AllowanceChargeType AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
+		public AllowanceChargeType AllowanceCharge { get; set; }
 	}
 }

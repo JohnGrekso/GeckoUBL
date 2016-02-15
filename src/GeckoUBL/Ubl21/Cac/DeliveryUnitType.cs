@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("DeliveryUnit", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class DeliveryUnitType {
-    
-		private BatchQuantityType batchQuantityField;
-    
-		private ConsumerUnitQuantityType consumerUnitQuantityField;
-    
-		private HazardousRiskIndicatorType hazardousRiskIndicatorField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BatchQuantityType BatchQuantity {
-			get {
-				return batchQuantityField;
-			}
-			set {
-				batchQuantityField = value;
-			}
-		}
-    
+		public QuantityType BatchQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ConsumerUnitQuantityType ConsumerUnitQuantity {
-			get {
-				return consumerUnitQuantityField;
-			}
-			set {
-				consumerUnitQuantityField = value;
-			}
-		}
-    
+		public QuantityType ConsumerUnitQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public HazardousRiskIndicatorType HazardousRiskIndicator {
-			get {
-				return hazardousRiskIndicatorField;
-			}
-			set {
-				hazardousRiskIndicatorField = value;
-			}
-		}
+		public IndicatorType HazardousRiskIndicator { get; set; }
 	}
 }

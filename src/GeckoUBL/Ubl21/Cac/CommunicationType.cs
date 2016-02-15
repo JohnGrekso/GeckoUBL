@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,44 +10,16 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Communication", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CommunicationType {
-    
-		private ChannelCodeType channelCodeField;
-    
-		private ChannelType channelField;
-    
-		private ValueType valueField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ChannelCodeType ChannelCode {
-			get {
-				return channelCodeField;
-			}
-			set {
-				channelCodeField = value;
-			}
-		}
-    
+		public CodeType ChannelCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ChannelType Channel {
-			get {
-				return channelField;
-			}
-			set {
-				channelField = value;
-			}
-		}
-    
+		public TextType Channel { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ValueType Value {
-			get {
-				return valueField;
-			}
-			set {
-				valueField = value;
-			}
-		}
+		public ValueType Value { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,57 +10,20 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AdditionalCommodityClassification", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class CommodityClassificationType {
-    
-		private NatureCodeType natureCodeField;
-    
-		private CargoTypeCodeType cargoTypeCodeField;
-    
-		private CommodityCodeType commodityCodeField;
-    
-		private ItemClassificationCodeType itemClassificationCodeField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NatureCodeType NatureCode {
-			get {
-				return natureCodeField;
-			}
-			set {
-				natureCodeField = value;
-			}
-		}
-    
+		public CodeType NatureCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CargoTypeCodeType CargoTypeCode {
-			get {
-				return cargoTypeCodeField;
-			}
-			set {
-				cargoTypeCodeField = value;
-			}
-		}
-    
+		public CodeType CargoTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CommodityCodeType CommodityCode {
-			get {
-				return commodityCodeField;
-			}
-			set {
-				commodityCodeField = value;
-			}
-		}
-    
+		public CodeType CommodityCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public ItemClassificationCodeType ItemClassificationCode {
-			get {
-				return itemClassificationCodeField;
-			}
-			set {
-				itemClassificationCodeField = value;
-			}
-		}
+		public CodeType ItemClassificationCode { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,31 +10,12 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("EconomicOperatorRole", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EconomicOperatorRoleType {
-    
-		private RoleCodeType roleCodeField;
-    
-		private RoleDescriptionType[] roleDescriptionField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RoleCodeType RoleCode {
-			get {
-				return roleCodeField;
-			}
-			set {
-				roleCodeField = value;
-			}
-		}
-    
+		public CodeType RoleCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("RoleDescription", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public RoleDescriptionType[] RoleDescription {
-			get {
-				return roleDescriptionField;
-			}
-			set {
-				roleDescriptionField = value;
-			}
-		}
+		public TextType[] RoleDescription { get; set; }
 	}
 }

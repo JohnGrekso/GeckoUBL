@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,133 +10,42 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AlternativeConditionPrice", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class PriceType {
-    
-		private PriceAmountType priceAmountField;
-    
-		private BaseQuantityType baseQuantityField;
-    
-		private PriceChangeReasonType[] priceChangeReasonField;
-    
-		private PriceTypeCodeType priceTypeCodeField;
-    
-		private PriceTypeType priceType1Field;
-    
-		private OrderableUnitFactorRateType orderableUnitFactorRateField;
-    
-		private PeriodType[] validityPeriodField;
-    
-		private PriceListType priceListField;
-    
-		private AllowanceChargeType[] allowanceChargeField;
-    
-		private ExchangeRateType pricingExchangeRateField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceAmountType PriceAmount {
-			get {
-				return priceAmountField;
-			}
-			set {
-				priceAmountField = value;
-			}
-		}
-    
+		public AmountType PriceAmount { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public BaseQuantityType BaseQuantity {
-			get {
-				return baseQuantityField;
-			}
-			set {
-				baseQuantityField = value;
-			}
-		}
-    
+		public QuantityType BaseQuantity { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PriceChangeReason", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceChangeReasonType[] PriceChangeReason {
-			get {
-				return priceChangeReasonField;
-			}
-			set {
-				priceChangeReasonField = value;
-			}
-		}
-    
+		public TextType[] PriceChangeReason { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceTypeCodeType PriceTypeCode {
-			get {
-				return priceTypeCodeField;
-			}
-			set {
-				priceTypeCodeField = value;
-			}
-		}
-    
+		public CodeType PriceTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("PriceType", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public PriceTypeType PriceType1 {
-			get {
-				return priceType1Field;
-			}
-			set {
-				priceType1Field = value;
-			}
-		}
-    
+		public TextType PriceType1 { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OrderableUnitFactorRateType OrderableUnitFactorRate {
-			get {
-				return orderableUnitFactorRateField;
-			}
-			set {
-				orderableUnitFactorRateField = value;
-			}
-		}
-    
+		public RateType OrderableUnitFactorRate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("ValidityPeriod")]
-		public PeriodType[] ValidityPeriod {
-			get {
-				return validityPeriodField;
-			}
-			set {
-				validityPeriodField = value;
-			}
-		}
-    
+		public PeriodType[] ValidityPeriod { get; set; }
+
 		/// <remarks/>
-		public PriceListType PriceList {
-			get {
-				return priceListField;
-			}
-			set {
-				priceListField = value;
-			}
-		}
-    
+		public PriceListType PriceList { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("AllowanceCharge")]
-		public AllowanceChargeType[] AllowanceCharge {
-			get {
-				return allowanceChargeField;
-			}
-			set {
-				allowanceChargeField = value;
-			}
-		}
-    
+		public AllowanceChargeType[] AllowanceCharge { get; set; }
+
 		/// <remarks/>
-		public ExchangeRateType PricingExchangeRate {
-			get {
-				return pricingExchangeRateField;
-			}
-			set {
-				pricingExchangeRateField = value;
-			}
-		}
+		public ExchangeRateType PricingExchangeRate { get; set; }
 	}
 }

@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,158 +10,49 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("AcceptanceTransportEvent", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class TransportEventType {
-    
-		private IdentificationIDType identificationIDField;
-    
-		private OccurrenceDateType occurrenceDateField;
-    
-		private OccurrenceTimeType occurrenceTimeField;
-    
-		private TransportEventTypeCodeType transportEventTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private CompletionIndicatorType completionIndicatorField;
-    
-		private ShipmentType reportedShipmentField;
-    
-		private StatusType[] currentStatusField;
-    
-		private ContactType[] contactField;
-    
-		private LocationType1 locationField;
-    
-		private SignatureType signatureField;
-    
-		private PeriodType[] periodField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IdentificationIDType IdentificationID {
-			get {
-				return identificationIDField;
-			}
-			set {
-				identificationIDField = value;
-			}
-		}
-    
+		public IdentifierType IdentificationID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OccurrenceDateType OccurrenceDate {
-			get {
-				return occurrenceDateField;
-			}
-			set {
-				occurrenceDateField = value;
-			}
-		}
-    
+		public DateType OccurrenceDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public OccurrenceTimeType OccurrenceTime {
-			get {
-				return occurrenceTimeField;
-			}
-			set {
-				occurrenceTimeField = value;
-			}
-		}
-    
+		public TimeType OccurrenceTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public TransportEventTypeCodeType TransportEventTypeCode {
-			get {
-				return transportEventTypeCodeField;
-			}
-			set {
-				transportEventTypeCodeField = value;
-			}
-		}
-    
+		public CodeType TransportEventTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CompletionIndicatorType CompletionIndicator {
-			get {
-				return completionIndicatorField;
-			}
-			set {
-				completionIndicatorField = value;
-			}
-		}
-    
+		public IndicatorType CompletionIndicator { get; set; }
+
 		/// <remarks/>
-		public ShipmentType ReportedShipment {
-			get {
-				return reportedShipmentField;
-			}
-			set {
-				reportedShipmentField = value;
-			}
-		}
-    
+		public ShipmentType ReportedShipment { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CurrentStatus")]
-		public StatusType[] CurrentStatus {
-			get {
-				return currentStatusField;
-			}
-			set {
-				currentStatusField = value;
-			}
-		}
-    
+		public StatusType[] CurrentStatus { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Contact")]
-		public ContactType[] Contact {
-			get {
-				return contactField;
-			}
-			set {
-				contactField = value;
-			}
-		}
-    
+		public ContactType[] Contact { get; set; }
+
 		/// <remarks/>
-		public LocationType1 Location {
-			get {
-				return locationField;
-			}
-			set {
-				locationField = value;
-			}
-		}
-    
+		public LocationType1 Location { get; set; }
+
 		/// <remarks/>
-		public SignatureType Signature {
-			get {
-				return signatureField;
-			}
-			set {
-				signatureField = value;
-			}
-		}
-    
+		public SignatureType Signature { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Period")]
-		public PeriodType[] Period {
-			get {
-				return periodField;
-			}
-			set {
-				periodField = value;
-			}
-		}
+		public PeriodType[] Period { get; set; }
 	}
 }

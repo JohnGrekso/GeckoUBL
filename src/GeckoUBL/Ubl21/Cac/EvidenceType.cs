@@ -1,4 +1,4 @@
-using GeckoUBL.Ubl21.Cbc;
+using GeckoUBL.Ubl21.Udt;
 
 namespace GeckoUBL.Ubl21.Cac
 {
@@ -10,93 +10,29 @@ namespace GeckoUBL.Ubl21.Cac
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("Evidence", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", IsNullable=false)]
 	public class EvidenceType {
-    
-		private IDType idField;
-    
-		private EvidenceTypeCodeType evidenceTypeCodeField;
-    
-		private DescriptionType[] descriptionField;
-    
-		private CandidateStatementType[] candidateStatementField;
-    
-		private PartyType evidenceIssuingPartyField;
-    
-		private DocumentReferenceType documentReferenceField;
-    
-		private LanguageType languageField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IDType ID {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public IdentifierType ID { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public EvidenceTypeCodeType EvidenceTypeCode {
-			get {
-				return evidenceTypeCodeField;
-			}
-			set {
-				evidenceTypeCodeField = value;
-			}
-		}
-    
+		public CodeType EvidenceTypeCode { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Description", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DescriptionType[] Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public TextType[] Description { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("CandidateStatement", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public CandidateStatementType[] CandidateStatement {
-			get {
-				return candidateStatementField;
-			}
-			set {
-				candidateStatementField = value;
-			}
-		}
-    
+		public TextType[] CandidateStatement { get; set; }
+
 		/// <remarks/>
-		public PartyType EvidenceIssuingParty {
-			get {
-				return evidenceIssuingPartyField;
-			}
-			set {
-				evidenceIssuingPartyField = value;
-			}
-		}
-    
+		public PartyType EvidenceIssuingParty { get; set; }
+
 		/// <remarks/>
-		public DocumentReferenceType DocumentReference {
-			get {
-				return documentReferenceField;
-			}
-			set {
-				documentReferenceField = value;
-			}
-		}
-    
+		public DocumentReferenceType DocumentReference { get; set; }
+
 		/// <remarks/>
-		public LanguageType Language {
-			get {
-				return languageField;
-			}
-			set {
-				languageField = value;
-			}
-		}
+		public LanguageType Language { get; set; }
 	}
 }
