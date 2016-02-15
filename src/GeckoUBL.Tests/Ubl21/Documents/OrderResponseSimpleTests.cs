@@ -7,24 +7,22 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 	[TestClass]
 	public class OrderResponseSimpleTests
 	{
-		private static ValidationResponse GetValidationResponse(BaseUblDocument doc)
-		{
-			return doc.Validate(Helpers.XsdFolder + "UBL-OrderResponseSimple-2.1.xsd");
-		}
+		private string _xsdFile;
+		private OrderResponseSimpleType _document;
 
-		private static OrderResponseSimpleType GetDocument()
+		[TestInitialize]
+		public void TestInitialize()
 		{
+			_xsdFile = Helpers.XsdFolder + "UBL-OrderResponseSimple-2.1.xsd";
+
 			var exampleFile = Helpers.ExampleFolder + "UBL-OrderResponseSimple-2.1-Example.xml";
-			var doc = UblDocumentLoader<OrderResponseSimpleType>.GetDocument(exampleFile);
-			return doc;
+			_document = UblDocumentLoader<OrderResponseSimpleType>.GetDocument(exampleFile);
 		}
 
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsValid()
 		{
-			var doc = GetDocument();
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsTrue(actual.IsValid, actual.Errors);
 		}
@@ -32,11 +30,9 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsNotValid()
 		{
-			var doc = GetDocument();
+			_document.ID = null;
 
-			doc.ID = null;
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsFalse(actual.IsValid);
 		}

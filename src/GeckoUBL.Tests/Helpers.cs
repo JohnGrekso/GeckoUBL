@@ -10,7 +10,9 @@ namespace GeckoUBL.Tests
 			get { return @"..\..\..\..\xsd\os-UBL-2.1\xsd\maindoc\";} 
 			
 		}
-		public static string ExampleFolder {
+		
+		public static string ExampleFolder 
+		{
 			get { return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\Ubl21\Examples\"; }
 		}
 	}

@@ -8,24 +8,22 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 	[TestClass]
 	public class CatalogueTypeTests
 	{
-		private static ValidationResponse GetValidationResponse(BaseUblDocument doc)
-		{
-			return doc.Validate(Helpers.XsdFolder + "UBL-Catalogue-2.1.xsd");
-		}
+		private string _xsdFile;
+		private CatalogueType _document;
 
-		private static CatalogueType GetDocument()
+		[TestInitialize]
+		public void TestInitialize()
 		{
+			_xsdFile = Helpers.XsdFolder + "UBL-Catalogue-2.1.xsd";
+
 			var exampleFile = Helpers.ExampleFolder + "UBL-Catalogue-2.1-Example.xml";
-			var doc = UblDocumentLoader<CatalogueType>.GetDocument(exampleFile);
-			return doc;
+			_document = UblDocumentLoader<CatalogueType>.GetDocument(exampleFile);
 		}
 
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsValid()
 		{
-			var doc = GetDocument();
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsTrue(actual.IsValid, actual.Errors);
 		}
@@ -33,11 +31,9 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsNotValid()
 		{
-			var doc = GetDocument();
+			_document.ID = null;
 
-			doc.ID = null;
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsFalse(actual.IsValid);
 		}
@@ -45,20 +41,18 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		[TestMethod]
 		public void GivenCatalogueXml_ThenCatalogueLoads()
 		{
-			var doc = GetDocument();
+			Assert.AreEqual("2.1", _document.UBLVersionID.Value);
 
-			Assert.AreEqual("2.1", doc.UBLVersionID.Value);
+			Assert.AreEqual("1234", _document.ID.Value);
+			Assert.AreEqual("Add", _document.ActionCode.Value);
+			Assert.AreEqual(DateTime.Parse("2016-01-05"), _document.IssueDate.Value);
+			Assert.AreEqual(DateTime.Parse("2016-01-01"), _document.ValidityPeriod[0].StartDate.Value);
+			Assert.AreEqual(DateTime.Parse("2016-03-31"), _document.ValidityPeriod[0].EndDate.Value);
 
-			Assert.AreEqual("1234", doc.ID.Value);
-			Assert.AreEqual("Add", doc.ActionCode.Value);
-			Assert.AreEqual(DateTime.Parse("2016-01-05"), doc.IssueDate.Value);
-			Assert.AreEqual(DateTime.Parse("2016-01-01"), doc.ValidityPeriod[0].StartDate.Value);
-			Assert.AreEqual(DateTime.Parse("2016-03-31"), doc.ValidityPeriod[0].EndDate.Value);
+			Assert.AreEqual("CONTOSO", _document.ProviderParty.PartyIdentification[0].ID.Value);
+			Assert.AreEqual("NRTHWND", _document.ReceiverParty.PartyIdentification[0].ID.Value);
 
-			Assert.AreEqual("CONTOSO", doc.ProviderParty.PartyIdentification[0].ID.Value);
-			Assert.AreEqual("NRTHWND", doc.ReceiverParty.PartyIdentification[0].ID.Value);
-
-			Assert.AreEqual(2, doc.CatalogueLine.Length);
+			Assert.AreEqual(2, _document.CatalogueLine.Length);
 		}
 	}
 }

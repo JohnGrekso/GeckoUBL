@@ -88,22 +88,9 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.Xml.Serialization.XmlRootAttribute("UBLExtensions", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
 	public class UBLExtensionsType
 	{
-
-		private UBLExtensionType[] uBLExtensionField;
-
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("UBLExtension")]
-		public UBLExtensionType[] UBLExtension
-		{
-			get
-			{
-				return uBLExtensionField;
-			}
-			set
-			{
-				uBLExtensionField = value;
-			}
-		}
+		public UBLExtensionType[] UBLExtension { get; set; }
 	}
 
 	/// <remarks/>
@@ -115,157 +102,36 @@ namespace GeckoUBL.Ubl21.Cec
 	[System.Xml.Serialization.XmlRootAttribute("UBLExtension", Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", IsNullable = false)]
 	public class UBLExtensionType
 	{
-
-		private IdentifierType idField;
-
-		private NameType nameField;
-
-		private ExtensionAgencyIDType extensionAgencyIDField;
-
-		private ExtensionAgencyNameType extensionAgencyNameField;
-
-		private ExtensionVersionIDType extensionVersionIDField;
-
-		private ExtensionAgencyURIType extensionAgencyURIField;
-
-		private ExtensionURIType extensionURIField;
-
-		private ExtensionReasonCodeType extensionReasonCodeField;
-
-		private ExtensionReasonType extensionReasonField;
-
-		private System.Xml.XmlElement extensionContentField;
+		/// <remarks/>
+		[System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
+		public IdentifierType ID { get; set; }
 
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public IdentifierType ID
-		{
-			get
-			{
-				return idField;
-			}
-			set
-			{
-				idField = value;
-			}
-		}
+		public NameType Name { get; set; }
 
 		/// <remarks/>
-		[System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public NameType Name
-		{
-			get
-			{
-				return nameField;
-			}
-			set
-			{
-				nameField = value;
-			}
-		}
+		public ExtensionAgencyIDType ExtensionAgencyID { get; set; }
 
 		/// <remarks/>
-		public ExtensionAgencyIDType ExtensionAgencyID
-		{
-			get
-			{
-				return extensionAgencyIDField;
-			}
-			set
-			{
-				extensionAgencyIDField = value;
-			}
-		}
+		public ExtensionAgencyNameType ExtensionAgencyName { get; set; }
 
 		/// <remarks/>
-		public ExtensionAgencyNameType ExtensionAgencyName
-		{
-			get
-			{
-				return extensionAgencyNameField;
-			}
-			set
-			{
-				extensionAgencyNameField = value;
-			}
-		}
+		public ExtensionVersionIDType ExtensionVersionID { get; set; }
 
 		/// <remarks/>
-		public ExtensionVersionIDType ExtensionVersionID
-		{
-			get
-			{
-				return extensionVersionIDField;
-			}
-			set
-			{
-				extensionVersionIDField = value;
-			}
-		}
+		public ExtensionAgencyURIType ExtensionAgencyURI { get; set; }
 
 		/// <remarks/>
-		public ExtensionAgencyURIType ExtensionAgencyURI
-		{
-			get
-			{
-				return extensionAgencyURIField;
-			}
-			set
-			{
-				extensionAgencyURIField = value;
-			}
-		}
+		public ExtensionURIType ExtensionURI { get; set; }
 
 		/// <remarks/>
-		public ExtensionURIType ExtensionURI
-		{
-			get
-			{
-				return extensionURIField;
-			}
-			set
-			{
-				extensionURIField = value;
-			}
-		}
+		public ExtensionReasonCodeType ExtensionReasonCode { get; set; }
 
 		/// <remarks/>
-		public ExtensionReasonCodeType ExtensionReasonCode
-		{
-			get
-			{
-				return extensionReasonCodeField;
-			}
-			set
-			{
-				extensionReasonCodeField = value;
-			}
-		}
+		public ExtensionReasonType ExtensionReason { get; set; }
 
 		/// <remarks/>
-		public ExtensionReasonType ExtensionReason
-		{
-			get
-			{
-				return extensionReasonField;
-			}
-			set
-			{
-				extensionReasonField = value;
-			}
-		}
-
-		/// <remarks/>
-		public System.Xml.XmlElement ExtensionContent
-		{
-			get
-			{
-				return extensionContentField;
-			}
-			set
-			{
-				extensionContentField = value;
-			}
-		}
+		public System.Xml.XmlElement ExtensionContent { get; set; }
 	}
 }

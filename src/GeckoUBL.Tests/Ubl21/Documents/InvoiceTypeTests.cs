@@ -8,24 +8,22 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 	[TestClass]
 	public class InvoiceTypeTests
 	{
-		private static ValidationResponse GetValidationResponse(BaseUblDocument doc)
-		{
-			return doc.Validate(Helpers.XsdFolder + "UBL-Invoice-2.1.xsd");
-		}
+		private string _xsdFile;
+		private InvoiceType _document;
 
-		private static InvoiceType GetDocument()
+		[TestInitialize]
+		public void TestInitialize()
 		{
+			_xsdFile = Helpers.XsdFolder + "UBL-Invoice-2.1.xsd";
+
 			var exampleFile = Helpers.ExampleFolder + "UBL-Invoice-2.1-Example.xml";
-			var doc = UblDocumentLoader<InvoiceType>.GetDocument(exampleFile);
-			return doc;
+			_document = UblDocumentLoader<InvoiceType>.GetDocument(exampleFile);
 		}
 
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsValid()
 		{
-			var doc = GetDocument();
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsTrue(actual.IsValid, actual.Errors);
 		}
@@ -33,11 +31,9 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		[TestMethod]
 		public void GivenObject_ThenSchemaIsNotValid()
 		{
-			var doc = GetDocument();
+			_document.ID = null;
 
-			doc.ID = null;
-
-			var actual = GetValidationResponse(doc);
+			var actual = _document.Validate(_xsdFile);
 
 			Assert.IsFalse(actual.IsValid);
 		}
@@ -45,19 +41,17 @@ namespace GeckoUBL.Tests.Ubl21.Documents
 		[TestMethod]
 		public void GivenInvoiceXml_ThenInvoiceLoads()
 		{
-			var doc = GetDocument();
+			Assert.AreEqual("2.1", _document.UBLVersionID.Value);
 
-			Assert.AreEqual("2.1", doc.UBLVersionID.Value);
+			Assert.AreEqual("TOSL108", _document.ID.Value);
+			Assert.AreEqual(DateTime.Parse("2009-12-15"), _document.IssueDate.Value);
+			Assert.AreEqual(DateTime.Parse("2009-11-01"), _document.InvoicePeriod[0].StartDate.Value);
+			Assert.AreEqual(DateTime.Parse("2009-11-30"), _document.InvoicePeriod[0].EndDate.Value);
 
-			Assert.AreEqual("TOSL108", doc.ID.Value);
-			Assert.AreEqual(DateTime.Parse("2009-12-15"), doc.IssueDate.Value);
-			Assert.AreEqual(DateTime.Parse("2009-11-01"), doc.InvoicePeriod[0].StartDate.Value);
-			Assert.AreEqual(DateTime.Parse("2009-11-30"), doc.InvoicePeriod[0].EndDate.Value);
+			Assert.AreEqual(729, _document.LegalMonetaryTotal.PayableAmount.Value);
+			Assert.AreEqual("EUR", _document.LegalMonetaryTotal.PayableAmount.currencyID);
 
-			Assert.AreEqual(729, doc.LegalMonetaryTotal.PayableAmount.Value);
-			Assert.AreEqual("EUR", doc.LegalMonetaryTotal.PayableAmount.currencyID);
-
-			Assert.AreEqual(5, doc.InvoiceLine.Length);
+			Assert.AreEqual(5, _document.InvoiceLine.Length);
 		}
 	}
 }
