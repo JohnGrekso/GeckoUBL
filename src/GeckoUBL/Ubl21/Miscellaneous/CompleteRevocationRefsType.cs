@@ -8,57 +8,20 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("CompleteRevocationRefs", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
 	public class CompleteRevocationRefsType {
-    
-		private CRLRefType[] cRLRefsField;
-    
-		private OCSPRefType[] oCSPRefsField;
-    
-		private AnyType[] otherRefsField;
-    
-		private string idField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlArrayItemAttribute("CRLRef", IsNullable=false)]
-		public CRLRefType[] CRLRefs {
-			get {
-				return cRLRefsField;
-			}
-			set {
-				cRLRefsField = value;
-			}
-		}
-    
+		public CRLRefType[] CRLRefs { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlArrayItemAttribute("OCSPRef", IsNullable=false)]
-		public OCSPRefType[] OCSPRefs {
-			get {
-				return oCSPRefsField;
-			}
-			set {
-				oCSPRefsField = value;
-			}
-		}
-    
+		public OCSPRefType[] OCSPRefs { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlArrayItemAttribute("OtherRef", IsNullable=false)]
-		public AnyType[] OtherRefs {
-			get {
-				return otherRefsField;
-			}
-			set {
-				otherRefsField = value;
-			}
-		}
-    
+		public AnyType[] OtherRefs { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-		public string Id {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
+		public string Id { get; set; }
 	}
 }

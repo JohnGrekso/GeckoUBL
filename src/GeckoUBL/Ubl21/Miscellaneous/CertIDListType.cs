@@ -8,18 +8,8 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("SigningCertificate", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
 	public class CertIDListType {
-    
-		private CertIDType[] certField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Cert")]
-		public CertIDType[] Cert {
-			get {
-				return certField;
-			}
-			set {
-				certField = value;
-			}
-		}
+		public CertIDType[] Cert { get; set; }
 	}
 }

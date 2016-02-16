@@ -7,6 +7,7 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("XAdESTimeStamp", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
+	// ReSharper disable once InconsistentNaming
 	public class XAdESTimeStampType : GenericTimeStampType {
 	}
 }

@@ -9,59 +9,22 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public abstract class GenericTimeStampType {
-    
-		private object[] itemsField;
-    
-		private CanonicalizationMethodType1 canonicalizationMethodField;
-    
-		private object[] items1Field;
-    
-		private string idField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Include", typeof(IncludeType))]
 		[System.Xml.Serialization.XmlElementAttribute("ReferenceInfo", typeof(ReferenceInfoType))]
-		public object[] Items {
-			get {
-				return itemsField;
-			}
-			set {
-				itemsField = value;
-			}
-		}
-    
+		public object[] Items { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
-		public CanonicalizationMethodType1 CanonicalizationMethod {
-			get {
-				return canonicalizationMethodField;
-			}
-			set {
-				canonicalizationMethodField = value;
-			}
-		}
-    
+		public CanonicalizationMethodType1 CanonicalizationMethod { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("EncapsulatedTimeStamp", typeof(EncapsulatedPKIDataType))]
 		[System.Xml.Serialization.XmlElementAttribute("XMLTimeStamp", typeof(AnyType))]
-		public object[] Items1 {
-			get {
-				return items1Field;
-			}
-			set {
-				items1Field = value;
-			}
-		}
-    
+		public object[] Items1 { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-		public string Id {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
+		public string Id { get; set; }
 	}
 }

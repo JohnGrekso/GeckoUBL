@@ -8,18 +8,8 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("CounterSignature", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
 	public class CounterSignatureType {
-    
-		private SignatureType1 signatureField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
-		public SignatureType1 Signature {
-			get {
-				return signatureField;
-			}
-			set {
-				signatureField = value;
-			}
-		}
+		public SignatureType1 Signature { get; set; }
 	}
 }

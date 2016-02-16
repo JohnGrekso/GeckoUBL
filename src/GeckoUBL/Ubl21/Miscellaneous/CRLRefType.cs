@@ -7,29 +7,10 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public class CRLRefType {
-    
-		private DigestAlgAndValueType digestAlgAndValueField;
-    
-		private CRLIdentifierType cRLIdentifierField;
-    
 		/// <remarks/>
-		public DigestAlgAndValueType DigestAlgAndValue {
-			get {
-				return digestAlgAndValueField;
-			}
-			set {
-				digestAlgAndValueField = value;
-			}
-		}
-    
+		public DigestAlgAndValueType DigestAlgAndValue { get; set; }
+
 		/// <remarks/>
-		public CRLIdentifierType CRLIdentifier {
-			get {
-				return cRLIdentifierField;
-			}
-			set {
-				cRLIdentifierField = value;
-			}
-		}
+		public CRLIdentifierType CRLIdentifier { get; set; }
 	}
 }

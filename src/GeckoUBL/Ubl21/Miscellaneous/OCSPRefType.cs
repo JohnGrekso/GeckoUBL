@@ -7,29 +7,10 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public class OCSPRefType {
-    
-		private OCSPIdentifierType oCSPIdentifierField;
-    
-		private DigestAlgAndValueType digestAlgAndValueField;
-    
 		/// <remarks/>
-		public OCSPIdentifierType OCSPIdentifier {
-			get {
-				return oCSPIdentifierField;
-			}
-			set {
-				oCSPIdentifierField = value;
-			}
-		}
-    
+		public OCSPIdentifierType OCSPIdentifier { get; set; }
+
 		/// <remarks/>
-		public DigestAlgAndValueType DigestAlgAndValue {
-			get {
-				return digestAlgAndValueField;
-			}
-			set {
-				digestAlgAndValueField = value;
-			}
-		}
+		public DigestAlgAndValueType DigestAlgAndValue { get; set; }
 	}
 }

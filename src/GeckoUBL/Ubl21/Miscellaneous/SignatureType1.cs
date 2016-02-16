@@ -8,67 +8,21 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName="SignatureType", Namespace="http://www.w3.org/2000/09/xmldsig#")]
 	[System.Xml.Serialization.XmlRootAttribute("Signature", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
 	public class SignatureType1 {
-    
-		private SignedInfoType signedInfoField;
-    
-		private SignatureValueType signatureValueField;
-    
-		private KeyInfoType keyInfoField;
-    
-		private ObjectType[] objectField;
-    
-		private string idField;
-    
 		/// <remarks/>
-		public SignedInfoType SignedInfo {
-			get {
-				return signedInfoField;
-			}
-			set {
-				signedInfoField = value;
-			}
-		}
-    
+		public SignedInfoType SignedInfo { get; set; }
+
 		/// <remarks/>
-		public SignatureValueType SignatureValue {
-			get {
-				return signatureValueField;
-			}
-			set {
-				signatureValueField = value;
-			}
-		}
-    
+		public SignatureValueType SignatureValue { get; set; }
+
 		/// <remarks/>
-		public KeyInfoType KeyInfo {
-			get {
-				return keyInfoField;
-			}
-			set {
-				keyInfoField = value;
-			}
-		}
-    
+		public KeyInfoType KeyInfo { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Object")]
-		public ObjectType[] Object {
-			get {
-				return objectField;
-			}
-			set {
-				objectField = value;
-			}
-		}
-    
+		public ObjectType[] Object { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-		public string Id {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
+		public string Id { get; set; }
 	}
 }

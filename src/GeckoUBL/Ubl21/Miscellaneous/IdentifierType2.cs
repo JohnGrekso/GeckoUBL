@@ -7,44 +7,16 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(TypeName="IdentifierType", Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public class IdentifierType2 {
-    
-		private QualifierType qualifierField;
-    
-		private bool qualifierFieldSpecified;
-    
-		private string valueField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute()]
-		public QualifierType Qualifier {
-			get {
-				return qualifierField;
-			}
-			set {
-				qualifierField = value;
-			}
-		}
-    
+		public QualifierType Qualifier { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlIgnoreAttribute()]
-		public bool QualifierSpecified {
-			get {
-				return qualifierFieldSpecified;
-			}
-			set {
-				qualifierFieldSpecified = value;
-			}
-		}
-    
+		public bool QualifierSpecified { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlTextAttribute(DataType="anyURI")]
-		public string Value {
-			get {
-				return valueField;
-			}
-			set {
-				valueField = value;
-			}
-		}
+		public string Value { get; set; }
 	}
 }

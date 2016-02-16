@@ -8,18 +8,8 @@ namespace GeckoUBL.Ubl21.Signature
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2")]
 	[System.Xml.Serialization.XmlRootAttribute("UBLDocumentSignatures", Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2", IsNullable=false)]
 	public class UBLDocumentSignaturesType {
-    
-		private SignatureInformationType[] signatureInformationField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("SignatureInformation", Namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2")]
-		public SignatureInformationType[] SignatureInformation {
-			get {
-				return signatureInformationField;
-			}
-			set {
-				signatureInformationField = value;
-			}
-		}
+		public SignatureInformationType[] SignatureInformation { get; set; }
 	}
 }

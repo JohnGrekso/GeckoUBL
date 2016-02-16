@@ -8,57 +8,20 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.4.1#")]
 	[System.Xml.Serialization.XmlRootAttribute("TimeStampValidationData", Namespace="http://uri.etsi.org/01903/v1.4.1#", IsNullable=false)]
 	public class ValidationDataType {
-    
-		private CertificateValuesType certificateValuesField;
-    
-		private RevocationValuesType revocationValuesField;
-    
-		private string idField;
-    
-		private string urField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
-		public CertificateValuesType CertificateValues {
-			get {
-				return certificateValuesField;
-			}
-			set {
-				certificateValuesField = value;
-			}
-		}
-    
+		public CertificateValuesType CertificateValues { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
-		public RevocationValuesType RevocationValues {
-			get {
-				return revocationValuesField;
-			}
-			set {
-				revocationValuesField = value;
-			}
-		}
-    
+		public RevocationValuesType RevocationValues { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-		public string Id {
-			get {
-				return idField;
-			}
-			set {
-				idField = value;
-			}
-		}
-    
+		public string Id { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-		public string UR {
-			get {
-				return urField;
-			}
-			set {
-				urField = value;
-			}
-		}
+		public string UR { get; set; }
 	}
 }

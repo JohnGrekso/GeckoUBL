@@ -8,18 +8,8 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
 	[System.Xml.Serialization.XmlRootAttribute("Transforms", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
 	public class TransformsType {
-    
-		private TransformType[] transformField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("Transform")]
-		public TransformType[] Transform {
-			get {
-				return transformField;
-			}
-			set {
-				transformField = value;
-			}
-		}
+		public TransformType[] Transform { get; set; }
 	}
 }

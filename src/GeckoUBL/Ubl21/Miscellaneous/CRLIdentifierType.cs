@@ -7,55 +7,18 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public class CRLIdentifierType {
-    
-		private string issuerField;
-    
-		private System.DateTime issueTimeField;
-    
-		private string numberField;
-    
-		private string uRIField;
-    
 		/// <remarks/>
-		public string Issuer {
-			get {
-				return issuerField;
-			}
-			set {
-				issuerField = value;
-			}
-		}
-    
+		public string Issuer { get; set; }
+
 		/// <remarks/>
-		public System.DateTime IssueTime {
-			get {
-				return issueTimeField;
-			}
-			set {
-				issueTimeField = value;
-			}
-		}
-    
+		public System.DateTime IssueTime { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-		public string Number {
-			get {
-				return numberField;
-			}
-			set {
-				numberField = value;
-			}
-		}
-    
+		public string Number { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-		public string URI {
-			get {
-				return uRIField;
-			}
-			set {
-				uRIField = value;
-			}
-		}
+		public string URI { get; set; }
 	}
 }

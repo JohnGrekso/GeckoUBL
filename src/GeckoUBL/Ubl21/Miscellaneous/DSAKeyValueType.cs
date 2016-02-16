@@ -8,96 +8,32 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
 	[System.Xml.Serialization.XmlRootAttribute("DSAKeyValue", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
 	public class DSAKeyValueType {
-    
-		private byte[] pField;
-    
-		private byte[] qField;
-    
-		private byte[] gField;
-    
-		private byte[] yField;
-    
-		private byte[] jField;
-    
-		private byte[] seedField;
-    
-		private byte[] pgenCounterField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] P {
-			get {
-				return pField;
-			}
-			set {
-				pField = value;
-			}
-		}
-    
+		public byte[] P { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] Q {
-			get {
-				return qField;
-			}
-			set {
-				qField = value;
-			}
-		}
-    
+		public byte[] Q { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] G {
-			get {
-				return gField;
-			}
-			set {
-				gField = value;
-			}
-		}
-    
+		public byte[] G { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] Y {
-			get {
-				return yField;
-			}
-			set {
-				yField = value;
-			}
-		}
-    
+		public byte[] Y { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] J {
-			get {
-				return jField;
-			}
-			set {
-				jField = value;
-			}
-		}
-    
+		public byte[] J { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] Seed {
-			get {
-				return seedField;
-			}
-			set {
-				seedField = value;
-			}
-		}
-    
+		public byte[] Seed { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-		public byte[] PgenCounter {
-			get {
-				return pgenCounterField;
-			}
-			set {
-				pgenCounterField = value;
-			}
-		}
+		public byte[] PgenCounter { get; set; }
 	}
 }

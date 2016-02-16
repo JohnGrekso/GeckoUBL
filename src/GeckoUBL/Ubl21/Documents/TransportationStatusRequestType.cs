@@ -12,8 +12,6 @@ namespace GeckoUBL.Ubl21.Documents
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatusRequest-2")]
 	[System.Xml.Serialization.XmlRootAttribute("TransportationStatusRequest", Namespace="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatusRequest-2", IsNullable=false)]
 	public class TransportationStatusRequestType {
-		private DateType issueDateField;
-
 		/// <remarks/>
 		[System.Xml.Serialization.XmlArrayAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2")]
 		[System.Xml.Serialization.XmlArrayItemAttribute("UBLExtension", IsNullable=false)]
@@ -49,16 +47,8 @@ namespace GeckoUBL.Ubl21.Documents
 
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
-		public DateType IssueDate
-		{
-			get {
-				return issueDateField;
-			}
-			set {
-				issueDateField = value;
-			}
-		}
-    
+		public DateType IssueDate { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(Namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2")]
 		public TimeType IssueTime { get; set; }

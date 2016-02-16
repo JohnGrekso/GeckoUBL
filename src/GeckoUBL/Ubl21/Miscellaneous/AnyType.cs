@@ -8,32 +8,13 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("Any", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
 	public class AnyType {
-    
-		private System.Xml.XmlNode[] anyField;
-    
-		private System.Xml.XmlAttribute[] anyAttrField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlTextAttribute()]
 		[System.Xml.Serialization.XmlAnyElementAttribute()]
-		public System.Xml.XmlNode[] Any {
-			get {
-				return anyField;
-			}
-			set {
-				anyField = value;
-			}
-		}
-    
+		public System.Xml.XmlNode[] Any { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAnyAttributeAttribute()]
-		public System.Xml.XmlAttribute[] AnyAttr {
-			get {
-				return anyAttrField;
-			}
-			set {
-				anyAttrField = value;
-			}
-		}
+		public System.Xml.XmlAttribute[] AnyAttr { get; set; }
 	}
 }

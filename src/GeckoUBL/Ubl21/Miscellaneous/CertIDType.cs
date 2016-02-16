@@ -7,42 +7,14 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	public class CertIDType {
-    
-		private DigestAlgAndValueType certDigestField;
-    
-		private X509IssuerSerialType issuerSerialField;
-    
-		private string uRIField;
-    
 		/// <remarks/>
-		public DigestAlgAndValueType CertDigest {
-			get {
-				return certDigestField;
-			}
-			set {
-				certDigestField = value;
-			}
-		}
-    
+		public DigestAlgAndValueType CertDigest { get; set; }
+
 		/// <remarks/>
-		public X509IssuerSerialType IssuerSerial {
-			get {
-				return issuerSerialField;
-			}
-			set {
-				issuerSerialField = value;
-			}
-		}
-    
+		public X509IssuerSerialType IssuerSerial { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-		public string URI {
-			get {
-				return uRIField;
-			}
-			set {
-				uRIField = value;
-			}
-		}
+		public string URI { get; set; }
 	}
 }

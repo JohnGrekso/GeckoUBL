@@ -8,67 +8,21 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://uri.etsi.org/01903/v1.3.2#")]
 	[System.Xml.Serialization.XmlRootAttribute("DataObjectFormat", Namespace="http://uri.etsi.org/01903/v1.3.2#", IsNullable=false)]
 	public class DataObjectFormatType {
-    
-		private string descriptionField;
-    
-		private ObjectIdentifierType objectIdentifierField;
-    
-		private string mimeTypeField;
-    
-		private string encodingField;
-    
-		private string objectReferenceField;
-    
 		/// <remarks/>
-		public string Description {
-			get {
-				return descriptionField;
-			}
-			set {
-				descriptionField = value;
-			}
-		}
-    
+		public string Description { get; set; }
+
 		/// <remarks/>
-		public ObjectIdentifierType ObjectIdentifier {
-			get {
-				return objectIdentifierField;
-			}
-			set {
-				objectIdentifierField = value;
-			}
-		}
-    
+		public ObjectIdentifierType ObjectIdentifier { get; set; }
+
 		/// <remarks/>
-		public string MimeType {
-			get {
-				return mimeTypeField;
-			}
-			set {
-				mimeTypeField = value;
-			}
-		}
-    
+		public string MimeType { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
-		public string Encoding {
-			get {
-				return encodingField;
-			}
-			set {
-				encodingField = value;
-			}
-		}
-    
+		public string Encoding { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-		public string ObjectReference {
-			get {
-				return objectReferenceField;
-			}
-			set {
-				objectReferenceField = value;
-			}
-		}
+		public string ObjectReference { get; set; }
 	}
 }

@@ -8,45 +8,17 @@ namespace GeckoUBL.Ubl21.Miscellaneous
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
 	[System.Xml.Serialization.XmlRootAttribute("Transform", Namespace="http://www.w3.org/2000/09/xmldsig#", IsNullable=false)]
 	public class TransformType {
-    
-		private object[] itemsField;
-    
-		private string[] textField;
-    
-		private string algorithmField;
-    
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAnyElementAttribute()]
 		[System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
-		public object[] Items {
-			get {
-				return itemsField;
-			}
-			set {
-				itemsField = value;
-			}
-		}
-    
+		public object[] Items { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlTextAttribute()]
-		public string[] Text {
-			get {
-				return textField;
-			}
-			set {
-				textField = value;
-			}
-		}
-    
+		public string[] Text { get; set; }
+
 		/// <remarks/>
 		[System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-		public string Algorithm {
-			get {
-				return algorithmField;
-			}
-			set {
-				algorithmField = value;
-			}
-		}
+		public string Algorithm { get; set; }
 	}
 }
